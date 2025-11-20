@@ -1,0 +1,372 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.8"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "9ff1023b2170e005dab165ee74d7bd83",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"module-1-data-engineering-foundations\">Module 1: Data Engineering Foundations</h1>\n<span class=\"paragraph\"><strong>Welcome to your ML engineering journey!</strong></span>\n<span class=\"paragraph\">In this module, you'll learn that <strong>data engineering is the foundation of any ML system</strong>.\nIn industry, data engineering typically takes 60-80% of an ML engineer's time.</span>\n<h2 id=\"what-youll-learn\">What You'll Learn</h2>\n<ol>\n<li><strong>Treat Data as Code</strong>: Data deserves the same rigor as application code</li>\n<li><strong>Data Quality</strong>: Identify and fix data quality issues systematically</li>\n<li><strong>Reproducibility</strong>: Build pipelines that produce identical results</li>\n<li><strong>Performance</strong>: Compare pandas vs polars for different scenarios</li>\n</ol>\n<h2 id=\"industry-context\">Industry Context</h2>\n<blockquote>\n<span class=\"paragraph\">\"If I had an hour to solve a problem, I'd spend 55 minutes on data quality and 5 minutes on the model.\"\n\u2014 Adapted from Einstein, but every ML engineer agrees</span>\n</blockquote>\n<span class=\"paragraph\"><strong>Why data engineering matters:</strong></span>\n<ul>\n<li>Bad data \u2192 Bad models (no matter how sophisticated your algorithm)</li>\n<li>Data bugs are hard to detect (model trains successfully, but learns wrong patterns)</li>\n<li>Production failures are usually data issues, not model issues</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "94c1b1ee5a0e21d20e6a4f5a23595dec",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"section-1-loading-data-the-right-way\">Section 1: Loading Data (The Right Way)</h2>\n<span class=\"paragraph\">Let's start by loading our Pokemon card dataset. But we won't just load it \u2014\nwe'll do it <strong>professionally</strong> with proper validation and error handling.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "33bdab1340081750e24d6608e8195215",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"initial-data-exploration\">\ud83d\udcca Initial Data Exploration</h3>\n<span class=\"paragraph\">Before we do anything else, let's understand what we're working with.\nThis is called <strong>Exploratory Data Analysis (EDA)</strong>, though for now we're just getting oriented.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "7548ab0232cc4d641d4cf9d62d9bd956",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"did-you-notice-anything-wrong\">\ud83d\udea8 Did You Notice Anything Wrong?</h3>\n<span class=\"paragraph\">Look at the <code>.info()</code> output above carefully:</span>\n<ul>\n<li><code>hp</code>: 784 non-null out of 800 \u2192 <strong>16 missing values</strong></li>\n<li><code>price_usd</code>: 776 non-null out of 800 \u2192 <strong>24 missing values</strong></li>\n</ul>\n<span class=\"paragraph\"><strong>This is realistic!</strong> Real-world datasets are messy. Let's investigate further.</span>\n<hr />\n<h2 id=\"section-2-data-quality-issues\">Section 2: Data Quality Issues</h2>\n<span class=\"paragraph\">Now let's systematically check for common data quality problems:</span>\n<ol>\n<li>Missing values</li>\n<li>Duplicate records</li>\n<li>Inconsistent values (e.g., capitalization)</li>\n<li>Outliers</li>\n<li>Data type issues</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "6c69891fe4889fda7d3a524d17dcb48c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"industry-insight-data-quality-issues-are-normal\">\ud83d\udca1 Industry Insight: Data Quality Issues are Normal</h3>\n<span class=\"paragraph\"><strong>What we found:</strong></span>\n<ul>\n<li>\u2705 Missing values in HP and price</li>\n<li>\u2705 Duplicate card IDs (data entry errors)</li>\n<li>\u2705 Inconsistent capitalization in <code>type</code> column</li>\n<li>\u2705 Price outliers (some cards 10x more expensive)</li>\n</ul>\n<span class=\"paragraph\"><strong>In production, you'll see:</strong></span>\n<ul>\n<li>Database connection failures \u2192 missing data</li>\n<li>Multiple data sources \u2192 inconsistent formats</li>\n<li>Manual data entry \u2192 typos and duplicates</li>\n<li>Edge cases \u2192 outliers that break models</li>\n</ul>\n<span class=\"paragraph\"><strong>The key question:</strong> Are these errors, or valid data points?</span>\n<ul>\n<li>Duplicates: Probably errors</li>\n<li>Missing values: Depends (could be \"unknown\" vs \"not collected\")</li>\n<li>Outliers: Rare cards ARE expensive (domain knowledge!)</li>\n<li>Inconsistent case: Definitely an error</li>\n</ul>\n<hr />\n<h2 id=\"section-3-data-validation-with-pandera\">Section 3: Data Validation with Pandera</h2>\n<span class=\"paragraph\">Manual checks are good for exploration, but in production we need <strong>automated validation</strong>.\nLet's use <strong>Pandera</strong> to define a schema that our data must conform to.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "TqIu",
+      "code_hash": "97682cca713d5dc9e6676dc544de32fa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"data-cleaning-pipeline\">\ud83d\udd27 Data Cleaning Pipeline</h3>\n<span class=\"paragraph\">Now that we know what's wrong, let's fix it systematically.\nWe'll create a <strong>data cleaning pipeline</strong> that's:</span>\n<ul>\n<li>Reproducible (same input \u2192 same output)</li>\n<li>Documented (each step has a clear purpose)</li>\n<li>Testable (we can verify it works)</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ecfG",
+      "code_hash": "3dd5d202d91c350c9ab6dac5ac3d7ff0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"section-4-data-versioning-reproducibility\">Section 4: Data Versioning &amp; Reproducibility</h2>\n<span class=\"paragraph\"><strong>Key Question</strong>: If you run this pipeline tomorrow, will you get the same result?</span>\n<span class=\"paragraph\">In production, we need:</span>\n<ul>\n<li><strong>Data versioning</strong>: Track which version of data produced which model</li>\n<li><strong>Pipeline versioning</strong>: Track the code that processed the data</li>\n<li><strong>Reproducibility</strong>: Ability to recreate any past result</li>\n</ul>\n<h3 id=\"tools-in-industry\">Tools in Industry:</h3>\n<ul>\n<li><strong>DVC (Data Version Control)</strong>: Git for data</li>\n<li><strong>MLflow</strong>: Track experiments with data versions</li>\n<li><strong>Feast</strong>: Feature store for versioned features</li>\n<li><strong>Delta Lake</strong>: Versioned data lake storage</li>\n</ul>\n<span class=\"paragraph\">For this project, we'll use simple approaches that scale up.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZBYS",
+      "code_hash": "92c0c2c00acb0ee5c3541f8062122dd5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"section-5-performance-comparison-pandas-vs-polars\">Section 5: Performance Comparison - Pandas vs Polars</h2>\n<span class=\"paragraph\">You've heard about <strong>Polars</strong> - the fast new DataFrame library written in Rust.\nLet's compare it to pandas for our use case.</span>\n<h3 id=\"when-to-use-each\">When to use each:</h3>\n<ul>\n<li><strong>pandas</strong>: &lt;10GB data, lots of libraries expect pandas, exploratory work</li>\n<li><strong>polars</strong>: &gt;10GB data, performance critical, parallel processing needed</li>\n</ul>\n<span class=\"paragraph\">Let's run a performance comparison!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "xXTn",
+      "code_hash": "99603ffa183c66c4f402cc9529995b56",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"should-you-switch-to-polars\">\ud83e\udd14 Should You Switch to Polars?</h3>\n<span class=\"paragraph\"><strong>Not necessarily!</strong> Consider:</span>\n<span class=\"paragraph\"><strong>Stick with pandas if:</strong></span>\n<ul>\n<li>Your data is &lt;1GB</li>\n<li>You're doing exploratory analysis</li>\n<li>You need compatibility with scikit-learn, matplotlib, etc.</li>\n<li>Your team knows pandas well</li>\n</ul>\n<span class=\"paragraph\"><strong>Use polars if:</strong></span>\n<ul>\n<li>Data is &gt;10GB</li>\n<li>Performance is critical</li>\n<li>You're building data pipelines</li>\n<li>You can handle the learning curve</li>\n</ul>\n<span class=\"paragraph\"><strong>In this course</strong>: We'll use pandas (industry standard, better ecosystem),\nbut you now know polars exists for when you need it!</span>\n<hr />\n<h2 id=\"section-6-key-takeaways-socratic-questions\">Section 6: Key Takeaways &amp; Socratic Questions</h2>\n<h3 id=\"what-you-learned\">\u2705 What You Learned</h3>\n<ol>\n<li><strong>Data quality matters more than algorithms</strong></li>\n<li><strong>Always validate your data</strong> (use schemas like Pandera)</li>\n<li><strong>Build reproducible pipelines</strong> (version everything)</li>\n<li><strong>Performance tools exist</strong> (polars) but choose wisely</li>\n<li><strong>Document and test your data code</strong> (it's real code!)</li>\n</ol>\n<h3 id=\"socratic-questions-test-your-understanding\">\ud83e\udd14 Socratic Questions (Test Your Understanding)</h3>\n<span class=\"paragraph\">Try to answer these before moving on:</span>\n<ol>\n<li>\n<span class=\"paragraph\"><strong>\"If I run your data pipeline twice on the same input, will I get identical output? Why or why not?\"</strong></span>\n<ul>\n<li>Think about: random operations, timestamps, external dependencies</li>\n</ul>\n</li>\n<li>\n<span class=\"paragraph\"><strong>\"Your model performed great in training but fails in production. The data looks similar. What could be wrong?\"</strong></span>\n<ul>\n<li>Think about: data drift, schema changes, missing values handled differently</li>\n</ul>\n</li>\n<li>\n<span class=\"paragraph\"><strong>\"Someone changed a column name upstream. How would you detect this before it breaks your model?\"</strong></span>\n<ul>\n<li>Think about: schema validation, automated tests, monitoring</li>\n</ul>\n</li>\n<li>\n<span class=\"paragraph\"><strong>\"When would you choose polars over pandas? When would you stick with pandas?\"</strong></span>\n<ul>\n<li>Think about: data size, team skills, ecosystem compatibility</li>\n</ul>\n</li>\n</ol>\n<h3 id=\"practice-exercise\">\ud83c\udfcb\ufe0f Practice Exercise</h3>\n<span class=\"paragraph\">Before moving to Module 2, try this:</span>\n<span class=\"paragraph\"><strong>Exercise</strong>: You receive a new Pokemon dataset with a different schema (missing columns, extra columns).\nModify the cleaning pipeline to handle this gracefully.</span>\n<span class=\"paragraph\">Hints:</span>\n<ul>\n<li>Update the Pandera schema</li>\n<li>Add checks for required columns</li>\n<li>Handle missing features with defaults</li>\n</ul>\n<hr />\n<h2 id=\"industry-context-real-world-data-engineering\">\ud83c\udfe2 Industry Context: Real-World Data Engineering</h2>\n<h3 id=\"how-companies-do-this-at-scale\">How Companies Do This at Scale</h3>\n<span class=\"paragraph\"><strong>Small Startup (&lt;10 models)</strong>:</span>\n<ul>\n<li>Simple CSV files in S3/GCS</li>\n<li>Python scripts for cleaning</li>\n<li>Basic validation</li>\n</ul>\n<span class=\"paragraph\"><strong>Medium Company (10-50 models)</strong>:</span>\n<ul>\n<li>Data warehouse (Snowflake, BigQuery)</li>\n<li>Airflow for orchestration</li>\n<li>Great Expectations for validation</li>\n<li>Basic feature store (Feast)</li>\n</ul>\n<span class=\"paragraph\"><strong>Large Company (&gt;50 models)</strong>:</span>\n<ul>\n<li>Custom data platform</li>\n<li>Real-time + batch pipelines</li>\n<li>Feature stores (Tecton, internal)</li>\n<li>Data quality monitoring</li>\n<li>Automated alerting</li>\n</ul>\n<h3 id=\"common-pitfalls-to-avoid\">Common Pitfalls to Avoid</h3>\n<span class=\"paragraph\">\u26a0\ufe0f <strong>Don't</strong>: Load data without validation\n\u2705 <strong>Do</strong>: Define schemas and validate automatically</span>\n<span class=\"paragraph\">\u26a0\ufe0f <strong>Don't</strong>: Clean data in notebooks without saving the code\n\u2705 <strong>Do</strong>: Write reusable cleaning functions with tests</span>\n<span class=\"paragraph\">\u26a0\ufe0f <strong>Don't</strong>: Ignore missing values\n\u2705 <strong>Do</strong>: Understand why they're missing and handle appropriately</span>\n<span class=\"paragraph\">\u26a0\ufe0f <strong>Don't</strong>: Assume your data is correct\n\u2705 <strong>Do</strong>: Be paranoid - validate everything</span>\n<hr />\n<h2 id=\"module-1-checkpoint\">\ud83c\udfaf Module 1 Checkpoint</h2>\n<span class=\"paragraph\">You've completed Module 1 when you can:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Write a data validation test from scratch in &lt;10 minutes</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Explain why data versioning matters to a junior engineer</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Debug a data quality issue by reading test failures</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Choose the right tool (pandas/polars/SQL) for a given task</li>\n</ul>\n<span class=\"paragraph\"><strong>Next</strong>: Module 2 - EDA &amp; Feature Engineering</span>\n<span class=\"paragraph\">In the next module, you'll learn how to:</span>\n<ul>\n<li>Explore data to extract insights</li>\n<li>Engineer features that improve model performance</li>\n<li>Avoid data leakage (the silent killer)</li>\n<li>Build scikit-learn preprocessing pipelines</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "193f8158b35bc029b41414bc63aa2e4d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "674cd5a0f94e06958acac4f6f985e334",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "01917b557fdd5d60540d86ef5a26b52c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"first-look-at-the-data\">\ud83d\udd0d First Look at the Data</h3>\n<span class=\"paragraph\">We loaded <strong>800 records</strong> with <strong>13 features</strong>.\nLet's examine the first few rows:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "6f7f96cc5bbeaa0fccbc780d76f6a923",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='3fe1687c-5591-1016-4bf6-7ecad407ab1a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0000&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zenith-122&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Psychic&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:65,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:89,&#92;&quot;sp_defense&#92;&quot;:79,&#92;&quot;speed&#92;&quot;:70,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0001&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Machamp-188&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:73,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:55,&#92;&quot;sp_defense&#92;&quot;:90,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-09-0002&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Titanor-14&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Steel&#92;&quot;,&#92;&quot;hp&#92;&quot;:63.0,&#92;&quot;attack&#92;&quot;:89,&#92;&quot;defense&#92;&quot;:97,&#92;&quot;sp_attack&#92;&quot;:58,&#92;&quot;sp_defense&#92;&quot;:74,&#92;&quot;speed&#92;&quot;:58,&#92;&quot;generation&#92;&quot;:9,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.19},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-06-0003&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Flamara-54&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:86,&#92;&quot;defense&#92;&quot;:72,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:68,&#92;&quot;speed&#92;&quot;:81,&#92;&quot;generation&#92;&quot;:6,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0004&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Floravia-41&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:null,&#92;&quot;attack&#92;&quot;:59,&#92;&quot;defense&#92;&quot;:74,&#92;&quot;sp_attack&#92;&quot;:77,&#92;&quot;sp_defense&#92;&quot;:59,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:5.44},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0005&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Fernix-231&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:76.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:73,&#92;&quot;sp_attack&#92;&quot;:91,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:10.62},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0006&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Sparklix-101&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fairy&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:88,&#92;&quot;sp_defense&#92;&quot;:76,&#92;&quot;speed&#92;&quot;:72,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:4.29},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0007&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Brawlix-237&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:96,&#92;&quot;defense&#92;&quot;:71,&#92;&quot;sp_attack&#92;&quot;:56,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:3.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0008&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zaptor-286&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Electric&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:77,&#92;&quot;defense&#92;&quot;:56,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:67,&#92;&quot;speed&#92;&quot;:99,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.31},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0009&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Ignithor-137&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:94.0,&#92;&quot;attack&#92;&quot;:83,&#92;&quot;defense&#92;&quot;:55,&#92;&quot;sp_attack&#92;&quot;:71,&#92;&quot;sp_defense&#92;&quot;:65,&#92;&quot;speed&#92;&quot;:79,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.28}]&quot;' data-total-rows='10' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;card_id&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;hp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;speed&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;generation&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;is_legendary&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;rarity&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;price_usd&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "0c1e84674a65e0171dab94a9e5cf6ef5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "7614667d5789a4dc391f26041ff046b2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "c07721b650dd18c2c82f2957450fded9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "0c89c0f3d5d9c9eef264e709f7f484f6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "bddd1318a0e00648bce02b3c87acc895",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "011decdb9494755ef09960701fb195a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "d95897d9e2d029f59606b2a34a834199",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "qnkX",
+      "code_hash": "4f261da3bb6671da698a0589f0bb0907",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Vxnm",
+      "code_hash": "6d1945ac04c5eed615025fa14f26d9f1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DnEU",
+      "code_hash": "8aff2cc6f856df9dc258965b43496e2b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"cleaned-data-summary\">\u2705 Cleaned Data Summary</h3>\n<span class=\"paragraph\">After cleaning, we have <strong>766 valid records</strong>.</span>\n<span class=\"paragraph\">Let's verify the data now passes validation:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ulZA",
+      "code_hash": "5bcfd97f99d955886a905cc48e4916f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Pvdt",
+      "code_hash": "50d34b3f67eace480815746a14e1e9af",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "aLJB",
+      "code_hash": "460285878f00990c2110051af28d783d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nHfw",
+      "code_hash": "b27280f0e438f3d7715c62d05989ba3b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
