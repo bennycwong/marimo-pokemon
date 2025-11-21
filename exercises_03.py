@@ -302,7 +302,7 @@ def _():
     from sklearn.model_selection import RandomizedSearchCV
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.pipeline import Pipeline
-    from sklearn.preprocessing import StandardScaler
+    from sklearn.preprocessing import StandardScaler as _StandardScaler
     import time
 
     # TODO: Define your parameter space
@@ -320,7 +320,7 @@ def _():
 
     # TODO: Create pipeline
     # pipeline = Pipeline([
-    #     ('scaler', StandardScaler()),
+    #     ('scaler', _StandardScaler()),
     #     ('classifier', RandomForestClassifier(random_state=42, n_jobs=-1))
     # ])
 
