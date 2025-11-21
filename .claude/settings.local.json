@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python data/generate_dataset.py:*)",
+      "Bash(python3:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv run python:*)",
+      "Bash(cat:*)",
+      "Bash(uv run:*)",
+      "Bash(python:*)",
+      "Bash(uvx marimo run:*)",
+      "Bash(uvx marimo check:*)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nPhase 1: Complete Technical Core (Modules 1-5 + All Exercises)\n\n✅ Verified all existing modules (1-5) work correctly\n✅ Created comprehensive exercises_04.py for Model Evaluation\n\nModule 1: Data Engineering Foundations\n- Data quality validation with Pandera\n- Reproducible pipelines\n- pandas vs polars performance\n\nModule 2: EDA & Feature Engineering  \n- Systematic feature creation\n- Data leakage prevention\n- Scikit-learn pipelines\n\nModule 3: Model Training & Experimentation\n- Cross-validation\n- Hyperparameter tuning\n- Systematic model comparison\n\nModule 4: Model Evaluation & Validation\n- Metrics beyond accuracy\n- Error analysis\n- Model cards and documentation\n\nModule 5: Deployment & Inference\n- Production APIs\n- Input validation\n- Model serving\n\nAll modules validated and ready for use.\n\nNext: Add Modules 0, 6-8 for business context, production ops, and collaboration.\n\n🤖 Generated with Claude Code\nEOF\n)\")",
+      "Bash(git commit:*)",
+      "Bash(for module in 00 01 02 03 04 05)",
+      "Bash(do echo \"Testing Module $module...\")",
+      "Bash(for ex in exercises_0{0..4}.py)",
+      "Bash(do echo \"Testing $ex...\")",
+      "Bash(for module in 00_ml_in_business.py 01_data_engineering.py 02_eda_and_features.py 03_model_training.py 04_model_evaluation.py 05_inference_service.py 06_production_monitoring.py 07_collaboration.py 08_capstone.py)",
+      "Bash(do)",
+      "Bash(for exercise in exercises_00.py exercises_01.py exercises_02.py exercises_03.py exercises_04.py exercises_06.py exercises_07.py)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
