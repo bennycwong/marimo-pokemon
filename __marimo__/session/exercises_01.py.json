@@ -1,0 +1,152 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.0"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "b5cbeff16642a6e87dc6f735bd2fc74b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"module-1-exercises\">Module 1 Exercises</h1>\n<span class=\"paragraph\">Complete these exercises to solidify your understanding of data engineering fundamentals.</span>\n<h2 id=\"exercise-11-break-the-data-20-min\">Exercise 1.1: Break the Data (20 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Introduce 5 different data quality issues, then write tests to catch them.</span>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Load the cleaned Pokemon dataset</li>\n<li>\n<span class=\"paragraph\">Introduce these issues deliberately:</span>\n<ul>\n<li>Add 10 duplicate card_ids</li>\n<li>Add 20 missing values in random columns</li>\n<li>Add 5 invalid values (e.g., negative HP)</li>\n<li>Add 3 outliers (price &gt; 500)</li>\n<li>Add inconsistent formatting in a categorical column</li>\n</ul>\n</li>\n<li>Write Pandera schema tests to catch ALL issues</li>\n<li>Verify your tests work by running validation</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Understanding what can go wrong helps you prevent it.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "d1fac723fa462ef4f48bcaa121bef37a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"reflection-questions\">\ud83e\udd14 Reflection Questions:</h3>\n<ol>\n<li>Which type of data quality issue was hardest to detect? Why?</li>\n<li>How would you automate this validation in a production pipeline?</li>\n<li>What happens if the schema is too strict? Too lenient?</li>\n</ol>\n<hr />\n<h2 id=\"exercise-12-refactor-messy-code-20-min\">Exercise 1.2: Refactor Messy Code (20 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Take messy data loading code and make it production-ready.</span>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Review the messy code below</li>\n<li>\n<span class=\"paragraph\">Refactor it to be:</span>\n<ul>\n<li>Reproducible (no randomness, or controlled randomness)</li>\n<li>Documented (type hints, docstrings)</li>\n<li>Tested (add basic error handling)</li>\n<li>Modular (break into functions)</li>\n</ul>\n</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Code quality matters for data code too!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "240b8ca45a0fa5eaf007a486429ff3d4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"messy-code-dont-use-this\">Messy Code (DON'T USE THIS!):</h3>\n<div class=\"language-python codehilite\"><pre><span></span><code><span class=\"c1\"># Bad example - do NOT copy this!</span>\n<span class=\"kn\">import</span><span class=\"w\"> </span><span class=\"nn\">pandas</span><span class=\"w\"> </span><span class=\"k\">as</span><span class=\"w\"> </span><span class=\"nn\">pd</span>\n\n<span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"n\">pd</span><span class=\"o\">.</span><span class=\"n\">read_csv</span><span class=\"p\">(</span><span class=\"s1\">&#39;data/pokemon_cards.csv&#39;</span><span class=\"p\">)</span>\n<span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"n\">data</span><span class=\"o\">.</span><span class=\"n\">drop_duplicates</span><span class=\"p\">()</span>\n<span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"n\">data</span><span class=\"o\">.</span><span class=\"n\">dropna</span><span class=\"p\">()</span>\n<span class=\"n\">data</span><span class=\"p\">[</span><span class=\"s1\">&#39;type&#39;</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"n\">data</span><span class=\"p\">[</span><span class=\"s1\">&#39;type&#39;</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">str</span><span class=\"o\">.</span><span class=\"n\">lower</span><span class=\"p\">()</span>\n<span class=\"n\">data</span> <span class=\"o\">=</span> <span class=\"n\">data</span><span class=\"p\">[</span><span class=\"n\">data</span><span class=\"o\">.</span><span class=\"n\">price_usd</span> <span class=\"o\">&lt;</span> <span class=\"mi\">100</span><span class=\"p\">]</span>\n<span class=\"n\">data</span><span class=\"o\">.</span><span class=\"n\">to_csv</span><span class=\"p\">(</span><span class=\"s1\">&#39;output.csv&#39;</span><span class=\"p\">)</span>\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"s1\">&#39;done&#39;</span><span class=\"p\">)</span>\n</code></pre></div>\n<h3 id=\"problems-with-this-code\">Problems with this code:</h3>\n<ol>\n<li>No error handling (what if file doesn't exist?)</li>\n<li>No documentation (what does this code do?)</li>\n<li>Hardcoded paths</li>\n<li>No type hints</li>\n<li>Unclear transformation logic</li>\n<li>No validation</li>\n<li>Destructive operations (modifies data in place)</li>\n<li>No logging of what changed</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "869a89d55b741d988e749f6155328c5b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"reflection-questions\">\ud83e\udd14 Reflection Questions:</h3>\n<ol>\n<li>How is your refactored version better than the messy version?</li>\n<li>What would you add if this went to production?</li>\n<li>How would you test this function automatically?</li>\n</ol>\n<hr />\n<h2 id=\"exercise-13-performance-challenge-30-min\">Exercise 1.3: Performance Challenge (30 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Optimize a slow pandas operation using polars.</span>\n<span class=\"paragraph\"><strong>Scenario</strong>: You have a large dataset (we'll simulate 100K rows) and need to:</span>\n<ol>\n<li>Group by Pokemon type</li>\n<li>Calculate average stats per type</li>\n<li>Filter to types with avg HP &gt; 70</li>\n<li>Sort by average attack</li>\n<li>Export to CSV</li>\n</ol>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Implement this in pandas</li>\n<li>Benchmark the execution time</li>\n<li>Implement the same in polars</li>\n<li>Compare performance</li>\n<li>Determine when the switch to polars is worth it</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Understand performance tradeoffs.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "22c3b46ea9c26b9d8d4bd3ab6310afa6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"reflection-questions\">\ud83e\udd14 Reflection Questions:</h3>\n<ol>\n<li>At what data size does polars become worth the complexity?</li>\n<li>What if your data is 10MB? 100MB? 10GB?</li>\n<li>What other factors matter besides performance (team knowledge, ecosystem, etc.)?</li>\n</ol>\n<hr />\n<h2 id=\"module-1-checkpoint-new-pokemon-data-drop\">\ud83c\udfaf Module 1 Checkpoint: \"New Pokemon Data Drop\"</h2>\n<span class=\"paragraph\"><strong>The Challenge</strong>: You receive a new Pokemon card dataset from a different source.\nThe schema is slightly different:</span>\n<ul>\n<li>Column names use <code>snake_case</code> instead of matching your schema</li>\n<li>Has extra columns you don't need</li>\n<li>Missing some columns you expect</li>\n<li>Different value encodings (e.g., \"TRUE\"/\"FALSE\" instead of True/False)</li>\n</ul>\n<span class=\"paragraph\"><strong>Your Task</strong> (30-45 min):\nCreate a robust pipeline that:</span>\n<ol>\n<li>Detects schema mismatches</li>\n<li>Maps columns to expected names</li>\n<li>Validates data quality</li>\n<li>Produces a dataset matching your standard schema</li>\n<li>Logs all transformations</li>\n</ol>\n<span class=\"paragraph\"><strong>Deliverable</strong>:</span>\n<ul>\n<li>A function <code>harmonize_external_data()</code> that handles this</li>\n<li>Documentation of what transformations were applied</li>\n<li>Test that it works on different input schemas</li>\n</ul>\n<span class=\"paragraph\">This simulates a real production scenario where data sources change!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ROlb",
+      "code_hash": "0ba54c64a0525a616a76c9d2b3058a50",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"exercise-solutions\">\ud83c\udf93 Exercise Solutions</h2>\n<span class=\"paragraph\">Don't peek until you've tried! Solutions are in <code>solutions_01.py</code>.</span>\n<h2 id=\"self-assessment\">\ud83d\udcdd Self-Assessment</h2>\n<span class=\"paragraph\">Before moving to Module 2, rate yourself:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can write a data validation schema from scratch</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I understand when to use pandas vs polars</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can debug data quality issues systematically</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can write production-quality data pipeline code</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can handle schema mismatches between data sources</li>\n</ul>\n<span class=\"paragraph\"><strong>If you checked all boxes</strong>: You're ready for Module 2!</span>\n<span class=\"paragraph\"><strong>If not</strong>: Review the sections you struggled with and try the exercises again.</span>\n<hr />\n<h2 id=\"additional-challenges-optional\">\ud83d\udca1 Additional Challenges (Optional)</h2>\n<span class=\"paragraph\">If you want more practice:</span>\n<ol>\n<li><strong>Challenge 1</strong>: Add unit tests for the cleaning pipeline using pytest</li>\n<li><strong>Challenge 2</strong>: Implement data drift detection between two versions</li>\n<li><strong>Challenge 3</strong>: Create a monitoring dashboard for data quality metrics</li>\n<li><strong>Challenge 4</strong>: Handle streaming data (one record at a time validation)</li>\n</ol>\n<span class=\"paragraph\">These challenges will prepare you for real production scenarios!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "c39a96f36c8fefa1603cc11891a3a37b",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "b33625d6d0428df0b04cfb8655415be1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "79bb1d7ec40d7bfa8f5890431421607c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "9351391263e650919cbabdbece2a7abb",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "cff4605a166239f493789e31429e574e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "b300b9abf0be274a979e3bb445ec8f87",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "3240ee06331e1ead1d03b674767a8220",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "33c2dad2de389660f1d3f6074f076434",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "02fb9a3ce9a21064db3610947d9eff0a",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "3510aeba386b3262044a89429c2550db",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

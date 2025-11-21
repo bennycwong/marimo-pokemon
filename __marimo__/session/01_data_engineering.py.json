@@ -1,7 +1,7 @@
 {
   "version": "1",
   "metadata": {
-    "marimo_version": "0.17.8"
+    "marimo_version": "0.18.0"
   },
   "cells": [
     {
@@ -32,7 +32,7 @@
     },
     {
       "id": "SFPL",
-      "code_hash": "33bdab1340081750e24d6608e8195215",
+      "code_hash": "a41ad93ab21d9f014bde1c2b28ebd502",
       "outputs": [
         {
           "type": "data",
@@ -158,11 +158,18 @@
           }
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Loaded 800 Pokemon cards\n\u2705 Dataset shape: 800 rows \u00d7 13 columns\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "PKri",
-      "code_hash": "01917b557fdd5d60540d86ef5a26b52c",
+      "code_hash": "48f048ae85cb78713fef84d0029ed008",
       "outputs": [
         {
           "type": "data",
@@ -180,7 +187,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='3fe1687c-5591-1016-4bf6-7ecad407ab1a'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0000&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zenith-122&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Psychic&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:65,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:89,&#92;&quot;sp_defense&#92;&quot;:79,&#92;&quot;speed&#92;&quot;:70,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0001&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Machamp-188&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:73,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:55,&#92;&quot;sp_defense&#92;&quot;:90,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-09-0002&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Titanor-14&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Steel&#92;&quot;,&#92;&quot;hp&#92;&quot;:63.0,&#92;&quot;attack&#92;&quot;:89,&#92;&quot;defense&#92;&quot;:97,&#92;&quot;sp_attack&#92;&quot;:58,&#92;&quot;sp_defense&#92;&quot;:74,&#92;&quot;speed&#92;&quot;:58,&#92;&quot;generation&#92;&quot;:9,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.19},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-06-0003&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Flamara-54&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:86,&#92;&quot;defense&#92;&quot;:72,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:68,&#92;&quot;speed&#92;&quot;:81,&#92;&quot;generation&#92;&quot;:6,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0004&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Floravia-41&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:null,&#92;&quot;attack&#92;&quot;:59,&#92;&quot;defense&#92;&quot;:74,&#92;&quot;sp_attack&#92;&quot;:77,&#92;&quot;sp_defense&#92;&quot;:59,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:5.44},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0005&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Fernix-231&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:76.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:73,&#92;&quot;sp_attack&#92;&quot;:91,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:10.62},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0006&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Sparklix-101&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fairy&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:88,&#92;&quot;sp_defense&#92;&quot;:76,&#92;&quot;speed&#92;&quot;:72,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:4.29},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0007&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Brawlix-237&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:96,&#92;&quot;defense&#92;&quot;:71,&#92;&quot;sp_attack&#92;&quot;:56,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:3.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0008&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zaptor-286&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Electric&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:77,&#92;&quot;defense&#92;&quot;:56,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:67,&#92;&quot;speed&#92;&quot;:99,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.31},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0009&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Ignithor-137&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:94.0,&#92;&quot;attack&#92;&quot;:83,&#92;&quot;defense&#92;&quot;:55,&#92;&quot;sp_attack&#92;&quot;:71,&#92;&quot;sp_defense&#92;&quot;:65,&#92;&quot;speed&#92;&quot;:79,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.28}]&quot;' data-total-rows='10' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;card_id&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;hp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;speed&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;generation&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;is_legendary&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;rarity&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;price_usd&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='false' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='0aa673e9-5bba-cb66-8d05-ec8408dba215'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0000&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zenith-122&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Psychic&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:65,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:89,&#92;&quot;sp_defense&#92;&quot;:79,&#92;&quot;speed&#92;&quot;:70,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0001&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Machamp-188&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:73,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:55,&#92;&quot;sp_defense&#92;&quot;:90,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-09-0002&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Titanor-14&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Steel&#92;&quot;,&#92;&quot;hp&#92;&quot;:63.0,&#92;&quot;attack&#92;&quot;:89,&#92;&quot;defense&#92;&quot;:97,&#92;&quot;sp_attack&#92;&quot;:58,&#92;&quot;sp_defense&#92;&quot;:74,&#92;&quot;speed&#92;&quot;:58,&#92;&quot;generation&#92;&quot;:9,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.19},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-06-0003&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Flamara-54&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:86,&#92;&quot;defense&#92;&quot;:72,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:68,&#92;&quot;speed&#92;&quot;:81,&#92;&quot;generation&#92;&quot;:6,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0004&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Floravia-41&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:null,&#92;&quot;attack&#92;&quot;:59,&#92;&quot;defense&#92;&quot;:74,&#92;&quot;sp_attack&#92;&quot;:77,&#92;&quot;sp_defense&#92;&quot;:59,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:5.44},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0005&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Fernix-231&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:76.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:73,&#92;&quot;sp_attack&#92;&quot;:91,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:10.62},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0006&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Sparklix-101&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fairy&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:88,&#92;&quot;sp_defense&#92;&quot;:76,&#92;&quot;speed&#92;&quot;:72,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:4.29},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0007&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Brawlix-237&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:96,&#92;&quot;defense&#92;&quot;:71,&#92;&quot;sp_attack&#92;&quot;:56,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:3.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0008&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zaptor-286&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Electric&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:77,&#92;&quot;defense&#92;&quot;:56,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:67,&#92;&quot;speed&#92;&quot;:99,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.31},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0009&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Ignithor-137&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:94.0,&#92;&quot;attack&#92;&quot;:83,&#92;&quot;defense&#92;&quot;:55,&#92;&quot;sp_attack&#92;&quot;:71,&#92;&quot;sp_defense&#92;&quot;:65,&#92;&quot;speed&#92;&quot;:79,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.28}]&quot;' data-total-rows='10' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;card_id&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;hp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;speed&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;generation&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;is_legendary&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;rarity&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;price_usd&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -189,183 +196,85 @@
     {
       "id": "BYtC",
       "code_hash": "0c1e84674a65e0171dab94a9e5cf6ef5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Kclp",
       "code_hash": "7614667d5789a4dc391f26041ff046b2",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "emfo",
       "code_hash": "c07721b650dd18c2c82f2957450fded9",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Hstk",
       "code_hash": "0c89c0f3d5d9c9eef264e709f7f484f6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "nWHF",
       "code_hash": "bddd1318a0e00648bce02b3c87acc895",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ZHCJ",
       "code_hash": "011decdb9494755ef09960701fb195a6",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ROlb",
       "code_hash": "d95897d9e2d029f59606b2a34a834199",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "qnkX",
       "code_hash": "4f261da3bb6671da698a0589f0bb0907",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Vxnm",
       "code_hash": "6d1945ac04c5eed615025fa14f26d9f1",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "DnEU",
       "code_hash": "8aff2cc6f856df9dc258965b43496e2b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"cleaned-data-summary\">\u2705 Cleaned Data Summary</h3>\n<span class=\"paragraph\">After cleaning, we have <strong>766 valid records</strong>.</span>\n<span class=\"paragraph\">Let's verify the data now passes validation:</span></span>"
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "ulZA",
       "code_hash": "5bcfd97f99d955886a905cc48e4916f8",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "Pvdt",
       "code_hash": "50d34b3f67eace480815746a14e1e9af",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "aLJB",
       "code_hash": "460285878f00990c2110051af28d783d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     },
     {
       "id": "nHfw",
       "code_hash": "b27280f0e438f3d7715c62d05989ba3b",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
+      "outputs": [],
       "console": []
     }
   ]

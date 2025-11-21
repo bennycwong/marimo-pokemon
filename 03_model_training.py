@@ -17,54 +17,52 @@ Duration: 3-4 hours
 
 import marimo
 
-__generated_with = "0.17.8"
+__generated_with = "0.18.0"
 app = marimo.App(width="medium")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
     return (mo,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        # Module 3: Model Training & Experimentation
+def _(mo):
+    mo.md("""
+    # Module 3: Model Training & Experimentation
 
-        **"Think in experiments, not models"** — Every successful ML team
+    **"Think in experiments, not models"** — Every successful ML team
 
-        Welcome to the most exciting part: training models! But here's the key insight:
-        **Success in ML comes from systematic experimentation, not finding the "best" algorithm.**
+    Welcome to the most exciting part: training models! But here's the key insight:
+    **Success in ML comes from systematic experimentation, not finding the "best" algorithm.**
 
-        ## What You'll Learn
+    ## What You'll Learn
 
-        1. **Experimentation Mindset**: Formulate hypotheses and test systematically
-        2. **The Model Zoo**: When to use linear models vs trees vs neural networks
-        3. **Cross-Validation**: Get robust performance estimates
-        4. **Hyperparameter Tuning**: Optimize models without overfitting
-        5. **Experiment Tracking**: Never lose track of what works
+    1. **Experimentation Mindset**: Formulate hypotheses and test systematically
+    2. **The Model Zoo**: When to use linear models vs trees vs neural networks
+    3. **Cross-Validation**: Get robust performance estimates
+    4. **Hyperparameter Tuning**: Optimize models without overfitting
+    5. **Experiment Tracking**: Never lose track of what works
 
-        ## Industry Reality
+    ## Industry Reality
 
-        > "We ran 10,000+ experiments to improve our model by 2%"
-        > — Google Brain team
+    > "We ran 10,000+ experiments to improve our model by 2%"
+    > — Google Brain team
 
-        **Why systematic experimentation matters:**
-        - No single "best" algorithm (it depends on your data)
-        - Small improvements compound to big business value
-        - Documentation prevents repeating mistakes
-        - Reproducibility is critical for debugging
+    **Why systematic experimentation matters:**
+    - No single "best" algorithm (it depends on your data)
+    - Small improvements compound to big business value
+    - Documentation prevents repeating mistakes
+    - Reproducibility is critical for debugging
 
-        Let's learn to experiment like a pro!
-        """
-    )
+    Let's learn to experiment like a pro!
+    """)
     return
 
 
 @app.cell
-def __():
+def _():
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
@@ -78,34 +76,22 @@ def __():
     # Visualization setup
     sns.set_style("whitegrid")
     plt.rcParams['figure.figsize'] = (10, 6)
-    return (
-        Any,
-        Dict,
-        List,
-        Path,
-        Tuple,
-        np,
-        pd,
-        plt,
-        sns,
-        time,
-        warnings,
-    )
+    return Any, Dict, Path, pd, plt, time
 
 
 @app.cell
-def __(Path, pd):
+def _(Path, pd):
     # Load the data we prepared in Module 2
     DATA_PATH = Path("data/clean/pokemon_cards_clean_latest.csv")
     df = pd.read_csv(DATA_PATH)
 
     print(f"✅ Loaded {len(df)} Pokemon cards")
     print(f"✅ Target: {df['type'].nunique()} Pokemon types")
-    return DATA_PATH, df
+    return (df,)
 
 
 @app.cell
-def __(df, np, pd):
+def _(df, pd):
     # Feature engineering (from Module 2)
     def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
         """Apply feature engineering from Module 2."""
@@ -123,13 +109,16 @@ def __(df, np, pd):
         df_feat['physical_bulk'] = df_feat['hp'] * df_feat['defense']
         df_feat['special_bulk'] = df_feat['hp'] * df_feat['sp_defense']
 
+        # Convert boolean to int (for sklearn compatibility)
+        df_feat['legendary_int'] = df_feat['is_legendary'].astype(int)
+
         return df_feat
 
     df_eng = engineer_features(df)
 
-    # Select features for modeling
+    # Select features for modeling (use legendary_int instead of is_legendary)
     feature_cols = ['hp', 'attack', 'defense', 'sp_attack', 'sp_defense', 'speed',
-                    'generation', 'is_legendary',
+                    'generation', 'legendary_int',
                     'total_stats', 'physical_bias', 'offensive_bias', 'stat_balance',
                     'physical_ratio', 'special_ratio', 'hp_ratio',
                     'physical_bulk', 'special_bulk']
@@ -139,39 +128,37 @@ def __(df, np, pd):
 
     print(f"✅ Features: {len(feature_cols)}")
     print(f"✅ Classes: {y.nunique()}")
-    return X, engineer_features, feature_cols, y
+    return X, y
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## Section 1: Data Splitting (The Foundation)
+def _(mo):
+    mo.md("""
+    ---
+    ## Section 1: Data Splitting (The Foundation)
 
-        **Critical question**: How do we know if our model is any good?
+    **Critical question**: How do we know if our model is any good?
 
-        Answer: We need to test it on data it hasn't seen during training!
+    Answer: We need to test it on data it hasn't seen during training!
 
-        ### The Standard Split
+    ### The Standard Split
 
-        - **Training set** (70%): Model learns from this
-        - **Validation set** (15%): Tune hyperparameters, compare models
-        - **Test set** (15%): Final evaluation (touch once!)
+    - **Training set** (70%): Model learns from this
+    - **Validation set** (15%): Tune hyperparameters, compare models
+    - **Test set** (15%): Final evaluation (touch once!)
 
-        **Why 3 sets?**
-        - Training: For learning
-        - Validation: For model selection (prevents overfitting to test set!)
-        - Test: Unbiased final performance estimate
+    **Why 3 sets?**
+    - Training: For learning
+    - Validation: For model selection (prevents overfitting to test set!)
+    - Test: Unbiased final performance estimate
 
-        Let's split our data properly:
-        """
-    )
+    Let's split our data properly:
+    """)
     return
 
 
 @app.cell
-def __(X, y):
+def _(X, y):
     from sklearn.model_selection import train_test_split
 
     # Split: 70% train, 15% validation, 15% test
@@ -193,21 +180,11 @@ def __(X, y):
     print(f"  Original:   {y.value_counts(normalize=True).head(3).to_dict()}")
     print(f"  Training:   {y_train.value_counts(normalize=True).head(3).to_dict()}")
     print(f"  Validation: {y_val.value_counts(normalize=True).head(3).to_dict()}")
-    return (
-        X_temp,
-        X_test,
-        X_train,
-        X_val,
-        train_test_split,
-        y_temp,
-        y_test,
-        y_train,
-        y_val,
-    )
+    return X_test, X_train, X_val, y_test, y_train, y_val
 
 
 @app.cell
-def __(X_test, X_train, X_val):
+def _(X_test, X_train, X_val):
     # Preprocessing (fit on train, transform all)
     from sklearn.preprocessing import StandardScaler
 
@@ -218,42 +195,34 @@ def __(X_test, X_train, X_val):
 
     print("✅ Data preprocessed (scaled)")
     print(f"   Training shape: {X_train_scaled.shape}")
-    return (
-        StandardScaler,
-        X_test_scaled,
-        X_train_scaled,
-        X_val_scaled,
-        scaler,
-    )
+    return StandardScaler, X_test_scaled, X_train_scaled, X_val_scaled
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## Section 2: Baseline Model (Always Start Here!)
+def _(mo):
+    mo.md("""
+    ---
+    ## Section 2: Baseline Model (Always Start Here!)
 
-        **Rule #1 of ML**: Always start with a simple baseline.
+    **Rule #1 of ML**: Always start with a simple baseline.
 
-        **Why?**
-        - Know if your problem is even solvable
-        - Understand the difficulty
-        - Have something to compare against
-        - Catch data issues early
+    **Why?**
+    - Know if your problem is even solvable
+    - Understand the difficulty
+    - Have something to compare against
+    - Catch data issues early
 
-        **Common baselines**:
-        - **Dummy classifier**: Always predict most common class
-        - **Simple model**: Logistic Regression or Decision Tree
+    **Common baselines**:
+    - **Dummy classifier**: Always predict most common class
+    - **Simple model**: Logistic Regression or Decision Tree
 
-        Let's establish our baseline:
-        """
-    )
+    Let's establish our baseline:
+    """)
     return
 
 
 @app.cell
-def __(X_train_scaled, y_train, y_val):
+def _(X_train_scaled, X_val_scaled, y_train, y_val):
     from sklearn.dummy import DummyClassifier
     from sklearn.metrics import accuracy_score
 
@@ -270,19 +239,18 @@ def __(X_train_scaled, y_train, y_val):
     print(f"  Training Accuracy:   {dummy_train_acc:.2%}")
     print(f"  Validation Accuracy: {dummy_val_acc:.2%}")
     print(f"  → This is our \"zero skill\" baseline\n")
-    return (
-        DummyClassifier,
-        accuracy_score,
-        dummy_model,
-        dummy_pred,
-        dummy_train_acc,
-        dummy_val_acc,
-        dummy_val_pred,
-    )
+    return accuracy_score, dummy_val_acc
 
 
 @app.cell
-def __(X_train_scaled, X_val_scaled, accuracy_score, y_train, y_val):
+def _(
+    X_train_scaled,
+    X_val_scaled,
+    accuracy_score,
+    dummy_val_acc,
+    y_train,
+    y_val,
+):
     from sklearn.linear_model import LogisticRegression
 
     # Baseline 2: Logistic Regression
@@ -302,56 +270,46 @@ def __(X_train_scaled, X_val_scaled, accuracy_score, y_train, y_val):
 
     improvement = baseline_val_acc - dummy_val_acc
     print(f"✅ Our features provide {improvement:.1%} improvement over random!")
-    return (
-        LogisticRegression,
-        baseline_model,
-        baseline_train_acc,
-        baseline_train_pred,
-        baseline_val_acc,
-        baseline_val_pred,
-        improvement,
-    )
+    return LogisticRegression, baseline_train_acc, baseline_val_acc
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Baseline Insights
+def _(mo):
+    mo.md("""
+    ### 💡 Baseline Insights
 
-        **Key observations**:
-        - Dummy classifier: ~15-20% (just guessing most common type)
-        - Logistic Regression: ~50-60% (learning real patterns!)
+    **Key observations**:
+    - Dummy classifier: ~15-20% (just guessing most common type)
+    - Logistic Regression: ~50-60% (learning real patterns!)
 
-        **What this tells us**:
-        - Problem is definitely solvable with ML
-        - Features contain useful signal
-        - But there's room for improvement (60% → 80%+?)
+    **What this tells us**:
+    - Problem is definitely solvable with ML
+    - Features contain useful signal
+    - But there's room for improvement (60% → 80%+?)
 
-        This is realistic! Most ML projects start here.
+    This is realistic! Most ML projects start here.
 
-        ---
-        ## Section 3: The Model Zoo (Which Model When?)
+    ---
+    ## Section 3: The Model Zoo (Which Model When?)
 
-        **Key insight**: No free lunch theorem says "no algorithm is best for all problems."
+    **Key insight**: No free lunch theorem says "no algorithm is best for all problems."
 
-        So how do we choose? Let's train multiple model types and compare!
+    So how do we choose? Let's train multiple model types and compare!
 
-        ### Models We'll Try
+    ### Models We'll Try
 
-        1. **Logistic Regression** (linear, fast, interpretable)
-        2. **Decision Tree** (non-linear, interpretable, baseline for trees)
-        3. **Random Forest** (ensemble of trees, robust, good default)
-        4. **Gradient Boosting (XGBoost)** (often best for tabular data)
+    1. **Logistic Regression** (linear, fast, interpretable)
+    2. **Decision Tree** (non-linear, interpretable, baseline for trees)
+    3. **Random Forest** (ensemble of trees, robust, good default)
+    4. **Gradient Boosting (XGBoost)** (often best for tabular data)
 
-        Let's train all four and compare systematically:
-        """
-    )
+    Let's train all four and compare systematically:
+    """)
     return
 
 
 @app.cell
-def __(
+def _(
     LogisticRegression,
     X_train_scaled,
     X_val_scaled,
@@ -397,19 +355,15 @@ def __(
     return (
         DecisionTreeClassifier,
         RandomForestClassifier,
-        lr_model,
-        lr_train_acc,
         lr_train_time,
-        lr_val_acc,
         results,
-        start,
         xgb,
         xgb_available,
     )
 
 
 @app.cell
-def __(
+def _(
     DecisionTreeClassifier,
     X_train_scaled,
     X_val_scaled,
@@ -437,11 +391,11 @@ def __(
 
     print("Model 2: Decision Tree")
     print(f"  Train Acc: {dt_train_acc:.2%} | Val Acc: {dt_val_acc:.2%} | Time: {dt_train_time:.2f}s\n")
-    return dt_model, dt_train_acc, dt_train_time, dt_val_acc, start_dt
+    return
 
 
 @app.cell
-def __(
+def _(
     RandomForestClassifier,
     X_train_scaled,
     X_val_scaled,
@@ -469,11 +423,11 @@ def __(
 
     print("Model 3: Random Forest")
     print(f"  Train Acc: {rf_train_acc:.2%} | Val Acc: {rf_val_acc:.2%} | Time: {rf_train_time:.2f}s\n")
-    return rf_model, rf_train_acc, rf_train_time, rf_val_acc, start_rf
+    return rf_train_acc, rf_train_time, rf_val_acc
 
 
 @app.cell
-def __(
+def _(
     X_train_scaled,
     X_val_scaled,
     accuracy_score,
@@ -527,21 +481,11 @@ def __(
         xgb_train_time = None
         start_xgb = None
         print("Model 4: XGBoost - Skipped (not installed)\n")
-    return (
-        LabelEncoder,
-        le_xgb,
-        start_xgb,
-        xgb_model,
-        xgb_train_acc,
-        xgb_train_time,
-        xgb_val_acc,
-        y_train_encoded,
-        y_val_encoded,
-    )
+    return
 
 
 @app.cell
-def __(pd, plt, results):
+def _(pd, plt, results):
     # Compare all models
     comparison_df = pd.DataFrame(results).T
     comparison_df = comparison_df[['train_acc', 'val_acc', 'train_time']].round(4)
@@ -553,36 +497,36 @@ def __(pd, plt, results):
     print("=" * 70)
 
     # Visualize comparison
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    _fig, _axes = plt.subplots(1, 2, figsize=(14, 5))
 
     # Plot 1: Accuracy comparison
-    ax = axes[0]
-    comparison_df[['train_acc', 'val_acc']].plot(kind='bar', ax=ax)
-    ax.set_title('Model Accuracy Comparison', fontweight='bold', fontsize=14)
-    ax.set_ylabel('Accuracy')
-    ax.set_xlabel('Model')
-    ax.legend(['Training', 'Validation'])
-    ax.set_ylim([0, 1])
-    ax.axhline(y=0.5, color='r', linestyle='--', alpha=0.5, label='Baseline')
+    _ax = _axes[0]
+    comparison_df[['train_acc', 'val_acc']].plot(kind='bar', ax=_ax)
+    _ax.set_title('Model Accuracy Comparison', fontweight='bold', fontsize=14)
+    _ax.set_ylabel('Accuracy')
+    _ax.set_xlabel('Model')
+    _ax.legend(['Training', 'Validation'])
+    _ax.set_ylim([0, 1])
+    _ax.axhline(y=0.5, color='r', linestyle='--', alpha=0.5, label='Baseline')
 
     # Plot 2: Train time vs accuracy
-    ax2 = axes[1]
-    ax2.scatter(comparison_df['train_time'], comparison_df['val_acc'], s=200, alpha=0.6)
+    _ax2 = _axes[1]
+    _ax2.scatter(comparison_df['train_time'], comparison_df['val_acc'], s=200, alpha=0.6)
     for idx, model_name in enumerate(comparison_df.index):
-        ax2.annotate(model_name, (comparison_df.iloc[idx]['train_time'], comparison_df.iloc[idx]['val_acc']),
+        _ax2.annotate(model_name, (comparison_df.iloc[idx]['train_time'], comparison_df.iloc[idx]['val_acc']),
                     xytext=(5, 5), textcoords='offset points', fontsize=10)
-    ax2.set_xlabel('Training Time (seconds)')
-    ax2.set_ylabel('Validation Accuracy')
-    ax2.set_title('Speed vs Accuracy Tradeoff', fontweight='bold', fontsize=14)
-    ax2.grid(True, alpha=0.3)
+    _ax2.set_xlabel('Training Time (seconds)')
+    _ax2.set_ylabel('Validation Accuracy')
+    _ax2.set_title('Speed vs Accuracy Tradeoff', fontweight='bold', fontsize=14)
+    _ax2.grid(True, alpha=0.3)
 
     plt.tight_layout()
     plt.show()
-    return ax, ax2, axes, comparison_df, fig
+    return (comparison_df,)
 
 
 @app.cell
-def __(comparison_df, mo):
+def _(comparison_df, mo):
     best_model = comparison_df['val_acc'].idxmax()
     best_val_acc = comparison_df['val_acc'].max()
 
@@ -636,17 +580,13 @@ def __(comparison_df, mo):
         Let's use 5-fold CV on our best model:
         """
     )
-    return best_model, best_val_acc
+    return
 
 
 @app.cell
-def __(X_train, y_train):
+def _(RandomForestClassifier, StandardScaler, X_train, y_train):
     from sklearn.model_selection import cross_val_score, StratifiedKFold
-
-    # Use RandomForest (one of our better models)
-    from sklearn.ensemble import RandomForestClassifier
     from sklearn.pipeline import Pipeline
-    from sklearn.preprocessing import StandardScaler
 
     # Create pipeline (preprocessing + model)
     rf_pipeline = Pipeline([
@@ -663,78 +603,69 @@ def __(X_train, y_train):
     print(f"  Mean: {cv_scores.mean():.2%}")
     print(f"  Std:  {cv_scores.std():.2%}")
     print(f"\n✅ CV gives us a robust estimate: {cv_scores.mean():.2%} ± {cv_scores.std():.2%}")
-    return (
-        Pipeline,
-        StratifiedKFold,
-        cross_val_score,
-        cv,
-        cv_scores,
-        rf_pipeline,
-    )
+    return Pipeline, cv, cv_scores
 
 
 @app.cell
-def __(cv_scores, plt):
+def _(cv_scores, plt):
     # Visualize CV scores
-    fig, ax = plt.subplots(figsize=(10, 5))
-    ax.bar(range(1, len(cv_scores)+1), cv_scores, alpha=0.7, color='steelblue')
-    ax.axhline(cv_scores.mean(), color='red', linestyle='--', label=f'Mean: {cv_scores.mean():.2%}')
-    ax.fill_between(range(1, len(cv_scores)+1),
+    _fig, _ax = plt.subplots(figsize=(10, 5))
+    _ax.bar(range(1, len(cv_scores)+1), cv_scores, alpha=0.7, color='steelblue')
+    _ax.axhline(cv_scores.mean(), color='red', linestyle='--', label=f'Mean: {cv_scores.mean():.2%}')
+    _ax.fill_between(range(1, len(cv_scores)+1),
                      cv_scores.mean() - cv_scores.std(),
                      cv_scores.mean() + cv_scores.std(),
                      alpha=0.2, color='red', label=f'±1 Std: {cv_scores.std():.2%}')
-    ax.set_xlabel('Fold')
-    ax.set_ylabel('Accuracy')
-    ax.set_title('Cross-Validation Scores by Fold', fontweight='bold', fontsize=14)
-    ax.legend()
-    ax.set_ylim([0, 1])
+    _ax.set_xlabel('Fold')
+    _ax.set_ylabel('Accuracy')
+    _ax.set_title('Cross-Validation Scores by Fold', fontweight='bold', fontsize=14)
+    _ax.legend()
+    _ax.set_ylim([0, 1])
     plt.tight_layout()
     plt.show()
-    return ax, fig
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Cross-Validation Insights
-
-        **Why standard deviation matters**:
-        - Low std: Model is stable across different data splits
-        - High std: Model performance varies (might be overfitting or data issues)
-
-        **When to use CV**:
-        - ✅ Model selection (which algorithm?)
-        - ✅ Feature selection (which features?)
-        - ✅ Hyperparameter tuning (which settings?)
-        - ❌ Final test evaluation (use held-out test set once!)
-
-        ---
-        ## Section 5: Hyperparameter Tuning
-
-        **Hyperparameters** = Settings you choose before training
-
-        Examples:
-        - Random Forest: n_estimators, max_depth, min_samples_split
-        - XGBoost: learning_rate, max_depth, n_estimators
-        - Neural Networks: learning_rate, batch_size, hidden_layers
-
-        **Challenge**: How do we find good hyperparameters?
-
-        ### Approaches:
-        1. **Manual tuning**: Try values one by one (slow!)
-        2. **Grid Search**: Try all combinations (thorough but expensive)
-        3. **Random Search**: Try random combinations (faster, often good enough)
-        4. **Bayesian Optimization**: Smart search (advanced)
-
-        Let's use Grid Search on Random Forest:
-        """
-    )
     return
 
 
 @app.cell
-def __(Pipeline, RandomForestClassifier, StandardScaler, X_train, cv, y_train):
+def _(mo):
+    mo.md("""
+    ### 💡 Cross-Validation Insights
+
+    **Why standard deviation matters**:
+    - Low std: Model is stable across different data splits
+    - High std: Model performance varies (might be overfitting or data issues)
+
+    **When to use CV**:
+    - ✅ Model selection (which algorithm?)
+    - ✅ Feature selection (which features?)
+    - ✅ Hyperparameter tuning (which settings?)
+    - ❌ Final test evaluation (use held-out test set once!)
+
+    ---
+    ## Section 5: Hyperparameter Tuning
+
+    **Hyperparameters** = Settings you choose before training
+
+    Examples:
+    - Random Forest: n_estimators, max_depth, min_samples_split
+    - XGBoost: learning_rate, max_depth, n_estimators
+    - Neural Networks: learning_rate, batch_size, hidden_layers
+
+    **Challenge**: How do we find good hyperparameters?
+
+    ### Approaches:
+    1. **Manual tuning**: Try values one by one (slow!)
+    2. **Grid Search**: Try all combinations (thorough but expensive)
+    3. **Random Search**: Try random combinations (faster, often good enough)
+    4. **Bayesian Optimization**: Smart search (advanced)
+
+    Let's use Grid Search on Random Forest:
+    """)
+    return
+
+
+@app.cell
+def _(Pipeline, RandomForestClassifier, StandardScaler, X_train, cv, y_train):
     from sklearn.model_selection import GridSearchCV
 
     # Define parameter grid
@@ -766,11 +697,11 @@ def __(Pipeline, RandomForestClassifier, StandardScaler, X_train, cv, y_train):
     print(f"\n✅ Grid Search Complete!")
     print(f"   Best CV Score: {grid_search.best_score_:.2%}")
     print(f"   Best Parameters: {grid_search.best_params_}")
-    return GridSearchCV, grid_search, param_grid, rf_pipeline_tune
+    return (grid_search,)
 
 
 @app.cell
-def __(X_val, accuracy_score, grid_search, y_val):
+def _(X_val, accuracy_score, grid_search, rf_val_acc, y_val):
     # Evaluate best model on validation set
     best_rf_model = grid_search.best_estimator_
     val_pred_tuned = best_rf_model.predict(X_val)
@@ -779,54 +710,64 @@ def __(X_val, accuracy_score, grid_search, y_val):
     print(f"\nTuned Model Performance:")
     print(f"  Validation Accuracy: {val_acc_tuned:.2%}")
     print(f"  Improvement from default: {(val_acc_tuned - rf_val_acc)*100:.1f} percentage points")
-    return best_rf_model, val_acc_tuned, val_pred_tuned
+    return (val_acc_tuned,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 🎯 Hyperparameter Tuning Insights
+def _(mo):
+    mo.md("""
+    ### 🎯 Hyperparameter Tuning Insights
 
-        **Key learnings**:
-        - Tuning can improve performance by 2-5% (significant!)
-        - But it's expensive (trying many combinations)
-        - Diminishing returns after a point
+    **Key learnings**:
+    - Tuning can improve performance by 2-5% (significant!)
+    - But it's expensive (trying many combinations)
+    - Diminishing returns after a point
 
-        **Best practices**:
-        1. Start with default hyperparameters
-        2. Understand which hyperparameters matter most
-        3. Use Random Search first (faster)
-        4. Use Grid Search to refine
-        5. Always validate on held-out data
+    **Best practices**:
+    1. Start with default hyperparameters
+    2. Understand which hyperparameters matter most
+    3. Use Random Search first (faster)
+    4. Use Grid Search to refine
+    5. Always validate on held-out data
 
-        ### ⚠️ Common Pitfall: Hyperparameter Overfitting
+    ### ⚠️ Common Pitfall: Hyperparameter Overfitting
 
-        If you tune hyperparameters too aggressively on validation set,
-        you overfit to the validation set!
+    If you tune hyperparameters too aggressively on validation set,
+    you overfit to the validation set!
 
-        **Solution**: Use nested CV or keep a true test set untouched.
+    **Solution**: Use nested CV or keep a true test set untouched.
 
-        ---
-        ## Section 6: Experiment Tracking
+    ---
+    ## Section 6: Experiment Tracking
 
-        **Problem**: You've run 10 experiments. Which one was best? What settings did you use?
+    **Problem**: You've run 10 experiments. Which one was best? What settings did you use?
 
-        **Solution**: Track everything!
+    **Solution**: Track everything!
 
-        In production, use tools like:
-        - **MLflow**: Open source experiment tracking
-        - **Weights & Biases**: Cloud-based with rich visualizations
-        - **Neptune**: Experiment management platform
+    In production, use tools like:
+    - **MLflow**: Open source experiment tracking
+    - **Weights & Biases**: Cloud-based with rich visualizations
+    - **Neptune**: Experiment management platform
 
-        For this project, we'll use a simple approach:
-        """
-    )
+    For this project, we'll use a simple approach:
+    """)
     return
 
 
 @app.cell
-def __(Any, Dict, pd):
+def _(
+    Any,
+    Dict,
+    baseline_train_acc,
+    baseline_val_acc,
+    grid_search,
+    lr_train_time,
+    pd,
+    rf_train_acc,
+    rf_train_time,
+    rf_val_acc,
+    val_acc_tuned,
+):
     # Simple experiment tracker
     class ExperimentTracker:
         """Simple experiment tracking system."""
@@ -906,117 +847,115 @@ def __(Any, Dict, pd):
     best_exp = tracker.get_best()
     print(f"\n🏆 Best Experiment: {best_exp['name']}")
     print(f"   Validation Accuracy: {best_exp['val_acc']:.2%}")
-    return ExperimentTracker, best_exp, tracker
+    return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 📊 Why Experiment Tracking Matters
+def _(mo):
+    mo.md("""
+    ### 📊 Why Experiment Tracking Matters
 
-        **In production**:
-        - You'll run 100s or 1000s of experiments
-        - Need to compare across weeks/months
-        - Team members need to see what worked
-        - Reproducibility is critical
+    **In production**:
+    - You'll run 100s or 1000s of experiments
+    - Need to compare across weeks/months
+    - Team members need to see what worked
+    - Reproducibility is critical
 
-        **What to track**:
-        - ✅ Model type and hyperparameters
-        - ✅ Training and validation metrics
-        - ✅ Training time and resources
-        - ✅ Feature set used
-        - ✅ Data version
-        - ✅ Code version (git commit)
-        - ✅ Random seeds
-        - ✅ Notes and observations
+    **What to track**:
+    - ✅ Model type and hyperparameters
+    - ✅ Training and validation metrics
+    - ✅ Training time and resources
+    - ✅ Feature set used
+    - ✅ Data version
+    - ✅ Code version (git commit)
+    - ✅ Random seeds
+    - ✅ Notes and observations
 
-        ---
-        ## Section 7: Key Takeaways & Socratic Questions
+    ---
+    ## Section 7: Key Takeaways & Socratic Questions
 
-        ### ✅ What You Learned
+    ### ✅ What You Learned
 
-        1. **Always start with a baseline** (know your starting point)
-        2. **Try multiple model types** (no free lunch theorem)
-        3. **Use cross-validation** (robust performance estimates)
-        4. **Tune hyperparameters systematically** (grid/random search)
-        5. **Track everything** (experiments, not just final models)
+    1. **Always start with a baseline** (know your starting point)
+    2. **Try multiple model types** (no free lunch theorem)
+    3. **Use cross-validation** (robust performance estimates)
+    4. **Tune hyperparameters systematically** (grid/random search)
+    5. **Track everything** (experiments, not just final models)
 
-        ### 🤔 Socratic Questions
+    ### 🤔 Socratic Questions
 
-        1. **"Your validation accuracy is 90% but test accuracy is 70%. What happened?"**
-           - Answer: Overfit to validation set through tuning
+    1. **"Your validation accuracy is 90% but test accuracy is 70%. What happened?"**
+       - Answer: Overfit to validation set through tuning
 
-        2. **"When would you choose Logistic Regression over XGBoost, even if XGBoost is more accurate?"**
-           - Think: Interpretability, speed, production constraints, model size
+    2. **"When would you choose Logistic Regression over XGBoost, even if XGBoost is more accurate?"**
+       - Think: Interpretability, speed, production constraints, model size
 
-        3. **"You're tuning hyperparameters. Should you use test data to select the best model? Why not?"**
-           - Answer: No! Test set must remain untouched until final evaluation
+    3. **"You're tuning hyperparameters. Should you use test data to select the best model? Why not?"**
+       - Answer: No! Test set must remain untouched until final evaluation
 
-        4. **"Your model is 90% accurate but your PM is unhappy. What might you be missing?"**
-           - Think: Class imbalance, cost-sensitive errors, business metrics vs ML metrics
+    4. **"Your model is 90% accurate but your PM is unhappy. What might you be missing?"**
+       - Think: Class imbalance, cost-sensitive errors, business metrics vs ML metrics
 
-        5. **"Training takes 8 hours. How do you experiment efficiently?"**
-           - Think: Smaller data samples, simpler models first, distributed training, caching
+    5. **"Training takes 8 hours. How do you experiment efficiently?"**
+       - Think: Smaller data samples, simpler models first, distributed training, caching
 
-        ---
-        ## 🏢 Industry Context
+    ---
+    ## 🏢 Industry Context
 
-        ### How Companies Do This at Scale
+    ### How Companies Do This at Scale
 
-        **Netflix**:
-        - 1000s of experiments tracked in MLflow
-        - Automated hyperparameter tuning (Optuna)
-        - A/B tests for final model selection
-        - Retraining pipelines (Airflow)
+    **Netflix**:
+    - 1000s of experiments tracked in MLflow
+    - Automated hyperparameter tuning (Optuna)
+    - A/B tests for final model selection
+    - Retraining pipelines (Airflow)
 
-        **Google**:
-        - AutoML for hyperparameter search
-        - Distributed training (multiple GPUs/TPUs)
-        - Experiment management (internal tools)
-        - Rigorous A/B testing
+    **Google**:
+    - AutoML for hyperparameter search
+    - Distributed training (multiple GPUs/TPUs)
+    - Experiment management (internal tools)
+    - Rigorous A/B testing
 
-        **Small Startup**:
-        - Manual tracking (spreadsheets initially)
-        - Grid/random search for tuning
-        - Simple retraining scripts
-        - Focus on business metrics
+    **Small Startup**:
+    - Manual tracking (spreadsheets initially)
+    - Grid/random search for tuning
+    - Simple retraining scripts
+    - Focus on business metrics
 
-        ### Common Pitfalls
+    ### Common Pitfalls
 
-        ⚠️ **Don't**: Train one model and call it done
-        ✅ **Do**: Try multiple approaches systematically
+    ⚠️ **Don't**: Train one model and call it done
+    ✅ **Do**: Try multiple approaches systematically
 
-        ⚠️ **Don't**: Tune hyperparameters on test set
-        ✅ **Do**: Use validation set or CV for tuning
+    ⚠️ **Don't**: Tune hyperparameters on test set
+    ✅ **Do**: Use validation set or CV for tuning
 
-        ⚠️ **Don't**: Forget to track experiments
-        ✅ **Do**: Log everything from day one
+    ⚠️ **Don't**: Forget to track experiments
+    ✅ **Do**: Log everything from day one
 
-        ⚠️ **Don't**: Overfit through excessive tuning
-        ✅ **Do**: Use nested CV or keep test set sacred
+    ⚠️ **Don't**: Overfit through excessive tuning
+    ✅ **Do**: Use nested CV or keep test set sacred
 
-        ---
-        ## 🎯 Module 3 Checkpoint
+    ---
+    ## 🎯 Module 3 Checkpoint
 
-        You've completed Module 3 when you can:
+    You've completed Module 3 when you can:
 
-        - [ ] Set up an experiment from scratch in 15 minutes
-        - [ ] Explain bias-variance tradeoff with concrete example
-        - [ ] Choose appropriate model for a new problem
-        - [ ] Run cross-validation and interpret results
-        - [ ] Tune hyperparameters without overfitting
-        - [ ] Track experiments systematically
+    - [ ] Set up an experiment from scratch in 15 minutes
+    - [ ] Explain bias-variance tradeoff with concrete example
+    - [ ] Choose appropriate model for a new problem
+    - [ ] Run cross-validation and interpret results
+    - [ ] Tune hyperparameters without overfitting
+    - [ ] Track experiments systematically
 
-        **Next**: Module 4 - Model Evaluation & Validation
+    **Next**: Module 4 - Model Evaluation & Validation
 
-        In the next module, you'll learn how to:
-        - Evaluate beyond accuracy
-        - Analyze errors systematically
-        - Create model cards
-        - Communicate model quality to stakeholders
-        """
-    )
+    In the next module, you'll learn how to:
+    - Evaluate beyond accuracy
+    - Analyze errors systematically
+    - Create model cards
+    - Communicate model quality to stakeholders
+    """)
     return
 
 

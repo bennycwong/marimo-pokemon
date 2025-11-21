@@ -10,41 +10,39 @@ Time estimate: 2-3 hours
 
 import marimo
 
-__generated_with = "0.17.8"
+__generated_with = "0.18.0"
 app = marimo.App(width="medium")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
     return (mo,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        # Module 3 Exercises
+def _(mo):
+    mo.md("""
+    # Module 3 Exercises
 
-        ## Exercise 3.1: Implement Cross-Validation from Scratch (45 min)
+    ## Exercise 3.1: Implement Cross-Validation from Scratch (45 min)
 
-        **Goal**: Understand cross-validation deeply by implementing it yourself.
+    **Goal**: Understand cross-validation deeply by implementing it yourself.
 
-        **Instructions**:
-        1. Implement k-fold cross-validation manually (no sklearn)
-        2. Split data into k folds
-        3. For each fold, train and evaluate
-        4. Return mean and std of scores
-        5. Compare your results to sklearn's cross_val_score
+    **Instructions**:
+    1. Implement k-fold cross-validation manually (no sklearn)
+    2. Split data into k folds
+    3. For each fold, train and evaluate
+    4. Return mean and std of scores
+    5. Compare your results to sklearn's cross_val_score
 
-        **Learning Objective**: Deep understanding > using libraries blindly
-        """
-    )
+    **Learning Objective**: Deep understanding > using libraries blindly
+    """)
     return
 
 
 @app.cell
-def __():
+def _():
     import pandas as pd
     import numpy as np
     from pathlib import Path
@@ -63,24 +61,11 @@ def __():
     y = df['type']
 
     print(f"Dataset: {len(X)} samples, {len(feature_cols)} features")
-    return (
-        DATA_PATH,
-        LogisticRegression,
-        Path,
-        StandardScaler,
-        X,
-        accuracy_score,
-        df,
-        feature_cols,
-        np,
-        pd,
-        train_test_split,
-        y,
-    )
+    return StandardScaler, X, accuracy_score, np, train_test_split, y
 
 
 @app.cell
-def __(LogisticRegression, StandardScaler, X, accuracy_score, np, y):
+def _(np):
     # TODO: Implement k-fold cross-validation from scratch
     def manual_k_fold_cv(X, y, model, k=5, random_state=42):
         """
@@ -159,55 +144,46 @@ def __(LogisticRegression, StandardScaler, X, accuracy_score, np, y):
     # sklearn_scores = cross_val_score(pipeline, X, y, cv=5)
     # print(f"\nSklearn CV scores: {[f'{s:.2%}' for s in sklearn_scores]}")
     # print(f"Mean: {sklearn_scores.mean():.2%}, Std: {sklearn_scores.std():.2%}")
-    return (manual_k_fold_cv,)
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### Reflection Questions:
-        1. How close are your results to sklearn's?
-        2. What did you learn by implementing it yourself?
-        3. Why is it important to shuffle data before splitting?
-        4. What happens if you forget to scale the validation set?
-
-        ---
-
-        ## Exercise 3.2: Model Selection Competition (60 min)
-
-        **Goal**: Train 4+ models and select the best one systematically.
-
-        **Scenario**: You're tasked with building a Pokemon type classifier.
-        You need to recommend ONE model for production.
-
-        **Instructions**:
-        1. Train at least 4 different model types
-        2. Use cross-validation for each
-        3. Track all experiments (parameters, scores, time)
-        4. Consider multiple criteria:
-           - Accuracy
-           - Training time
-           - Inference speed
-           - Model size
-           - Interpretability
-        5. Write a recommendation memo to your "PM"
-
-        **Learning Objective**: Model selection is multi-criteria decision making.
-        """
-    )
     return
 
 
 @app.cell
-def __(
-    LogisticRegression,
-    StandardScaler,
-    X,
-    accuracy_score,
-    train_test_split,
-    y,
-):
+def _(mo):
+    mo.md("""
+    ### Reflection Questions:
+    1. How close are your results to sklearn's?
+    2. What did you learn by implementing it yourself?
+    3. Why is it important to shuffle data before splitting?
+    4. What happens if you forget to scale the validation set?
+
+    ---
+
+    ## Exercise 3.2: Model Selection Competition (60 min)
+
+    **Goal**: Train 4+ models and select the best one systematically.
+
+    **Scenario**: You're tasked with building a Pokemon type classifier.
+    You need to recommend ONE model for production.
+
+    **Instructions**:
+    1. Train at least 4 different model types
+    2. Use cross-validation for each
+    3. Track all experiments (parameters, scores, time)
+    4. Consider multiple criteria:
+       - Accuracy
+       - Training time
+       - Inference speed
+       - Model size
+       - Interpretability
+    5. Write a recommendation memo to your "PM"
+
+    **Learning Objective**: Model selection is multi-criteria decision making.
+    """)
+    return
+
+
+@app.cell
+def _(X, train_test_split, y):
     # Split data
     X_train_ex, X_test_ex, y_train_ex, y_test_ex = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
@@ -267,64 +243,62 @@ def __(
     # }
 
     # TODO: Create a summary DataFrame and visualizations
-    return X_test_ex, X_train_ex, results_competition, y_test_ex, y_train_ex
+    return X_test_ex, X_train_ex, y_test_ex, y_train_ex
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### TODO: Write Recommendation Memo
+def _(mo):
+    mo.md("""
+    ### TODO: Write Recommendation Memo
 
-        **To**: Product Manager
-        **From**: ML Engineer (You!)
-        **Re**: Pokemon Type Classifier - Model Recommendation
+    **To**: Product Manager
+    **From**: ML Engineer (You!)
+    **Re**: Pokemon Type Classifier - Model Recommendation
 
-        **Executive Summary**:
-        (1-2 sentences on recommended model)
+    **Executive Summary**:
+    (1-2 sentences on recommended model)
 
-        **Models Evaluated**:
-        (Table or bullet list of models and key metrics)
+    **Models Evaluated**:
+    (Table or bullet list of models and key metrics)
 
-        **Recommendation**:
-        Model: [Your choice]
-        Reasoning:
-        - Accuracy: [Why this is sufficient]
-        - Speed: [Production requirements]
-        - Maintainability: [Team considerations]
-        - Trade-offs: [What we're giving up]
+    **Recommendation**:
+    Model: [Your choice]
+    Reasoning:
+    - Accuracy: [Why this is sufficient]
+    - Speed: [Production requirements]
+    - Maintainability: [Team considerations]
+    - Trade-offs: [What we're giving up]
 
-        **Next Steps**:
-        - [What happens before production]
-        - [What monitoring is needed]
+    **Next Steps**:
+    - [What happens before production]
+    - [What monitoring is needed]
 
-        ---
+    ---
 
-        ## Exercise 3.3: Hyperparameter Tuning Challenge (60 min)
+    ## Exercise 3.3: Hyperparameter Tuning Challenge (60 min)
 
-        **Goal**: Optimize a model within constraints.
+    **Goal**: Optimize a model within constraints.
 
-        **Scenario**: Your model must meet these production requirements:
-        - Validation accuracy > 70%
-        - Inference time < 10ms per sample
-        - Model size < 50MB
-        - Training time < 5 minutes
+    **Scenario**: Your model must meet these production requirements:
+    - Validation accuracy > 70%
+    - Inference time < 10ms per sample
+    - Model size < 50MB
+    - Training time < 5 minutes
 
-        **Instructions**:
-        1. Choose a model type
-        2. Find hyperparameters that meet ALL constraints
-        3. Use RandomizedSearchCV or GridSearchCV
-        4. Document your tuning process
-        5. Verify all constraints are met
+    **Instructions**:
+    1. Choose a model type
+    2. Find hyperparameters that meet ALL constraints
+    3. Use RandomizedSearchCV or GridSearchCV
+    4. Document your tuning process
+    5. Verify all constraints are met
 
-        **Learning Objective**: Production constraints guide optimization.
-        """
-    )
+    **Learning Objective**: Production constraints guide optimization.
+    """)
     return
 
 
 @app.cell
-def __(X_train_ex, y_train_ex):
+def _():
     from sklearn.model_selection import RandomizedSearchCV
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.pipeline import Pipeline
@@ -392,54 +366,51 @@ def __(X_train_ex, y_train_ex):
     #
     # # Check 4: Training time < 5 minutes
     # print(f"  {'✓' if total_train_time < 300 else '✗'} Train time: {total_train_time:.1f}s < 300s")
-    return Pipeline, RandomForestClassifier, RandomizedSearchCV, param_distributions, time
+    return (StandardScaler,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### Reflection Questions:
-        1. Which constraints were hardest to meet?
-        2. What trade-offs did you make?
-        3. How would you handle conflicting constraints?
-        4. What would you do if you couldn't meet all constraints?
+def _(mo):
+    mo.md("""
+    ### Reflection Questions:
+    1. Which constraints were hardest to meet?
+    2. What trade-offs did you make?
+    3. How would you handle conflicting constraints?
+    4. What would you do if you couldn't meet all constraints?
 
-        ---
+    ---
 
-        ## 🎯 Module 3 Checkpoint: "Debug the Failing Model"
+    ## 🎯 Module 3 Checkpoint: "Debug the Failing Model"
 
-        **Final Challenge** (60-90 min):
+    **Final Challenge** (60-90 min):
 
-        You're given a trained model that performs poorly. Your job: diagnose and fix it.
+    You're given a trained model that performs poorly. Your job: diagnose and fix it.
 
-        **Scenario**: A colleague trained a model and got these results:
-        - Training accuracy: 99%
-        - Validation accuracy: 45%
-        - Test accuracy: 43%
+    **Scenario**: A colleague trained a model and got these results:
+    - Training accuracy: 99%
+    - Validation accuracy: 45%
+    - Test accuracy: 43%
 
-        **Your Tasks**:
-        1. **Diagnose**: What's wrong? (Overfitting? Underfitting? Data issues?)
-        2. **Root Cause**: Why did this happen?
-        3. **Fix**: Implement a solution
-        4. **Verify**: Show improved results
-        5. **Document**: Explain your debugging process
+    **Your Tasks**:
+    1. **Diagnose**: What's wrong? (Overfitting? Underfitting? Data issues?)
+    2. **Root Cause**: Why did this happen?
+    3. **Fix**: Implement a solution
+    4. **Verify**: Show improved results
+    5. **Document**: Explain your debugging process
 
-        This simulates a real production debugging scenario!
-        """
-    )
+    This simulates a real production debugging scenario!
+    """)
     return
 
 
 @app.cell
-def __(
-    DecisionTreeClassifier,
+def _(
     StandardScaler,
-    X_train_ex,
     X_test_ex,
+    X_train_ex,
     accuracy_score,
-    y_train_ex,
     y_test_ex,
+    y_train_ex,
 ):
     # Simulate the "broken" model
     from sklearn.tree import DecisionTreeClassifier
@@ -459,80 +430,70 @@ def __(
     print(f"  Training Accuracy: {train_acc_broken:.2%}")
     print(f"  Test Accuracy: {test_acc_broken:.2%}")
     print(f"\n❌ This model has problems! Your task: Fix it.")
-    return (
-        DecisionTreeClassifier,
-        X_test_broken,
-        X_train_broken,
-        broken_model,
-        broken_scaler,
-        test_acc_broken,
-        train_acc_broken,
-    )
+    return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### TODO: Debug and Fix the Model
+def _(mo):
+    mo.md("""
+    ### TODO: Debug and Fix the Model
 
-        **Step 1: Diagnosis** (15 min)
-        - What symptoms do you see?
-        - What's the likely problem?
-        - How can you verify your hypothesis?
+    **Step 1: Diagnosis** (15 min)
+    - What symptoms do you see?
+    - What's the likely problem?
+    - How can you verify your hypothesis?
 
-        **Step 2: Investigation** (15 min)
-        - Look at the model (tree depth, parameters)
-        - Check learning curves
-        - Examine feature importance
+    **Step 2: Investigation** (15 min)
+    - Look at the model (tree depth, parameters)
+    - Check learning curves
+    - Examine feature importance
 
-        **Step 3: Fix** (30 min)
-        - Try multiple solutions:
-          - Regularization (max_depth, min_samples_split)
-          - Different model type
-          - Cross-validation
-          - More data
-          - Different features
-        - Compare before/after
+    **Step 3: Fix** (30 min)
+    - Try multiple solutions:
+      - Regularization (max_depth, min_samples_split)
+      - Different model type
+      - Cross-validation
+      - More data
+      - Different features
+    - Compare before/after
 
-        **Step 4: Document** (15 min)
-        - Write up your debugging process
-        - What worked? What didn't?
-        - How did you know when it was fixed?
+    **Step 4: Document** (15 min)
+    - Write up your debugging process
+    - What worked? What didn't?
+    - How did you know when it was fixed?
 
-        ---
+    ---
 
-        ## 📝 Self-Assessment
+    ## 📝 Self-Assessment
 
-        Before moving to Module 4, rate yourself:
+    Before moving to Module 4, rate yourself:
 
-        - [ ] I can set up an experiment from scratch in 15 minutes
-        - [ ] I understand bias-variance tradeoff with examples
-        - [ ] I can implement cross-validation from scratch
-        - [ ] I know when to use which model type
-        - [ ] I can tune hyperparameters systematically
-        - [ ] I can debug overfitting/underfitting
-        - [ ] I track experiments consistently
+    - [ ] I can set up an experiment from scratch in 15 minutes
+    - [ ] I understand bias-variance tradeoff with examples
+    - [ ] I can implement cross-validation from scratch
+    - [ ] I know when to use which model type
+    - [ ] I can tune hyperparameters systematically
+    - [ ] I can debug overfitting/underfitting
+    - [ ] I track experiments consistently
 
-        **If you checked all boxes**: You're ready for Module 4!
+    **If you checked all boxes**: You're ready for Module 4!
 
-        ---
+    ---
 
-        ## 💡 Key Takeaways
+    ## 💡 Key Takeaways
 
-        By now you should understand:
+    By now you should understand:
 
-        1. **Systematic experimentation beats random trying**
-        2. **Cross-validation gives robust estimates**
-        3. **Hyperparameter tuning is constrained optimization**
-        4. **Model selection involves trade-offs**
-        5. **Debugging is a systematic process**
+    1. **Systematic experimentation beats random trying**
+    2. **Cross-validation gives robust estimates**
+    3. **Hyperparameter tuning is constrained optimization**
+    4. **Model selection involves trade-offs**
+    5. **Debugging is a systematic process**
 
-        **Next Module**: Model Evaluation & Validation
+    **Next Module**: Model Evaluation & Validation
 
-        Now that we can train models, let's learn to evaluate them properly!
-        """
-    )
+    Now that we can train models, let's learn to evaluate them properly!
+    """)
     return
 
 

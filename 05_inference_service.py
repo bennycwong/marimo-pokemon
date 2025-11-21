@@ -17,55 +17,53 @@ Duration: 2-3 hours
 
 import marimo
 
-__generated_with = "0.17.8"
+__generated_with = "0.18.0"
 app = marimo.App(width="medium")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
     return (mo,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        # Module 5: Deployment & Inference
+def _(mo):
+    mo.md("""
+    # Module 5: Deployment & Inference
 
-        **"Models in notebooks aren't models in production"** — Every ML engineer
+    **"Models in notebooks aren't models in production"** — Every ML engineer
 
-        You've built a great model. Now the hard part: **making it work in production!**
+    You've built a great model. Now the hard part: **making it work in production!**
 
-        ## What You'll Learn
+    ## What You'll Learn
 
-        1. **Model Serialization**: Save and load models correctly
-        2. **Inference API**: Build production-ready prediction service
-        3. **Input Validation**: Handle bad inputs gracefully
-        4. **Latency Optimization**: Make predictions fast
-        5. **Monitoring**: Detect when things go wrong
+    1. **Model Serialization**: Save and load models correctly
+    2. **Inference API**: Build production-ready prediction service
+    3. **Input Validation**: Handle bad inputs gracefully
+    4. **Latency Optimization**: Make predictions fast
+    5. **Monitoring**: Detect when things go wrong
 
-        ## Why Deployment is Hard
+    ## Why Deployment is Hard
 
-        **Research models vs Production models**:
-        - Research: Accuracy matters most
-        - Production: Reliability, latency, cost, maintainability matter
+    **Research models vs Production models**:
+    - Research: Accuracy matters most
+    - Production: Reliability, latency, cost, maintainability matter
 
-        **Common production failures**:
-        - Model expects features in wrong order
-        - Input data has different schema
-        - Latency too high under load
-        - Model degrades over time (data drift)
-        - No monitoring, issues go undetected
+    **Common production failures**:
+    - Model expects features in wrong order
+    - Input data has different schema
+    - Latency too high under load
+    - Model degrades over time (data drift)
+    - No monitoring, issues go undetected
 
-        Let's learn to deploy like a pro!
-        """
-    )
+    Let's learn to deploy like a pro!
+    """)
     return
 
 
 @app.cell
-def __():
+def _():
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
@@ -76,24 +74,11 @@ def __():
     from typing import Dict, List, Optional, Any
     import time
     warnings.filterwarnings('ignore')
-    return (
-        Any,
-        Dict,
-        List,
-        Optional,
-        Path,
-        json,
-        np,
-        pd,
-        pickle,
-        plt,
-        time,
-        warnings,
-    )
+    return Any, Dict, Optional, Path, json, pd, pickle
 
 
 @app.cell
-def __(Path, pd):
+def _(Path, pd):
     # Train our final production model
     DATA_PATH = Path("data/clean/pokemon_cards_clean_latest.csv")
     df = pd.read_csv(DATA_PATH)
@@ -126,54 +111,37 @@ def __(Path, pd):
     print(f"✅ Production model trained")
     print(f"   Features: {feature_cols}")
     print(f"   Classes: {sorted(y.unique())}")
-    return (
-        DATA_PATH,
-        Pipeline,
-        RandomForestClassifier,
-        StandardScaler,
-        X,
-        X_test,
-        X_train,
-        df,
-        feature_cols,
-        production_model,
-        train_test_split,
-        y,
-        y_test,
-        y_train,
-    )
+    return X_train, feature_cols, production_model
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## Section 1: Model Serialization (Saving Your Work)
+def _(mo):
+    mo.md("""
+    ---
+    ## Section 1: Model Serialization (Saving Your Work)
 
-        **Key question**: How do we save a trained model for later use?
+    **Key question**: How do we save a trained model for later use?
 
-        ### Common Approaches
+    ### Common Approaches
 
-        1. **Pickle** (Python standard): Simple but Python-only
-        2. **Joblib** (scikit-learn): Better for large numpy arrays
-        3. **ONNX**: Cross-platform format
-        4. **TensorFlow SavedModel** / **PyTorch torchscript**: Framework-specific
+    1. **Pickle** (Python standard): Simple but Python-only
+    2. **Joblib** (scikit-learn): Better for large numpy arrays
+    3. **ONNX**: Cross-platform format
+    4. **TensorFlow SavedModel** / **PyTorch torchscript**: Framework-specific
 
-        **What to save**:
-        - ✅ Trained model
-        - ✅ Preprocessing pipeline (scaler, encoders)
-        - ✅ Feature names and order
-        - ✅ Model version and metadata
+    **What to save**:
+    - ✅ Trained model
+    - ✅ Preprocessing pipeline (scaler, encoders)
+    - ✅ Feature names and order
+    - ✅ Model version and metadata
 
-        Let's save our model properly:
-        """
-    )
+    Let's save our model properly:
+    """)
     return
 
 
 @app.cell
-def __(Path, feature_cols, json, pickle, production_model):
+def _(Path, feature_cols, json, pickle, production_model):
     # Create models directory
     MODELS_DIR = Path("models")
     MODELS_DIR.mkdir(exist_ok=True)
@@ -204,18 +172,11 @@ def __(Path, feature_cols, json, pickle, production_model):
     print(f"✅ Model saved to: {model_path}")
     print(f"✅ Metadata saved to: {metadata_path}")
     print(f"\nModel size: {model_path.stat().st_size / 1024 / 1024:.2f} MB")
-    return (
-        MODEL_VERSION,
-        MODELS_DIR,
-        f,
-        metadata,
-        metadata_path,
-        model_path,
-    )
+    return metadata_path, model_path
 
 
 @app.cell
-def __(metadata_path, model_path, pickle):
+def _(json, metadata_path, model_path, pickle):
     # Load model (simulating production environment)
     def load_model(model_path, metadata_path):
         """Load model and metadata for inference."""
@@ -231,44 +192,42 @@ def __(metadata_path, model_path, pickle):
         return model, metadata
 
     loaded_model, loaded_metadata = load_model(model_path, metadata_path)
-    return f, load_model, loaded_metadata, loaded_model
+    return loaded_metadata, loaded_model
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Model Serialization Best Practices
+def _(mo):
+    mo.md("""
+    ### 💡 Model Serialization Best Practices
 
-        **Always include**:
-        - Model version (semantic versioning: major.minor.patch)
-        - Feature names and expected order
-        - Training date
-        - Library versions (scikit-learn, python, etc.)
-        - Performance metrics
+    **Always include**:
+    - Model version (semantic versioning: major.minor.patch)
+    - Feature names and expected order
+    - Training date
+    - Library versions (scikit-learn, python, etc.)
+    - Performance metrics
 
-        **Common mistakes**:
-        - ❌ Forgetting to save preprocessing steps
-        - ❌ Not versioning models
-        - ❌ Saving model but not metadata
-        - ❌ Using pickle across Python versions (can break!)
+    **Common mistakes**:
+    - ❌ Forgetting to save preprocessing steps
+    - ❌ Not versioning models
+    - ❌ Saving model but not metadata
+    - ❌ Using pickle across Python versions (can break!)
 
-        **Production tip**: Use a model registry (MLflow Model Registry, Sagemaker Model Registry, etc.)
+    **Production tip**: Use a model registry (MLflow Model Registry, Sagemaker Model Registry, etc.)
 
-        ---
-        ## Section 2: Inference API (Making Predictions)
+    ---
+    ## Section 2: Inference API (Making Predictions)
 
-        **Goal**: Build a simple prediction service.
+    **Goal**: Build a simple prediction service.
 
-        In production, you'd use FastAPI, Flask, or BentoML. For this project,
-        we'll build the core prediction logic with proper validation.
-        """
-    )
+    In production, you'd use FastAPI, Flask, or BentoML. For this project,
+    we'll build the core prediction logic with proper validation.
+    """)
     return
 
 
 @app.cell
-def __(Any, Dict, List, Optional, loaded_metadata, loaded_model, pd):
+def _(Any, Dict, Optional, loaded_metadata, loaded_model, pd):
     class PokemonTypePredictor:
         """Production-ready Pokemon type prediction service."""
 
@@ -376,11 +335,11 @@ def __(Any, Dict, List, Optional, loaded_metadata, loaded_model, pd):
     predictor = PokemonTypePredictor(loaded_model, loaded_metadata)
 
     print("✅ Prediction service initialized")
-    return (PokemonTypePredictor, predictor)
+    return (predictor,)
 
 
 @app.cell
-def __(predictor):
+def _(json, predictor):
     # Test the prediction service
     test_input = {
         'hp': 180,
@@ -399,11 +358,11 @@ def __(predictor):
 
     print("Test Prediction:")
     print(json.dumps(result, indent=2))
-    return result, test_input
+    return
 
 
 @app.cell
-def __(mo, predictor):
+def _(mo):
     # Create interactive UI for testing
     hp_slider = mo.ui.slider(start=20, stop=200, value=100, step=1, label="HP")
     attack_slider = mo.ui.slider(start=20, stop=200, value=100, step=1, label="Attack")
@@ -438,7 +397,7 @@ def __(mo, predictor):
 
 
 @app.cell
-def __(
+def _(
     attack_slider,
     defense_slider,
     generation_slider,
@@ -483,97 +442,93 @@ def __(
         )
     else:
         mo.md(f"**Error**: {ui_result['error']}")
-    return ui_input, ui_result
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## Section 3: Production Considerations
-
-        ### Latency Optimization
-
-        **Production requirements**: Predictions must be fast!
-        - Web API: <200ms total (including network)
-        - Real-time: <10ms for model inference
-        - Batch: Throughput matters more than latency
-
-        **Optimization strategies**:
-        1. **Model simplification**: Fewer trees, smaller depth
-        2. **Feature selection**: Remove low-importance features
-        3. **Model quantization**: Reduce precision (float32 → float16)
-        4. **Batch predictions**: Predict multiple samples at once
-        5. **Caching**: Cache frequent predictions
-        6. **Model distillation**: Train smaller model to mimic large one
-
-        ---
-        ## Section 4: Monitoring & Observability
-
-        **Key insight**: Models degrade over time without you noticing!
-
-        **What to monitor**:
-        """
-    )
     return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 📊 Production Monitoring Checklist
+def _(mo):
+    mo.md("""
+    ---
+    ## Section 3: Production Considerations
 
-        **Input Monitoring**:
-        - [ ] Feature distributions (detect drift)
-        - [ ] Missing values rate
-        - [ ] Out-of-range values
-        - [ ] Request volume
+    ### Latency Optimization
 
-        **Output Monitoring**:
-        - [ ] Prediction distribution
-        - [ ] Confidence distribution
-        - [ ] Per-class prediction rate
-        - [ ] Response latency (p50, p95, p99)
+    **Production requirements**: Predictions must be fast!
+    - Web API: <200ms total (including network)
+    - Real-time: <10ms for model inference
+    - Batch: Throughput matters more than latency
 
-        **Performance Monitoring**:
-        - [ ] Accuracy (when ground truth available)
-        - [ ] Precision/Recall per class
-        - [ ] Confusion patterns
-        - [ ] Error rate
+    **Optimization strategies**:
+    1. **Model simplification**: Fewer trees, smaller depth
+    2. **Feature selection**: Remove low-importance features
+    3. **Model quantization**: Reduce precision (float32 → float16)
+    4. **Batch predictions**: Predict multiple samples at once
+    5. **Caching**: Cache frequent predictions
+    6. **Model distillation**: Train smaller model to mimic large one
 
-        **Infrastructure Monitoring**:
-        - [ ] CPU/Memory usage
-        - [ ] Request queue depth
-        - [ ] Error rate (500s)
-        - [ ] Availability/uptime
+    ---
+    ## Section 4: Monitoring & Observability
 
-        ### 🚨 Alerting Thresholds
+    **Key insight**: Models degrade over time without you noticing!
 
-        **Critical alerts** (page someone!):
-        - Prediction error rate > 5%
-        - Latency p95 > 500ms
-        - Service down
-
-        **Warning alerts** (investigate next day):
-        - Feature distribution drift > 20%
-        - Prediction distribution change > 10%
-        - Confidence drop > 5%
-
-        ---
-        ## Section 5: Data Drift Detection
-
-        **Data drift** = Distribution of input features changes over time
-
-        **Why it matters**: Model trained on old data won't work on new data!
-        """
-    )
+    **What to monitor**:
+    """)
     return
 
 
 @app.cell
-def __(X_train, np):
+def _(mo):
+    mo.md("""
+    ### 📊 Production Monitoring Checklist
+
+    **Input Monitoring**:
+    - [ ] Feature distributions (detect drift)
+    - [ ] Missing values rate
+    - [ ] Out-of-range values
+    - [ ] Request volume
+
+    **Output Monitoring**:
+    - [ ] Prediction distribution
+    - [ ] Confidence distribution
+    - [ ] Per-class prediction rate
+    - [ ] Response latency (p50, p95, p99)
+
+    **Performance Monitoring**:
+    - [ ] Accuracy (when ground truth available)
+    - [ ] Precision/Recall per class
+    - [ ] Confusion patterns
+    - [ ] Error rate
+
+    **Infrastructure Monitoring**:
+    - [ ] CPU/Memory usage
+    - [ ] Request queue depth
+    - [ ] Error rate (500s)
+    - [ ] Availability/uptime
+
+    ### 🚨 Alerting Thresholds
+
+    **Critical alerts** (page someone!):
+    - Prediction error rate > 5%
+    - Latency p95 > 500ms
+    - Service down
+
+    **Warning alerts** (investigate next day):
+    - Feature distribution drift > 20%
+    - Prediction distribution change > 10%
+    - Confidence drop > 5%
+
+    ---
+    ## Section 5: Data Drift Detection
+
+    **Data drift** = Distribution of input features changes over time
+
+    **Why it matters**: Model trained on old data won't work on new data!
+    """)
+    return
+
+
+@app.cell
+def _(X_train):
     # Simulate data drift detection
     def detect_drift_simple(reference_data, new_data, threshold=0.1):
         """
@@ -624,119 +579,117 @@ def __(X_train, np):
     for feature, metrics in drift_results.items():
         status = "🚨 DRIFT" if metrics['is_drifted'] else "✅ OK"
         print(f"{feature:20s}: {status} (score: {metrics['drift_score']:.3f})")
-    return X_new, detect_drift_simple, drift_results, feature, metrics, status
+    return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Handling Data Drift
+def _(mo):
+    mo.md("""
+    ### 💡 Handling Data Drift
 
-        **When drift is detected**:
-        1. **Investigate**: What changed in the data?
-        2. **Assess impact**: Is model performance affected?
-        3. **Decision**:
-           - Minor drift: Continue monitoring
-           - Moderate drift: Retrain with new data
-           - Severe drift: Retrain + add new features
+    **When drift is detected**:
+    1. **Investigate**: What changed in the data?
+    2. **Assess impact**: Is model performance affected?
+    3. **Decision**:
+       - Minor drift: Continue monitoring
+       - Moderate drift: Retrain with new data
+       - Severe drift: Retrain + add new features
 
-        **Prevention strategies**:
-        - Regular retraining schedule
-        - Online learning (continuous updates)
-        - Robust features (less sensitive to drift)
-        - Ensemble models (more stable)
+    **Prevention strategies**:
+    - Regular retraining schedule
+    - Online learning (continuous updates)
+    - Robust features (less sensitive to drift)
+    - Ensemble models (more stable)
 
-        ---
-        ## Key Takeaways
+    ---
+    ## Key Takeaways
 
-        ### ✅ What You Learned
+    ### ✅ What You Learned
 
-        1. **Model serialization**: Save models + metadata properly
-        2. **Input validation**: Handle edge cases gracefully
-        3. **Monitoring**: Track inputs, outputs, and performance
-        4. **Data drift**: Detect and respond to distribution changes
-        5. **Production mindset**: Reliability > accuracy
+    1. **Model serialization**: Save models + metadata properly
+    2. **Input validation**: Handle edge cases gracefully
+    3. **Monitoring**: Track inputs, outputs, and performance
+    4. **Data drift**: Detect and respond to distribution changes
+    5. **Production mindset**: Reliability > accuracy
 
-        ### 🤔 Socratic Questions
+    ### 🤔 Socratic Questions
 
-        1. **"You deployed a model. A week later, accuracy drops from 85% to 60%. What do you investigate first?"**
-           - Data drift? Code bug? Upstream data issue? Ground truth labels correct?
+    1. **"You deployed a model. A week later, accuracy drops from 85% to 60%. What do you investigate first?"**
+       - Data drift? Code bug? Upstream data issue? Ground truth labels correct?
 
-        2. **"Training takes 1 hour. Inference must complete in <100ms. How do you approach this?"**
-           - Simplify model, feature selection, batch prediction, caching, distillation
+    2. **"Training takes 1 hour. Inference must complete in <100ms. How do you approach this?"**
+       - Simplify model, feature selection, batch prediction, caching, distillation
 
-        3. **"A user sends malformed input that crashes your API. Who's responsible - you or the user?"**
-           - You! Production code must handle all inputs gracefully.
+    3. **"A user sends malformed input that crashes your API. Who's responsible - you or the user?"**
+       - You! Production code must handle all inputs gracefully.
 
-        ---
-        ## 🏢 Industry Context
+    ---
+    ## 🏢 Industry Context
 
-        ### How Companies Deploy Models
+    ### How Companies Deploy Models
 
-        **Small Startup**:
-        - Docker container
-        - FastAPI/Flask
-        - Manual deployment
-        - Basic monitoring (CloudWatch, Datadog)
+    **Small Startup**:
+    - Docker container
+    - FastAPI/Flask
+    - Manual deployment
+    - Basic monitoring (CloudWatch, Datadog)
 
-        **Medium Company**:
-        - Kubernetes
-        - BentoML/Seldon
-        - CI/CD pipelines
-        - Structured monitoring (Prometheus, Grafana)
+    **Medium Company**:
+    - Kubernetes
+    - BentoML/Seldon
+    - CI/CD pipelines
+    - Structured monitoring (Prometheus, Grafana)
 
-        **Large Company**:
-        - Custom ML platform
-        - A/B testing framework
-        - Canary deployments
-        - Comprehensive observability
+    **Large Company**:
+    - Custom ML platform
+    - A/B testing framework
+    - Canary deployments
+    - Comprehensive observability
 
-        ### Common Deployment Patterns
+    ### Common Deployment Patterns
 
-        1. **Batch inference**: Run predictions offline, store results
-        2. **Online inference**: Real-time predictions via API
-        3. **Edge inference**: Model runs on device (mobile, IoT)
-        4. **Streaming inference**: Process stream of events (Kafka, Kinesis)
+    1. **Batch inference**: Run predictions offline, store results
+    2. **Online inference**: Real-time predictions via API
+    3. **Edge inference**: Model runs on device (mobile, IoT)
+    4. **Streaming inference**: Process stream of events (Kafka, Kinesis)
 
-        ---
-        ## 🎯 Module 5 Checkpoint
+    ---
+    ## 🎯 Module 5 Checkpoint
 
-        You've completed Module 5 when you can:
+    You've completed Module 5 when you can:
 
-        - [ ] Serialize and load models correctly
-        - [ ] Build inference API with validation
-        - [ ] Handle production edge cases
-        - [ ] Monitor model in production
-        - [ ] Detect and respond to data drift
+    - [ ] Serialize and load models correctly
+    - [ ] Build inference API with validation
+    - [ ] Handle production edge cases
+    - [ ] Monitor model in production
+    - [ ] Detect and respond to data drift
 
-        ---
-        ## 🎓 Course Complete!
+    ---
+    ## 🎓 Course Complete!
 
-        **Congratulations!** You've completed all 5 modules of the
-        Professional ML Engineering Onboarding Project.
+    **Congratulations!** You've completed all 5 modules of the
+    Professional ML Engineering Onboarding Project.
 
-        **What you've learned**:
-        - ✅ Data engineering and validation
-        - ✅ Feature engineering with domain knowledge
-        - ✅ Systematic model training and experimentation
-        - ✅ Comprehensive model evaluation
-        - ✅ Production deployment and monitoring
+    **What you've learned**:
+    - ✅ Data engineering and validation
+    - ✅ Feature engineering with domain knowledge
+    - ✅ Systematic model training and experimentation
+    - ✅ Comprehensive model evaluation
+    - ✅ Production deployment and monitoring
 
-        **You're now ready to**:
-        - Join an ML team and contribute from day one
-        - Build end-to-end ML systems
-        - Debug production ML issues
-        - Communicate with stakeholders effectively
+    **You're now ready to**:
+    - Join an ML team and contribute from day one
+    - Build end-to-end ML systems
+    - Debug production ML issues
+    - Communicate with stakeholders effectively
 
-        **Next steps**:
-        - Complete the capstone project
-        - Apply these skills to your own projects
-        - Continue learning advanced topics
+    **Next steps**:
+    - Complete the capstone project
+    - Apply these skills to your own projects
+    - Continue learning advanced topics
 
-        **Welcome to the world of ML engineering!** 🚀
-        """
-    )
+    **Welcome to the world of ML engineering!** 🚀
+    """)
     return
 
 

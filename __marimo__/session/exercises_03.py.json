@@ -1,0 +1,109 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.0"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "da736c90ae3fadac4ed258b72e3bb887",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"module-3-exercises\">Module 3 Exercises</h1>\n<h2 id=\"exercise-31-implement-cross-validation-from-scratch-45-min\">Exercise 3.1: Implement Cross-Validation from Scratch (45 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Understand cross-validation deeply by implementing it yourself.</span>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Implement k-fold cross-validation manually (no sklearn)</li>\n<li>Split data into k folds</li>\n<li>For each fold, train and evaluate</li>\n<li>Return mean and std of scores</li>\n<li>Compare your results to sklearn's cross_val_score</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Deep understanding &gt; using libraries blindly</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d6f0092d34cea024546266c25e3afc77",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"reflection-questions\">Reflection Questions:</h3>\n<ol>\n<li>How close are your results to sklearn's?</li>\n<li>What did you learn by implementing it yourself?</li>\n<li>Why is it important to shuffle data before splitting?</li>\n<li>What happens if you forget to scale the validation set?</li>\n</ol>\n<hr />\n<h2 id=\"exercise-32-model-selection-competition-60-min\">Exercise 3.2: Model Selection Competition (60 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Train 4+ models and select the best one systematically.</span>\n<span class=\"paragraph\"><strong>Scenario</strong>: You're tasked with building a Pokemon type classifier.\nYou need to recommend ONE model for production.</span>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Train at least 4 different model types</li>\n<li>Use cross-validation for each</li>\n<li>Track all experiments (parameters, scores, time)</li>\n<li>\n<span class=\"paragraph\">Consider multiple criteria:</span>\n<ul>\n<li>Accuracy</li>\n<li>Training time</li>\n<li>Inference speed</li>\n<li>Model size</li>\n<li>Interpretability</li>\n</ul>\n</li>\n<li>Write a recommendation memo to your \"PM\"</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Model selection is multi-criteria decision making.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "d5ec652ce5d32f92f618653cf5b4aac0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"todo-write-recommendation-memo\">TODO: Write Recommendation Memo</h3>\n<span class=\"paragraph\"><strong>To</strong>: Product Manager\n<strong>From</strong>: ML Engineer (You!)\n<strong>Re</strong>: Pokemon Type Classifier - Model Recommendation</span>\n<span class=\"paragraph\"><strong>Executive Summary</strong>:\n(1-2 sentences on recommended model)</span>\n<span class=\"paragraph\"><strong>Models Evaluated</strong>:\n(Table or bullet list of models and key metrics)</span>\n<span class=\"paragraph\"><strong>Recommendation</strong>:\nModel: [Your choice]\nReasoning:</span>\n<ul>\n<li>Accuracy: [Why this is sufficient]</li>\n<li>Speed: [Production requirements]</li>\n<li>Maintainability: [Team considerations]</li>\n<li>Trade-offs: [What we're giving up]</li>\n</ul>\n<span class=\"paragraph\"><strong>Next Steps</strong>:</span>\n<ul>\n<li>[What happens before production]</li>\n<li>[What monitoring is needed]</li>\n</ul>\n<hr />\n<h2 id=\"exercise-33-hyperparameter-tuning-challenge-60-min\">Exercise 3.3: Hyperparameter Tuning Challenge (60 min)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Optimize a model within constraints.</span>\n<span class=\"paragraph\"><strong>Scenario</strong>: Your model must meet these production requirements:</span>\n<ul>\n<li>Validation accuracy &gt; 70%</li>\n<li>Inference time &lt; 10ms per sample</li>\n<li>Model size &lt; 50MB</li>\n<li>Training time &lt; 5 minutes</li>\n</ul>\n<span class=\"paragraph\"><strong>Instructions</strong>:</span>\n<ol>\n<li>Choose a model type</li>\n<li>Find hyperparameters that meet ALL constraints</li>\n<li>Use RandomizedSearchCV or GridSearchCV</li>\n<li>Document your tuning process</li>\n<li>Verify all constraints are met</li>\n</ol>\n<span class=\"paragraph\"><strong>Learning Objective</strong>: Production constraints guide optimization.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "2cbe275b42fbaa4b734eaba9e6e9b308",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"reflection-questions\">Reflection Questions:</h3>\n<ol>\n<li>Which constraints were hardest to meet?</li>\n<li>What trade-offs did you make?</li>\n<li>How would you handle conflicting constraints?</li>\n<li>What would you do if you couldn't meet all constraints?</li>\n</ol>\n<hr />\n<h2 id=\"module-3-checkpoint-debug-the-failing-model\">\ud83c\udfaf Module 3 Checkpoint: \"Debug the Failing Model\"</h2>\n<span class=\"paragraph\"><strong>Final Challenge</strong> (60-90 min):</span>\n<span class=\"paragraph\">You're given a trained model that performs poorly. Your job: diagnose and fix it.</span>\n<span class=\"paragraph\"><strong>Scenario</strong>: A colleague trained a model and got these results:</span>\n<ul>\n<li>Training accuracy: 99%</li>\n<li>Validation accuracy: 45%</li>\n<li>Test accuracy: 43%</li>\n</ul>\n<span class=\"paragraph\"><strong>Your Tasks</strong>:</span>\n<ol>\n<li><strong>Diagnose</strong>: What's wrong? (Overfitting? Underfitting? Data issues?)</li>\n<li><strong>Root Cause</strong>: Why did this happen?</li>\n<li><strong>Fix</strong>: Implement a solution</li>\n<li><strong>Verify</strong>: Show improved results</li>\n<li><strong>Document</strong>: Explain your debugging process</li>\n</ol>\n<span class=\"paragraph\">This simulates a real production debugging scenario!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "e6443e0ff5de28f43c284020d35d12c4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"todo-debug-and-fix-the-model\">TODO: Debug and Fix the Model</h3>\n<span class=\"paragraph\"><strong>Step 1: Diagnosis</strong> (15 min)</span>\n<ul>\n<li>What symptoms do you see?</li>\n<li>What's the likely problem?</li>\n<li>How can you verify your hypothesis?</li>\n</ul>\n<span class=\"paragraph\"><strong>Step 2: Investigation</strong> (15 min)</span>\n<ul>\n<li>Look at the model (tree depth, parameters)</li>\n<li>Check learning curves</li>\n<li>Examine feature importance</li>\n</ul>\n<span class=\"paragraph\"><strong>Step 3: Fix</strong> (30 min)</span>\n<ul>\n<li>\n<span class=\"paragraph\">Try multiple solutions:</span>\n<ul>\n<li>Regularization (max_depth, min_samples_split)</li>\n<li>Different model type</li>\n<li>Cross-validation</li>\n<li>More data</li>\n<li>Different features</li>\n</ul>\n</li>\n<li>Compare before/after</li>\n</ul>\n<span class=\"paragraph\"><strong>Step 4: Document</strong> (15 min)</span>\n<ul>\n<li>Write up your debugging process</li>\n<li>What worked? What didn't?</li>\n<li>How did you know when it was fixed?</li>\n</ul>\n<hr />\n<h2 id=\"self-assessment\">\ud83d\udcdd Self-Assessment</h2>\n<span class=\"paragraph\">Before moving to Module 4, rate yourself:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can set up an experiment from scratch in 15 minutes</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I understand bias-variance tradeoff with examples</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can implement cross-validation from scratch</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I know when to use which model type</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can tune hyperparameters systematically</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I can debug overfitting/underfitting</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> I track experiments consistently</li>\n</ul>\n<span class=\"paragraph\"><strong>If you checked all boxes</strong>: You're ready for Module 4!</span>\n<hr />\n<h2 id=\"key-takeaways\">\ud83d\udca1 Key Takeaways</h2>\n<span class=\"paragraph\">By now you should understand:</span>\n<ol>\n<li><strong>Systematic experimentation beats random trying</strong></li>\n<li><strong>Cross-validation gives robust estimates</strong></li>\n<li><strong>Hyperparameter tuning is constrained optimization</strong></li>\n<li><strong>Model selection involves trade-offs</strong></li>\n<li><strong>Debugging is a systematic process</strong></li>\n</ol>\n<span class=\"paragraph\"><strong>Next Module</strong>: Model Evaluation &amp; Validation</span>\n<span class=\"paragraph\">Now that we can train models, let's learn to evaluate them properly!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "81bef3e4f1665f14bda57bf6ee5280a3",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "fa5207c9b084d44d5eeb1c578c875405",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "0b4a775fd99ec9f4b23fbede65735828",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "e31d123518014c53e66ff8359ae340a7",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "0c48992508c31dbfc6b40adf789c87f2",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

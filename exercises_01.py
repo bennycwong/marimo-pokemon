@@ -10,47 +10,45 @@ Time estimate: 1-2 hours
 
 import marimo
 
-__generated_with = "0.17.8"
+__generated_with = "0.18.0"
 app = marimo.App(width="medium")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
     return (mo,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        # Module 1 Exercises
+def _(mo):
+    mo.md("""
+    # Module 1 Exercises
 
-        Complete these exercises to solidify your understanding of data engineering fundamentals.
+    Complete these exercises to solidify your understanding of data engineering fundamentals.
 
-        ## Exercise 1.1: Break the Data (20 min)
+    ## Exercise 1.1: Break the Data (20 min)
 
-        **Goal**: Introduce 5 different data quality issues, then write tests to catch them.
+    **Goal**: Introduce 5 different data quality issues, then write tests to catch them.
 
-        **Instructions**:
-        1. Load the cleaned Pokemon dataset
-        2. Introduce these issues deliberately:
-           - Add 10 duplicate card_ids
-           - Add 20 missing values in random columns
-           - Add 5 invalid values (e.g., negative HP)
-           - Add 3 outliers (price > 500)
-           - Add inconsistent formatting in a categorical column
-        3. Write Pandera schema tests to catch ALL issues
-        4. Verify your tests work by running validation
+    **Instructions**:
+    1. Load the cleaned Pokemon dataset
+    2. Introduce these issues deliberately:
+       - Add 10 duplicate card_ids
+       - Add 20 missing values in random columns
+       - Add 5 invalid values (e.g., negative HP)
+       - Add 3 outliers (price > 500)
+       - Add inconsistent formatting in a categorical column
+    3. Write Pandera schema tests to catch ALL issues
+    4. Verify your tests work by running validation
 
-        **Learning Objective**: Understanding what can go wrong helps you prevent it.
-        """
-    )
+    **Learning Objective**: Understanding what can go wrong helps you prevent it.
+    """)
     return
 
 
 @app.cell
-def __():
+def _():
     import pandas as pd
     import numpy as np
     from pathlib import Path
@@ -62,21 +60,11 @@ def __():
     df = pd.read_csv(DATA_PATH)
 
     print(f"Loaded {len(df)} clean records")
-    return (
-        DATA_PATH,
-        Check,
-        Column,
-        DataFrameSchema,
-        Path,
-        df,
-        np,
-        pa,
-        pd,
-    )
+    return DataFrameSchema, Path, df, np, pa, pd
 
 
 @app.cell
-def __(df, np, pd):
+def _(df):
     # TODO: Create a copy and introduce data quality issues
     df_broken = df.copy()
 
@@ -105,7 +93,7 @@ def __(df, np, pd):
 
 
 @app.cell
-def __(Check, Column, DataFrameSchema):
+def _(DataFrameSchema):
     # TODO: Define a Pandera schema that will catch ALL the issues you introduced
 
     validation_schema = DataFrameSchema(
@@ -124,7 +112,7 @@ def __(Check, Column, DataFrameSchema):
 
 
 @app.cell
-def __(df_broken, validation_schema):
+def _(df_broken, pa, validation_schema):
     # TODO: Run validation and check that it catches all issues
     try:
         validation_schema.validate(df_broken, lazy=True)
@@ -134,73 +122,69 @@ def __(df_broken, validation_schema):
         print(f"Caught {len(e.failure_cases)} errors")
         print("\nError summary:")
         print(e.failure_cases.groupby('check').size())
-    return (e,)
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 🤔 Reflection Questions:
-
-        1. Which type of data quality issue was hardest to detect? Why?
-        2. How would you automate this validation in a production pipeline?
-        3. What happens if the schema is too strict? Too lenient?
-
-        ---
-        ## Exercise 1.2: Refactor Messy Code (20 min)
-
-        **Goal**: Take messy data loading code and make it production-ready.
-
-        **Instructions**:
-        1. Review the messy code below
-        2. Refactor it to be:
-           - Reproducible (no randomness, or controlled randomness)
-           - Documented (type hints, docstrings)
-           - Tested (add basic error handling)
-           - Modular (break into functions)
-
-        **Learning Objective**: Code quality matters for data code too!
-        """
-    )
     return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### Messy Code (DON'T USE THIS!):
+def _(mo):
+    mo.md("""
+    ### 🤔 Reflection Questions:
 
-        ```python
-        # Bad example - do NOT copy this!
-        import pandas as pd
+    1. Which type of data quality issue was hardest to detect? Why?
+    2. How would you automate this validation in a production pipeline?
+    3. What happens if the schema is too strict? Too lenient?
 
-        data = pd.read_csv('data/pokemon_cards.csv')
-        data = data.drop_duplicates()
-        data = data.dropna()
-        data['type'] = data['type'].str.lower()
-        data = data[data.price_usd < 100]
-        data.to_csv('output.csv')
-        print('done')
-        ```
+    ---
+    ## Exercise 1.2: Refactor Messy Code (20 min)
 
-        ### Problems with this code:
-        1. No error handling (what if file doesn't exist?)
-        2. No documentation (what does this code do?)
-        3. Hardcoded paths
-        4. No type hints
-        5. Unclear transformation logic
-        6. No validation
-        7. Destructive operations (modifies data in place)
-        8. No logging of what changed
-        """
-    )
+    **Goal**: Take messy data loading code and make it production-ready.
+
+    **Instructions**:
+    1. Review the messy code below
+    2. Refactor it to be:
+       - Reproducible (no randomness, or controlled randomness)
+       - Documented (type hints, docstrings)
+       - Tested (add basic error handling)
+       - Modular (break into functions)
+
+    **Learning Objective**: Code quality matters for data code too!
+    """)
     return
 
 
 @app.cell
-def __(Path, pd):
+def _(mo):
+    mo.md("""
+    ### Messy Code (DON'T USE THIS!):
+
+    ```python
+    # Bad example - do NOT copy this!
+    import pandas as pd
+
+    data = pd.read_csv('data/pokemon_cards.csv')
+    data = data.drop_duplicates()
+    data = data.dropna()
+    data['type'] = data['type'].str.lower()
+    data = data[data.price_usd < 100]
+    data.to_csv('output.csv')
+    print('done')
+    ```
+
+    ### Problems with this code:
+    1. No error handling (what if file doesn't exist?)
+    2. No documentation (what does this code do?)
+    3. Hardcoded paths
+    4. No type hints
+    5. Unclear transformation logic
+    6. No validation
+    7. Destructive operations (modifies data in place)
+    8. No logging of what changed
+    """)
+    return
+
+
+@app.cell
+def _(Path, pd):
     # TODO: Refactor the messy code above using best practices
 
     def load_and_clean_data(
@@ -236,46 +220,44 @@ def __(Path, pd):
     # input_path = Path("data/pokemon_cards.csv")
     # output_path = Path("data/clean/refactored_clean.csv")
     # df_refactored = load_and_clean_data(input_path, output_path)
-    return (load_and_clean_data,)
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 🤔 Reflection Questions:
-
-        1. How is your refactored version better than the messy version?
-        2. What would you add if this went to production?
-        3. How would you test this function automatically?
-
-        ---
-        ## Exercise 1.3: Performance Challenge (30 min)
-
-        **Goal**: Optimize a slow pandas operation using polars.
-
-        **Scenario**: You have a large dataset (we'll simulate 100K rows) and need to:
-        1. Group by Pokemon type
-        2. Calculate average stats per type
-        3. Filter to types with avg HP > 70
-        4. Sort by average attack
-        5. Export to CSV
-
-        **Instructions**:
-        1. Implement this in pandas
-        2. Benchmark the execution time
-        3. Implement the same in polars
-        4. Compare performance
-        5. Determine when the switch to polars is worth it
-
-        **Learning Objective**: Understand performance tradeoffs.
-        """
-    )
     return
 
 
 @app.cell
-def __(df, np, pd):
+def _(mo):
+    mo.md("""
+    ### 🤔 Reflection Questions:
+
+    1. How is your refactored version better than the messy version?
+    2. What would you add if this went to production?
+    3. How would you test this function automatically?
+
+    ---
+    ## Exercise 1.3: Performance Challenge (30 min)
+
+    **Goal**: Optimize a slow pandas operation using polars.
+
+    **Scenario**: You have a large dataset (we'll simulate 100K rows) and need to:
+    1. Group by Pokemon type
+    2. Calculate average stats per type
+    3. Filter to types with avg HP > 70
+    4. Sort by average attack
+    5. Export to CSV
+
+    **Instructions**:
+    1. Implement this in pandas
+    2. Benchmark the execution time
+    3. Implement the same in polars
+    4. Compare performance
+    5. Determine when the switch to polars is worth it
+
+    **Learning Objective**: Understand performance tradeoffs.
+    """)
+    return
+
+
+@app.cell
+def _(df, np, pd):
     # Generate a larger dataset for benchmarking
     # Repeat the dataset 125x to get ~100K rows
     df_large = pd.concat([df] * 125, ignore_index=True)
@@ -287,11 +269,11 @@ def __(df, np, pd):
 
     print(f"Generated dataset with {len(df_large)} rows")
     print(f"Memory usage: {df_large.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
-    return (df_large,)
+    return
 
 
 @app.cell
-def __(df_large):
+def _():
     import time
 
     # TODO: Implement the transformation in pandas
@@ -316,11 +298,11 @@ def __(df_large):
     # result_pandas = pandas_aggregation(df_large)
     # pandas_time = time.time() - start
     # print(f"Pandas time: {pandas_time:.4f} seconds")
-    return pandas_aggregation, time
+    return
 
 
 @app.cell
-def __(df_large, pl):
+def _(pl):
     # TODO: Implement the same transformation in polars
     def polars_aggregation(df):
         """
@@ -346,50 +328,48 @@ def __(df_large, pl):
     # polars_time = time.time() - start
     # print(f"Polars time: {polars_time:.4f} seconds")
     # print(f"Speedup: {pandas_time / polars_time:.2f}x")
-    return (polars_aggregation,)
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 🤔 Reflection Questions:
-
-        1. At what data size does polars become worth the complexity?
-        2. What if your data is 10MB? 100MB? 10GB?
-        3. What other factors matter besides performance (team knowledge, ecosystem, etc.)?
-
-        ---
-        ## 🎯 Module 1 Checkpoint: "New Pokemon Data Drop"
-
-        **The Challenge**: You receive a new Pokemon card dataset from a different source.
-        The schema is slightly different:
-        - Column names use `snake_case` instead of matching your schema
-        - Has extra columns you don't need
-        - Missing some columns you expect
-        - Different value encodings (e.g., "TRUE"/"FALSE" instead of True/False)
-
-        **Your Task** (30-45 min):
-        Create a robust pipeline that:
-        1. Detects schema mismatches
-        2. Maps columns to expected names
-        3. Validates data quality
-        4. Produces a dataset matching your standard schema
-        5. Logs all transformations
-
-        **Deliverable**:
-        - A function `harmonize_external_data()` that handles this
-        - Documentation of what transformations were applied
-        - Test that it works on different input schemas
-
-        This simulates a real production scenario where data sources change!
-        """
-    )
     return
 
 
 @app.cell
-def __(Path, pd):
+def _(mo):
+    mo.md("""
+    ### 🤔 Reflection Questions:
+
+    1. At what data size does polars become worth the complexity?
+    2. What if your data is 10MB? 100MB? 10GB?
+    3. What other factors matter besides performance (team knowledge, ecosystem, etc.)?
+
+    ---
+    ## 🎯 Module 1 Checkpoint: "New Pokemon Data Drop"
+
+    **The Challenge**: You receive a new Pokemon card dataset from a different source.
+    The schema is slightly different:
+    - Column names use `snake_case` instead of matching your schema
+    - Has extra columns you don't need
+    - Missing some columns you expect
+    - Different value encodings (e.g., "TRUE"/"FALSE" instead of True/False)
+
+    **Your Task** (30-45 min):
+    Create a robust pipeline that:
+    1. Detects schema mismatches
+    2. Maps columns to expected names
+    3. Validates data quality
+    4. Produces a dataset matching your standard schema
+    5. Logs all transformations
+
+    **Deliverable**:
+    - A function `harmonize_external_data()` that handles this
+    - Documentation of what transformations were applied
+    - Test that it works on different input schemas
+
+    This simulates a real production scenario where data sources change!
+    """)
+    return
+
+
+@app.cell
+def _(Path, pd):
     # First, let's create a simulated "external" dataset
     def create_external_dataset():
         """Create a dataset with different schema."""
@@ -416,11 +396,11 @@ def __(Path, pd):
         return df_external
 
     df_external = create_external_dataset()
-    return create_external_dataset, df_external
+    return
 
 
 @app.cell
-def __(pd):
+def _(pd):
     # TODO: Create a harmonization function
     def harmonize_external_data(external_df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -459,45 +439,43 @@ def __(pd):
     # TODO: Test your function
     # df_harmonized = harmonize_external_data(df_external)
     # print(df_harmonized.head())
-    return (harmonize_external_data,)
+    return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## 🎓 Exercise Solutions
+def _(mo):
+    mo.md("""
+    ---
+    ## 🎓 Exercise Solutions
 
-        Don't peek until you've tried! Solutions are in `solutions_01.py`.
+    Don't peek until you've tried! Solutions are in `solutions_01.py`.
 
-        ## 📝 Self-Assessment
+    ## 📝 Self-Assessment
 
-        Before moving to Module 2, rate yourself:
+    Before moving to Module 2, rate yourself:
 
-        - [ ] I can write a data validation schema from scratch
-        - [ ] I understand when to use pandas vs polars
-        - [ ] I can debug data quality issues systematically
-        - [ ] I can write production-quality data pipeline code
-        - [ ] I can handle schema mismatches between data sources
+    - [ ] I can write a data validation schema from scratch
+    - [ ] I understand when to use pandas vs polars
+    - [ ] I can debug data quality issues systematically
+    - [ ] I can write production-quality data pipeline code
+    - [ ] I can handle schema mismatches between data sources
 
-        **If you checked all boxes**: You're ready for Module 2!
+    **If you checked all boxes**: You're ready for Module 2!
 
-        **If not**: Review the sections you struggled with and try the exercises again.
+    **If not**: Review the sections you struggled with and try the exercises again.
 
-        ---
-        ## 💡 Additional Challenges (Optional)
+    ---
+    ## 💡 Additional Challenges (Optional)
 
-        If you want more practice:
+    If you want more practice:
 
-        1. **Challenge 1**: Add unit tests for the cleaning pipeline using pytest
-        2. **Challenge 2**: Implement data drift detection between two versions
-        3. **Challenge 3**: Create a monitoring dashboard for data quality metrics
-        4. **Challenge 4**: Handle streaming data (one record at a time validation)
+    1. **Challenge 1**: Add unit tests for the cleaning pipeline using pytest
+    2. **Challenge 2**: Implement data drift detection between two versions
+    3. **Challenge 3**: Create a monitoring dashboard for data quality metrics
+    4. **Challenge 4**: Handle streaming data (one record at a time validation)
 
-        These challenges will prepare you for real production scenarios!
-        """
-    )
+    These challenges will prepare you for real production scenarios!
+    """)
     return
 
 

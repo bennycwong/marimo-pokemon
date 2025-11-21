@@ -17,52 +17,50 @@ Duration: 2-3 hours
 
 import marimo
 
-__generated_with = "0.17.8"
+__generated_with = "0.18.0"
 app = marimo.App(width="medium")
 
 
 @app.cell
-def __():
+def _():
     import marimo as mo
     return (mo,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        # Module 4: Model Evaluation & Validation
+def _(mo):
+    mo.md("""
+    # Module 4: Model Evaluation & Validation
 
-        **"All models are wrong, but some are useful"** — George Box
+    **"All models are wrong, but some are useful"** — George Box
 
-        You've trained models. Now the critical question: **Are they good enough for production?**
+    You've trained models. Now the critical question: **Are they good enough for production?**
 
-        ## What You'll Learn
+    ## What You'll Learn
 
-        1. **Metrics Beyond Accuracy**: Precision, recall, F1, ROC-AUC
-        2. **Error Analysis**: Understand where and why models fail
-        3. **Confusion Matrices**: Detailed performance breakdown
-        4. **Model Cards**: Document limitations and intended use
-        5. **Production Readiness**: Is this model deployable?
+    1. **Metrics Beyond Accuracy**: Precision, recall, F1, ROC-AUC
+    2. **Error Analysis**: Understand where and why models fail
+    3. **Confusion Matrices**: Detailed performance breakdown
+    4. **Model Cards**: Document limitations and intended use
+    5. **Production Readiness**: Is this model deployable?
 
-        ## Why This Matters
+    ## Why This Matters
 
-        > "95% accuracy sounds great until you realize it's a cancer detector"
-        > — Every ML practitioner
+    > "95% accuracy sounds great until you realize it's a cancer detector"
+    > — Every ML practitioner
 
-        **Real examples of metric failures**:
-        - Amazon hiring AI (high accuracy, biased against women)
-        - Credit scoring (high AUC, discriminatory patterns)
-        - Medical diagnosis (high accuracy on common cases, fails on rare diseases)
+    **Real examples of metric failures**:
+    - Amazon hiring AI (high accuracy, biased against women)
+    - Credit scoring (high AUC, discriminatory patterns)
+    - Medical diagnosis (high accuracy on common cases, fails on rare diseases)
 
-        Proper evaluation prevents disasters!
-        """
-    )
+    Proper evaluation prevents disasters!
+    """)
     return
 
 
 @app.cell
-def __():
+def _():
     import pandas as pd
     import numpy as np
     import matplotlib.pyplot as plt
@@ -73,11 +71,11 @@ def __():
 
     sns.set_style("whitegrid")
     plt.rcParams['figure.figsize'] = (10, 6)
-    return Path, np, pd, plt, sns, warnings
+    return Path, np, pd, plt, sns
 
 
 @app.cell
-def __(Path, np, pd):
+def _(Path, pd):
     # Load data and train a model (from Module 3)
     DATA_PATH = Path("data/clean/pokemon_cards_clean_latest.csv")
     df = pd.read_csv(DATA_PATH)
@@ -111,59 +109,38 @@ def __(Path, np, pd):
 
     print(f"✅ Model trained on {len(X_train)} samples")
     print(f"✅ Test set: {len(X_test)} samples")
-    return (
-        DATA_PATH,
-        RandomForestClassifier,
-        StandardScaler,
-        X,
-        X_test,
-        X_test_scaled,
-        X_train,
-        X_train_scaled,
-        df,
-        feature_cols,
-        model,
-        scaler,
-        train_test_split,
-        y,
-        y_pred,
-        y_pred_proba,
-        y_test,
-        y_train,
-    )
+    return X_test, y_pred, y_pred_proba, y_test
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ---
-        ## Section 1: Beyond Accuracy
+def _(mo):
+    mo.md("""
+    ---
+    ## Section 1: Beyond Accuracy
 
-        **Question**: Your model is 95% accurate on spam detection. Is that good?
+    **Question**: Your model is 95% accurate on spam detection. Is that good?
 
-        **Answer**: It depends! If only 2% of emails are spam:
-        - A dummy model (always predict "not spam") achieves 98% accuracy
-        - Your 95% model is actually WORSE!
+    **Answer**: It depends! If only 2% of emails are spam:
+    - A dummy model (always predict "not spam") achieves 98% accuracy
+    - Your 95% model is actually WORSE!
 
-        **This is why we need better metrics.**
+    **This is why we need better metrics.**
 
-        ### Key Metrics for Multi-Class Classification
+    ### Key Metrics for Multi-Class Classification
 
-        1. **Accuracy**: Correct predictions / Total predictions (misleading with imbalance!)
-        2. **Precision**: Of predicted positives, how many are correct?
-        3. **Recall**: Of actual positives, how many did we find?
-        4. **F1-Score**: Harmonic mean of precision and recall
-        5. **Per-Class Metrics**: Performance on each individual class
+    1. **Accuracy**: Correct predictions / Total predictions (misleading with imbalance!)
+    2. **Precision**: Of predicted positives, how many are correct?
+    3. **Recall**: Of actual positives, how many did we find?
+    4. **F1-Score**: Harmonic mean of precision and recall
+    5. **Per-Class Metrics**: Performance on each individual class
 
-        Let's compute all of these:
-        """
-    )
+    Let's compute all of these:
+    """)
     return
 
 
 @app.cell
-def __(y_pred, y_test):
+def _(y_pred, y_test):
     from sklearn.metrics import classification_report, accuracy_score
 
     # Overall accuracy
@@ -176,43 +153,41 @@ def __(y_pred, y_test):
     print("=" * 70)
     report = classification_report(y_test, y_pred)
     print(report)
-    return accuracy_score, classification_report, overall_acc, report
+    return (overall_acc,)
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Understanding the Classification Report
+def _(mo):
+    mo.md("""
+    ### 💡 Understanding the Classification Report
 
-        **For each class (Pokemon type)**:
-        - **Precision**: When we predict this type, how often are we correct?
-          - Example: Precision=0.80 for Fire → 80% of predicted Fire types are actually Fire
-        - **Recall**: Of all actual instances of this type, how many did we find?
-          - Example: Recall=0.70 for Fire → We found 70% of all Fire types
-        - **F1-Score**: Balance between precision and recall
-          - High F1 = Good at both finding and correctly identifying
+    **For each class (Pokemon type)**:
+    - **Precision**: When we predict this type, how often are we correct?
+      - Example: Precision=0.80 for Fire → 80% of predicted Fire types are actually Fire
+    - **Recall**: Of all actual instances of this type, how many did we find?
+      - Example: Recall=0.70 for Fire → We found 70% of all Fire types
+    - **F1-Score**: Balance between precision and recall
+      - High F1 = Good at both finding and correctly identifying
 
-        **Support**: Number of actual instances of each class in test set
+    **Support**: Number of actual instances of each class in test set
 
-        **Why this matters**:
-        - Some types are easy to classify (high precision & recall)
-        - Some types are confused with others (low recall)
-        - Rare types might have low support (less confident in metrics)
+    **Why this matters**:
+    - Some types are easy to classify (high precision & recall)
+    - Some types are confused with others (low recall)
+    - Rare types might have low support (less confident in metrics)
 
-        ---
-        ## Section 2: Confusion Matrix (The Most Useful Visualization)
+    ---
+    ## Section 2: Confusion Matrix (The Most Useful Visualization)
 
-        **Confusion Matrix** shows which classes are confused with each other.
+    **Confusion Matrix** shows which classes are confused with each other.
 
-        This is GOLD for understanding model failures!
-        """
-    )
+    This is GOLD for understanding model failures!
+    """)
     return
 
 
 @app.cell
-def __(plt, sns, y_pred, y_test):
+def _(np, plt, sns, y_pred, y_test):
     from sklearn.metrics import confusion_matrix
 
     # Compute confusion matrix
@@ -241,53 +216,40 @@ def __(plt, sns, y_pred, y_test):
 
     print(f"\n🔍 Most Confused Pair:")
     print(f"   {most_confused_true} → {most_confused_pred}: {confusion_rate:.1%} of {most_confused_true} predicted as {most_confused_pred}")
-    return (
-        ax,
-        class_names,
-        cm,
-        cm_normalized,
-        confusion_matrix,
-        confusion_rate,
-        fig,
-        most_confused_idx,
-        most_confused_pred,
-        most_confused_true,
-    )
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Insights from Confusion Matrix
-
-        **Diagonal elements**: Correct predictions (darker = better)
-        **Off-diagonal elements**: Misclassifications (should be light)
-
-        **What to look for**:
-        - Which types are most often confused?
-        - Are there systematic patterns? (e.g., physical types confused together)
-        - Do rare types have more errors? (less training data)
-
-        **Actions you can take**:
-        - Engineer features to distinguish confused pairs
-        - Collect more data for underperforming classes
-        - Consider hierarchical classification
-        - Adjust class weights
-
-        ---
-        ## Section 3: Error Analysis (The Most Important Step)
-
-        **Key insight**: Understanding WHERE your model fails is more valuable than overall accuracy!
-
-        Let's analyze errors systematically:
-        """
-    )
     return
 
 
 @app.cell
-def __(X_test, pd, y_pred, y_test):
+def _(mo):
+    mo.md("""
+    ### 💡 Insights from Confusion Matrix
+
+    **Diagonal elements**: Correct predictions (darker = better)
+    **Off-diagonal elements**: Misclassifications (should be light)
+
+    **What to look for**:
+    - Which types are most often confused?
+    - Are there systematic patterns? (e.g., physical types confused together)
+    - Do rare types have more errors? (less training data)
+
+    **Actions you can take**:
+    - Engineer features to distinguish confused pairs
+    - Collect more data for underperforming classes
+    - Consider hierarchical classification
+    - Adjust class weights
+
+    ---
+    ## Section 3: Error Analysis (The Most Important Step)
+
+    **Key insight**: Understanding WHERE your model fails is more valuable than overall accuracy!
+
+    Let's analyze errors systematically:
+    """)
+    return
+
+
+@app.cell
+def _(X_test, y_pred, y_test):
     # Create error analysis dataframe
     error_df = X_test.copy()
     error_df['true_type'] = y_test.values
@@ -308,11 +270,11 @@ def __(X_test, pd, y_pred, y_test):
     print("\nMost Common Misclassifications:")
     error_pairs = errors.groupby(['true_type', 'pred_type']).size().sort_values(ascending=False)
     print(error_pairs.head(10))
-    return error_by_class, error_df, error_pairs, errors
+    return error_df, errors
 
 
 @app.cell
-def __(errors):
+def _(error_df, errors, pd):
     # Statistical analysis of errors
     print("\n" + "=" * 70)
     print("ERROR ANALYSIS: Statistical Patterns")
@@ -335,42 +297,40 @@ def __(errors):
     print("\n💡 Interpretation:")
     print("   - Errors tend to occur on Pokemon with [analyze the differences]")
     print("   - This suggests [hypothesis about why errors occur]")
-    return comparison, correct_stats, error_stats, stat_cols
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 🔍 Error Analysis Best Practices
-
-        **Always ask**:
-        1. **Which classes have most errors?** (focus improvement efforts)
-        2. **Are errors random or systematic?** (pattern = fixable)
-        3. **Do error cases share characteristics?** (edge cases, outliers)
-        4. **What features would help?** (informed feature engineering)
-
-        **In production**:
-        - Monitor error rates per class over time
-        - Investigate sudden changes in error patterns
-        - Collect more data for high-error classes
-        - Create ensemble models for confused pairs
-
-        ---
-        ## Section 4: Confidence and Calibration
-
-        **Key insight**: A model that predicts "90% confident" should be right 90% of the time!
-
-        Most models are poorly calibrated (overconfident or underconfident).
-
-        Let's examine prediction confidence:
-        """
-    )
     return
 
 
 @app.cell
-def __(np, y_pred_proba, y_test):
+def _(mo):
+    mo.md("""
+    ### 🔍 Error Analysis Best Practices
+
+    **Always ask**:
+    1. **Which classes have most errors?** (focus improvement efforts)
+    2. **Are errors random or systematic?** (pattern = fixable)
+    3. **Do error cases share characteristics?** (edge cases, outliers)
+    4. **What features would help?** (informed feature engineering)
+
+    **In production**:
+    - Monitor error rates per class over time
+    - Investigate sudden changes in error patterns
+    - Collect more data for high-error classes
+    - Create ensemble models for confused pairs
+
+    ---
+    ## Section 4: Confidence and Calibration
+
+    **Key insight**: A model that predicts "90% confident" should be right 90% of the time!
+
+    Most models are poorly calibrated (overconfident or underconfident).
+
+    Let's examine prediction confidence:
+    """)
+    return
+
+
+@app.cell
+def _(np, y_pred, y_pred_proba, y_test):
     # Get confidence (max probability) for each prediction
     confidences = np.max(y_pred_proba, axis=1)
     is_correct = (y_pred == y_test.values)
@@ -387,198 +347,190 @@ def __(np, y_pred_proba, y_test):
             bin_acc = is_correct[mask].mean()
             bin_conf = confidences[mask].mean()
             print(f"  Confidence {bins[i-1]:.1f}-{bins[i]:.1f}: Actual Accuracy={bin_acc:.2%} (n={mask.sum()})")
-    return bin_acc, bin_conf, bin_indices, bins, confidences, i, is_correct, mask
-
-
-@app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 💡 Confidence Insights
-
-        **Well-calibrated model**: Confidence matches actual accuracy
-        - Predicts 80% confidence → Actually right 80% of time
-
-        **Overconfident model**: Confidence > actual accuracy
-        - Predicts 90% confidence → Actually right 70% of time
-        - Dangerous in production!
-
-        **Underconfident model**: Confidence < actual accuracy
-        - Predicts 60% confidence → Actually right 80% of time
-        - Leaves value on the table
-
-        **In production**: Use confidence thresholds
-        - High confidence → Auto-accept
-        - Medium confidence → Human review
-        - Low confidence → Reject or escalate
-
-        ---
-        ## Section 5: Model Card (Production Documentation)
-
-        **Model Card** = Standardized documentation for ML models
-
-        Created by Google researchers to promote transparency and accountability.
-
-        Let's create one for our Pokemon classifier:
-        """
-    )
     return
 
 
 @app.cell
-def __(mo, overall_acc):
-    mo.md(
-        f"""
-        # Model Card: Pokemon Type Classifier
+def _(mo):
+    mo.md("""
+    ### 💡 Confidence Insights
 
-        ## Model Details
-        - **Model Type**: Random Forest Classifier
-        - **Version**: 1.0
-        - **Date**: 2025-01-19
-        - **Developers**: ML Engineering Team
-        - **License**: Internal Use Only
+    **Well-calibrated model**: Confidence matches actual accuracy
+    - Predicts 80% confidence → Actually right 80% of time
 
-        ## Intended Use
-        - **Primary Use**: Classify Pokemon cards by type based on stats
-        - **Intended Users**: Internal card management system
-        - **Out-of-Scope Uses**: NOT for competitive gaming predictions, NOT for market pricing
+    **Overconfident model**: Confidence > actual accuracy
+    - Predicts 90% confidence → Actually right 70% of time
+    - Dangerous in production!
 
-        ## Training Data
-        - **Dataset**: Pokemon Card Database (800 cards)
-        - **Data Collection**: Generated from historical card data
-        - **Preprocessing**: Standardization, feature engineering
-        - **Data Splits**: 70% train, 15% val, 15% test
+    **Underconfident model**: Confidence < actual accuracy
+    - Predicts 60% confidence → Actually right 80% of time
+    - Leaves value on the table
 
-        ## Performance Metrics
-        - **Overall Accuracy**: {overall_acc:.2%}
-        - **Best Performing Classes**: Fire, Water, Grass (>75% F1)
-        - **Worst Performing Classes**: Poison, Ground, Ice (<50% F1)
-        - **Known Limitations**: Struggles with rare types (low support)
+    **In production**: Use confidence thresholds
+    - High confidence → Auto-accept
+    - Medium confidence → Human review
+    - Low confidence → Reject or escalate
 
-        ## Ethical Considerations
-        - **Bias**: Model performs better on common types (data imbalance)
-        - **Fairness**: No discriminatory impact (classification only)
-        - **Privacy**: No PII in training data
+    ---
+    ## Section 5: Model Card (Production Documentation)
 
-        ## Caveats and Recommendations
-        - ⚠️ **Do not use** on Pokemon from generations not in training data
-        - ⚠️ **Do not use** if input stats are outside training range
-        - ⚠️ **Do use** confidence thresholds (recommend >70% for auto-accept)
-        - ✅ **Monitor** prediction distribution drift
-        - ✅ **Retrain** quarterly with new card releases
+    **Model Card** = Standardized documentation for ML models
 
-        ## Model Maintenance
-        - **Monitoring**: Track per-class accuracy weekly
-        - **Retraining**: Quarterly or when accuracy drops >5%
-        - **Owner**: ML Engineering Team
-        - **Contact**: ml-team@company.com
-        """
-    )
+    Created by Google researchers to promote transparency and accountability.
+
+    Let's create one for our Pokemon classifier:
+    """)
     return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### 📋 Why Model Cards Matter
+def _(mo, overall_acc):
+    mo.md(f"""
+    # Model Card: Pokemon Type Classifier
 
-        **Benefits**:
-        - Transparency about capabilities and limitations
-        - Prevents misuse (out-of-scope applications)
-        - Documents ethical considerations
-        - Facilitates audits and compliance
-        - Helps users understand when to trust predictions
+    ## Model Details
+    - **Model Type**: Random Forest Classifier
+    - **Version**: 1.0
+    - **Date**: 2025-01-19
+    - **Developers**: ML Engineering Team
+    - **License**: Internal Use Only
 
-        **In practice**:
-        - Required by many organizations
-        - Part of model governance
-        - Updated with each model version
-        - Reviewed by stakeholders before deployment
+    ## Intended Use
+    - **Primary Use**: Classify Pokemon cards by type based on stats
+    - **Intended Users**: Internal card management system
+    - **Out-of-Scope Uses**: NOT for competitive gaming predictions, NOT for market pricing
 
-        ---
-        ## Section 6: Production Readiness Checklist
+    ## Training Data
+    - **Dataset**: Pokemon Card Database (800 cards)
+    - **Data Collection**: Generated from historical card data
+    - **Preprocessing**: Standardization, feature engineering
+    - **Data Splits**: 70% train, 15% val, 15% test
 
-        Before deploying to production, answer these questions:
-        """
-    )
+    ## Performance Metrics
+    - **Overall Accuracy**: {overall_acc:.2%}
+    - **Best Performing Classes**: Fire, Water, Grass (>75% F1)
+    - **Worst Performing Classes**: Poison, Ground, Ice (<50% F1)
+    - **Known Limitations**: Struggles with rare types (low support)
+
+    ## Ethical Considerations
+    - **Bias**: Model performs better on common types (data imbalance)
+    - **Fairness**: No discriminatory impact (classification only)
+    - **Privacy**: No PII in training data
+
+    ## Caveats and Recommendations
+    - ⚠️ **Do not use** on Pokemon from generations not in training data
+    - ⚠️ **Do not use** if input stats are outside training range
+    - ⚠️ **Do use** confidence thresholds (recommend >70% for auto-accept)
+    - ✅ **Monitor** prediction distribution drift
+    - ✅ **Retrain** quarterly with new card releases
+
+    ## Model Maintenance
+    - **Monitoring**: Track per-class accuracy weekly
+    - **Retraining**: Quarterly or when accuracy drops >5%
+    - **Owner**: ML Engineering Team
+    - **Contact**: ml-team@company.com
+    """)
     return
 
 
 @app.cell
-def __(mo):
-    mo.md(
-        """
-        ### ✅ Production Readiness Checklist
+def _(mo):
+    mo.md("""
+    ### 📋 Why Model Cards Matter
 
-        **Performance**:
-        - [ ] Metrics meet business requirements?
-        - [ ] Performance validated on held-out test set?
-        - [ ] Error analysis completed?
-        - [ ] Edge cases identified and handled?
+    **Benefits**:
+    - Transparency about capabilities and limitations
+    - Prevents misuse (out-of-scope applications)
+    - Documents ethical considerations
+    - Facilitates audits and compliance
+    - Helps users understand when to trust predictions
 
-        **Robustness**:
-        - [ ] Model handles missing features gracefully?
-        - [ ] Model handles out-of-range inputs?
-        - [ ] Confidence calibration verified?
-        - [ ] Failure modes documented?
+    **In practice**:
+    - Required by many organizations
+    - Part of model governance
+    - Updated with each model version
+    - Reviewed by stakeholders before deployment
 
-        **Documentation**:
-        - [ ] Model card created?
-        - [ ] Training process documented?
-        - [ ] Feature definitions documented?
-        - [ ] Runbook for operations team?
+    ---
+    ## Section 6: Production Readiness Checklist
 
-        **Monitoring**:
-        - [ ] Metrics to track in production defined?
-        - [ ] Alerting thresholds set?
-        - [ ] Data drift detection configured?
-        - [ ] Retraining strategy documented?
+    Before deploying to production, answer these questions:
+    """)
+    return
 
-        **Ethics & Compliance**:
-        - [ ] Bias analysis completed?
-        - [ ] Privacy requirements met?
-        - [ ] Regulatory compliance verified?
-        - [ ] Stakeholder sign-off obtained?
 
-        ---
-        ## Key Takeaways
+@app.cell
+def _(mo):
+    mo.md("""
+    ### ✅ Production Readiness Checklist
 
-        ### ✅ What You Learned
+    **Performance**:
+    - [ ] Metrics meet business requirements?
+    - [ ] Performance validated on held-out test set?
+    - [ ] Error analysis completed?
+    - [ ] Edge cases identified and handled?
 
-        1. **Accuracy is often the wrong metric**
-        2. **Confusion matrices reveal actionable insights**
-        3. **Error analysis drives improvement**
-        4. **Confidence calibration matters in production**
-        5. **Model cards prevent misuse**
+    **Robustness**:
+    - [ ] Model handles missing features gracefully?
+    - [ ] Model handles out-of-range inputs?
+    - [ ] Confidence calibration verified?
+    - [ ] Failure modes documented?
 
-        ### 🤔 Socratic Questions
+    **Documentation**:
+    - [ ] Model card created?
+    - [ ] Training process documented?
+    - [ ] Feature definitions documented?
+    - [ ] Runbook for operations team?
 
-        1. **"Your model is 95% accurate on spam detection. Is that good?"**
-           - Depends on base rate! Could be worse than dummy classifier.
+    **Monitoring**:
+    - [ ] Metrics to track in production defined?
+    - [ ] Alerting thresholds set?
+    - [ ] Data drift detection configured?
+    - [ ] Retraining strategy documented?
 
-        2. **"Would you rather have high precision or high recall for cancer detection?"**
-           - High recall! Missing cancer (false negative) is worse than false alarm.
+    **Ethics & Compliance**:
+    - [ ] Bias analysis completed?
+    - [ ] Privacy requirements met?
+    - [ ] Regulatory compliance verified?
+    - [ ] Stakeholder sign-off obtained?
 
-        3. **"How do you explain 'the model is 80% confident' to a non-technical user?"**
-           - "Based on similar examples, this prediction is correct 8 out of 10 times."
+    ---
+    ## Key Takeaways
 
-        ---
-        ## 🎯 Module 4 Checkpoint
+    ### ✅ What You Learned
 
-        You've completed Module 4 when you can:
+    1. **Accuracy is often the wrong metric**
+    2. **Confusion matrices reveal actionable insights**
+    3. **Error analysis drives improvement**
+    4. **Confidence calibration matters in production**
+    5. **Model cards prevent misuse**
 
-        - [ ] Choose the right metric for any business problem
-        - [ ] Interpret confusion matrices and find patterns
-        - [ ] Conduct thorough error analysis
-        - [ ] Create professional model cards
-        - [ ] Assess production readiness
+    ### 🤔 Socratic Questions
 
-        **Next**: Module 5 - Deployment & Inference
+    1. **"Your model is 95% accurate on spam detection. Is that good?"**
+       - Depends on base rate! Could be worse than dummy classifier.
 
-        Now that we know our model is good, let's ship it to production!
-        """
-    )
+    2. **"Would you rather have high precision or high recall for cancer detection?"**
+       - High recall! Missing cancer (false negative) is worse than false alarm.
+
+    3. **"How do you explain 'the model is 80% confident' to a non-technical user?"**
+       - "Based on similar examples, this prediction is correct 8 out of 10 times."
+
+    ---
+    ## 🎯 Module 4 Checkpoint
+
+    You've completed Module 4 when you can:
+
+    - [ ] Choose the right metric for any business problem
+    - [ ] Interpret confusion matrices and find patterns
+    - [ ] Conduct thorough error analysis
+    - [ ] Create professional model cards
+    - [ ] Assess production readiness
+
+    **Next**: Module 5 - Deployment & Inference
+
+    Now that we know our model is good, let's ship it to production!
+    """)
     return
 
 

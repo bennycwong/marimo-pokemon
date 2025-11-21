@@ -1,0 +1,258 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.18.0"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "544f156968ecd3099e0bfd391e1beac5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"module-5-deployment-inference\">Module 5: Deployment &amp; Inference</h1>\n<span class=\"paragraph\"><strong>\"Models in notebooks aren't models in production\"</strong> \u2014 Every ML engineer</span>\n<span class=\"paragraph\">You've built a great model. Now the hard part: <strong>making it work in production!</strong></span>\n<h2 id=\"what-youll-learn\">What You'll Learn</h2>\n<ol>\n<li><strong>Model Serialization</strong>: Save and load models correctly</li>\n<li><strong>Inference API</strong>: Build production-ready prediction service</li>\n<li><strong>Input Validation</strong>: Handle bad inputs gracefully</li>\n<li><strong>Latency Optimization</strong>: Make predictions fast</li>\n<li><strong>Monitoring</strong>: Detect when things go wrong</li>\n</ol>\n<h2 id=\"why-deployment-is-hard\">Why Deployment is Hard</h2>\n<span class=\"paragraph\"><strong>Research models vs Production models</strong>:</span>\n<ul>\n<li>Research: Accuracy matters most</li>\n<li>Production: Reliability, latency, cost, maintainability matter</li>\n</ul>\n<span class=\"paragraph\"><strong>Common production failures</strong>:</span>\n<ul>\n<li>Model expects features in wrong order</li>\n<li>Input data has different schema</li>\n<li>Latency too high under load</li>\n<li>Model degrades over time (data drift)</li>\n<li>No monitoring, issues go undetected</li>\n</ul>\n<span class=\"paragraph\">Let's learn to deploy like a pro!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "d8465d563706ec3102bf5f8b603735c0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"section-1-model-serialization-saving-your-work\">Section 1: Model Serialization (Saving Your Work)</h2>\n<span class=\"paragraph\"><strong>Key question</strong>: How do we save a trained model for later use?</span>\n<h3 id=\"common-approaches\">Common Approaches</h3>\n<ol>\n<li><strong>Pickle</strong> (Python standard): Simple but Python-only</li>\n<li><strong>Joblib</strong> (scikit-learn): Better for large numpy arrays</li>\n<li><strong>ONNX</strong>: Cross-platform format</li>\n<li><strong>TensorFlow SavedModel</strong> / <strong>PyTorch torchscript</strong>: Framework-specific</li>\n</ol>\n<span class=\"paragraph\"><strong>What to save</strong>:</span>\n<ul>\n<li>\u2705 Trained model</li>\n<li>\u2705 Preprocessing pipeline (scaler, encoders)</li>\n<li>\u2705 Feature names and order</li>\n<li>\u2705 Model version and metadata</li>\n</ul>\n<span class=\"paragraph\">Let's save our model properly:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "a2f678f4b2a9029cbff9ba53adef2662",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"model-serialization-best-practices\">\ud83d\udca1 Model Serialization Best Practices</h3>\n<span class=\"paragraph\"><strong>Always include</strong>:</span>\n<ul>\n<li>Model version (semantic versioning: major.minor.patch)</li>\n<li>Feature names and expected order</li>\n<li>Training date</li>\n<li>Library versions (scikit-learn, python, etc.)</li>\n<li>Performance metrics</li>\n</ul>\n<span class=\"paragraph\"><strong>Common mistakes</strong>:</span>\n<ul>\n<li>\u274c Forgetting to save preprocessing steps</li>\n<li>\u274c Not versioning models</li>\n<li>\u274c Saving model but not metadata</li>\n<li>\u274c Using pickle across Python versions (can break!)</li>\n</ul>\n<span class=\"paragraph\"><strong>Production tip</strong>: Use a model registry (MLflow Model Registry, Sagemaker Model Registry, etc.)</span>\n<hr />\n<h2 id=\"section-2-inference-api-making-predictions\">Section 2: Inference API (Making Predictions)</h2>\n<span class=\"paragraph\"><strong>Goal</strong>: Build a simple prediction service.</span>\n<span class=\"paragraph\">In production, you'd use FastAPI, Flask, or BentoML. For this project,\nwe'll build the core prediction logic with proper validation.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "4c4c95ed78652e1d98f9f4b2e7df4517",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><hr />\n<h2 id=\"section-3-production-considerations\">Section 3: Production Considerations</h2>\n<h3 id=\"latency-optimization\">Latency Optimization</h3>\n<span class=\"paragraph\"><strong>Production requirements</strong>: Predictions must be fast!</span>\n<ul>\n<li>Web API: &lt;200ms total (including network)</li>\n<li>Real-time: &lt;10ms for model inference</li>\n<li>Batch: Throughput matters more than latency</li>\n</ul>\n<span class=\"paragraph\"><strong>Optimization strategies</strong>:</span>\n<ol>\n<li><strong>Model simplification</strong>: Fewer trees, smaller depth</li>\n<li><strong>Feature selection</strong>: Remove low-importance features</li>\n<li><strong>Model quantization</strong>: Reduce precision (float32 \u2192 float16)</li>\n<li><strong>Batch predictions</strong>: Predict multiple samples at once</li>\n<li><strong>Caching</strong>: Cache frequent predictions</li>\n<li><strong>Model distillation</strong>: Train smaller model to mimic large one</li>\n</ol>\n<hr />\n<h2 id=\"section-4-monitoring-observability\">Section 4: Monitoring &amp; Observability</h2>\n<span class=\"paragraph\"><strong>Key insight</strong>: Models degrade over time without you noticing!</span>\n<span class=\"paragraph\"><strong>What to monitor</strong>:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "76bc0fc99b0a3fb61b0f30eb18ebc97e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"production-monitoring-checklist\">\ud83d\udcca Production Monitoring Checklist</h3>\n<span class=\"paragraph\"><strong>Input Monitoring</strong>:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Feature distributions (detect drift)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Missing values rate</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Out-of-range values</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Request volume</li>\n</ul>\n<span class=\"paragraph\"><strong>Output Monitoring</strong>:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Prediction distribution</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Confidence distribution</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Per-class prediction rate</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Response latency (p50, p95, p99)</li>\n</ul>\n<span class=\"paragraph\"><strong>Performance Monitoring</strong>:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Accuracy (when ground truth available)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Precision/Recall per class</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Confusion patterns</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Error rate</li>\n</ul>\n<span class=\"paragraph\"><strong>Infrastructure Monitoring</strong>:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> CPU/Memory usage</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Request queue depth</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Error rate (500s)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Availability/uptime</li>\n</ul>\n<h3 id=\"alerting-thresholds\">\ud83d\udea8 Alerting Thresholds</h3>\n<span class=\"paragraph\"><strong>Critical alerts</strong> (page someone!):</span>\n<ul>\n<li>Prediction error rate &gt; 5%</li>\n<li>Latency p95 &gt; 500ms</li>\n<li>Service down</li>\n</ul>\n<span class=\"paragraph\"><strong>Warning alerts</strong> (investigate next day):</span>\n<ul>\n<li>Feature distribution drift &gt; 20%</li>\n<li>Prediction distribution change &gt; 10%</li>\n<li>Confidence drop &gt; 5%</li>\n</ul>\n<hr />\n<h2 id=\"section-5-data-drift-detection\">Section 5: Data Drift Detection</h2>\n<span class=\"paragraph\"><strong>Data drift</strong> = Distribution of input features changes over time</span>\n<span class=\"paragraph\"><strong>Why it matters</strong>: Model trained on old data won't work on new data!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ZHCJ",
+      "code_hash": "34ad9b522f670f5b03d5083446c39e81",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"handling-data-drift\">\ud83d\udca1 Handling Data Drift</h3>\n<span class=\"paragraph\"><strong>When drift is detected</strong>:</span>\n<ol>\n<li><strong>Investigate</strong>: What changed in the data?</li>\n<li><strong>Assess impact</strong>: Is model performance affected?</li>\n<li>\n<span class=\"paragraph\"><strong>Decision</strong>:</span>\n<ul>\n<li>Minor drift: Continue monitoring</li>\n<li>Moderate drift: Retrain with new data</li>\n<li>Severe drift: Retrain + add new features</li>\n</ul>\n</li>\n</ol>\n<span class=\"paragraph\"><strong>Prevention strategies</strong>:</span>\n<ul>\n<li>Regular retraining schedule</li>\n<li>Online learning (continuous updates)</li>\n<li>Robust features (less sensitive to drift)</li>\n<li>Ensemble models (more stable)</li>\n</ul>\n<hr />\n<h2 id=\"key-takeaways\">Key Takeaways</h2>\n<h3 id=\"what-you-learned\">\u2705 What You Learned</h3>\n<ol>\n<li><strong>Model serialization</strong>: Save models + metadata properly</li>\n<li><strong>Input validation</strong>: Handle edge cases gracefully</li>\n<li><strong>Monitoring</strong>: Track inputs, outputs, and performance</li>\n<li><strong>Data drift</strong>: Detect and respond to distribution changes</li>\n<li><strong>Production mindset</strong>: Reliability &gt; accuracy</li>\n</ol>\n<h3 id=\"socratic-questions\">\ud83e\udd14 Socratic Questions</h3>\n<ol>\n<li>\n<span class=\"paragraph\"><strong>\"You deployed a model. A week later, accuracy drops from 85% to 60%. What do you investigate first?\"</strong></span>\n<ul>\n<li>Data drift? Code bug? Upstream data issue? Ground truth labels correct?</li>\n</ul>\n</li>\n<li>\n<span class=\"paragraph\"><strong>\"Training takes 1 hour. Inference must complete in &lt;100ms. How do you approach this?\"</strong></span>\n<ul>\n<li>Simplify model, feature selection, batch prediction, caching, distillation</li>\n</ul>\n</li>\n<li>\n<span class=\"paragraph\"><strong>\"A user sends malformed input that crashes your API. Who's responsible - you or the user?\"</strong></span>\n<ul>\n<li>You! Production code must handle all inputs gracefully.</li>\n</ul>\n</li>\n</ol>\n<hr />\n<h2 id=\"industry-context\">\ud83c\udfe2 Industry Context</h2>\n<h3 id=\"how-companies-deploy-models\">How Companies Deploy Models</h3>\n<span class=\"paragraph\"><strong>Small Startup</strong>:</span>\n<ul>\n<li>Docker container</li>\n<li>FastAPI/Flask</li>\n<li>Manual deployment</li>\n<li>Basic monitoring (CloudWatch, Datadog)</li>\n</ul>\n<span class=\"paragraph\"><strong>Medium Company</strong>:</span>\n<ul>\n<li>Kubernetes</li>\n<li>BentoML/Seldon</li>\n<li>CI/CD pipelines</li>\n<li>Structured monitoring (Prometheus, Grafana)</li>\n</ul>\n<span class=\"paragraph\"><strong>Large Company</strong>:</span>\n<ul>\n<li>Custom ML platform</li>\n<li>A/B testing framework</li>\n<li>Canary deployments</li>\n<li>Comprehensive observability</li>\n</ul>\n<h3 id=\"common-deployment-patterns\">Common Deployment Patterns</h3>\n<ol>\n<li><strong>Batch inference</strong>: Run predictions offline, store results</li>\n<li><strong>Online inference</strong>: Real-time predictions via API</li>\n<li><strong>Edge inference</strong>: Model runs on device (mobile, IoT)</li>\n<li><strong>Streaming inference</strong>: Process stream of events (Kafka, Kinesis)</li>\n</ol>\n<hr />\n<h2 id=\"module-5-checkpoint\">\ud83c\udfaf Module 5 Checkpoint</h2>\n<span class=\"paragraph\">You've completed Module 5 when you can:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Serialize and load models correctly</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Build inference API with validation</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Handle production edge cases</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Monitor model in production</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> Detect and respond to data drift</li>\n</ul>\n<hr />\n<h2 id=\"course-complete\">\ud83c\udf93 Course Complete!</h2>\n<span class=\"paragraph\"><strong>Congratulations!</strong> You've completed all 5 modules of the\nProfessional ML Engineering Onboarding Project.</span>\n<span class=\"paragraph\"><strong>What you've learned</strong>:</span>\n<ul>\n<li>\u2705 Data engineering and validation</li>\n<li>\u2705 Feature engineering with domain knowledge</li>\n<li>\u2705 Systematic model training and experimentation</li>\n<li>\u2705 Comprehensive model evaluation</li>\n<li>\u2705 Production deployment and monitoring</li>\n</ul>\n<span class=\"paragraph\"><strong>You're now ready to</strong>:</span>\n<ul>\n<li>Join an ML team and contribute from day one</li>\n<li>Build end-to-end ML systems</li>\n<li>Debug production ML issues</li>\n<li>Communicate with stakeholders effectively</li>\n</ul>\n<span class=\"paragraph\"><strong>Next steps</strong>:</span>\n<ul>\n<li>Complete the capstone project</li>\n<li>Apply these skills to your own projects</li>\n<li>Continue learning advanced topics</li>\n</ul>\n<span class=\"paragraph\"><strong>Welcome to the world of ML engineering!</strong> \ud83d\ude80</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "910b03a20216d2811a1b07caac907e88",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "86934e822fa57a3a24daa08b24426c42",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Production model trained\n   Features: ['hp', 'attack', 'defense', 'sp_attack', 'sp_defense', 'speed', 'total_stats', 'physical_bias', 'generation', 'is_legendary']\n   Classes: ['Bug', 'Dark', 'Dragon', 'Electric', 'Fairy', 'Fighting', 'Fire', 'Flying', 'Ghost', 'Grass', 'Ground', 'Ice', 'Normal', 'Poison', 'Psychic', 'Rock', 'Steel', 'Water']\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "PKri",
+      "code_hash": "b53332a82fb0829300fdabacc057e5e1",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Model saved to: models/pokemon_classifier_v1.0.0.pkl\n\u2705 Metadata saved to: models/pokemon_classifier_v1.0.0_metadata.json\n\nModel size: 8.35 MB\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Xref",
+      "code_hash": "7512d70e66b4c7cbd9071f6637034895",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Loaded model version: v1.0.0\n   Expected features: ['hp', 'attack', 'defense', 'sp_attack', 'sp_defense', 'speed', 'total_stats', 'physical_bias', 'generation', 'is_legendary']\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "3aebad5f8a6c276c8dfd01de764e4de4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Prediction service initialized\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "699b01fb0258ffe394e7154e4c99b0d4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Test Prediction:\n{\n  \"success\": true,\n  \"prediction\": \"Water\",\n  \"confidence\": 0.19,\n  \"top_3\": [\n    {\n      \"type\": \"Water\",\n      \"probability\": 0.19\n    },\n    {\n      \"type\": \"Fire\",\n      \"probability\": 0.18\n    },\n    {\n      \"type\": \"Dragon\",\n      \"probability\": 0.16\n    }\n  ],\n  \"model_version\": \"v1.0.0\"\n}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "e5535f607aea5537ba3e30e713c50d98",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"interactive-pokemon-type-predictor\">\ud83c\udfae Interactive Pokemon Type Predictor</h2>\n<span class=\"paragraph\">Adjust the stats below to see predictions:</span>\n<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Kclp-0' random-id='eebb0c62-cf96-e08f-3783-52dd30cba742'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;HP&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='Kclp-1' random-id='deb11228-f042-b220-baee-9c71c6cfd62e'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Attack&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='Kclp-2' random-id='bd440232-2d40-5cb6-7a83-c94d24b03d2b'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Defense&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div>\n<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Kclp-3' random-id='96ece327-7515-9375-45af-b654a07e027e'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Sp. Attack&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='Kclp-4' random-id='4a085c82-f508-7045-1512-4b72250f256f'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Sp. Defense&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='Kclp-5' random-id='1c059488-5476-d15d-b822-ecc0a9f255e9'><marimo-slider data-initial-value='100' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Speed&lt;/span&gt;&lt;/span&gt;&quot;' data-start='20' data-stop='200' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element></div>\n<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Kclp-6' random-id='965cf65d-35b9-50bb-fe16-18deffb75559'><marimo-slider data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Generation&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='9' data-step='1' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='false' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element><marimo-ui-element object-id='Kclp-7' random-id='e7c9a891-49d2-f891-2e0b-164d332cb394'><marimo-checkbox data-initial-value='false' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Is Legendary?&lt;/span&gt;&lt;/span&gt;&quot;' data-disabled='false'></marimo-checkbox></marimo-ui-element></div></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "2b2ac73bafe45f509b2d44dcc5e8a9fe",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "iLit",
+      "code_hash": "bcb29f410b00373567f55611a8ccc299",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "Drift Detection Results:\n============================================================\nhp                  : \u2705 OK (score: 0.015)\nattack              : \u2705 OK (score: 0.088)\ndefense             : \u2705 OK (score: 0.049)\nsp_attack           : \u2705 OK (score: 0.067)\nsp_defense          : \u2705 OK (score: 0.012)\nspeed               : \u2705 OK (score: 0.018)\ntotal_stats         : \ud83d\udea8 DRIFT (score: 1.094)\nphysical_bias       : \u2705 OK (score: 0.066)\ngeneration          : \ud83d\udea8 DRIFT (score: 0.402)\nis_legendary        : \u2705 OK (score: 0.030)\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    }
+  ]
+}

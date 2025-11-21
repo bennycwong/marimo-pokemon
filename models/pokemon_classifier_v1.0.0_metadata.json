@@ -1,0 +1,39 @@
+{
+  "version": "v1.0.0",
+  "model_type": "RandomForestClassifier",
+  "feature_names": [
+    "hp",
+    "attack",
+    "defense",
+    "sp_attack",
+    "sp_defense",
+    "speed",
+    "total_stats",
+    "physical_bias",
+    "generation",
+    "is_legendary"
+  ],
+  "n_features": 10,
+  "classes": [
+    "Bug",
+    "Dark",
+    "Dragon",
+    "Electric",
+    "Fairy",
+    "Fighting",
+    "Fire",
+    "Flying",
+    "Ghost",
+    "Grass",
+    "Ground",
+    "Ice",
+    "Normal",
+    "Poison",
+    "Psychic",
+    "Rock",
+    "Steel",
+    "Water"
+  ],
+  "training_date": "2025-01-19",
+  "sklearn_version": "1.4.0"
+}
