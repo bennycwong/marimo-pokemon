@@ -95,32 +95,73 @@ A hands-on learning system that teaches you to build production ML systems from 
 
 ### Prerequisites
 - **uv** - Fast Python package installer ([install here](https://docs.astral.sh/uv/))
+- Python 3.13+ (uv will handle this if needed)
 - That's it! `uvx` will handle everything else
 
-### Get Started
+### Get Started (Recommended: 3 Steps)
 
 ```bash
-# Clone or navigate to the project
+# 1. Navigate to the project directory
 cd marimo-pokemon
 
-# Install dependencies
+# 2. Install dependencies with uv
 uv sync
 
-# Generate the dataset (if not already done)
-uv run python data/generate_dataset.py
-
-# Start learning! Use uvx to run marimo (no global install needed)
-uvx marimo edit 01_data_engineering.py  # Begin with Module 1
-
-# Or open the entire project as a workspace
+# 3. Start learning with Workspace Mode (RECOMMENDED!)
 uvx marimo edit ./
 ```
 
-**Why uvx?**
+**🌟 Why Workspace Mode (`uvx marimo edit ./`)?**
+- Opens the **entire project** in one window
+- File browser to easily switch between modules
+- No need to remember file names
+- See your progress across all modules
+- This is the recommended way to use the course!
+
+### Alternative: Run Specific Modules
+
+If you prefer to open individual notebooks:
+
+```bash
+# Start with Module 0 (business context)
+uvx marimo edit 00_ml_in_business.py
+
+# Or jump to a specific module
+uvx marimo edit 03_model_training.py
+
+# View-only mode (read without editing)
+uvx marimo run 00_ml_in_business.py
+```
+
+### Generate the Dataset
+
+```bash
+# Generate the Pokemon card dataset (with price_usd)
+uv run python data/generate_dataset.py
+
+# This creates data/pokemon_cards.csv (800 cards)
+```
+
+---
+
+## 📌 Key uv/uvx Commands
+
+| Command | What it does | When to use |
+|---------|--------------|-------------|
+| `uv sync` | Install dependencies | Once at start, or when dependencies change |
+| `uvx marimo edit ./` | **Open entire project** | **Recommended way to use the course** |
+| `uvx marimo edit <file>` | Open specific notebook | When you know which module you want |
+| `uvx marimo run <file>` | View notebook (read-only) | Just reading, not editing |
+| `uv run python <file>` | Run Python script | For dataset generation, utilities |
+
+**💡 Pro Tip**: Always use `uvx marimo edit ./` from the project root to get the best experience!
+
+**Why uvx is awesome**:
 - No need to install marimo globally
-- Automatically uses the right version
+- Automatically uses the right version from your environment
 - Works from any directory
-- Perfect for ephemeral environments
+- Perfect for ephemeral environments (containers, Codespaces)
+- No virtual environment activation needed
 
 ---
 
@@ -327,31 +368,37 @@ Most courses only teach the technical core. This course teaches all three.
 
 **Ready to become an ML engineer?**
 
-### Option 1: Start with Module 0 (Recommended)
+### Recommended: Workspace Mode
+
+```bash
+cd marimo-pokemon
+uv sync
+uvx marimo edit ./
+```
+
+This opens the entire project in one window with a file browser. Start with `00_ml_in_business.py` and work through modules 0-8 in order.
+
+### Alternative Options
+
+**Option 1: Start with Module 0**
 ```bash
 uvx marimo edit 00_ml_in_business.py
 ```
 Start here to understand the business context before diving into code!
 
-### Option 2: Open workspace (recommended)
+**Option 2: Jump to specific modules**
 ```bash
-uvx marimo edit ./
-```
-Then select `00_ml_in_business.py` from the file browser.
-
-### Option 3: Jump to specific modules
-```bash
-uvx marimo edit 01_data_engineering.py  # Skip to technical content
-uvx marimo edit 08_capstone.py         # Jump to capstone (after completing 0-7)
+uvx marimo edit 03_model_training.py   # Jump to specific module
+uvx marimo edit 08_capstone.py         # Jump to capstone (after 0-7)
 ```
 
-### Option 4: View-only mode
+**Option 3: View-only mode**
 ```bash
-uvx marimo run 00_ml_in_business.py  # View without editing
+uvx marimo run 00_ml_in_business.py    # View without editing
 ```
 
 ---
 
 **Happy learning! 🎓**
 
-*P.S. This course will prepare you for the 80-20 most important skills companies need in ML engineers. Start with Module 0 - don't skip the business context!*
+*P.S. This course will prepare you for the 80-20 most important skills companies need in ML engineers. Use `uvx marimo edit ./` for the best experience, and start with Module 0 - don't skip the business context!*
