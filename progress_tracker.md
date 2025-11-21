@@ -18,17 +18,17 @@
 ## 🎯 Pre-Course Setup
 
 - [ ] Python 3.9+ installed
-- [ ] Marimo installed (`pip install marimo`)
-- [ ] Required libraries installed (see README.md)
-- [ ] Dataset downloaded and verified
-- [ ] Can run `marimo edit 01_data_engineering.py` successfully
+- [ ] **uv** installed ([install here](https://docs.astral.sh/uv/))
+- [ ] Dependencies synced (`uv sync`)
+- [ ] Dataset downloaded and verified (`uv run python data/generate_dataset.py`)
+- [ ] Can run `uvx marimo edit 01_data_engineering.py` successfully
 
 ---
 
 ## 📚 Module 1: Data Engineering Foundations (2-3 hours)
 
 ### Core Notebook
-- [ ] Opened `01_data_engineering.py` in Marimo
+- [ ] Opened `01_data_engineering.py` with `uvx marimo edit 01_data_engineering.py`
 - [ ] Ran all cells successfully
 - [ ] Understood data loading concepts
 - [ ] Understood data validation with Pandera
@@ -69,7 +69,7 @@
 ## 📚 Module 2: EDA & Feature Engineering (3-4 hours)
 
 ### Core Notebook
-- [ ] Opened `02_eda_and_features.py` in Marimo
+- [ ] Opened `02_eda_and_features.py` with `uvx marimo edit 02_eda_and_features.py`
 - [ ] Ran all cells successfully
 - [ ] Understood statistical analysis techniques
 - [ ] Learned feature engineering patterns
@@ -111,7 +111,7 @@
 ## 📚 Module 3: Model Development & Experimentation (3-4 hours)
 
 ### Core Notebook
-- [ ] Opened `03_model_training.py` in Marimo
+- [ ] Opened `03_model_training.py` with `uvx marimo edit 03_model_training.py`
 - [ ] Ran all cells successfully
 - [ ] Trained baseline models
 - [ ] Compared multiple model types
@@ -154,7 +154,7 @@
 ## 📚 Module 4: Model Evaluation & Validation (2-3 hours)
 
 ### Core Notebook
-- [ ] Opened `04_model_evaluation.py` in Marimo
+- [ ] Opened `04_model_evaluation.py` with `uvx marimo edit 04_model_evaluation.py`
 - [ ] Ran all cells successfully
 - [ ] Understood precision vs recall tradeoffs
 - [ ] Analyzed confusion matrices
@@ -198,7 +198,7 @@
 ## 📚 Module 5: Deployment, Inference & Monitoring (2-3 hours)
 
 ### Core Notebook
-- [ ] Opened `05_inference_service.py` in Marimo
+- [ ] Opened `05_inference_service.py` with `uvx marimo edit 05_inference_service.py`
 - [ ] Ran all cells successfully
 - [ ] Built inference API with error handling
 - [ ] Implemented input validation

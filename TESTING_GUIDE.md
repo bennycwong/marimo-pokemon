@@ -5,7 +5,7 @@
 ### 1. Open Module 1: Data Engineering
 
 ```bash
-marimo edit 01_data_engineering.py
+uvx marimo edit 01_data_engineering.py
 ```
 
 **What to look for:**
@@ -25,7 +25,7 @@ marimo edit 01_data_engineering.py
 ### 2. Open Module 1 Exercises
 
 ```bash
-marimo edit exercises_01.py
+uvx marimo edit exercises_01.py
 ```
 
 **What to look for:**
@@ -42,7 +42,7 @@ marimo edit exercises_01.py
 ### 3. Open Module 2: EDA & Feature Engineering
 
 ```bash
-marimo edit 02_eda_and_features.py
+uvx marimo edit 02_eda_and_features.py
 ```
 
 **What to look for:**
@@ -135,7 +135,7 @@ marimo edit 02_eda_and_features.py
 **Solution**: Run Module 1 first to generate the cleaned dataset
 
 ### Issue: Visualizations not showing
-**Solution**: Make sure you're using `marimo edit` not `marimo run`
+**Solution**: Make sure you're using `uvx marimo edit` not `uvx marimo run`
 
 ### Issue: XGBoost import error
 **Solution**: Only needed for Module 3. For now, you can ignore it.
@@ -211,13 +211,16 @@ uv run python data/generate_dataset.py
 uv run python -c "import pandas as pd; df = pd.read_csv('data/pokemon_cards.csv'); print(f'✅ Dataset has {len(df)} records')"
 
 # Open Module 1 for interactive testing
-marimo edit 01_data_engineering.py
+uvx marimo edit 01_data_engineering.py
 
 # Open Module 2 for interactive testing
-marimo edit 02_eda_and_features.py
+uvx marimo edit 02_eda_and_features.py
 
 # Open exercises
-marimo edit exercises_01.py
+uvx marimo edit exercises_01.py
+
+# Or open everything at once (workspace mode)
+uvx marimo edit ./
 ```
 
 ---

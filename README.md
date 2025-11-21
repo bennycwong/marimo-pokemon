@@ -64,16 +64,34 @@ A hands-on learning system that teaches you to build production ML systems from 
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- **uv** - Fast Python package installer ([install here](https://docs.astral.sh/uv/))
+- That's it! `uvx` will handle everything else
+
+### Get Started
+
 ```bash
+# Clone or navigate to the project
+cd marimo-pokemon
+
 # Install dependencies
 uv sync
 
 # Generate the dataset (if not already done)
 uv run python data/generate_dataset.py
 
-# Start learning!
-marimo edit 01_data_engineering.py  # Begin with Module 1
+# Start learning! Use uvx to run marimo (no global install needed)
+uvx marimo edit 01_data_engineering.py  # Begin with Module 1
+
+# Or open the entire project as a workspace
+uvx marimo edit ./
 ```
+
+**Why uvx?**
+- No need to install marimo globally
+- Automatically uses the right version
+- Works from any directory
+- Perfect for ephemeral environments
 
 ---
 
@@ -81,15 +99,22 @@ marimo edit 01_data_engineering.py  # Begin with Module 1
 
 ### Complete Learning Path (12-16 hours)
 
-1. **Module 1**: Data Engineering → `marimo edit 01_data_engineering.py`
-2. **Exercises 1**: Practice validation and pipelines → `marimo edit exercises_01.py`
-3. **Module 2**: EDA & Features → `marimo edit 02_eda_and_features.py`
-4. **Exercises 2**: Feature engineering competition → `marimo edit exercises_02.py`
-5. **Module 3**: Model Training → `marimo edit 03_model_training.py`
-6. **Exercises 3**: CV and tuning → `marimo edit exercises_03.py`
-7. **Module 4**: Model Evaluation → `marimo edit 04_model_evaluation.py`
-8. **Module 5**: Deployment → `marimo edit 05_inference_service.py`
+1. **Module 1**: Data Engineering → `uvx marimo edit 01_data_engineering.py`
+2. **Exercises 1**: Practice validation and pipelines → `uvx marimo edit exercises_01.py`
+3. **Module 2**: EDA & Features → `uvx marimo edit 02_eda_and_features.py`
+4. **Exercises 2**: Feature engineering competition → `uvx marimo edit exercises_02.py`
+5. **Module 3**: Model Training → `uvx marimo edit 03_model_training.py`
+6. **Exercises 3**: CV and tuning → `uvx marimo edit exercises_03.py`
+7. **Module 4**: Model Evaluation → `uvx marimo edit 04_model_evaluation.py`
+8. **Module 5**: Deployment → `uvx marimo edit 05_inference_service.py`
 9. **Reference**: ML Cheatsheet → `ml_cheatsheet.md`
+
+### Pro Tip: Workspace Mode
+Open all notebooks at once with:
+```bash
+uvx marimo edit ./
+```
+This gives you a file browser and lets you switch between modules easily!
 
 ---
 
@@ -213,8 +238,26 @@ marimo-pokemon/
 
 ---
 
-**Ready to become an ML engineer? Start with Module 1!** 🚀
+## 🚀 Getting Started
 
+**Ready to become an ML engineer?**
+
+### Option 1: Start with Module 1
 ```bash
-marimo edit 01_data_engineering.py
+uvx marimo edit 01_data_engineering.py
 ```
+
+### Option 2: Open workspace (recommended)
+```bash
+uvx marimo edit ./
+```
+Then select `01_data_engineering.py` from the file browser.
+
+### Option 3: Run specific modules
+```bash
+uvx marimo run 01_data_engineering.py  # View-only mode
+```
+
+---
+
+**Happy learning! 🎓**
