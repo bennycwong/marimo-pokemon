@@ -407,43 +407,53 @@ uv pip install fastapi uvicorn pydantic
 
 ## 🎲 Randomizer Feature
 
-The UI includes a **Random** button that generates realistic Pokemon stats based on 8 different archetypes:
+The UI includes a **Random** button that generates realistic Pokemon stats based on **30 different archetypes**!
 
-### Archetypes
+### Core Archetypes (8)
 
-1. **Tank** - High HP and defenses, low speed
-   - Total stats: ~450-550
-   - Example: Snorlax, Blissey
+1. **Tank** - High HP and defenses, low speed (Snorlax, Blissey)
+2. **Physical Sweeper** - High attack, moderate speed (Garchomp, Tyranitar)
+3. **Special Sweeper** - High special attack, moderate speed (Alakazam, Gengar)
+4. **Speedster** - Very high speed, moderate offenses (Jolteon, Crobat)
+5. **Balanced** - All stats 80-100 (Mew, Celebi)
+6. **Glass Cannon** - Extreme offense, very low defense (Deoxys-A, Rampardos)
+7. **Legendary** - High stats all around (Mewtwo, Rayquaza)
+8. **Defensive Wall** - Extreme defenses, low speed (Shuckle, Steelix)
 
-2. **Physical Attacker** - High attack, moderate speed
-   - Total stats: ~480-580
-   - Example: Machamp, Tyranitar
+### Advanced Archetypes (22)
 
-3. **Special Attacker** - High special attack, moderate speed
-   - Total stats: ~480-570
-   - Example: Alakazam, Gengar
+9. **Trick Room Attacker** - Very slow but powerful (Rhyperior, Marowak)
+10. **Mixed Attacker** - Both Attack and Sp. Attack high (Infernape, Lucario)
+11. **Pseudo-Legendary** - ~600 BST, well distributed (Dragonite, Metagross)
+12. **Starter Pokemon (Final)** - ~530 BST, specialized (Charizard, Greninja)
+13. **Eeveelution** - ~525 BST, one stat maxed (Vaporeon, Espeon)
+14. **Early Route (Weak)** - Low stats all around (Pidgey, Rattata)
+15. **Support/Cleric** - High HP, Sp. Def (Chansey, Clefable)
+16. **Physical Wall** - Extreme Defense (Skarmory, Ferrothorn)
+17. **Special Wall** - Extreme Sp. Defense (Blissey, Umbreon)
+18. **Hyper Offense** - Maximum offensive stats (Kartana, Pheromosa)
+19. **Bulky Attacker** - High HP and Attack (Conkeldurr, Azumarill)
+20. **Fast Physical** - Speed + Attack focused (Weavile, Cinderace)
+21. **Fast Special** - Speed + Sp. Attack focused (Alakazam, Starmie)
+22. **Mythical Pokemon** - 100 base stats all around (Manaphy, Shaymin)
+23. **Ultra Beast (Extreme)** - Weird min-maxed stats (Kartana, Buzzwole)
+24. **Slow Pivot** - Bulky with low speed (Slowbro, Rotom-W)
+25. **Revenge Killer** - High Speed + Attack (Dragapult, Weavile)
+26. **Stall Specialist** - Maximum HP + Defenses (Toxapex, Ferrothorn)
+27. **Set-Up Sweeper** - Moderate stats, needs boosts (Gyarados, Volcarona)
+28. **Defensive Pivot** - Balanced defenses (Landorus-T, Tangrowth)
+29. **Scarfed Attacker** - High offense, moderate speed (Hydreigon, Darmanitan)
+30. **Banded Physical** - Maximum Attack, decent bulk (Dragonite, Azumarill)
 
-4. **Speedster** - Very high speed, moderate offenses
-   - Total stats: ~460-550
-   - Example: Jolteon, Crobat
+### Features
 
-5. **Balanced** - All stats around 80-100
-   - Total stats: ~480-600
-   - Example: Mew, Celebi
+- **30 unique stat distributions** covering every competitive archetype
+- **Realistic stat totals** ranging from 200-700+ BST
+- **Diverse playstyles** from hyper offense to extreme stall
+- **Covers all generations** from Gen 1 to modern Ultra Beasts
+- Each click generates a completely different Pokemon profile!
 
-6. **Glass Cannon** - Extreme offense, very low defense
-   - Total stats: ~450-560
-   - Example: Alakazam, Gengar (offensive builds)
-
-7. **Legendary** - High stats all around
-   - Total stats: ~600-720
-   - Example: Mewtwo, Rayquaza, Arceus
-
-8. **Defensive Wall** - Extreme defenses, low speed
-   - Total stats: ~450-580
-   - Example: Shuckle, Steelix
-
-Each archetype generates stats within realistic ranges for actual Pokemon, ensuring the predictions are meaningful!
+Click the **🎲 Random** button repeatedly to explore the full variety of Pokemon builds! Open the browser console (F12) to see which archetype was generated.
 
 ---
 
