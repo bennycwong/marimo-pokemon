@@ -1,0 +1,48 @@
+{
+  "dataset_info": {
+    "total_cards": 16000,
+    "train_cards": 11200,
+    "val_cards": 2400,
+    "test_cards": 2400,
+    "split_ratio": "70/15/15",
+    "stratification": "By Pokemon type",
+    "random_seed": 42
+  },
+  "feature_columns": [
+    "name",
+    "type",
+    "hp",
+    "attack",
+    "defense",
+    "sp_attack",
+    "sp_defense",
+    "speed",
+    "generation",
+    "rarity",
+    "is_legendary",
+    "set_name",
+    "price_usd"
+  ],
+  "target_column": "type",
+  "num_classes": 18,
+  "class_names": [
+    "Bug",
+    "Dark",
+    "Dragon",
+    "Electric",
+    "Fairy",
+    "Fighting",
+    "Fire",
+    "Flying",
+    "Ghost",
+    "Grass",
+    "Ground",
+    "Ice",
+    "Normal",
+    "Poison",
+    "Psychic",
+    "Rock",
+    "Steel",
+    "Water"
+  ]
+}

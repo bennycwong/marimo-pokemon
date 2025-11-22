@@ -1,0 +1,2401 @@
+name,hp,attack,defense,sp_attack,sp_defense,speed,generation,rarity,is_legendary,set_name,price_usd,type
+Growlithe,54,53,45,34,48,20,5,Common,False,Flashfire,0.37,Fire
+Hakamo-o,47,57,74,43,59,56,4,Common,False,Great Encounters,0.35,Dragon
+Beautifly,57,38,58,69,52,54,3,Uncommon,False,EX Emerald,0.61,Bug
+Latias,69,44,30,38,69,53,2,Common,False,Aquapolis,0.45,Psychic
+Piplup,54,39,33,53,40,61,6,Common,False,Sun & Moon,0.18,Water
+Hitmonlee,56,46,81,79,37,47,1,Uncommon,False,Gym Challenge,0.41,Fighting
+Hitmonchan,76,57,52,63,43,35,1,Common,False,Gym Heroes,0.18,Fighting
+Lumineon,85,54,58,69,70,76,3,Uncommon,False,Sandstorm,0.28,Water
+Ditto,49,52,49,21,47,41,6,Common,False,Sun & Moon,0.28,Normal
+Luxio,111,47,79,51,87,91,3,Rare Holo,False,EX Emerald,6.82,Electric
+Girafarig,62,41,18,27,65,64,2,Common,False,Neo Destiny,0.18,Psychic
+Deino,51,47,58,48,61,65,2,Uncommon,False,Neo Revelation,0.2,Dark
+Gastrodon,89,77,67,96,50,89,1,Rare Holo,False,Gym Heroes,16.58,Water
+Hitmonchan,53,46,87,67,46,49,7,Uncommon,False,Vivid Voltage,0.29,Fighting
+Lucario,220,105,163,128,78,126,6,Rare Ultra,True,Guardians Rising,60.2,Fighting
+Plusle,51,40,59,24,38,36,1,Common,False,Base Set,0.33,Electric
+Vanilluxe,86,95,78,95,69,58,4,Rare Holo,True,Legends Awakened,20.92,Ice
+Victini,41,31,36,44,76,59,4,Common,True,Legends Awakened,0.23,Psychic
+Lickitung,63,58,53,63,75,70,2,Rare,False,Neo Revelation,1.7,Normal
+Zapdos,114,67,62,46,77,73,7,Rare Holo,False,Battle Styles,6.52,Flying
+Granbull,84,53,45,58,52,69,8,Common,False,Paldea Evolved,0.13,Fairy
+Claydol,30,47,66,73,43,34,5,Common,False,Roaring Skies,0.32,Ground
+Camerupt,40,68,105,64,55,80,8,Rare,False,Scarlet & Violet,1.81,Ground
+Piloswine,42,42,57,51,25,45,4,Common,False,Majestic Dawn,0.33,Ground
+Tentacruel,57,44,39,62,19,61,2,Common,False,Skyridge,0.24,Water
+Yveltal,99,61,71,59,60,54,6,Rare,False,Burning Shadows,2.69,Dark
+Pidgeot,64,48,50,59,50,63,7,Uncommon,False,Sword & Shield,0.71,Normal
+Houndour,60,67,73,64,77,65,8,Rare,False,Paldea Evolved,1.08,Dark
+Skarmory,67,46,44,75,46,60,1,Common,False,Fossil,0.23,Steel
+Mawile,63,57,61,99,56,69,3,Uncommon,False,EX Emerald,0.61,Steel
+Grotle,46,51,63,56,84,58,6,Uncommon,False,Sun & Moon,0.69,Grass
+Squirtle,81,58,76,92,40,81,4,Rare,False,Diamond & Pearl,0.84,Water
+Rayquaza,98,59,49,62,44,44,5,Rare,False,Primal Clash,2.29,Flying
+Jynx,44,25,32,48,53,58,2,Common,False,Expedition,0.22,Psychic
+Golduck,89,66,55,60,42,86,4,Uncommon,False,Diamond & Pearl,0.81,Water
+Dustox,61,45,70,50,53,60,2,Rare,False,Legendary Collection,0.96,Bug
+Igglybuff,79,53,45,51,56,81,5,Uncommon,False,Flashfire,0.53,Fairy
+Kabuto,184,100,117,123,68,101,6,Rare Holo EX,True,Burning Shadows,52.88,Rock
+Gabite,57,53,66,63,37,28,6,Uncommon,False,Burning Shadows,0.47,Ground
+Heatran,87,90,38,38,64,75,6,Rare,False,Forbidden Light,1.13,Fire
+Raichu,48,29,63,44,39,48,3,Common,False,EX Emerald,0.34,Electric
+Lanturn,74,62,73,45,76,42,1,Uncommon,False,Team Rocket,1.42,Electric
+Magcargo,82,76,57,38,72,58,2,Rare,False,Legendary Collection,1.44,Fire
+Metang,57,58,27,47,47,62,6,Common,False,Crimson Invasion,0.19,Steel
+Ursaring,107,56,60,44,48,43,8,Uncommon,False,Obsidian Flames,0.24,Normal
+Pawniard,56,43,48,75,50,41,8,Common,False,Paldea Evolved,0.36,Steel
+Exeggcute,95,55,56,48,50,39,6,Uncommon,False,Guardians Rising,1.14,Grass
+Infernape,101,86,70,50,61,61,5,Rare Holo,False,Furious Fists,7.04,Fire
+Skarmory,66,68,57,66,65,71,3,Uncommon,False,Team Magma vs Team Aqua,0.85,Steel
+Toxicroak,46,47,64,58,57,42,8,Common,False,151,0.49,Fighting
+Pancham,79,60,85,67,52,58,1,Rare,False,Team Rocket,1.87,Fighting
+Throh,78,55,95,54,45,72,6,Uncommon,False,Forbidden Light,1.11,Fighting
+Wigglytuff EX,65,48,48,52,52,42,4,Common,True,Great Encounters,0.26,Fairy
+Fletchinder,96,82,56,45,67,44,2,Rare,False,Skyridge,1.71,Fire
+Clefable,90,74,67,81,86,89,2,Rare Holo,False,Neo Revelation,10.42,Fairy
+Heracross,84,44,81,64,41,59,4,Uncommon,False,Secret Wonders,0.45,Fighting
+Voltorb,206,110,148,82,123,91,2,Secret Rare,True,Expedition,414.93,Electric
+Umbreon,75,58,40,34,40,59,4,Common,False,Majestic Dawn,0.12,Dark
+Charjabug,60,43,43,20,47,43,8,Common,False,Obsidian Flames,0.25,Electric
+Caterpie,76,43,65,52,51,54,8,Rare,False,Obsidian Flames,0.79,Bug
+Ludicolo,100,54,58,67,52,68,8,Uncommon,False,151,0.28,Water
+Tentacool,107,47,56,71,37,69,1,Uncommon,False,Team Rocket,0.85,Water
+Flaaffy,46,41,58,48,39,52,3,Common,False,EX Emerald,0.31,Electric
+Cherubi,82,65,79,87,92,82,3,Rare Holo,False,EX Emerald,6.01,Grass
+Chimchar,37,43,45,22,37,59,8,Common,False,Paradox Rift,0.24,Fire
+Rotom,89,53,97,43,72,71,1,Rare Holo,False,Fossil,3.54,Electric
+Farfetchd,68,51,47,50,43,37,4,Common,False,Majestic Dawn,0.15,Normal
+Lotad,149,81,82,108,103,86,4,Rare Holo EX,False,Diamond & Pearl,66.26,Grass
+Ralts,84,70,64,76,88,97,7,Rare Holo,False,Rebel Clash,8.52,Fairy
+Magnezone,46,62,38,53,32,73,8,Common,False,Obsidian Flames,0.17,Steel
+Dodrio,110,62,58,84,70,66,7,Rare,False,Battle Styles,3.15,Normal
+Pelipper GX,49,65,50,67,50,69,1,Uncommon,True,Base Set,2.27,Water
+Litten,59,63,37,31,52,38,3,Common,False,EX FireRed & LeafGreen,0.55,Fire
+Polteageist,85,35,55,50,69,60,4,Uncommon,False,Diamond & Pearl,0.25,Ghost
+Pelipper,168,77,99,71,84,64,7,Rare Holo EX,True,Darkness Ablaze,120.28,Flying
+Mew,50,39,22,41,61,56,4,Common,False,Legends Awakened,0.11,Psychic
+Charmeleon,48,62,37,56,52,39,1,Uncommon,False,Neo Genesis,0.84,Fire
+Hawlucha,58,52,53,57,36,26,5,Common,False,Primal Clash,0.13,Fighting
+Altaria,42,52,37,40,71,34,4,Common,False,Diamond & Pearl,0.24,Dragon
+Walrein,58,40,73,60,63,60,7,Uncommon,False,Vivid Voltage,0.77,Water
+Torchic,114,61,55,43,53,59,5,Rare,False,Primal Clash,2.32,Fire
+Kricketot,30,32,44,42,34,30,7,Common,False,Vivid Voltage,0.36,Bug
+Entei,60,50,37,38,41,22,1,Common,False,Jungle,0.35,Fire
+Lileep,116,65,82,95,41,74,2,Rare,False,Aquapolis,5.57,Rock
+Swampert GX,39,39,56,46,43,55,3,Common,True,Ruby & Sapphire,0.71,Water
+Nidoran,95,44,54,52,59,70,1,Uncommon,False,Gym Challenge,0.25,Poison
+Mandibuzz,69,48,46,49,41,44,6,Common,False,Burning Shadows,0.69,Dark
+Slowbro,73,40,35,61,81,66,5,Uncommon,False,Furious Fists,0.94,Psychic
+Wailord,103,62,70,85,62,76,9,Rare Holo,False,Temporal Forces,5.62,Water
+Dedenne,110,68,46,85,73,94,8,Rare,False,Scarlet & Violet,2.2,Fairy
+Blaziken,52,58,49,45,54,44,3,Common,False,Dragon,0.22,Fire
+Croconaw,90,67,75,90,61,73,8,Rare,False,Paldea Evolved,4.1,Water
+Alakazam,104,45,70,61,109,96,4,Rare Holo,False,Legends Awakened,3.18,Psychic
+Voltorb,72,57,98,70,64,57,6,Rare,True,Guardians Rising,4.31,Electric
+Chesnaught,108,63,54,80,94,62,1,Rare Holo,False,Gym Challenge,7.91,Grass
+Pangoro,32,44,61,55,41,36,3,Common,False,Ruby & Sapphire,0.2,Fighting
+Lombre,72,48,56,56,50,83,6,Uncommon,False,Ultra Prism,0.6,Water
+Riolu,30,38,87,42,46,46,8,Common,False,Paldean Fates,0.5,Fighting
+Luxray,93,70,79,66,73,79,1,Rare Holo,False,Jungle,20.63,Electric
+Victreebel,52,47,39,33,70,48,3,Common,True,EX FireRed & LeafGreen,0.83,Grass
+Roggenrola,58,44,56,76,36,43,5,Common,False,Ancient Origins,0.2,Rock
+Spiritomb,53,52,68,12,53,45,6,Common,False,Guardians Rising,0.23,Dark
+Armaldo,72,54,51,59,44,55,3,Uncommon,False,Sandstorm,0.42,Bug
+Toxicroak,203,76,94,121,116,123,6,Rare Ultra,True,Guardians Rising,512.68,Poison
+Hitmonchan,45,60,66,77,30,40,2,Common,False,Legendary Collection,0.3,Fighting
+Aron,49,63,68,64,38,63,7,Uncommon,False,Darkness Ablaze,0.6,Rock
+Tyrogue V,38,47,51,54,35,34,7,Common,True,Rebel Clash,0.42,Fighting
+Spearow,40,41,35,29,35,68,8,Common,False,Paldea Evolved,0.38,Normal
+Flygon,96,80,81,70,82,73,7,Rare,False,Sword & Shield,0.61,Dragon
+Quilladin,55,46,42,40,63,44,6,Common,False,Burning Shadows,0.23,Grass
+Klinklang,86,63,46,56,43,73,1,Uncommon,False,Team Rocket,1.24,Steel
+Pidgey,100,48,58,48,63,51,2,Uncommon,False,Neo Destiny,0.46,Normal
+Venonat,70,49,62,80,71,73,8,Rare,True,Paldean Fates,3.39,Poison
+Baltoy,30,29,24,33,69,66,7,Common,False,Chilling Reign,0.25,Psychic
+Doublade,88,78,83,105,49,100,1,Rare Holo,False,Fossil,19.89,Steel
+Buizel,59,45,52,48,46,63,1,Common,False,Fossil,0.21,Water
+Sawk V,69,62,94,76,58,60,1,Rare,True,Base Set,1.33,Fighting
+Sunkern,86,60,72,55,58,61,1,Uncommon,False,Fossil,0.31,Grass
+Chespin,81,47,76,76,68,57,3,Rare,False,EX Emerald,3.03,Grass
+Duraludon,77,49,39,61,39,81,8,Uncommon,False,151,0.28,Steel
+Golduck,90,57,31,63,58,66,4,Uncommon,False,Secret Wonders,0.29,Water
+Mr. Mime,86,56,51,67,87,77,7,Uncommon,False,Vivid Voltage,0.26,Psychic
+Yanma,87,28,79,41,59,61,6,Uncommon,False,Crimson Invasion,0.47,Bug
+Exeggcute GX,58,41,57,58,65,40,1,Common,True,Gym Heroes,0.34,Grass
+Zeraora,168,91,107,68,84,85,8,Rare Holo EX,True,Scarlet & Violet,86.98,Electric
+Alakazam,30,41,39,62,59,64,7,Common,False,Sword & Shield,0.33,Psychic
+Slugma,40,74,42,30,57,35,2,Common,False,Neo Destiny,0.39,Fire
+Metapod,30,35,54,49,31,39,6,Common,False,Guardians Rising,0.11,Bug
+Heracross,62,63,95,47,31,47,6,Uncommon,False,Forbidden Light,0.56,Fighting
+Buizel,83,40,36,70,54,44,1,Common,False,Gym Challenge,0.34,Water
+Hakamo-o,76,71,70,60,74,55,2,Uncommon,False,Aquapolis,0.47,Dragon
+Numel,75,97,57,42,35,62,1,Rare,False,Base Set,1.07,Fire
+Druddigon,73,51,79,63,63,60,1,Uncommon,False,Gym Heroes,0.63,Dragon
+Ledyba EX,38,38,36,40,35,45,8,Common,True,Obsidian Flames,0.29,Bug
+Weepinbell,64,38,67,57,76,83,6,Uncommon,False,Sun & Moon,0.69,Poison
+Furret,166,81,88,96,98,104,1,Rare Holo GX,True,Jungle,43.87,Normal
+Shiftry,60,49,60,66,68,49,3,Uncommon,False,Ruby & Sapphire,0.28,Grass
+Venomoth,58,49,53,66,31,42,4,Common,True,Secret Wonders,0.23,Bug
+Raboot,41,55,42,34,49,46,4,Common,False,Mysterious Treasures,0.24,Fire
+Cranidos,93,80,86,106,60,76,1,Rare,False,Neo Genesis,1.11,Rock
+Pidgeot,91,53,66,51,79,68,7,Rare,False,Sword & Shield,2.56,Flying
+Nuzleaf,63,70,47,69,44,46,5,Uncommon,False,Furious Fists,0.44,Grass
+Lotad,126,84,50,80,57,113,1,Rare Holo,False,Neo Discovery,6.83,Water
+Gabite,40,49,72,34,56,53,6,Common,False,Forbidden Light,0.19,Dragon
+Electrike,66,56,56,37,45,34,1,Uncommon,False,Jungle,0.42,Electric
+Kadabra,73,46,52,55,67,66,3,Uncommon,False,Dragon,0.3,Psychic
+Murkrow,47,57,52,53,41,49,5,Common,False,Primal Clash,0.33,Dark
+Shaymin,39,24,61,47,41,43,1,Common,False,Base Set 2,0.26,Grass
+Girafarig EX,107,85,62,71,75,50,6,Rare Holo,True,Forbidden Light,14.81,Normal
+Yamper,60,43,73,54,63,33,4,Uncommon,False,Majestic Dawn,0.89,Electric
+Makuhita,109,51,100,76,40,67,2,Rare,False,Expedition,1.23,Fighting
+Heracross,77,44,68,47,39,56,1,Rare,False,Team Rocket,2.0,Bug
+Slugma,89,79,62,49,78,58,2,Rare Holo,False,Expedition,6.75,Fire
+Charjabug,171,95,115,73,117,77,3,Rare Holo GX,True,Dragon,29.56,Electric
+Magmar EX,65,78,65,35,58,59,3,Rare,True,EX Emerald,3.16,Fire
+Seviper,91,72,82,57,72,64,1,Rare,False,Neo Genesis,3.88,Poison
+Farfetchd V,90,46,73,41,64,31,3,Rare,True,Ruby & Sapphire,2.35,Flying
+Spoink,52,43,37,42,75,55,4,Common,False,Majestic Dawn,0.23,Psychic
+Roserade,43,58,37,50,57,49,4,Common,False,Majestic Dawn,1.11,Grass
+Suicune,44,35,54,38,47,59,6,Common,False,Burning Shadows,0.27,Water
+Turtwig,64,43,61,47,60,56,3,Uncommon,False,Team Magma vs Team Aqua,0.47,Grass
+Sunflora,40,35,40,48,51,40,8,Common,False,Scarlet & Violet,0.36,Grass
+Reshiram,31,52,44,28,39,27,2,Common,False,Legendary Collection,0.51,Fire
+Cacturne,30,53,37,50,41,50,2,Common,False,Expedition,0.23,Dark
+Silcoon,80,50,61,43,47,41,6,Uncommon,False,Ultra Prism,0.33,Bug
+Kadabra,55,36,40,61,57,39,4,Common,False,Secret Wonders,0.18,Psychic
+Flygon,53,48,81,68,75,57,1,Uncommon,False,Neo Genesis,0.93,Dragon
+Dhelmise,33,22,63,27,56,50,2,Common,False,Aquapolis,0.53,Ghost
+Heatran EX,33,68,32,25,45,44,8,Common,True,151,0.21,Fire
+Luxray EX,57,38,60,32,51,43,3,Common,True,EX FireRed & LeafGreen,0.28,Electric
+Alakazam,93,42,41,56,79,76,6,Uncommon,False,Ultra Prism,0.55,Psychic
+Granbull,62,42,32,68,60,86,5,Uncommon,False,Phantom Forces,0.54,Fairy
+Klang,60,37,35,60,29,51,2,Common,False,Legendary Collection,0.18,Steel
+Hitmonlee,85,56,99,72,37,79,5,Rare,False,Ancient Origins,1.82,Fighting
+Blastoise,68,42,57,61,38,70,6,Common,False,Forbidden Light,0.17,Water
+Hawlucha,59,56,84,68,42,49,2,Uncommon,False,Skyridge,1.52,Fighting
+Deoxys,46,37,22,46,60,58,2,Common,False,Expedition,0.06,Psychic
+Skarmory,84,40,58,27,70,54,8,Uncommon,False,151,1.22,Flying
+Pelipper EX,89,48,71,85,52,96,6,Rare Holo,True,Sun & Moon,12.47,Water
+Spinarak,104,68,91,74,69,62,2,Rare Holo,False,Skyridge,5.91,Bug
+Pelipper,72,50,40,76,52,59,7,Uncommon,False,Vivid Voltage,0.81,Water
+Dragapult,107,85,95,88,97,69,7,Rare Holo,False,Darkness Ablaze,8.71,Dragon
+Diglett,30,49,60,67,24,42,3,Common,False,Team Magma vs Team Aqua,0.1,Ground
+Psyduck,91,43,55,82,47,60,6,Uncommon,False,Crimson Invasion,0.55,Water
+Shellos,101,45,81,60,53,104,7,Rare,False,Darkness Ablaze,0.97,Water
+Hakamo-o,45,53,74,66,68,54,8,Uncommon,False,Scarlet & Violet,1.16,Dragon
+Venomoth,59,26,48,42,35,43,8,Common,True,Scarlet & Violet,0.47,Poison
+Zubat,50,47,46,55,48,37,1,Uncommon,False,Gym Heroes,0.42,Flying
+Azumarill,66,32,35,49,56,55,3,Common,False,Dragon,0.89,Water
+Stufful,90,67,92,87,34,79,5,Rare,False,Flashfire,1.1,Fighting
+Beldum,55,58,66,73,38,70,9,Uncommon,False,Temporal Forces,0.39,Steel
+Cradily,93,81,81,110,70,92,3,Rare Holo,False,Dragon,3.65,Rock
+Heracross,64,57,88,60,44,53,4,Uncommon,False,Legends Awakened,0.22,Fighting
+Palkia,102,74,92,79,62,57,5,Rare,False,Phantom Forces,2.42,Dragon
+Magnemite,74,46,66,44,65,52,4,Uncommon,False,Legends Awakened,0.61,Electric
+Garchomp,105,87,82,64,62,65,3,Rare,False,Team Magma vs Team Aqua,3.34,Ground
+Zapdos,64,59,58,43,52,31,6,Uncommon,False,Crimson Invasion,0.31,Electric
+Victreebel,77,78,73,51,47,75,6,Uncommon,True,Burning Shadows,1.99,Poison
+Corsola,89,37,45,82,43,52,1,Uncommon,False,Gym Challenge,0.52,Water
+Kangaskhan,208,91,105,110,97,102,6,Rare Holo GX,True,Forbidden Light,50.99,Normal
+Muk,51,37,50,51,61,70,2,Common,False,Expedition,0.3,Poison
+Togekiss,38,46,10,50,49,66,4,Common,False,Legends Awakened,0.35,Fairy
+Ursaring,30,40,44,42,48,35,5,Common,False,Roaring Skies,0.35,Normal
+Diglett,69,68,79,62,43,54,7,Uncommon,False,Chilling Reign,0.73,Ground
+Mimikyu,73,50,55,45,83,67,5,Uncommon,False,Roaring Skies,0.6,Ghost
+Slowbro,55,38,29,68,17,60,5,Common,False,Flashfire,0.18,Water
+Snover,55,29,56,57,55,45,5,Common,False,Primal Clash,0.3,Grass
+Victreebel,69,37,48,62,75,53,4,Uncommon,True,Secret Wonders,0.82,Grass
+Pupitar,76,70,77,67,56,71,1,Rare,False,Gym Challenge,2.2,Rock
+Luxray,95,51,45,50,50,45,1,Uncommon,False,Fossil,0.69,Electric
+Xatu,112,53,80,72,106,101,7,Rare Holo,False,Battle Styles,18.34,Psychic
+Liepard,73,62,93,70,69,65,6,Rare,False,Guardians Rising,2.03,Dark
+Roselia GX,154,89,98,88,142,78,4,Rare Holo GX,True,Secret Wonders,48.21,Grass
+Spheal V,67,57,55,62,51,45,6,Uncommon,True,Guardians Rising,0.78,Water
+Vibrava,94,68,109,103,72,92,4,Rare Holo,True,Legends Awakened,14.19,Ground
+Ralts,80,54,53,65,64,76,3,Rare,False,Sandstorm,0.41,Fairy
+Mr. Mime,49,30,48,48,63,74,5,Common,False,XY Base,0.4,Psychic
+Ninetales,30,68,31,40,54,33,6,Common,False,Sun & Moon,0.18,Fire
+Sinistea,33,41,68,55,66,54,5,Common,False,XY Base,0.21,Ghost
+Clefable,59,41,49,45,62,72,1,Uncommon,False,Gym Heroes,0.41,Fairy
+Piloswine,59,19,23,58,37,51,4,Common,False,Majestic Dawn,0.23,Ice
+Nuzleaf,67,38,70,53,74,46,1,Uncommon,False,Neo Genesis,0.45,Dark
+Zigzagoon,171,90,97,83,100,84,7,Rare Holo EX,True,Battle Styles,62.08,Normal
+Wigglytuff,43,52,35,32,46,59,4,Common,False,Secret Wonders,0.3,Fairy
+Ludicolo GX,80,74,58,69,71,63,1,Rare Holo,True,Neo Genesis,6.26,Grass
+Chimecho,97,53,38,55,79,90,2,Uncommon,False,Aquapolis,0.62,Psychic
+Weepinbell,55,63,53,54,69,68,4,Uncommon,False,Diamond & Pearl,0.58,Grass
+Slowpoke,79,49,52,53,42,67,6,Uncommon,False,Ultra Prism,0.33,Water
+Grovyle,181,74,61,107,119,78,3,Rare Holo EX,True,EX Emerald,53.25,Grass
+Roselia,102,66,83,86,93,82,7,Rare Holo,False,Vivid Voltage,6.16,Grass
+Monferno,121,84,57,51,60,51,6,Rare,False,Forbidden Light,1.56,Fire
+Shuppet,69,53,40,53,90,64,1,Uncommon,False,Jungle,0.63,Ghost
+Kricketot EX,88,48,85,51,56,67,8,Rare,True,Scarlet & Violet,2.77,Bug
+Absol,80,56,75,30,50,44,1,Uncommon,False,Team Rocket,0.39,Dark
+Golett,80,45,64,59,70,68,5,Rare,False,Flashfire,0.51,Ghost
+Celebi,87,43,25,41,96,72,1,Uncommon,False,Team Rocket,0.89,Psychic
+Exeggcute,75,37,44,46,69,60,3,Uncommon,False,Team Magma vs Team Aqua,1.18,Psychic
+Farfetchd,63,32,41,59,49,62,8,Uncommon,False,Paldea Evolved,0.26,Normal
+Togedemaru,44,42,43,37,43,54,6,Common,False,Crimson Invasion,0.18,Electric
+Tepig,50,49,49,43,52,49,5,Common,False,Primal Clash,0.25,Fire
+Natu,72,23,25,63,70,61,4,Uncommon,False,Legends Awakened,0.42,Psychic
+Simisear,96,118,66,49,93,74,3,Rare Holo,False,Team Magma vs Team Aqua,3.19,Fire
+Igglybuff,75,50,33,67,67,95,2,Uncommon,False,Skyridge,0.46,Fairy
+Paras,93,35,71,77,75,73,5,Rare Holo,False,Phantom Forces,3.96,Bug
+Diglett,67,60,52,83,56,55,3,Common,False,EX FireRed & LeafGreen,0.37,Ground
+Tepig,62,69,37,40,43,46,6,Uncommon,False,Forbidden Light,0.56,Fire
+Darmanitan,91,92,54,39,58,73,6,Rare,False,Ultra Prism,2.53,Fire
+Parasect,102,44,65,63,56,63,6,Rare,False,Ultra Prism,4.69,Bug
+Vikavolt,184,110,136,80,102,95,8,Rare Ultra,True,151,228.56,Electric
+Machop,33,27,72,59,26,40,6,Common,False,Crimson Invasion,0.56,Fighting
+Pelipper,49,23,77,60,53,55,5,Common,False,Flashfire,0.14,Water
+Nuzleaf,108,52,47,95,86,75,7,Rare,False,Rebel Clash,3.18,Grass
+Heatran,68,48,40,52,43,42,3,Uncommon,False,Ruby & Sapphire,0.38,Fire
+Steelix,65,57,41,68,31,60,2,Common,False,Legendary Collection,0.29,Steel
+Squirtle,93,65,57,80,69,71,6,Rare,False,Ultra Prism,1.15,Water
+Weezing,48,31,57,40,50,52,8,Common,False,Paldean Fates,0.38,Poison
+Linoone,58,58,51,55,60,50,4,Uncommon,False,Great Encounters,0.47,Normal
+Torchic,108,90,71,50,58,42,6,Rare,False,Ultra Prism,2.15,Fire
+Poochyena,55,61,74,52,61,65,6,Uncommon,False,Ultra Prism,0.4,Dark
+Geodude,74,60,73,81,32,43,3,Uncommon,False,Dragon,0.49,Rock
+Natu,73,38,61,75,73,78,4,Uncommon,False,Mysterious Treasures,0.46,Psychic
+Articuno,68,54,53,78,74,63,3,Uncommon,False,Ruby & Sapphire,0.76,Ice
+Mienfoo,68,69,94,61,49,61,2,Rare,False,Neo Revelation,2.21,Fighting
+Scizor,86,45,49,52,34,63,2,Common,False,Expedition,0.56,Steel
+Darmanitan,60,62,42,40,52,39,7,Common,False,Darkness Ablaze,0.31,Fire
+Kangaskhan,79,46,41,57,63,56,7,Common,False,Vivid Voltage,0.42,Normal
+Chimchar,51,69,58,35,51,37,4,Uncommon,False,Mysterious Treasures,0.83,Fire
+Murkrow,94,45,53,43,68,50,3,Rare,False,EX FireRed & LeafGreen,1.32,Flying
+Armaldo,49,51,54,50,21,44,1,Common,False,Neo Genesis,0.37,Rock
+Golduck,53,31,55,53,37,50,1,Common,False,Base Set,0.21,Water
+Helioptile,70,65,76,55,60,56,3,Rare,False,Dragon,1.34,Electric
+Sableye,68,35,48,56,54,56,5,Common,False,Roaring Skies,0.23,Ghost
+Pupitar,40,42,40,59,43,44,4,Common,False,Legends Awakened,0.25,Rock
+Cascoon,106,32,72,66,49,47,3,Rare,False,Dragon,0.77,Bug
+Ampharos,30,35,63,16,27,25,3,Common,False,EX Emerald,0.15,Electric
+Toxicroak,58,70,82,68,42,77,3,Uncommon,False,Dragon,1.57,Fighting
+Gourgeist,168,72,78,82,115,94,2,Rare Holo EX,True,Skyridge,50.01,Ghost
+Hypno,96,29,51,76,84,86,6,Rare,False,Forbidden Light,0.73,Psychic
+Boltund,101,59,89,49,77,60,3,Rare Holo,False,EX FireRed & LeafGreen,3.62,Electric
+Xatu,87,44,34,48,77,66,9,Uncommon,False,Twilight Masquerade,0.31,Psychic
+Zeraora,37,49,51,20,68,57,5,Uncommon,False,Ancient Origins,0.54,Electric
+Jolteon EX,71,47,69,44,54,43,3,Uncommon,True,Sandstorm,1.26,Electric
+Dedenne,59,49,37,57,62,51,3,Common,False,EX FireRed & LeafGreen,0.13,Fairy
+Growlithe,64,89,52,83,60,73,4,Rare Holo,False,Majestic Dawn,12.28,Fire
+Lampent,62,36,73,58,74,78,7,Rare,False,Darkness Ablaze,1.12,Ghost
+Ludicolo,197,91,95,121,92,131,3,Rare Ultra,True,EX FireRed & LeafGreen,212.02,Water
+Ralts,86,44,42,70,64,69,9,Uncommon,False,Temporal Forces,0.63,Fairy
+Weepinbell,40,17,45,55,40,35,4,Common,False,Diamond & Pearl,0.27,Grass
+Tyranitar,78,52,79,70,91,49,5,Rare,False,Primal Clash,1.39,Dark
+Pancham,63,54,79,66,45,51,1,Uncommon,False,Neo Discovery,0.27,Fighting
+Silcoon,60,47,69,39,53,51,8,Uncommon,False,Scarlet & Violet,0.63,Bug
+Vileplume,53,25,49,56,45,54,1,Common,True,Team Rocket,0.41,Grass
+Lucario GX,56,57,64,45,54,83,4,Uncommon,True,Secret Wonders,1.92,Steel
+Mightyena,39,46,57,57,62,55,1,Common,False,Neo Discovery,0.36,Dark
+Blaziken,91,91,69,61,65,68,5,Rare Holo,False,Flashfire,4.51,Fire
+Pichu,30,60,58,32,51,50,3,Common,False,Ruby & Sapphire,0.46,Electric
+Spearow,71,46,57,57,53,48,8,Uncommon,False,Paradox Rift,0.77,Normal
+Medicham,71,59,61,58,46,62,6,Common,False,Sun & Moon,0.33,Fighting
+Victreebel,49,55,60,34,58,42,3,Common,True,Sandstorm,0.17,Poison
+Exeggcute,85,34,44,58,83,79,2,Uncommon,False,Expedition,0.6,Psychic
+Wailmer,96,56,40,69,44,70,4,Uncommon,False,Legends Awakened,1.16,Water
+Houndour,65,47,58,68,49,41,7,Uncommon,False,Darkness Ablaze,0.37,Dark
+Baltoy,39,27,22,23,64,70,8,Common,False,Paldea Evolved,0.12,Psychic
+Raichu,101,93,90,60,67,60,8,Rare Holo,False,Paldean Fates,7.0,Electric
+Pignite,70,79,55,50,67,55,5,Rare,False,Roaring Skies,3.11,Fire
+Yanma,58,36,58,22,33,44,5,Common,False,Primal Clash,0.11,Flying
+Dialga,75,53,77,68,99,70,4,Rare,False,Great Encounters,1.11,Dragon
+Haunter,96,35,43,60,68,68,7,Uncommon,False,Vivid Voltage,0.34,Ghost
+Purrloin,51,49,36,35,58,28,7,Common,False,Sword & Shield,0.39,Dark
+Reshiram,72,70,59,55,66,52,7,Uncommon,False,Sword & Shield,1.6,Fire
+Goomy,75,64,85,92,86,63,6,Rare,False,Guardians Rising,1.45,Dragon
+Porygon,103,71,46,73,52,69,5,Rare,False,Flashfire,2.27,Normal
+Suicune,77,57,62,57,43,56,4,Uncommon,False,Secret Wonders,0.82,Water
+Klefki,99,78,48,70,73,87,3,Rare,False,EX FireRed & LeafGreen,1.94,Fairy
+Pikachu,78,43,47,26,38,34,3,Common,False,Sandstorm,0.29,Electric
+Melmetal V,42,39,46,68,37,49,2,Common,True,Neo Destiny,0.85,Steel
+Meowth,69,64,48,53,51,57,7,Uncommon,False,Darkness Ablaze,0.52,Normal
+Stunky V,100,52,87,55,68,75,5,Rare,True,Phantom Forces,1.73,Poison
+Scizor,69,45,48,84,49,76,3,Uncommon,False,Ruby & Sapphire,0.49,Steel
+Munna,90,49,35,61,73,63,4,Uncommon,False,Legends Awakened,0.9,Psychic
+Wingull,79,44,67,54,72,50,2,Rare Holo,False,Skyridge,3.67,Flying
+Mankey,30,42,69,58,41,31,5,Common,False,Primal Clash,0.41,Fighting
+Sandile,73,41,63,43,66,54,7,Common,False,Chilling Reign,0.22,Dark
+Graveler,41,44,57,63,40,38,5,Common,False,Phantom Forces,0.28,Ground
+Joltik,61,79,77,55,58,57,4,Uncommon,False,Legends Awakened,1.21,Electric
+Luxio,105,61,80,44,71,54,5,Rare,False,Roaring Skies,1.66,Electric
+Snorlax V,30,41,42,40,47,48,4,Common,True,Great Encounters,0.75,Normal
+Aipom,90,51,46,51,52,45,4,Uncommon,False,Secret Wonders,0.59,Normal
+Jolteon,40,41,79,22,42,51,7,Common,False,Vivid Voltage,0.21,Electric
+Cascoon,71,54,58,54,60,75,1,Uncommon,False,Gym Challenge,0.41,Bug
+Yamper,66,57,69,60,46,35,7,Uncommon,False,Vivid Voltage,0.44,Electric
+Zigzagoon,52,47,37,47,61,56,1,Uncommon,False,Neo Genesis,1.69,Normal
+Slowpoke,108,70,63,89,45,77,5,Rare,False,Roaring Skies,1.63,Water
+Mew,54,40,32,55,76,62,4,Uncommon,False,Legends Awakened,0.39,Psychic
+Lickitung,82,54,70,72,59,75,3,Rare,False,EX Emerald,1.41,Normal
+Sneasel,82,47,62,78,51,41,1,Uncommon,False,Base Set 2,0.8,Ice
+Throh,41,53,83,92,54,55,2,Uncommon,False,Neo Revelation,0.34,Fighting
+Swablu,68,39,60,41,53,56,5,Uncommon,False,Furious Fists,0.58,Flying
+Chansey,83,37,39,52,31,52,6,Uncommon,False,Crimson Invasion,0.4,Normal
+Abomasnow,141,96,76,99,93,105,6,Rare Holo EX,False,Burning Shadows,98.29,Ice
+Magikarp,84,53,53,80,49,74,2,Rare,False,Expedition,1.84,Water
+Kakuna,52,38,38,53,36,42,1,Common,False,Base Set 2,0.18,Bug
+Liepard,54,73,64,62,66,60,3,Uncommon,False,Sandstorm,0.46,Dark
+Tentacruel,59,45,46,45,39,66,1,Common,False,Base Set,0.23,Water
+Poliwhirl,112,71,62,94,39,100,3,Rare Holo,False,Sandstorm,4.68,Water
+Sealeo EX,51,45,35,42,39,47,1,Common,True,Base Set,0.32,Ice
+Honedge,105,65,51,97,70,91,7,Rare,False,Sword & Shield,3.59,Steel
+Slowpoke,30,38,48,59,40,57,2,Common,False,Expedition,0.32,Water
+Cyndaquil,60,69,41,42,51,44,1,Uncommon,False,Fossil,1.03,Fire
+Carbink,63,39,39,64,55,90,8,Uncommon,False,Paradox Rift,0.59,Fairy
+Golduck,92,52,65,75,49,77,8,Rare,False,Paldea Evolved,1.17,Water
+Conkeldurr,51,55,65,54,23,58,6,Common,False,Ultra Prism,0.21,Fighting
+Donphan,121,52,88,69,36,60,1,Rare,False,Team Rocket,0.92,Ground
+Nidoking,53,38,62,44,58,54,4,Common,False,Secret Wonders,0.32,Poison
+Ledian,70,37,63,59,59,56,4,Rare,False,Secret Wonders,2.08,Bug
+Golem,81,36,53,39,32,42,4,Common,False,Secret Wonders,0.2,Ground
+Porygon2,65,39,23,22,54,39,8,Common,False,Paldean Fates,0.2,Normal
+Gyarados,45,41,48,55,38,45,3,Common,False,Dragon,0.29,Water
+Vaporeon,103,70,85,78,51,82,6,Rare Holo,True,Crimson Invasion,7.6,Water
+Tentacool,78,32,70,72,37,71,3,Uncommon,False,Team Magma vs Team Aqua,0.46,Water
+Togetic,58,68,44,49,59,56,3,Common,False,Dragon,0.46,Fairy
+Fletchinder,222,154,102,95,133,99,6,Secret Rare,True,Guardians Rising,618.12,Fire
+Sylveon,90,65,50,80,91,91,2,Rare Holo,False,Neo Destiny,5.1,Fairy
+Charjabug,100,64,52,59,37,42,6,Uncommon,False,Crimson Invasion,1.0,Electric
+Medicham,90,65,102,99,63,63,2,Rare Holo,False,Expedition,7.49,Fighting
+Marill,85,78,70,86,50,92,3,Rare Holo,False,EX Emerald,8.09,Water
+Cloyster,81,56,53,70,67,74,6,Rare,False,Crimson Invasion,0.63,Ice
+Drifloon,48,27,40,37,40,28,3,Common,False,Sandstorm,0.22,Ghost
+Oddish,44,45,40,63,54,54,7,Common,False,Darkness Ablaze,0.27,Grass
+Hoothoot,70,57,44,55,46,47,4,Common,False,Diamond & Pearl,0.57,Normal
+Meltan,52,56,37,78,35,72,2,Common,False,Legendary Collection,0.36,Steel
+Sunflora GX,87,59,64,62,66,65,2,Uncommon,True,Aquapolis,1.06,Grass
+Oddish,73,60,50,52,71,55,5,Uncommon,False,Roaring Skies,1.03,Grass
+Duskull,38,37,40,34,64,50,2,Common,False,Neo Destiny,0.3,Ghost
+Phanpy,42,52,68,60,33,46,2,Common,False,Neo Revelation,0.38,Ground
+Celebi,80,60,45,82,85,88,5,Rare,False,Primal Clash,2.38,Psychic
+Swampert,57,59,80,76,61,48,1,Uncommon,False,Jungle,0.24,Water
+Haxorus,82,70,91,52,89,71,4,Uncommon,False,Majestic Dawn,0.35,Dragon
+Helioptile,50,72,71,48,51,37,4,Uncommon,False,Legends Awakened,1.05,Electric
+Togetic,72,55,34,56,41,86,2,Uncommon,False,Expedition,1.02,Fairy
+Munna,122,46,56,60,107,88,8,Rare Holo,False,Paldean Fates,7.53,Psychic
+Golbat,44,36,38,44,42,44,1,Common,False,Base Set 2,0.29,Flying
+Poochyena,71,41,60,45,71,44,8,Uncommon,False,Paldea Evolved,0.59,Dark
+Dedenne,36,36,39,21,30,49,5,Common,False,XY Base,0.25,Electric
+Aron,101,66,65,99,41,64,7,Rare,False,Chilling Reign,1.19,Steel
+Palkia,62,40,47,75,46,58,8,Common,False,Paldea Evolved,0.23,Water
+Frillish,61,49,55,44,84,54,5,Uncommon,False,Ancient Origins,0.5,Ghost
+Pachirisu,30,40,57,47,41,51,5,Common,False,Primal Clash,0.14,Electric
+Finneon,60,54,55,54,38,41,2,Common,False,Skyridge,0.13,Water
+Gabite,56,51,69,44,78,37,2,Common,False,Expedition,0.09,Dragon
+Cleffa,79,44,34,66,72,74,3,Uncommon,False,EX Emerald,0.6,Fairy
+Tyrogue,72,54,70,74,35,19,3,Common,False,Sandstorm,0.3,Fighting
+Mewtwo GX,44,38,43,41,45,58,1,Common,True,Team Rocket,1.01,Psychic
+Deoxys,87,51,42,53,87,70,4,Rare,False,Mysterious Treasures,2.48,Psychic
+Yveltal,60,44,67,63,57,56,2,Uncommon,False,Neo Revelation,0.69,Dark
+Jangmo-o V,83,73,101,76,87,67,6,Rare,True,Burning Shadows,3.53,Dragon
+Rapidash,77,70,48,41,88,60,4,Rare,False,Mysterious Treasures,1.16,Fire
+Zubat,64,47,60,54,51,66,1,Uncommon,False,Fossil,0.55,Flying
+Spheal,78,51,47,49,50,55,3,Common,False,Dragon,0.18,Water
+Magikarp,91,48,62,90,49,78,6,Rare,False,Burning Shadows,2.56,Water
+Kingdra,41,29,68,38,63,50,3,Common,False,Dragon,0.3,Dragon
+Crabominable,50,43,69,65,33,45,5,Common,False,Roaring Skies,0.11,Fighting
+Swampert,30,26,26,52,49,50,8,Common,False,Scarlet & Violet,0.29,Water
+Alolan Sandslash,48,57,50,62,30,60,3,Common,False,Sandstorm,0.26,Ice
+Honchkrow,36,46,63,45,37,49,3,Common,False,Sandstorm,0.26,Dark
+Golett,45,27,55,43,57,48,4,Common,False,Great Encounters,0.23,Ghost
+Hypno GX,85,62,61,49,100,97,4,Rare Holo,True,Majestic Dawn,8.01,Psychic
+Bronzong,47,40,50,74,37,52,4,Common,False,Diamond & Pearl,0.2,Steel
+Sealeo,49,65,57,56,34,47,4,Common,False,Mysterious Treasures,0.15,Water
+Kakuna,65,32,52,54,47,47,2,Common,False,Neo Destiny,0.25,Bug
+Electabuzz,78,77,73,47,36,69,8,Uncommon,False,Paradox Rift,0.39,Electric
+Hippopotas,54,68,44,53,30,51,1,Common,False,Gym Heroes,0.18,Ground
+Tyranitar,82,41,63,48,68,62,7,Uncommon,False,Chilling Reign,0.42,Dark
+Vigoroth,50,65,53,27,63,42,7,Common,True,Chilling Reign,0.31,Normal
+Croconaw,88,41,52,67,51,77,1,Uncommon,False,Neo Discovery,0.57,Water
+Luxio,108,59,100,66,81,60,6,Rare Holo,False,Burning Shadows,8.2,Electric
+Tentacool,57,42,40,59,54,50,8,Common,False,151,0.25,Water
+Dunsparce,80,80,57,65,70,61,2,Rare Holo,False,Aquapolis,5.84,Normal
+Monferno GX,177,122,101,84,95,81,8,Rare Holo GX,True,Paradox Rift,35.66,Fire
+Mightyena EX,64,39,16,49,21,48,9,Common,True,Shrouded Fable,0.46,Dark
+Alolan Sandslash,62,50,52,50,55,67,6,Uncommon,False,Forbidden Light,0.29,Ice
+Houndour,82,98,78,45,58,70,1,Rare,False,Gym Challenge,4.28,Fire
+Golbat,72,54,69,24,45,44,5,Uncommon,False,Primal Clash,0.81,Flying
+Shuppet,71,41,35,70,76,61,5,Uncommon,False,Roaring Skies,0.62,Ghost
+Litten,89,113,77,68,64,68,5,Rare Holo,False,Ancient Origins,8.07,Fire
+Ralts,30,62,51,54,64,68,5,Uncommon,False,Flashfire,0.58,Fairy
+Flareon GX,179,131,77,77,98,108,2,Rare Holo GX,True,Skyridge,34.02,Fire
+Heracross,94,62,81,71,56,84,6,Rare Holo,False,Guardians Rising,5.99,Bug
+Roserade EX,70,66,62,62,76,55,6,Uncommon,True,Guardians Rising,0.87,Grass
+Sunkern,193,96,94,119,113,125,5,Rare Ultra,True,Furious Fists,95.49,Grass
+Exeggutor,76,43,46,43,45,45,3,Common,False,EX FireRed & LeafGreen,0.33,Grass
+Fletchinder GX,47,51,32,38,31,49,1,Common,True,Gym Challenge,0.35,Fire
+Kommo-o,86,43,76,59,86,63,1,Uncommon,False,Jungle,1.06,Dragon
+Gyarados,76,59,48,70,51,69,7,Uncommon,False,Vivid Voltage,0.53,Water
+Natu EX,207,87,88,100,155,152,3,Rare Ultra,True,Sandstorm,188.96,Psychic
+Chandelure EX,92,38,55,35,91,84,1,Rare,True,Jungle,2.9,Ghost
+Sableye,91,60,92,68,84,54,4,Rare,False,Secret Wonders,3.38,Dark
+Krookodile EX,50,49,59,58,61,63,6,Uncommon,True,Crimson Invasion,1.86,Dark
+Magmar,31,55,45,42,45,43,2,Common,False,Aquapolis,0.36,Fire
+Ampharos,70,38,53,51,52,56,1,Uncommon,False,Jungle,0.91,Electric
+Barboach,85,71,99,62,73,61,4,Rare,False,Mysterious Treasures,1.82,Ground
+Chespin,49,38,39,45,46,40,3,Common,False,Team Magma vs Team Aqua,0.55,Grass
+Prinplup,50,49,41,60,52,56,6,Common,False,Ultra Prism,0.16,Water
+Dragonair,38,41,51,59,59,42,1,Common,False,Neo Genesis,0.21,Dragon
+Heatran,65,59,51,80,61,47,3,Uncommon,False,EX Emerald,0.36,Steel
+Slaking,63,57,53,35,48,41,4,Common,False,Legends Awakened,0.32,Normal
+Rhydon,66,74,70,64,55,50,4,Uncommon,False,Mysterious Treasures,0.38,Ground
+Ludicolo,64,54,46,47,41,49,6,Common,False,Burning Shadows,0.31,Water
+Buizel,73,31,24,48,40,46,3,Common,False,Team Magma vs Team Aqua,0.24,Water
+Vanillish,61,31,46,58,58,44,6,Common,True,Guardians Rising,0.24,Ice
+Caterpie,90,32,64,40,61,49,6,Uncommon,False,Sun & Moon,1.69,Bug
+Exeggutor,66,41,47,58,47,35,3,Common,False,EX Emerald,0.4,Grass
+Corviknight,55,48,68,64,16,67,3,Common,False,EX Emerald,0.46,Steel
+Fraxure,51,51,64,44,60,52,5,Common,False,Flashfire,0.51,Dragon
+Slowpoke,86,37,40,43,69,86,3,Uncommon,False,Dragon,0.35,Psychic
+Cresselia,39,32,52,57,73,67,5,Common,False,Flashfire,0.29,Psychic
+Darumaka GX,58,72,43,35,44,48,1,Uncommon,True,Fossil,1.53,Fire
+Zubat,79,51,82,82,73,91,6,Rare Holo,False,Guardians Rising,9.45,Poison
+Weepinbell,74,51,55,42,53,70,5,Uncommon,False,Phantom Forces,0.39,Poison
+Vigoroth,71,75,48,69,64,49,2,Uncommon,True,Neo Destiny,1.81,Normal
+Electrike,84,54,95,52,79,60,6,Rare Holo,False,Guardians Rising,5.87,Electric
+Magnemite,58,36,41,49,43,58,6,Uncommon,False,Sun & Moon,0.8,Electric
+Medicham,107,40,53,56,82,103,4,Rare,False,Great Encounters,1.42,Psychic
+Golett,53,32,50,37,68,40,3,Common,False,EX FireRed & LeafGreen,0.2,Ghost
+Drowzee,174,77,79,79,153,128,1,Rare Holo GX,True,Fossil,82.48,Psychic
+Zapdos,72,40,30,34,43,37,7,Uncommon,False,Rebel Clash,0.91,Flying
+Wartortle,99,74,68,99,63,88,6,Rare Holo,False,Burning Shadows,11.53,Water
+Ariados,66,34,17,34,60,42,3,Common,False,EX Emerald,0.21,Bug
+Lickitung,68,52,41,58,53,66,5,Rare,False,Phantom Forces,4.83,Normal
+Glaceon,197,110,96,118,115,111,6,Rare Holo GX,True,Burning Shadows,87.95,Ice
+Bayleef,48,39,55,65,55,52,5,Common,False,Roaring Skies,0.05,Grass
+Zekrom,37,53,58,35,24,42,4,Common,False,Legends Awakened,0.26,Electric
+Deino EX,166,101,108,96,108,100,4,Rare Holo EX,True,Diamond & Pearl,38.7,Dark
+Murkrow EX,190,99,116,78,115,89,5,Rare Holo EX,True,XY Base,62.23,Dark
+Ludicolo,73,79,55,60,56,62,1,Rare,False,Gym Challenge,1.79,Water
+Machamp,54,50,90,76,30,45,6,Uncommon,False,Burning Shadows,0.26,Fighting
+Spearow,105,74,53,47,66,70,2,Rare,False,Aquapolis,1.99,Normal
+Clefairy,83,66,58,62,71,79,3,Rare,False,Team Magma vs Team Aqua,1.15,Fairy
+Haxorus,49,50,49,59,83,49,1,Common,False,Gym Heroes,0.35,Dragon
+Dialga,76,61,76,79,38,65,6,Uncommon,False,Crimson Invasion,1.04,Steel
+Shroomish,161,83,87,97,117,80,4,Rare Holo EX,True,Majestic Dawn,64.96,Grass
+Latias,182,74,63,94,140,134,4,Rare Holo EX,True,Great Encounters,207.48,Psychic
+Crobat,50,36,54,39,47,37,6,Common,False,Sun & Moon,0.09,Flying
+Seviper,78,54,93,70,85,76,6,Rare Holo,False,Ultra Prism,11.22,Poison
+Nuzleaf,30,37,46,58,30,30,4,Common,False,Diamond & Pearl,0.1,Grass
+Camerupt,59,75,57,51,59,73,7,Uncommon,False,Rebel Clash,1.28,Ground
+Poochyena,58,31,65,58,49,62,7,Uncommon,False,Battle Styles,0.25,Dark
+Dragapult V,51,82,81,59,87,82,2,Rare,True,Aquapolis,2.32,Dragon
+Hitmontop EX,75,55,77,59,52,57,1,Uncommon,True,Neo Discovery,1.35,Fighting
+Sandile,38,65,73,56,43,59,9,Common,False,Twilight Masquerade,0.31,Dark
+Hariyama,82,37,80,58,37,63,8,Uncommon,False,Scarlet & Violet,0.24,Fighting
+Frillish,67,43,45,46,75,63,1,Uncommon,False,Base Set 2,0.55,Ghost
+Wartortle,80,42,55,65,47,46,4,Common,False,Great Encounters,0.5,Water
+Prinplup,45,46,39,68,43,75,5,Common,False,XY Base,0.24,Water
+Heracross,88,78,90,86,47,46,6,Rare,False,Crimson Invasion,1.26,Fighting
+Poliwhirl,46,55,62,72,41,62,3,Uncommon,False,Sandstorm,0.57,Water
+Kangaskhan,72,76,60,57,55,50,7,Rare,False,Chilling Reign,1.45,Normal
+Zubat,86,73,84,83,75,81,4,Rare Holo,False,Diamond & Pearl,5.09,Poison
+Azumarill,64,64,56,65,68,65,6,Uncommon,False,Burning Shadows,1.49,Water
+Jellicent,65,36,46,42,69,74,3,Common,False,Sandstorm,0.22,Ghost
+Medicham,65,45,39,65,88,99,3,Rare,False,EX Emerald,1.48,Psychic
+Kricketot GX,91,36,62,75,59,40,5,Uncommon,True,Flashfire,1.98,Bug
+Manectric,58,49,59,56,46,57,6,Common,False,Sun & Moon,0.47,Electric
+Chimchar,78,87,40,22,48,35,4,Uncommon,False,Mysterious Treasures,0.42,Fire
+Torracat,54,67,31,39,52,47,8,Common,False,Paradox Rift,0.18,Fire
+Lunatone,80,39,55,76,102,86,6,Rare,False,Sun & Moon,3.75,Psychic
+Blaziken,43,77,56,35,38,55,1,Uncommon,False,Gym Heroes,0.81,Fire
+Yanma,61,43,40,55,35,49,8,Common,False,151,0.47,Flying
+Snivy,43,32,55,55,83,29,6,Uncommon,False,Forbidden Light,0.48,Grass
+Linoone,100,60,45,36,54,59,4,Uncommon,False,Legends Awakened,0.52,Normal
+Tepig EX,74,54,38,40,45,40,8,Uncommon,True,Paradox Rift,1.02,Fire
+Dedenne,92,49,94,44,55,57,3,Rare,False,Ruby & Sapphire,1.33,Electric
+Porygon2,37,37,43,54,57,32,8,Common,False,Scarlet & Violet,0.37,Normal
+Ampharos EX,159,81,104,71,87,65,4,Rare Holo EX,True,Great Encounters,64.06,Electric
+Scizor,69,48,50,108,48,90,7,Rare,False,Sword & Shield,0.89,Steel
+Ludicolo,49,34,47,68,54,62,4,Common,False,Majestic Dawn,0.29,Water
+Lampent EX,60,35,48,40,46,58,3,Common,True,EX FireRed & LeafGreen,1.06,Ghost
+Milotic,66,27,33,43,28,65,4,Common,False,Secret Wonders,0.26,Water
+Numel,81,88,44,52,47,44,2,Rare,False,Neo Revelation,2.25,Fire
+Servine,64,34,59,44,56,40,2,Uncommon,False,Expedition,0.97,Grass
+Latios,52,41,59,47,64,70,3,Common,False,EX Emerald,0.2,Dragon
+Qwilfish,72,65,70,95,59,85,1,Rare Holo,False,Gym Heroes,3.21,Water
+Fearow,46,47,42,45,46,44,1,Common,False,Base Set 2,0.13,Normal
+Vikavolt,42,41,43,27,55,46,7,Common,True,Darkness Ablaze,0.65,Electric
+Weepinbell,95,48,74,70,69,71,5,Rare,False,Primal Clash,4.01,Grass
+Sealeo,156,91,99,93,87,113,1,Rare Holo EX,True,Jungle,49.57,Water
+Jynx,79,45,43,66,82,68,2,Uncommon,False,Legendary Collection,0.43,Psychic
+Hydreigon,58,41,53,34,44,47,8,Common,False,Paldean Fates,0.24,Dark
+Vaporeon,51,61,47,76,33,75,5,Common,True,Primal Clash,0.41,Water
+Deino,109,85,58,59,70,63,1,Rare Holo,False,Gym Heroes,6.92,Dark
+Moltres,96,94,66,59,61,51,8,Rare,False,Paldea Evolved,3.11,Fire
+Lombre,99,76,56,71,50,95,6,Rare,False,Guardians Rising,2.77,Water
+Nidorina,54,52,59,71,62,51,1,Rare,False,Jungle,1.16,Poison
+Rayquaza EX,60,50,49,43,47,54,7,Uncommon,True,Darkness Ablaze,1.96,Flying
+Klefki,52,53,36,60,52,54,8,Common,False,Paldean Fates,0.12,Fairy
+Feebas,43,54,44,42,37,50,4,Common,False,Secret Wonders,0.45,Water
+Natu,103,59,53,50,93,109,1,Rare,False,Fossil,2.55,Psychic
+Aromatisse,133,67,62,90,69,96,3,Rare,False,Team Magma vs Team Aqua,2.83,Fairy
+Jirachi,82,36,45,63,97,79,1,Rare,False,Gym Heroes,2.72,Psychic
+Snorlax,45,55,54,61,60,53,2,Uncommon,False,Legendary Collection,0.44,Normal
+Gothita,42,45,62,55,55,51,4,Common,False,Legends Awakened,0.16,Psychic
+Beautifly,99,54,74,80,54,71,5,Rare Holo,False,XY Base,10.34,Bug
+Doduo,38,61,47,65,60,57,6,Uncommon,False,Burning Shadows,0.59,Flying
+Meowth EX,107,68,48,56,84,58,6,Rare,True,Forbidden Light,4.52,Normal
+Bulbasaur,106,68,74,75,88,74,1,Rare Holo,False,Base Set,10.31,Grass
+Hoopa,46,24,45,37,71,59,6,Common,False,Guardians Rising,0.79,Ghost
+Turtwig,86,34,69,48,78,53,8,Uncommon,False,Paradox Rift,1.38,Grass
+Sandile,60,62,55,60,47,41,7,Common,False,Chilling Reign,0.33,Dark
+Scorbunny,109,76,53,58,75,63,1,Rare,False,Base Set 2,1.19,Fire
+Exeggcute,71,34,40,42,59,37,2,Common,False,Aquapolis,0.28,Grass
+Piloswine,97,75,90,83,72,53,6,Rare,False,Forbidden Light,1.89,Ground
+Zeraora,57,39,49,35,24,35,4,Common,False,Great Encounters,0.43,Electric
+Yamper GX,54,62,75,46,47,56,8,Uncommon,True,Paldea Evolved,1.08,Electric
+Lileep,124,63,79,98,66,53,1,Rare,False,Fossil,2.63,Rock
+Seedot,40,28,47,41,60,57,4,Common,False,Legends Awakened,0.3,Grass
+Jynx,36,40,59,72,60,49,6,Common,False,Guardians Rising,0.29,Ice
+Roserade,86,45,55,50,72,52,3,Uncommon,False,EX FireRed & LeafGreen,0.34,Grass
+Swirlix,65,60,51,60,57,61,5,Uncommon,False,Roaring Skies,0.95,Fairy
+Zapdos,60,43,43,44,35,51,7,Common,False,Darkness Ablaze,0.18,Electric
+Pansage,70,66,50,79,81,56,3,Rare,False,Sandstorm,0.76,Grass
+Duskull,38,25,51,39,80,76,3,Uncommon,False,EX Emerald,0.16,Ghost
+Doduo GX,71,37,42,40,54,48,8,Uncommon,True,151,0.61,Flying
+Snubbull,62,34,32,66,74,64,6,Common,False,Burning Shadows,0.16,Fairy
+Flareon,39,67,26,46,45,41,6,Common,False,Ultra Prism,0.15,Fire
+Cherrim,38,44,44,47,46,28,2,Common,False,Neo Revelation,0.2,Grass
+Magnemite,74,51,67,43,46,70,8,Uncommon,False,Scarlet & Violet,0.48,Electric
+Solrock,72,62,40,49,59,76,8,Uncommon,False,Paldean Fates,0.5,Psychic
+Metapod,148,66,103,104,94,89,1,Rare Holo EX,False,Team Rocket,37.85,Bug
+Breloom,75,38,45,47,51,24,8,Common,False,Paldea Evolved,0.24,Grass
+Serperior EX,71,49,31,62,82,76,6,Uncommon,True,Guardians Rising,2.14,Grass
+Gurdurr,68,39,68,50,25,58,2,Uncommon,False,Expedition,0.37,Fighting
+Aerodactyl,96,71,88,117,31,91,6,Rare Holo,False,Forbidden Light,16.76,Rock
+Flygon,83,55,64,57,76,71,9,Uncommon,False,Temporal Forces,0.47,Dragon
+Parasect,175,68,107,83,72,89,4,Rare Holo EX,True,Secret Wonders,80.39,Bug
+Mudkip,62,57,68,83,56,65,8,Uncommon,False,Scarlet & Violet,0.42,Water
+Abomasnow,51,59,35,52,56,27,2,Uncommon,False,Aquapolis,0.59,Grass
+Nidoran,46,52,61,52,56,65,9,Uncommon,False,Temporal Forces,0.19,Poison
+Marowak,37,58,54,59,40,39,7,Common,False,Sword & Shield,0.1,Ground
+Ditto,196,95,81,94,107,85,6,Rare Holo GX,True,Crimson Invasion,38.18,Normal
+Bastiodon,49,51,48,86,24,64,1,Common,False,Neo Discovery,0.29,Rock
+Miltank,116,51,61,64,74,60,4,Rare,False,Mysterious Treasures,1.42,Normal
+Exeggutor,105,54,72,74,77,72,4,Rare,False,Diamond & Pearl,1.21,Grass
+Murkrow,66,44,41,33,44,49,1,Common,False,Gym Challenge,0.14,Dark
+Teddiursa,55,45,56,41,43,47,1,Common,False,Gym Challenge,0.11,Normal
+Bellsprout,64,38,42,35,64,50,7,Common,False,Vivid Voltage,0.27,Poison
+Kadabra,51,33,27,48,80,80,1,Uncommon,False,Jungle,0.32,Psychic
+Hitmontop GX,81,53,93,75,49,59,4,Rare,True,Great Encounters,2.56,Fighting
+Ivysaur,70,30,57,62,68,65,1,Uncommon,False,Team Rocket,1.0,Grass
+Shellos,83,50,46,69,51,77,1,Uncommon,False,Neo Genesis,0.29,Water
+Gible,55,50,54,52,87,52,6,Uncommon,False,Guardians Rising,0.53,Dragon
+Illumise,45,20,57,45,36,41,8,Common,False,Paradox Rift,0.19,Bug
+Vileplume,80,55,73,93,82,58,4,Rare Holo,True,Mysterious Treasures,16.18,Grass
+Flaaffy,51,31,51,36,52,40,3,Common,False,Sandstorm,0.14,Electric
+Slakoth,64,43,44,63,34,56,4,Common,False,Diamond & Pearl,0.14,Normal
+Poliwhirl GX,65,65,44,63,49,41,2,Common,True,Legendary Collection,0.36,Water
+Camerupt,68,55,48,44,44,54,1,Uncommon,False,Base Set 2,0.22,Fire
+Magmar,119,84,58,58,79,57,2,Rare Holo,False,Aquapolis,3.65,Fire
+Delphox,58,58,64,13,54,23,7,Common,False,Chilling Reign,0.14,Fire
+Mismagius,98,42,56,63,97,62,1,Rare,False,Gym Challenge,2.9,Ghost
+Pignite,58,74,68,47,71,69,6,Uncommon,False,Ultra Prism,0.41,Fire
+Ho-Oh,84,54,58,52,79,41,8,Rare Holo,False,Paldean Fates,8.28,Flying
+Minun,30,48,34,28,49,28,1,Common,False,Jungle,0.45,Electric
+Bayleef,38,59,52,48,64,39,1,Common,False,Neo Discovery,0.33,Grass
+Poliwhirl,93,40,58,75,69,60,3,Uncommon,False,EX Emerald,0.18,Water
+Qwilfish V,51,38,61,33,47,38,8,Common,True,Paldean Fates,0.28,Poison
+Yanma,95,56,90,59,68,57,7,Rare Holo,False,Chilling Reign,5.81,Flying
+Blissey,55,56,46,43,52,39,2,Common,False,Aquapolis,0.37,Normal
+Togedemaru,86,53,69,22,50,45,3,Uncommon,False,Dragon,0.68,Electric
+Exeggcute,84,39,57,61,66,58,3,Rare,False,Sandstorm,2.74,Grass
+Houndour,85,82,89,78,85,70,8,Rare Holo,False,Paldea Evolved,9.54,Dark
+Melmetal,62,36,55,64,30,62,9,Common,False,Twilight Masquerade,0.42,Steel
+Golbat,117,55,62,60,65,39,7,Rare,False,Chilling Reign,1.25,Flying
+Growlithe,83,44,35,36,27,37,1,Common,False,Base Set 2,0.15,Fire
+Yamask EX,30,30,35,41,64,47,8,Common,True,151,0.63,Ghost
+Chimecho,72,39,51,51,78,80,3,Uncommon,False,Sandstorm,0.41,Psychic
+Kricketune,156,63,106,92,67,70,1,Rare Holo EX,True,Neo Discovery,166.04,Bug
+Granbull,61,53,41,53,53,73,7,Common,False,Battle Styles,0.46,Fairy
+Heatran,61,59,42,75,40,71,8,Common,False,Paldean Fates,0.83,Steel
+Kadabra,82,50,45,56,73,74,8,Uncommon,False,Obsidian Flames,0.83,Psychic
+Meditite,67,63,76,70,51,54,6,Uncommon,False,Guardians Rising,0.36,Fighting
+Sealeo,71,62,52,74,61,57,4,Rare,False,Mysterious Treasures,2.26,Ice
+Dhelmise,89,41,39,52,73,78,7,Uncommon,False,Sword & Shield,1.3,Ghost
+Heracross,30,56,51,41,20,57,3,Common,False,Dragon,0.25,Fighting
+Lugia,58,32,28,21,61,61,4,Common,False,Majestic Dawn,0.2,Psychic
+Liepard,40,26,37,38,51,55,2,Common,False,Neo Destiny,0.19,Dark
+Venomoth,225,83,114,124,107,120,2,Secret Rare,True,Aquapolis,354.82,Bug
+Scyther,77,34,65,52,65,84,5,Rare,False,Primal Clash,2.14,Bug
+Solrock,50,46,52,49,68,55,7,Common,False,Chilling Reign,0.5,Psychic
+Nuzleaf,30,27,59,55,52,44,1,Common,False,Neo Genesis,0.42,Grass
+Kommo-o,70,61,91,86,92,81,2,Rare Holo,False,Legendary Collection,2.38,Dragon
+Tyranitar,50,47,66,59,25,42,4,Common,False,Secret Wonders,0.28,Rock
+Wingull,46,20,35,74,46,51,6,Common,False,Forbidden Light,0.49,Water
+Frillish,34,31,41,36,63,44,4,Common,False,Secret Wonders,0.33,Ghost
+Dialga,81,78,87,67,63,71,5,Rare,False,Flashfire,3.26,Dragon
+Fletchinder,56,65,31,44,63,39,8,Common,False,Obsidian Flames,0.31,Fire
+Gulpin,72,42,61,68,58,57,3,Uncommon,False,Ruby & Sapphire,0.47,Poison
+Deoxys,50,19,36,60,70,42,7,Common,False,Darkness Ablaze,0.1,Psychic
+Feebas,78,83,68,72,64,65,5,Rare,False,Primal Clash,1.6,Water
+Gardevoir,110,61,40,61,79,51,7,Uncommon,False,Darkness Ablaze,0.34,Psychic
+Victini,57,57,40,41,51,48,5,Common,True,Ancient Origins,0.47,Fire
+Tentacool,47,33,38,38,36,52,8,Common,False,Paldea Evolved,0.1,Poison
+Nidoran,74,47,81,48,50,61,7,Uncommon,False,Sword & Shield,0.26,Poison
+Mawile,158,106,76,95,115,136,7,Rare Holo GX,True,Rebel Clash,56.81,Fairy
+Wigglytuff,91,81,65,84,71,96,5,Rare Holo,False,Flashfire,3.65,Fairy
+Thundurus,83,69,66,65,77,33,2,Rare Holo,False,Skyridge,10.44,Electric
+Kirlia,172,82,71,100,116,117,7,Rare Holo EX,True,Battle Styles,69.21,Fairy
+Chimchar,189,128,87,74,107,85,2,Rare Holo GX,True,Aquapolis,55.2,Fire
+Crabrawler,107,50,86,78,50,61,2,Uncommon,False,Skyridge,0.56,Fighting
+Pidgeot,33,37,44,61,40,33,2,Common,False,Aquapolis,0.35,Flying
+Ledyba,89,51,73,54,54,70,8,Rare,False,151,1.83,Bug
+Pidgeot,41,40,47,26,40,36,7,Common,False,Vivid Voltage,0.28,Normal
+Numel,58,52,53,45,64,39,8,Uncommon,False,Paldea Evolved,0.37,Fire
+Aegislash,56,58,55,74,57,73,6,Uncommon,False,Forbidden Light,0.45,Steel
+Darkrai,48,50,56,46,42,42,7,Common,False,Sword & Shield,0.23,Dark
+Kirlia,63,42,52,53,111,85,2,Rare,False,Expedition,2.67,Psychic
+Shellos,75,63,62,73,68,63,7,Rare,False,Darkness Ablaze,4.37,Water
+Exeggcute,192,82,110,132,133,118,6,Rare Ultra,True,Burning Shadows,197.02,Grass
+Meditite,42,30,66,60,56,66,3,Common,False,EX Emerald,0.24,Psychic
+Aerodactyl,62,67,51,86,45,54,8,Uncommon,False,Obsidian Flames,0.73,Rock
+Blitzle,105,52,68,62,66,57,3,Rare,False,Sandstorm,1.9,Electric
+Talonflame,31,59,64,33,54,36,6,Common,False,Sun & Moon,0.21,Fire
+Aegislash,31,41,56,57,55,65,6,Common,False,Ultra Prism,0.16,Steel
+Vikavolt,48,42,55,21,45,35,8,Uncommon,True,151,3.67,Electric
+Aron,47,66,42,56,44,66,4,Common,False,Secret Wonders,0.39,Steel
+Togedemaru,57,49,65,46,71,56,7,Uncommon,False,Darkness Ablaze,0.44,Electric
+Crobat,48,26,30,28,38,37,1,Common,False,Fossil,0.11,Flying
+Mawile,59,49,43,36,56,59,1,Common,False,Base Set 2,0.34,Fairy
+Gurdurr,51,49,43,57,30,45,3,Common,False,Sandstorm,0.12,Fighting
+Igglybuff,58,36,53,48,39,63,6,Common,False,Ultra Prism,0.18,Fairy
+Slaking,66,61,61,64,44,57,4,Uncommon,False,Legends Awakened,1.0,Normal
+Metang,55,36,52,75,44,75,6,Common,False,Forbidden Light,0.1,Steel
+Chimecho,59,34,42,70,63,57,3,Common,False,Ruby & Sapphire,0.3,Psychic
+Cacturne,52,31,52,59,74,63,1,Common,False,Gym Challenge,0.39,Grass
+Rattata,80,59,52,69,63,58,8,Uncommon,False,151,0.68,Normal
+Sneasel EX,104,50,39,57,70,61,8,Uncommon,True,Scarlet & Violet,0.92,Ice
+Abomasnow,55,56,65,48,52,48,2,Uncommon,False,Neo Destiny,0.42,Grass
+Ursaring,82,57,69,57,49,66,6,Uncommon,False,Sun & Moon,0.42,Normal
+Uxie,52,43,10,51,76,63,1,Common,False,Jungle,0.24,Psychic
+Shiftry,51,46,54,42,68,51,5,Common,False,Roaring Skies,0.18,Grass
+Tentacruel,106,65,55,79,55,72,6,Rare,False,Crimson Invasion,3.6,Water
+Infernape,98,52,59,42,43,53,1,Uncommon,False,Team Rocket,0.54,Fire
+Zekrom,61,52,48,34,47,37,3,Common,False,Ruby & Sapphire,0.23,Electric
+Gardevoir EX,77,38,54,72,85,85,7,Rare,True,Rebel Clash,5.83,Psychic
+Crawdaunt,85,67,64,43,39,33,3,Uncommon,False,EX FireRed & LeafGreen,1.05,Dark
+Pidgeotto,36,62,38,44,50,39,1,Common,False,Neo Genesis,0.38,Normal
+Caterpie,105,48,88,52,61,52,3,Rare,False,Sandstorm,2.54,Bug
+Anorith,48,56,57,58,53,55,5,Common,False,Ancient Origins,0.19,Rock
+Grovyle,50,49,33,50,41,57,2,Common,False,Neo Revelation,0.24,Grass
+Sandile,73,45,83,54,73,49,1,Rare,False,Gym Heroes,2.65,Dark
+Drifloon V,100,56,61,63,107,75,2,Rare Holo,True,Aquapolis,7.12,Ghost
+Qwilfish,77,54,46,65,63,80,3,Uncommon,False,EX FireRed & LeafGreen,0.19,Water
+Whiscash,117,60,87,95,64,60,2,Rare,False,Legendary Collection,1.26,Ground
+Vigoroth,67,52,36,42,34,17,3,Common,True,EX FireRed & LeafGreen,0.35,Normal
+Bastiodon,39,40,47,62,11,42,2,Common,False,Aquapolis,0.31,Rock
+Gardevoir,85,19,54,50,90,81,6,Uncommon,False,Forbidden Light,0.5,Psychic
+Wailmer,52,35,45,66,20,51,8,Common,False,Paldean Fates,0.28,Water
+Honedge,94,82,78,98,39,88,8,Rare Holo,False,Paldean Fates,4.9,Steel
+Clobbopus,159,88,125,97,74,90,5,Rare Holo EX,True,XY Base,63.6,Fighting
+Azumarill,208,98,108,121,100,110,6,Rare Holo GX,True,Crimson Invasion,29.95,Water
+Cryogonal,88,36,71,84,34,75,3,Uncommon,False,EX FireRed & LeafGreen,0.44,Ice
+Altaria,162,108,110,96,114,115,3,Rare Holo EX,True,EX Emerald,177.17,Dragon
+Nidorino,66,53,95,66,47,46,3,Uncommon,False,Sandstorm,0.43,Poison
+Vileplume,85,64,65,84,85,68,6,Rare Holo,True,Sun & Moon,18.55,Poison
+Ninjask,44,49,71,43,48,82,8,Uncommon,False,Obsidian Flames,0.91,Bug
+Chandelure,56,45,48,22,84,55,3,Common,False,Dragon,0.22,Ghost
+Mareep,56,28,59,31,39,36,4,Common,False,Mysterious Treasures,0.17,Electric
+Morelull,61,50,55,52,72,54,1,Uncommon,False,Gym Heroes,0.49,Fairy
+Chimchar,60,76,40,19,49,45,5,Common,False,XY Base,0.4,Fire
+Cresselia,73,52,62,38,66,71,2,Uncommon,False,Expedition,0.26,Psychic
+Gastrodon,91,67,67,83,61,61,5,Rare,False,Phantom Forces,1.12,Water
+Zoroark,100,57,68,44,49,56,2,Uncommon,False,Neo Revelation,0.2,Dark
+Xatu,43,31,39,44,78,77,5,Uncommon,False,XY Base,0.57,Psychic
+Snover,79,64,97,72,79,68,3,Rare,False,EX FireRed & LeafGreen,5.35,Ice
+Swampert,30,43,54,64,53,64,6,Common,False,Sun & Moon,0.14,Water
+Venusaur,82,62,64,66,79,47,7,Rare,True,Sword & Shield,3.95,Grass
+Piloswine,82,64,79,59,52,49,3,Uncommon,False,EX Emerald,0.44,Ground
+Mudkip,72,76,49,58,56,65,6,Uncommon,False,Ultra Prism,1.13,Water
+Delibird,72,54,61,41,73,66,5,Rare,False,Roaring Skies,0.4,Flying
+Serperior,50,33,50,55,58,47,7,Common,False,Rebel Clash,0.13,Grass
+Numel,37,65,44,36,52,39,3,Common,False,Ruby & Sapphire,0.32,Fire
+Drifblim,49,20,54,47,68,53,3,Uncommon,False,Team Magma vs Team Aqua,0.47,Ghost
+Zebstrika,41,41,57,52,46,26,1,Common,False,Base Set,0.16,Electric
+Charjabug,63,27,60,45,69,52,7,Uncommon,False,Rebel Clash,0.68,Electric
+Hippopotas,109,83,89,92,39,70,2,Rare Holo,False,Neo Revelation,13.04,Ground
+Shroomish V,109,73,60,64,88,64,2,Rare Holo,True,Expedition,12.17,Grass
+Tapu Koko,41,56,51,64,54,67,5,Uncommon,False,Furious Fists,1.49,Fairy
+Mesprit EX,52,26,38,61,73,63,2,Common,True,Neo Revelation,0.58,Psychic
+Girafarig,71,36,59,61,86,85,3,Uncommon,False,Dragon,0.96,Psychic
+Nidoran,71,35,44,56,73,49,7,Common,False,Sword & Shield,0.21,Poison
+Lickitung,42,44,45,45,52,38,6,Uncommon,False,Burning Shadows,0.42,Normal
+Volbeat,95,48,60,61,37,67,1,Rare,True,Gym Challenge,2.13,Bug
+Wailord EX,160,86,81,114,82,115,5,Rare Holo EX,True,Furious Fists,39.4,Water
+Bonsly,124,78,67,90,45,59,1,Rare,False,Gym Challenge,2.12,Rock
+Raticate,56,37,58,50,43,43,2,Uncommon,False,Aquapolis,0.8,Normal
+Gloom,95,48,61,69,68,62,7,Rare,False,Sword & Shield,1.67,Grass
+Meganium,107,44,52,89,70,59,5,Rare,False,Primal Clash,2.24,Grass
+Wartortle,96,48,49,92,50,70,1,Uncommon,False,Base Set,0.27,Water
+Blaziken,67,75,61,32,52,39,4,Uncommon,False,Mysterious Treasures,0.38,Fire
+Purrloin,88,52,77,46,45,49,2,Uncommon,False,Expedition,0.31,Dark
+Lunatone V,102,64,58,71,115,98,1,Rare Holo,True,Gym Heroes,7.47,Psychic
+Shaymin,118,61,69,74,83,63,8,Rare Holo,False,Paldean Fates,5.83,Grass
+Skarmory,50,55,57,66,29,56,3,Common,False,Sandstorm,0.34,Steel
+Golett,95,55,70,30,60,51,4,Uncommon,False,Majestic Dawn,1.09,Ghost
+Mienshao,169,95,124,105,54,80,1,Rare Holo EX,True,Gym Heroes,88.41,Fighting
+Zoroark,109,63,83,66,79,71,4,Rare,False,Great Encounters,1.35,Dark
+Grimer,76,40,55,60,65,65,7,Rare,False,Vivid Voltage,1.95,Poison
+Registeel,64,57,44,73,43,72,8,Uncommon,False,Paldea Evolved,0.26,Steel
+Dodrio,34,62,39,39,58,49,6,Common,False,Forbidden Light,0.17,Normal
+Lucario,39,56,71,65,41,58,7,Uncommon,False,Sword & Shield,0.7,Fighting
+Dedenne,93,37,54,54,49,57,7,Uncommon,False,Chilling Reign,0.4,Electric
+Vaporeon EX,52,48,41,69,25,48,5,Common,True,Phantom Forces,0.5,Water
+Blitzle,54,36,55,52,36,58,6,Uncommon,False,Crimson Invasion,0.41,Electric
+Togetic,66,51,55,26,52,40,5,Uncommon,False,Primal Clash,0.19,Flying
+Lombre,42,37,54,46,62,34,1,Common,False,Neo Discovery,0.23,Grass
+Bayleef,30,20,49,53,69,60,7,Common,False,Sword & Shield,0.25,Grass
+Entei,133,123,98,68,79,54,4,Rare Holo EX,False,Majestic Dawn,88.44,Fire
+Minun,78,48,74,60,63,50,4,Uncommon,False,Great Encounters,0.36,Electric
+Chansey GX,98,69,68,56,84,40,6,Rare,True,Forbidden Light,3.78,Normal
+Pinsir,75,42,56,62,69,71,1,Uncommon,False,Fossil,0.51,Bug
+Litten,55,68,40,60,41,46,3,Common,False,Dragon,0.39,Fire
+Lumineon V,57,32,69,62,34,68,7,Common,True,Sword & Shield,0.72,Water
+Cacnea,80,45,25,53,68,39,4,Uncommon,False,Diamond & Pearl,0.51,Grass
+Xerneas,103,61,34,65,80,82,1,Rare Holo,False,Base Set,4.9,Fairy
+Honedge,51,61,52,73,44,73,5,Common,False,Primal Clash,0.29,Steel
+Pignite,88,81,37,58,58,39,1,Uncommon,False,Gym Heroes,0.36,Fire
+Totodile,42,66,32,60,31,57,2,Uncommon,False,Neo Destiny,0.52,Water
+Torkoal,69,61,27,42,49,42,3,Uncommon,False,EX Emerald,0.23,Fire
+Krokorok,194,93,126,88,107,70,8,Rare Holo EX,True,Paradox Rift,41.13,Dark
+Weedle,54,45,67,61,39,63,3,Uncommon,False,EX Emerald,0.76,Bug
+Vanilluxe,54,53,55,50,49,66,7,Uncommon,True,Battle Styles,0.56,Ice
+Lotad,73,36,38,53,60,48,7,Common,False,Chilling Reign,0.27,Grass
+Shinx,63,48,56,34,62,40,2,Uncommon,False,Legendary Collection,0.49,Electric
+Electrike,76,48,87,56,59,36,8,Uncommon,False,151,1.02,Electric
+Spinarak,55,42,58,56,53,37,2,Common,False,Legendary Collection,0.42,Poison
+Drifblim,71,26,54,58,74,56,1,Uncommon,False,Gym Challenge,0.65,Ghost
+Tentacruel,33,39,42,66,60,57,6,Common,False,Guardians Rising,0.19,Water
+Feebas,32,33,37,58,27,72,1,Common,False,Neo Genesis,0.25,Water
+Darumaka,75,87,55,39,49,38,8,Uncommon,False,151,0.45,Fire
+Xatu,71,41,40,54,69,46,4,Uncommon,False,Secret Wonders,0.41,Flying
+Magneton,109,83,53,104,57,111,4,Rare Holo,False,Mysterious Treasures,3.91,Steel
+Prinplup,47,23,55,67,48,57,4,Common,False,Secret Wonders,0.38,Water
+Alakazam,37,33,28,55,76,64,6,Common,False,Crimson Invasion,0.3,Psychic
+Flareon,46,75,24,55,39,61,7,Common,False,Battle Styles,0.2,Fire
+Kangaskhan,56,57,60,59,44,49,3,Uncommon,False,Sandstorm,0.33,Normal
+Chinchou,68,28,58,25,47,42,5,Common,False,Roaring Skies,0.23,Electric
+Raichu,57,35,67,52,59,39,4,Uncommon,False,Secret Wonders,0.13,Electric
+Buizel GX,214,95,104,123,85,154,6,Rare Ultra,True,Sun & Moon,139.97,Water
+Gothorita,40,33,23,42,78,50,8,Common,False,Paldea Evolved,0.16,Psychic
+Wartortle,68,67,42,76,49,75,6,Uncommon,False,Ultra Prism,0.98,Water
+Weepinbell,235,92,118,129,142,107,1,Secret Rare,True,Neo Genesis,889.48,Grass
+Vullaby,35,56,69,42,57,39,4,Common,True,Mysterious Treasures,0.45,Dark
+Clefairy V,65,19,48,52,55,44,8,Common,True,Paldean Fates,0.64,Fairy
+Alakazam,91,59,58,63,94,100,3,Rare Holo,False,Dragon,6.42,Psychic
+Illumise,69,47,52,58,34,50,2,Uncommon,False,Neo Revelation,0.57,Bug
+Purrloin,43,49,59,31,49,56,3,Uncommon,False,EX FireRed & LeafGreen,0.48,Dark
+Zorua EX,85,72,96,57,70,57,2,Rare Holo,True,Expedition,16.58,Dark
+Mesprit,119,55,65,61,101,86,4,Rare,False,Secret Wonders,1.32,Psychic
+Ledyba,107,43,63,56,56,41,7,Uncommon,False,Battle Styles,0.45,Bug
+Mandibuzz,59,49,50,60,57,64,4,Uncommon,False,Secret Wonders,1.2,Dark
+Oddish,97,62,56,53,63,54,5,Uncommon,False,XY Base,0.15,Grass
+Poliwhirl,99,63,61,77,46,73,1,Rare,False,Base Set,0.7,Water
+Blitzle,44,35,65,35,58,32,3,Common,False,Sandstorm,0.23,Electric
+Boltund,84,44,74,25,69,58,5,Rare,False,Furious Fists,1.86,Electric
+Lombre,30,46,33,45,72,49,7,Common,False,Sword & Shield,0.32,Grass
+Cacturne,59,50,52,53,56,39,5,Uncommon,False,Roaring Skies,0.32,Dark
+Chansey EX,73,48,23,66,60,52,7,Uncommon,True,Battle Styles,0.56,Normal
+Parasect EX,97,56,73,54,76,77,8,Rare Holo,True,Paldea Evolved,15.48,Bug
+Servine,40,38,31,55,47,58,8,Common,False,Obsidian Flames,0.2,Grass
+Quilladin EX,79,48,57,62,76,59,8,Rare,True,Paradox Rift,2.14,Grass
+Gabite GX,104,92,122,77,78,75,7,Rare Holo,True,Battle Styles,16.13,Ground
+Riolu,54,53,82,66,22,44,1,Uncommon,False,Gym Heroes,0.48,Fighting
+Lapras V,212,109,109,138,95,131,6,Rare Ultra,True,Forbidden Light,198.14,Water
+Poliwhirl,59,61,48,60,54,48,1,Common,False,Gym Challenge,0.54,Water
+Torchic,85,63,56,46,57,61,9,Uncommon,False,Shrouded Fable,0.74,Fire
+Barboach,74,35,65,56,45,41,6,Common,False,Crimson Invasion,0.34,Ground
+Pikachu,35,48,79,20,34,30,8,Common,False,Paradox Rift,0.19,Electric
+Umbreon,36,44,49,43,43,51,5,Common,False,Furious Fists,0.39,Dark
+Cacturne,122,43,89,97,87,60,7,Rare Holo,False,Darkness Ablaze,3.87,Dark
+Geodude EX,71,62,45,57,43,50,6,Common,True,Crimson Invasion,0.38,Ground
+Litwick,58,35,32,61,72,60,3,Uncommon,False,Team Magma vs Team Aqua,0.34,Ghost
+Zigzagoon,41,32,35,48,30,50,4,Common,False,Diamond & Pearl,0.37,Normal
+Pancham,56,43,63,54,31,49,3,Common,False,EX FireRed & LeafGreen,0.24,Fighting
+Thundurus,104,56,84,40,59,55,3,Rare,False,EX FireRed & LeafGreen,2.69,Electric
+Latias,70,80,81,65,72,81,7,Rare,False,Sword & Shield,0.89,Dragon
+Mamoswine,86,36,36,81,51,51,7,Uncommon,False,Sword & Shield,0.34,Ice
+Vigoroth,75,59,71,49,67,55,3,Uncommon,True,EX Emerald,1.1,Normal
+Poliwrath,45,57,32,57,44,62,1,Common,False,Team Rocket,0.22,Water
+Bewear,61,55,72,75,35,48,6,Uncommon,False,Burning Shadows,0.32,Fighting
+Beldum,30,43,34,66,45,57,1,Common,False,Base Set,0.36,Steel
+Sceptile,80,53,56,76,62,52,3,Uncommon,False,Dragon,1.05,Grass
+Fennekin EX,70,37,42,41,57,34,5,Common,True,Flashfire,0.27,Fire
+Heliolisk,58,42,55,46,61,39,2,Uncommon,False,Skyridge,0.15,Electric
+Walrein,77,58,58,69,22,76,3,Uncommon,False,Sandstorm,0.31,Water
+Finneon,86,66,70,82,84,82,7,Rare Holo,False,Battle Styles,3.27,Water
+Magmar,62,43,32,48,44,48,5,Common,False,Phantom Forces,0.41,Fire
+Purrloin,69,44,57,30,63,47,2,Common,False,Legendary Collection,0.43,Dark
+Cresselia,45,20,55,48,76,66,1,Common,False,Neo Discovery,0.26,Psychic
+Typhlosion,31,60,32,53,50,41,6,Common,False,Guardians Rising,0.23,Fire
+Snorlax,71,48,70,68,35,51,5,Uncommon,False,Primal Clash,0.28,Normal
+Kabutops,76,61,72,70,53,55,6,Uncommon,False,Ultra Prism,0.3,Rock
+Charizard,70,83,45,42,68,46,5,Rare,False,Roaring Skies,1.18,Fire
+Cinderace,81,63,41,63,65,48,5,Uncommon,False,XY Base,0.3,Fire
+Beedrill,69,50,54,53,64,69,2,Uncommon,False,Legendary Collection,0.62,Bug
+Medicham,82,52,66,58,90,81,6,Rare,False,Burning Shadows,3.24,Psychic
+Chesnaught,76,52,39,53,75,43,7,Uncommon,False,Darkness Ablaze,0.68,Grass
+Groudon,72,73,78,68,40,55,3,Rare,False,Team Magma vs Team Aqua,1.33,Ground
+Cacnea EX,47,36,46,45,62,46,1,Common,True,Jungle,0.42,Grass
+Aron,161,96,96,126,78,119,1,Rare Holo EX,True,Gym Challenge,78.77,Steel
+Ludicolo,41,52,24,36,64,25,5,Common,False,Roaring Skies,0.35,Grass
+Riolu,60,58,62,76,35,29,4,Uncommon,False,Legends Awakened,1.02,Fighting
+Garchomp EX,85,74,78,63,72,82,5,Rare Holo,True,Primal Clash,15.23,Ground
+Gible,71,72,69,92,52,49,8,Uncommon,False,Scarlet & Violet,1.32,Ground
+Giratina,68,41,65,55,84,66,5,Rare,False,Primal Clash,1.35,Ghost
+Slakoth,105,59,75,49,51,59,4,Rare,False,Diamond & Pearl,1.92,Normal
+Mawile,91,56,54,91,48,99,7,Rare,False,Chilling Reign,1.33,Steel
+Mismagius,108,30,66,50,76,65,5,Rare,False,XY Base,0.46,Ghost
+Kangaskhan,63,68,48,42,49,69,1,Uncommon,False,Base Set 2,0.43,Normal
+Sneasel,58,74,81,55,81,63,4,Rare Holo,False,Secret Wonders,6.97,Dark
+Spearow,105,64,59,81,76,75,6,Rare Holo,False,Ultra Prism,5.65,Normal
+Blastoise,65,56,72,70,68,81,8,Rare,False,Obsidian Flames,2.23,Water
+Onix,112,82,72,75,55,73,5,Rare,False,Roaring Skies,1.73,Rock
+Elekid,41,41,59,27,37,37,3,Common,False,EX FireRed & LeafGreen,0.36,Electric
+Ho-Oh,48,53,49,37,45,45,4,Common,False,Diamond & Pearl,0.5,Flying
+Morelull,54,46,47,71,56,82,4,Uncommon,False,Secret Wonders,0.43,Fairy
+Kyurem,52,45,62,44,41,46,5,Common,False,Ancient Origins,0.15,Dragon
+Mawile EX,104,82,73,96,76,89,3,Rare,True,EX FireRed & LeafGreen,4.41,Fairy
+Mesprit,107,60,47,83,77,98,4,Rare,False,Great Encounters,1.26,Psychic
+Ursaring,101,81,73,77,84,56,3,Rare Holo,False,Team Magma vs Team Aqua,16.17,Normal
+Hitmontop,90,58,92,70,69,61,5,Rare,False,Primal Clash,2.35,Fighting
+Reshiram,97,77,40,45,42,51,3,Uncommon,False,Sandstorm,0.34,Fire
+Serperior V,62,45,42,60,53,36,1,Common,True,Gym Challenge,1.63,Grass
+Voltorb,82,47,92,60,85,61,5,Rare,True,Flashfire,3.02,Electric
+Garchomp,123,80,110,57,88,84,2,Rare Holo,False,Skyridge,5.97,Dragon
+Voltorb,54,42,51,38,47,34,4,Common,True,Great Encounters,0.96,Electric
+Zoroark,80,71,96,59,62,61,4,Rare,False,Diamond & Pearl,1.93,Dark
+Reshiram,30,58,66,61,61,48,5,Common,False,XY Base,0.11,Dragon
+Girafarig,99,41,37,61,91,81,4,Rare,False,Great Encounters,1.35,Psychic
+Jolteon,66,36,62,59,58,36,3,Uncommon,False,Team Magma vs Team Aqua,0.55,Electric
+Dodrio,107,61,73,71,75,73,1,Rare Holo,False,Fossil,2.58,Normal
+Anorith,60,43,38,33,33,44,5,Common,False,Phantom Forces,0.2,Bug
+Vaporeon,65,42,61,56,49,64,4,Uncommon,True,Secret Wonders,1.87,Water
+Rapidash GX,37,36,48,27,59,46,5,Common,True,Primal Clash,0.66,Fire
+Grimer,66,46,70,50,62,70,1,Uncommon,False,Gym Challenge,0.61,Poison
+Marill,168,69,59,111,102,113,7,Rare Holo EX,True,Sword & Shield,75.81,Fairy
+Typhlosion,87,78,38,34,49,47,2,Uncommon,False,Skyridge,0.32,Fire
+Yamper,92,39,72,24,48,67,8,Uncommon,False,151,0.48,Electric
+Porygon,30,41,53,56,41,59,5,Common,False,Phantom Forces,0.66,Normal
+Growlithe,71,56,56,54,59,44,1,Uncommon,False,Base Set 2,1.73,Fire
+Clobbopus,60,49,88,70,47,50,8,Uncommon,False,Paldea Evolved,0.65,Fighting
+Darkrai,181,106,129,111,116,111,3,Rare Ultra,True,Sandstorm,110.43,Dark
+Sealeo,60,45,59,83,44,67,4,Uncommon,False,Great Encounters,0.54,Ice
+Fletchinder,73,51,37,36,51,32,5,Common,False,Roaring Skies,0.12,Fire
+Conkeldurr,58,55,68,61,53,47,5,Common,False,Flashfire,0.13,Fighting
+Nidoran,55,48,51,37,72,56,8,Uncommon,False,Paradox Rift,0.38,Poison
+Natu GX,37,44,38,53,88,41,3,Common,True,EX FireRed & LeafGreen,0.41,Psychic
+Gastrodon,119,47,84,74,72,94,2,Rare Holo,False,Skyridge,6.99,Water
+Jigglypuff EX,75,75,64,69,66,68,8,Rare,True,Scarlet & Violet,3.97,Normal
+Heracross,185,115,153,153,84,95,3,Rare Ultra,True,Dragon,299.75,Fighting
+Baltoy,118,59,56,75,108,77,5,Rare Holo,False,Flashfire,3.72,Psychic
+Staraptor,94,75,78,50,64,63,4,Rare Holo,False,Legends Awakened,4.68,Flying
+Charizard,76,88,50,50,47,79,7,Rare,False,Battle Styles,1.82,Fire
+Corsola,77,45,46,88,52,73,8,Uncommon,False,151,0.31,Water
+Blissey,85,85,53,53,48,46,7,Uncommon,False,Rebel Clash,0.36,Normal
+Meowth,86,57,65,53,57,54,2,Uncommon,False,Expedition,1.04,Normal
+Lombre,66,32,39,60,55,55,8,Uncommon,False,Paldea Evolved,0.99,Grass
+Croconaw,89,63,57,56,47,59,3,Uncommon,False,Dragon,0.26,Water
+Wigglytuff,95,58,57,63,83,44,2,Rare,False,Skyridge,1.96,Normal
+Ho-Oh,34,40,53,52,37,31,5,Common,False,Roaring Skies,0.13,Flying
+Nidoqueen,100,75,78,65,79,68,3,Rare Holo,False,Dragon,16.83,Poison
+Electrike,95,50,71,51,73,49,6,Rare,False,Sun & Moon,0.75,Electric
+Banette,64,20,72,53,68,65,4,Uncommon,False,Great Encounters,1.45,Ghost
+Rattata,77,54,49,39,46,66,4,Uncommon,False,Great Encounters,0.5,Normal
+Aggron,163,90,95,143,76,114,7,Rare Holo EX,True,Sword & Shield,41.64,Steel
+Pangoro,55,65,54,51,39,44,1,Common,False,Neo Discovery,0.15,Fighting
+Pineco,77,39,50,50,36,51,1,Uncommon,False,Jungle,0.4,Bug
+Lotad,30,43,52,48,40,62,4,Common,False,Legends Awakened,0.26,Grass
+Reshiram,46,71,76,60,56,47,5,Uncommon,False,Primal Clash,0.42,Dragon
+Fearow GX,58,71,75,43,65,56,3,Uncommon,True,Dragon,0.95,Normal
+Gurdurr,91,39,53,45,41,54,2,Common,False,Skyridge,0.8,Fighting
+Weavile,30,63,59,46,30,51,2,Common,False,Skyridge,0.26,Ice
+Xerneas,61,38,51,52,55,75,4,Uncommon,False,Majestic Dawn,0.52,Fairy
+Zweilous,82,69,63,77,73,60,8,Rare,False,Paradox Rift,2.09,Dark
+Ludicolo,168,98,113,135,67,124,6,Rare Holo GX,True,Guardians Rising,33.32,Water
+Bastiodon,94,98,66,113,66,103,6,Rare Holo,False,Sun & Moon,10.2,Steel
+Honchkrow EX,65,50,62,66,48,57,6,Common,True,Guardians Rising,0.44,Dark
+Axew,48,62,52,50,50,58,7,Common,False,Rebel Clash,0.33,Dragon
+Zoroark,41,48,61,32,28,30,6,Common,False,Ultra Prism,0.11,Dark
+Honedge,54,63,68,76,52,67,9,Uncommon,False,Shrouded Fable,0.35,Steel
+Kangaskhan,88,59,58,37,51,77,1,Rare,False,Base Set 2,1.41,Normal
+Pawniard,34,41,51,88,38,62,3,Common,False,Team Magma vs Team Aqua,0.55,Steel
+Giratina,112,82,109,88,100,84,8,Rare Holo,False,Paradox Rift,9.93,Dragon
+Zigzagoon,88,65,58,72,70,74,6,Rare,False,Burning Shadows,1.77,Normal
+Lucario,76,55,71,63,57,71,2,Uncommon,False,Expedition,0.54,Steel
+Lickitung,41,56,36,26,44,52,5,Common,False,Flashfire,0.38,Normal
+Swalot,37,33,54,36,34,72,2,Common,False,Legendary Collection,0.44,Poison
+Darmanitan,30,40,36,43,35,45,6,Common,False,Burning Shadows,0.35,Fire
+Klefki,92,61,51,68,83,88,2,Rare,False,Neo Revelation,1.46,Fairy
+Gardevoir,93,65,55,70,76,92,8,Rare,False,Paldea Evolved,1.88,Fairy
+Croconaw,186,98,93,121,79,109,1,Rare Holo GX,True,Fossil,24.13,Water
+Sceptile,68,40,54,56,44,27,1,Common,False,Neo Discovery,0.33,Grass
+Wailmer,161,85,77,116,69,106,7,Rare Holo EX,True,Chilling Reign,129.81,Water
+Bisharp,71,51,50,78,41,68,1,Uncommon,False,Gym Heroes,0.51,Steel
+Gyarados,66,53,42,66,47,65,4,Uncommon,False,Mysterious Treasures,0.58,Water
+Cascoon,30,41,64,59,40,52,2,Common,False,Neo Revelation,0.26,Bug
+Jirachi,93,51,52,63,70,74,1,Uncommon,False,Base Set,0.52,Psychic
+Cherrim,30,32,56,60,59,43,4,Common,False,Secret Wonders,0.48,Grass
+Latias,85,70,76,68,67,66,6,Uncommon,False,Sun & Moon,0.74,Dragon
+Swablu,73,55,44,41,67,35,2,Uncommon,False,Aquapolis,0.25,Flying
+Hippowdon,30,54,65,79,38,46,2,Common,False,Neo Destiny,0.24,Ground
+Gigalith,72,50,60,75,52,48,1,Uncommon,False,Gym Heroes,0.45,Rock
+Spoink,93,49,52,81,118,99,1,Rare Holo,False,Team Rocket,8.68,Psychic
+Dragonair,79,76,90,67,84,84,4,Rare,False,Legends Awakened,0.74,Dragon
+Flaaffy,239,108,138,95,108,120,7,Secret Rare,True,Chilling Reign,1149.85,Electric
+Farfetchd GX,78,68,54,64,55,76,4,Rare,True,Diamond & Pearl,1.41,Normal
+Medicham EX,72,43,65,69,32,52,7,Common,True,Rebel Clash,0.39,Fighting
+Tentacool,78,62,53,63,59,72,9,Uncommon,False,Temporal Forces,0.52,Water
+Primeape,94,68,75,69,36,62,6,Rare,False,Ultra Prism,2.44,Fighting
+Exeggutor,224,94,91,103,140,132,6,Rare Ultra,True,Forbidden Light,228.87,Psychic
+Musharna,76,37,42,55,75,57,6,Uncommon,False,Ultra Prism,0.73,Psychic
+Victini,55,91,51,51,67,52,2,Uncommon,True,Legendary Collection,0.73,Fire
+Ninetales,96,74,44,42,61,48,1,Rare,False,Neo Genesis,2.06,Fire
+Camerupt,43,57,50,38,35,29,5,Common,False,Roaring Skies,0.12,Fire
+Deino,216,102,145,111,130,111,4,Rare Ultra,True,Secret Wonders,247.82,Dark
+Eevee,117,90,67,79,70,87,3,Rare Holo,False,EX FireRed & LeafGreen,7.82,Normal
+Bellossom,30,47,46,41,49,58,1,Common,False,Gym Challenge,0.39,Grass
+Mightyena,84,54,61,52,64,65,6,Uncommon,False,Forbidden Light,1.23,Dark
+Shroomish,72,53,35,59,44,36,6,Common,False,Burning Shadows,0.28,Grass
+Kadabra EX,98,69,76,85,95,87,6,Rare Holo,True,Guardians Rising,12.53,Psychic
+Aerodactyl,105,56,53,38,58,47,5,Uncommon,False,Flashfire,0.48,Flying
+Ditto,180,92,98,97,93,76,5,Rare Holo EX,True,Roaring Skies,92.6,Normal
+Wailmer,50,58,52,54,34,36,5,Common,False,Furious Fists,0.13,Water
+Lotad,97,49,66,71,54,84,5,Rare Holo,False,Ancient Origins,11.56,Water
+Weepinbell,58,44,70,57,55,43,4,Uncommon,False,Great Encounters,0.92,Grass
+Metagross,66,48,51,80,49,64,3,Uncommon,False,Team Magma vs Team Aqua,0.9,Steel
+Ampharos,58,55,43,43,62,67,3,Uncommon,False,Sandstorm,0.98,Electric
+Piloswine,43,40,50,74,50,39,4,Common,False,Secret Wonders,0.31,Ice
+Charjabug,94,74,81,22,53,65,5,Uncommon,False,Primal Clash,0.59,Electric
+Sinistea,74,29,41,47,69,51,6,Common,False,Guardians Rising,0.5,Ghost
+Blitzle,75,55,55,30,68,56,5,Uncommon,False,Phantom Forces,0.87,Electric
+Timburr,222,107,136,115,62,88,5,Rare Holo GX,True,XY Base,63.6,Fighting
+Mewtwo,51,33,42,37,80,88,2,Uncommon,False,Expedition,0.69,Psychic
+Zigzagoon,137,95,73,58,61,81,7,Rare Holo,False,Sword & Shield,14.73,Normal
+Togetic,45,34,46,47,49,46,2,Common,False,Neo Revelation,0.26,Flying
+Teddiursa,122,44,70,56,61,60,3,Rare,False,Ruby & Sapphire,1.11,Normal
+Raticate V,90,58,55,47,73,57,3,Uncommon,True,Ruby & Sapphire,0.63,Normal
+Electrode,73,63,73,40,55,50,6,Uncommon,False,Forbidden Light,0.77,Electric
+Roserade GX,106,53,75,77,102,77,3,Rare Holo,True,Ruby & Sapphire,18.49,Grass
+Sneasel,98,79,86,81,80,65,4,Rare Holo,False,Secret Wonders,3.65,Dark
+Delibird,58,40,59,45,54,56,1,Uncommon,False,Team Rocket,0.2,Flying
+Swampert,122,62,76,84,60,87,9,Rare Holo,False,Shrouded Fable,6.6,Water
+Raboot,79,92,49,58,52,54,2,Rare,False,Legendary Collection,1.0,Fire
+Vigoroth,82,77,68,61,72,56,5,Rare,True,XY Base,7.7,Normal
+Pidgeot,40,37,41,18,57,30,5,Common,False,Furious Fists,0.29,Normal
+Lugia,69,37,33,43,60,63,7,Common,False,Darkness Ablaze,0.29,Psychic
+Fraxure GX,170,116,114,107,131,89,7,Rare Holo EX,True,Darkness Ablaze,201.44,Dragon
+Croconaw,93,34,57,74,57,85,2,Rare,False,Skyridge,1.43,Water
+Altaria,58,58,59,54,61,67,2,Common,False,Expedition,0.16,Dragon
+Shiftry,75,51,41,63,52,47,7,Uncommon,False,Vivid Voltage,0.54,Grass
+Ninjask,105,64,64,71,67,65,7,Rare,False,Chilling Reign,1.72,Bug
+Shieldon,47,40,43,79,56,49,5,Common,False,Furious Fists,0.13,Steel
+Chesnaught,68,50,54,84,73,39,8,Uncommon,False,Paldean Fates,0.88,Grass
+Pupitar,86,87,104,78,62,46,6,Rare Holo,False,Sun & Moon,8.61,Ground
+Electrode,101,61,87,54,66,63,8,Rare Holo,False,Paldea Evolved,8.24,Electric
+Altaria,108,74,109,88,88,65,3,Rare Holo,False,Team Magma vs Team Aqua,9.05,Dragon
+Sandygast,66,43,52,45,70,52,6,Uncommon,False,Burning Shadows,0.36,Ghost
+Sunkern,45,37,27,43,33,27,4,Common,False,Diamond & Pearl,0.07,Grass
+Arbok,114,69,88,83,83,64,5,Rare Holo,False,Flashfire,4.79,Poison
+Chinchou,85,51,55,48,63,32,2,Uncommon,False,Neo Revelation,0.96,Electric
+Quilava EX,73,84,46,48,70,46,5,Uncommon,True,Roaring Skies,1.25,Fire
+Abra,50,55,30,42,64,59,3,Uncommon,False,Dragon,0.3,Psychic
+Hakamo-o,85,68,79,67,65,61,6,Rare,False,Burning Shadows,1.67,Dragon
+Pidgeotto EX,78,70,80,67,40,56,8,Uncommon,True,151,0.79,Normal
+Abomasnow,88,61,70,95,81,64,3,Rare,False,Team Magma vs Team Aqua,2.2,Grass
+Jellicent,114,43,82,46,86,71,6,Rare,False,Burning Shadows,3.12,Ghost
+Lucario,73,54,72,75,40,68,4,Uncommon,False,Legends Awakened,0.26,Fighting
+Simisear EX,67,71,43,44,49,33,8,Uncommon,True,Obsidian Flames,0.62,Fire
+Sandshrew EX,82,53,71,53,47,45,1,Uncommon,True,Jungle,2.93,Ground
+Golurk,53,32,44,31,71,43,3,Common,False,Ruby & Sapphire,0.31,Ghost
+Cacturne,37,39,47,41,40,29,3,Common,False,Team Magma vs Team Aqua,0.2,Dark
+Torterra,101,53,63,50,82,72,6,Rare,False,Burning Shadows,0.97,Grass
+Noctowl,72,62,55,45,49,20,4,Common,False,Legends Awakened,0.2,Normal
+Lucario,30,49,60,61,24,37,2,Common,False,Aquapolis,0.27,Fighting
+Mudkip,47,52,48,48,49,39,5,Common,False,Furious Fists,0.36,Water
+Roserade,33,47,41,49,66,34,3,Common,False,Sandstorm,0.23,Grass
+Mightyena EX,72,56,72,72,62,44,3,Rare,True,Sandstorm,1.3,Dark
+Hippowdon,110,77,101,78,69,67,7,Rare,False,Chilling Reign,1.21,Ground
+Hitmonlee,56,47,71,71,27,37,2,Uncommon,False,Expedition,0.22,Fighting
+Kabutops,93,93,54,98,51,79,5,Rare Holo,False,Furious Fists,6.56,Rock
+Magneton,67,55,59,30,79,51,2,Uncommon,False,Aquapolis,0.55,Electric
+Dwebble,112,86,73,81,54,66,6,Rare,False,Forbidden Light,4.11,Rock
+Gurdurr,103,71,106,70,53,59,2,Rare Holo,False,Legendary Collection,4.45,Fighting
+Combusken,84,57,31,30,68,37,7,Uncommon,False,Rebel Clash,0.57,Fire
+Ivysaur,110,64,63,53,76,71,5,Rare,False,Phantom Forces,1.0,Grass
+Kyurem,82,66,83,66,80,85,7,Rare,False,Chilling Reign,1.96,Dragon
+Kingdra,30,47,81,34,40,35,1,Common,False,Jungle,0.38,Dragon
+Psyduck,30,30,45,50,25,52,8,Common,False,151,0.24,Water
+Chimecho,58,34,32,31,61,42,6,Common,False,Guardians Rising,0.42,Psychic
+Gible,57,44,60,48,62,49,6,Common,False,Sun & Moon,0.32,Dragon
+Bayleef,36,30,56,53,34,55,7,Common,False,Chilling Reign,0.75,Grass
+Piplup,48,44,40,60,37,70,3,Common,False,EX Emerald,0.13,Water
+Pansear,108,89,76,53,79,64,6,Rare Holo,False,Burning Shadows,4.23,Fire
+Alakazam,118,62,59,69,101,115,5,Rare Holo,False,Flashfire,9.19,Psychic
+Mew,84,28,43,54,93,98,4,Rare,False,Legends Awakened,1.98,Psychic
+Slugma GX,73,69,45,46,41,47,7,Uncommon,True,Vivid Voltage,0.55,Fire
+Jolteon,227,126,124,114,125,108,4,Secret Rare,True,Legends Awakened,767.77,Electric
+Stufful,89,58,108,86,56,71,6,Rare Holo,False,Sun & Moon,7.52,Fighting
+Drifblim,45,37,72,60,78,58,2,Uncommon,False,Expedition,0.31,Ghost
+Lucario,59,49,87,76,35,60,8,Uncommon,False,Paradox Rift,0.42,Fighting
+Victini,212,151,109,93,126,103,3,Secret Rare,True,EX Emerald,256.99,Fire
+Electrike EX,113,73,56,31,67,31,1,Rare,True,Base Set 2,1.1,Electric
+Weavile,61,42,37,66,51,28,8,Common,False,Paradox Rift,0.1,Ice
+Snorlax,99,71,64,62,66,88,1,Rare,False,Fossil,0.74,Normal
+Dedenne EX,35,54,46,51,61,56,8,Common,True,Paldea Evolved,0.24,Fairy
+Corviknight,67,65,45,93,34,74,4,Uncommon,False,Secret Wonders,0.24,Steel
+Gigalith,88,65,78,87,73,60,1,Rare,False,Team Rocket,1.19,Rock
+Hawlucha,159,83,124,109,75,74,5,Rare Holo EX,True,Roaring Skies,99.92,Fighting
+Pelipper,113,49,47,47,62,50,6,Rare,False,Burning Shadows,2.95,Flying
+Klang,96,70,55,68,67,73,4,Rare,False,Mysterious Treasures,4.78,Steel
+Snubbull,194,97,78,104,120,125,7,Rare Holo EX,True,Chilling Reign,88.14,Fairy
+Poliwhirl,88,55,69,73,69,77,2,Rare,False,Aquapolis,2.34,Water
+Boltund,54,50,58,28,53,49,1,Uncommon,False,Gym Challenge,1.83,Electric
+Wingull,111,74,82,94,71,91,2,Rare Holo,False,Legendary Collection,5.26,Water
+Persian,61,47,42,63,46,50,3,Uncommon,False,Team Magma vs Team Aqua,0.71,Normal
+Houndour,89,99,72,72,91,60,7,Rare Holo,False,Vivid Voltage,9.68,Fire
+Timburr,172,101,140,120,64,89,4,Rare Holo GX,True,Diamond & Pearl,33.81,Fighting
+Armaldo,70,46,76,90,52,79,6,Uncommon,False,Burning Shadows,0.87,Rock
+Weepinbell,72,32,55,42,49,43,3,Common,False,EX Emerald,0.38,Grass
+Thundurus,72,48,82,57,58,53,1,Rare,False,Jungle,2.15,Electric
+Beldum,55,45,62,53,34,55,8,Common,False,Scarlet & Violet,0.74,Steel
+Rayquaza,69,58,59,46,53,48,5,Uncommon,False,XY Base,0.26,Flying
+Bastiodon EX,70,69,45,99,33,75,4,Uncommon,True,Majestic Dawn,0.51,Steel
+Celebi,61,49,43,60,85,64,3,Uncommon,False,Dragon,0.46,Psychic
+Raboot,96,79,56,47,63,42,4,Rare,False,Secret Wonders,2.52,Fire
+Furret,54,47,34,52,47,36,4,Common,False,Mysterious Treasures,0.17,Normal
+Zygarde,153,92,118,88,114,90,5,Rare Holo EX,True,Flashfire,40.52,Dragon
+Slakoth,34,37,43,48,54,37,6,Common,False,Ultra Prism,0.31,Normal
+Raboot,44,79,40,54,56,39,8,Uncommon,False,Paradox Rift,0.36,Fire
+Ponyta GX,54,56,35,37,48,33,3,Common,True,Team Magma vs Team Aqua,0.31,Fire
+Torchic,64,69,56,38,35,51,5,Uncommon,False,XY Base,0.5,Fire
+Omastar,89,52,57,86,51,58,2,Uncommon,False,Neo Revelation,0.5,Rock
+Mamoswine GX,70,43,48,61,54,57,2,Uncommon,True,Neo Revelation,1.28,Ice
+Purrloin,71,44,66,59,65,52,9,Uncommon,False,Shrouded Fable,0.45,Dark
+Azumarill,109,89,42,70,97,105,7,Rare Holo,False,Rebel Clash,8.66,Fairy
+Entei,104,67,50,34,58,47,5,Uncommon,False,Ancient Origins,0.61,Fire
+Dodrio,64,62,76,68,57,63,5,Rare,False,Furious Fists,3.22,Normal
+Solrock,79,46,39,47,88,60,4,Uncommon,False,Diamond & Pearl,1.5,Psychic
+Cyndaquil,171,119,61,85,103,65,3,Rare Holo EX,True,Ruby & Sapphire,47.14,Fire
+Ralts,113,58,46,74,82,84,7,Rare,False,Vivid Voltage,1.95,Psychic
+Entei,52,52,44,29,34,43,6,Common,False,Forbidden Light,0.23,Fire
+Pineco,162,81,91,81,74,101,3,Rare Holo EX,True,Sandstorm,48.47,Bug
+Monferno,179,143,105,87,108,105,4,Rare Ultra,True,Diamond & Pearl,127.49,Fire
+Piplup GX,86,52,39,60,45,63,8,Uncommon,True,Paldea Evolved,1.16,Water
+Helioptile,77,68,71,44,52,64,5,Rare,False,XY Base,2.07,Electric
+Mightyena,95,50,57,45,45,41,4,Uncommon,False,Majestic Dawn,0.32,Dark
+Natu,98,51,27,58,87,86,2,Rare,False,Legendary Collection,1.57,Psychic
+Shedinja,100,34,60,56,42,49,5,Rare,False,Flashfire,0.82,Bug
+Whismur,30,40,58,60,41,44,1,Common,False,Base Set 2,0.15,Normal
+Drifloon,90,56,77,67,65,53,5,Rare,False,Primal Clash,1.45,Ghost
+Sawk,114,63,101,104,50,70,1,Rare Holo,False,Jungle,5.71,Fighting
+Fletchinder,44,78,27,49,38,56,1,Uncommon,False,Gym Challenge,0.65,Fire
+Helioptile,72,40,63,58,46,43,6,Uncommon,False,Ultra Prism,0.24,Electric
+Omanyte,46,68,71,71,46,55,8,Uncommon,False,Paldea Evolved,0.95,Rock
+Squirtle,85,70,65,57,44,79,7,Rare,False,Sword & Shield,1.51,Water
+Spritzee,62,50,30,58,41,51,2,Common,False,Aquapolis,0.35,Fairy
+Aegislash,51,57,59,82,35,65,3,Uncommon,False,EX FireRed & LeafGreen,0.65,Steel
+Garchomp,110,64,80,69,42,56,5,Uncommon,False,XY Base,0.5,Ground
+Mudkip,32,50,64,44,62,49,1,Common,False,Neo Genesis,0.48,Water
+Gengar,87,56,57,54,66,52,2,Uncommon,False,Expedition,0.89,Ghost
+Numel,117,95,60,56,77,50,3,Rare Holo,False,Sandstorm,7.76,Fire
+Litten GX,94,63,35,30,50,41,6,Uncommon,True,Guardians Rising,1.46,Fire
+Ledian EX,49,42,42,47,51,47,4,Common,True,Mysterious Treasures,0.65,Bug
+Emboar,49,57,26,40,38,36,5,Common,False,Roaring Skies,0.18,Fire
+Illumise,85,42,66,76,56,70,8,Rare,False,Scarlet & Violet,0.73,Bug
+Marshtomp,106,78,69,75,66,90,1,Rare Holo,False,Base Set,3.66,Water
+Lotad,107,56,74,94,87,77,5,Rare Holo,False,Phantom Forces,9.73,Water
+Aron,91,51,69,85,49,77,6,Rare,False,Forbidden Light,0.92,Steel
+Shroomish,42,28,32,52,56,50,2,Common,False,Neo Revelation,0.22,Grass
+Zweilous,46,44,41,34,57,52,4,Common,False,Secret Wonders,0.29,Dark
+Pidgeotto,43,33,35,40,38,45,3,Common,False,Team Magma vs Team Aqua,0.14,Flying
+Kirlia EX,66,44,35,64,75,74,6,Uncommon,True,Crimson Invasion,1.06,Psychic
+Regidrago,42,45,41,53,73,52,5,Common,False,XY Base,0.26,Dragon
+Wailord,187,94,103,100,108,127,5,Rare Holo GX,True,Furious Fists,69.29,Water
+Kadabra,61,28,32,59,83,66,3,Common,False,Team Magma vs Team Aqua,0.42,Psychic
+Noctowl,89,56,52,50,64,43,1,Rare,False,Base Set,1.38,Normal
+Bellsprout,193,98,99,128,121,111,1,Rare Holo GX,True,Gym Heroes,93.44,Grass
+Gible EX,57,56,71,60,29,36,7,Common,True,Chilling Reign,0.27,Ground
+Purrloin,101,67,82,75,54,44,7,Rare,False,Rebel Clash,2.25,Dark
+Axew GX,77,63,77,62,58,64,3,Uncommon,True,EX FireRed & LeafGreen,0.84,Dragon
+Mime Jr.,68,58,56,72,83,100,3,Rare,False,Sandstorm,1.1,Fairy
+Milotic,39,41,34,45,54,54,7,Common,False,Battle Styles,0.17,Water
+Kirlia EX,56,40,52,58,44,56,1,Uncommon,True,Base Set,0.76,Fairy
+Conkeldurr,87,56,93,63,32,42,4,Uncommon,False,Secret Wonders,0.83,Fighting
+Klink V,45,41,53,79,22,75,8,Common,True,Paradox Rift,0.37,Steel
+Bellsprout,108,54,72,86,92,66,6,Rare Holo,False,Guardians Rising,5.07,Grass
+Grovyle,80,60,47,63,73,52,7,Uncommon,False,Chilling Reign,0.9,Grass
+Gyarados,105,84,85,87,50,86,2,Rare Holo,False,Neo Revelation,8.58,Water
+Helioptile,71,47,74,37,58,55,2,Uncommon,False,Neo Destiny,0.4,Electric
+Camerupt EX,171,124,85,57,95,105,1,Rare Holo EX,True,Base Set,90.55,Fire
+Exeggutor,63,39,32,24,67,52,8,Common,False,Scarlet & Violet,0.22,Grass
+Mew,88,50,68,68,94,90,2,Rare,False,Aquapolis,3.06,Psychic
+Mismagius,217,90,106,101,154,119,1,Secret Rare,True,Jungle,2391.53,Ghost
+Pangoro,62,49,78,62,45,52,6,Uncommon,False,Sun & Moon,0.82,Fighting
+Girafarig,95,59,50,69,86,54,3,Rare,False,EX Emerald,2.81,Psychic
+Walrein,90,51,63,78,37,76,2,Rare,False,Skyridge,0.9,Water
+Teddiursa,38,35,31,45,39,52,5,Common,False,Flashfire,0.25,Normal
+Tepig,79,80,64,36,70,52,3,Rare,False,Team Magma vs Team Aqua,1.65,Fire
+Arcanine,173,133,65,59,87,80,8,Rare Holo EX,True,Obsidian Flames,128.89,Fire
+Magneton,76,56,85,38,61,66,3,Rare,False,Dragon,2.27,Electric
+Lairon EX,51,67,60,75,33,71,8,Uncommon,True,Paradox Rift,1.27,Rock
+Marshtomp V,73,55,60,80,56,57,6,Uncommon,True,Guardians Rising,1.45,Water
+Golem,106,67,74,74,41,50,2,Uncommon,False,Legendary Collection,0.64,Ground
+Latios,101,35,56,82,92,82,7,Rare,False,Rebel Clash,3.32,Psychic
+Mandibuzz,33,46,63,59,76,67,4,Common,False,Diamond & Pearl,0.26,Dark
+Finneon,46,51,37,61,30,63,3,Common,False,EX FireRed & LeafGreen,0.21,Water
+Exeggcute V,116,51,74,84,81,73,3,Rare Holo,True,EX FireRed & LeafGreen,9.79,Grass
+Corsola,57,22,43,64,51,36,3,Common,False,Ruby & Sapphire,0.16,Water
+Abomasnow,61,45,50,43,54,50,1,Common,False,Team Rocket,0.16,Grass
+Lugia,84,58,38,66,84,71,7,Rare,False,Darkness Ablaze,3.2,Psychic
+Charmeleon,30,63,39,27,57,37,3,Common,False,Team Magma vs Team Aqua,0.07,Fire
+Igglybuff,116,45,40,76,95,88,7,Rare Holo,False,Sword & Shield,3.75,Fairy
+Sandile,35,44,55,69,65,45,2,Common,False,Neo Destiny,0.29,Dark
+Raikou,74,33,67,39,65,34,4,Uncommon,False,Great Encounters,0.43,Electric
+Fennekin,31,65,49,44,57,56,5,Uncommon,False,Furious Fists,0.35,Fire
+Walrein EX,42,47,45,40,42,35,5,Common,True,Phantom Forces,0.6,Water
+Breloom V,64,57,49,80,67,55,3,Uncommon,True,Dragon,1.08,Grass
+Stunky EX,41,27,53,64,67,53,3,Common,True,Dragon,0.74,Poison
+Jirachi,44,10,19,54,63,42,2,Common,False,Neo Revelation,0.21,Psychic
+Wingull,100,67,34,93,70,83,6,Rare,False,Forbidden Light,2.98,Water
+Dedenne,41,44,61,57,60,61,8,Common,False,Paradox Rift,0.37,Fairy
+Tepig,76,81,56,25,64,67,5,Uncommon,False,Roaring Skies,0.27,Fire
+Rhyperior,53,58,68,68,49,36,3,Common,False,EX Emerald,0.17,Rock
+Timburr,39,62,79,65,33,48,5,Common,False,Primal Clash,0.35,Fighting
+Ninjask,58,31,74,40,34,47,2,Common,False,Neo Revelation,0.12,Bug
+Sceptile,30,52,47,46,54,41,7,Common,False,Darkness Ablaze,0.21,Grass
+Spoink,63,38,39,35,66,43,8,Common,False,Paradox Rift,0.28,Psychic
+Ponyta,204,145,96,91,107,92,5,Rare Ultra,True,Ancient Origins,137.49,Fire
+Munna,112,38,50,63,95,105,4,Rare Holo,False,Diamond & Pearl,4.17,Psychic
+Yamper,30,40,70,34,47,41,1,Common,False,Neo Discovery,0.4,Electric
+Snubbull,40,54,18,55,43,62,4,Common,False,Diamond & Pearl,0.11,Fairy
+Hydreigon,75,71,58,64,61,64,3,Uncommon,False,Ruby & Sapphire,1.25,Dark
+Victini,39,41,54,52,72,66,2,Common,True,Legendary Collection,0.69,Psychic
+Hypno,30,23,21,40,54,58,5,Common,False,Roaring Skies,0.35,Psychic
+Dedenne,111,41,82,55,78,70,6,Rare,False,Forbidden Light,3.26,Electric
+Sandile,111,69,93,79,72,65,6,Rare Holo,False,Ultra Prism,1.14,Dark
+Braixen,157,118,73,72,79,84,7,Rare Holo EX,True,Battle Styles,38.75,Fire
+Paras,128,30,84,67,56,73,6,Rare,False,Burning Shadows,0.61,Bug
+Galvantula,40,52,56,53,49,15,1,Common,False,Fossil,0.27,Electric
+Palkia EX,99,78,66,80,78,79,7,Rare Holo,True,Darkness Ablaze,5.77,Water
+Poliwag,92,49,64,92,62,87,7,Rare,False,Darkness Ablaze,1.55,Water
+Ho-Oh V,57,37,45,40,66,32,6,Uncommon,True,Burning Shadows,1.65,Flying
+Mienshao,71,45,77,75,24,57,1,Uncommon,False,Team Rocket,0.69,Fighting
+Machoke,50,67,60,41,46,47,5,Uncommon,False,Furious Fists,1.41,Fighting
+Weavile,74,36,51,48,38,38,7,Common,False,Chilling Reign,0.21,Ice
+Snivy,85,50,60,82,59,84,8,Rare,False,Paradox Rift,2.23,Grass
+Lumineon,70,77,69,65,39,83,4,Rare,False,Majestic Dawn,2.36,Water
+Volbeat,62,40,40,55,32,29,3,Uncommon,True,Ruby & Sapphire,1.11,Bug
+Gothorita,86,45,48,46,83,85,3,Rare,False,Sandstorm,1.03,Psychic
+Mr. Mime,67,37,34,64,67,77,3,Uncommon,False,EX FireRed & LeafGreen,0.46,Psychic
+Zebstrika,95,67,89,46,62,68,2,Rare Holo,False,Legendary Collection,6.42,Electric
+Zweilous,102,56,91,78,72,55,8,Rare Holo,False,Paldean Fates,12.64,Dark
+Porygon2,199,107,112,110,107,104,6,Rare Ultra,True,Burning Shadows,154.64,Normal
+Bellossom,71,56,46,58,62,41,2,Uncommon,False,Expedition,0.29,Grass
+Dwebble,74,89,74,103,45,77,5,Rare,False,Roaring Skies,1.76,Rock
+Victini EX,50,77,49,28,61,41,4,Uncommon,True,Diamond & Pearl,0.98,Fire
+Piplup,30,36,47,56,18,54,1,Common,False,Fossil,0.39,Water
+Arcanine,78,65,50,56,58,38,8,Uncommon,False,Scarlet & Violet,0.41,Fire
+Grotle,51,39,21,32,68,41,8,Common,False,Scarlet & Violet,0.2,Grass
+Electrike,44,41,69,34,54,46,1,Common,False,Jungle,0.17,Electric
+Primeape,82,60,103,69,47,51,4,Rare,False,Secret Wonders,0.73,Fighting
+Tyrogue,174,63,125,108,74,89,2,Rare Holo EX,True,Aquapolis,106.01,Fighting
+Onix,101,65,87,87,60,72,6,Rare,False,Crimson Invasion,0.52,Ground
+Tepig,32,56,38,22,41,43,7,Common,False,Rebel Clash,0.18,Fire
+Feraligatr EX,131,75,76,80,77,86,6,Rare Holo,True,Forbidden Light,11.07,Water
+Ludicolo,35,61,63,48,53,61,7,Common,False,Darkness Ablaze,0.2,Water
+Scorbunny,88,69,39,43,37,45,1,Uncommon,False,Base Set 2,0.87,Fire
+Houndour,178,127,80,59,105,90,7,Rare Holo EX,True,Vivid Voltage,66.73,Fire
+Exeggcute,64,60,66,67,73,55,2,Uncommon,False,Neo Destiny,0.86,Grass
+Bisharp,157,88,100,123,90,123,6,Rare Holo EX,True,Forbidden Light,104.44,Steel
+Marill,86,71,70,77,59,80,5,Rare,False,Furious Fists,3.18,Water
+Flareon,78,51,28,27,50,49,2,Common,False,Aquapolis,0.32,Fire
+Exeggcute,90,43,60,49,61,55,6,Uncommon,False,Sun & Moon,0.76,Grass
+Magnemite,30,54,49,70,47,42,3,Common,False,Ruby & Sapphire,0.4,Steel
+Gardevoir,62,39,50,43,83,67,1,Uncommon,False,Team Rocket,0.66,Psychic
+Cyndaquil,61,59,55,40,45,65,1,Uncommon,False,Team Rocket,0.45,Fire
+Chansey EX,51,33,47,37,52,42,4,Common,True,Legends Awakened,0.44,Normal
+Zeraora,87,54,99,58,71,62,5,Rare,False,Ancient Origins,1.66,Electric
+Bisharp,80,58,58,46,66,43,8,Uncommon,False,Obsidian Flames,0.37,Dark
+Weezing,186,77,82,92,98,95,7,Rare Holo EX,True,Sword & Shield,83.19,Poison
+Hypno,30,28,32,47,66,47,1,Common,False,Fossil,0.22,Psychic
+Shuppet,66,24,53,56,52,63,8,Uncommon,False,Paldea Evolved,0.49,Ghost
+Venusaur,30,45,55,51,55,48,6,Common,True,Burning Shadows,0.49,Grass
+Chesnaught GX,51,57,46,77,62,37,6,Uncommon,True,Sun & Moon,2.38,Grass
+Boltund,205,88,138,89,95,90,5,Rare Ultra,True,XY Base,73.95,Electric
+Slugma,60,68,41,23,50,38,4,Common,False,Great Encounters,0.43,Fire
+Jirachi,30,38,31,39,83,55,5,Common,False,Flashfire,0.3,Psychic
+Simisear,30,60,37,35,27,34,2,Common,False,Skyridge,0.85,Fire
+Croagunk,94,75,92,96,39,78,4,Rare Holo,False,Great Encounters,8.54,Fighting
+Suicune,75,40,61,71,59,58,1,Uncommon,False,Team Rocket,0.54,Water
+Snover,85,54,36,57,40,53,3,Common,False,Sandstorm,0.16,Grass
+Dratini,66,60,69,53,80,53,4,Uncommon,False,Mysterious Treasures,0.61,Dragon
+Zekrom,53,44,62,36,52,47,6,Common,False,Sun & Moon,0.19,Dragon
+Lugia,88,39,53,40,94,66,3,Uncommon,False,EX Emerald,0.72,Psychic
+Phanpy,76,71,76,57,50,59,6,Uncommon,False,Guardians Rising,1.19,Ground
+Nuzleaf,85,71,64,47,77,84,3,Rare,False,Team Magma vs Team Aqua,1.22,Grass
+Reshiram,83,103,41,54,82,50,2,Rare Holo,False,Neo Destiny,8.22,Fire
+Volbeat,63,31,49,75,38,53,3,Uncommon,True,Team Magma vs Team Aqua,1.28,Bug
+Bastiodon,60,52,34,64,32,62,8,Common,False,Obsidian Flames,0.42,Steel
+Pignite,57,54,51,46,43,47,2,Common,False,Skyridge,0.21,Fire
+Crabominable,50,47,55,68,42,57,3,Common,False,Ruby & Sapphire,0.18,Fighting
+Galvantula,88,49,47,57,64,43,3,Uncommon,False,Ruby & Sapphire,0.31,Electric
+Cresselia,49,42,36,36,81,50,8,Common,False,Paldean Fates,0.38,Psychic
+Camerupt,71,75,54,57,54,36,1,Uncommon,False,Base Set 2,0.26,Fire
+Latias,81,33,27,53,101,75,2,Rare,False,Expedition,1.5,Psychic
+Ninjask,91,52,84,70,49,68,5,Rare Holo,False,Ancient Origins,4.99,Bug
+Pidgeotto,46,27,60,47,33,57,1,Common,False,Base Set 2,0.41,Flying
+Fletchinder,194,145,83,84,98,105,2,Rare Ultra,True,Aquapolis,86.39,Fire
+Magneton,82,44,67,32,58,61,7,Uncommon,False,Darkness Ablaze,1.01,Electric
+Torkoal EX,33,71,54,29,46,29,6,Common,True,Ultra Prism,0.91,Fire
+Smeargle,80,68,76,43,62,50,5,Rare,False,Roaring Skies,1.11,Normal
+Weepinbell,113,74,77,80,99,91,7,Rare Holo,False,Sword & Shield,6.57,Poison
+Honedge,64,58,43,45,30,59,7,Common,False,Vivid Voltage,0.19,Steel
+Aipom,92,54,73,53,74,68,8,Rare,False,151,3.03,Normal
+Exeggcute,59,27,46,56,89,72,6,Uncommon,False,Guardians Rising,0.97,Psychic
+Pancham,71,38,72,45,37,53,3,Common,False,Team Magma vs Team Aqua,0.26,Fighting
+Kirlia,40,56,37,49,65,48,8,Common,False,Obsidian Flames,0.22,Fairy
+Togepi,30,33,41,56,51,49,1,Common,False,Neo Discovery,0.18,Fairy
+Aron,87,74,87,89,25,45,6,Uncommon,False,Ultra Prism,0.32,Rock
+Wailord,99,78,60,69,69,85,5,Rare Holo,False,XY Base,3.96,Water
+Umbreon,170,85,105,111,101,85,8,Rare Holo EX,True,Scarlet & Violet,19.28,Dark
+Slakoth,50,56,64,43,49,58,4,Uncommon,False,Majestic Dawn,0.44,Normal
+Turtwig,143,86,69,61,85,91,3,Rare Holo,False,EX Emerald,7.87,Grass
+Sealeo,42,47,66,71,62,54,2,Uncommon,False,Expedition,0.99,Water
+Lotad,40,28,32,57,54,33,5,Common,False,Flashfire,0.27,Grass
+Klinklang,69,55,50,77,61,79,1,Uncommon,False,Gym Challenge,1.26,Steel
+Pupitar,30,53,56,64,31,64,9,Common,False,Twilight Masquerade,0.2,Ground
+Lapras,51,17,54,55,50,43,1,Common,False,Neo Genesis,0.24,Water
+Gothorita,34,33,36,57,57,67,7,Common,False,Vivid Voltage,0.6,Psychic
+Meowth,46,41,50,47,51,46,5,Common,False,Primal Clash,0.47,Normal
+Giratina,92,85,109,81,81,95,3,Rare Holo,False,EX Emerald,7.31,Dragon
+Pidgey EX,101,61,55,52,85,73,6,Rare Holo,True,Guardians Rising,9.74,Flying
+Dedenne,98,68,63,67,63,76,6,Rare Holo,False,Ultra Prism,3.22,Electric
+Gyarados,37,52,59,41,49,67,8,Common,False,Scarlet & Violet,0.32,Water
+Palossand,91,32,52,48,79,71,7,Uncommon,False,Sword & Shield,1.07,Ghost
+Magikarp,42,51,35,53,47,49,1,Common,False,Base Set,0.16,Water
+Stufful GX,101,53,64,60,54,67,4,Uncommon,True,Diamond & Pearl,3.29,Fighting
+Axew,36,53,64,35,74,35,7,Common,False,Chilling Reign,0.26,Dragon
+Seedot,65,24,38,52,41,44,5,Common,False,Furious Fists,0.1,Grass
+Camerupt,68,70,48,30,37,32,4,Common,False,Mysterious Treasures,0.17,Fire
+Finneon,87,72,48,99,49,85,4,Rare,False,Secret Wonders,5.17,Water
+Ninjask GX,65,48,60,56,38,48,3,Common,True,Team Magma vs Team Aqua,0.6,Bug
+Moltres,97,86,63,47,65,91,8,Rare Holo,False,Paldea Evolved,9.64,Fire
+Treecko,90,32,48,82,62,24,1,Uncommon,False,Gym Heroes,0.68,Grass
+Primeape,46,25,39,60,35,41,5,Common,False,Primal Clash,0.21,Fighting
+Lugia,104,67,44,77,92,73,2,Rare,False,Neo Destiny,1.18,Psychic
+Floatzel EX,30,44,49,56,39,44,4,Common,True,Mysterious Treasures,0.25,Water
+Poliwrath,38,52,26,58,39,50,4,Common,False,Mysterious Treasures,0.13,Water
+Victreebel,54,47,58,47,80,71,4,Uncommon,True,Majestic Dawn,1.56,Grass
+Phanpy,73,57,103,78,59,75,6,Rare,False,Guardians Rising,3.49,Ground
+Charizard,92,78,57,62,62,54,5,Rare,False,Primal Clash,2.77,Fire
+Entei,61,61,48,58,61,42,3,Uncommon,False,Team Magma vs Team Aqua,0.82,Fire
+Zoroark,178,105,135,105,111,113,7,Rare Ultra,True,Darkness Ablaze,255.51,Dark
+Minun,52,46,61,33,32,48,4,Common,False,Secret Wonders,0.15,Electric
+Palkia,67,54,55,54,48,63,5,Uncommon,False,Flashfire,0.4,Water
+Whismur,64,66,54,46,51,57,3,Uncommon,False,Sandstorm,1.37,Normal
+Rattata,42,45,38,54,47,26,1,Common,False,Fossil,0.36,Normal
+Sinistea,92,44,69,46,88,61,5,Rare,False,XY Base,1.17,Ghost
+Pansear GX,43,63,35,36,28,47,3,Common,True,Ruby & Sapphire,0.81,Fire
+Pignite,174,113,73,69,76,75,2,Rare Holo EX,True,Skyridge,122.26,Fire
+Combusken,68,59,32,27,36,30,1,Common,False,Fossil,0.35,Fire
+Heracross,100,62,83,75,53,58,8,Rare,False,Scarlet & Violet,1.16,Fighting
+Regirock,62,84,90,98,47,67,2,Rare,False,Expedition,1.45,Rock
+Seedot EX,85,37,58,48,58,37,8,Common,True,Paldea Evolved,0.31,Grass
+Grovyle,44,40,62,48,44,51,4,Common,False,Diamond & Pearl,0.28,Grass
+Murkrow,119,71,83,83,76,71,8,Rare Holo,False,Paldean Fates,2.92,Dark
+Venomoth,198,102,127,86,120,114,7,Rare Ultra,True,Chilling Reign,287.39,Poison
+Zigzagoon,61,52,49,56,51,54,6,Uncommon,False,Crimson Invasion,0.69,Normal
+Hitmontop,37,46,81,62,35,43,9,Common,False,Twilight Masquerade,0.22,Fighting
+Slaking,30,39,52,43,49,69,6,Common,False,Burning Shadows,0.22,Normal
+Xatu,101,47,53,73,92,93,6,Rare,False,Crimson Invasion,1.19,Psychic
+Venusaur,90,48,65,74,73,63,1,Rare,True,Gym Challenge,3.45,Grass
+Dragonite,76,59,88,54,65,68,8,Uncommon,False,Paldean Fates,0.86,Dragon
+Grimer,64,34,55,56,50,50,1,Uncommon,False,Neo Discovery,0.25,Poison
+Xatu,84,47,31,61,82,78,5,Uncommon,False,Primal Clash,0.38,Psychic
+Magcargo,76,88,56,42,61,49,1,Rare,False,Base Set 2,0.65,Fire
+Piplup,161,87,108,96,64,129,3,Rare Holo EX,True,Sandstorm,75.31,Water
+Gothitelle,84,50,55,52,92,106,3,Rare,False,Dragon,3.31,Psychic
+Elekid,52,32,55,31,59,26,7,Common,False,Sword & Shield,0.26,Electric
+Cinderace,81,96,65,37,80,67,7,Rare Holo,False,Vivid Voltage,4.64,Fire
+Ludicolo GX,71,41,61,71,80,64,7,Rare,True,Sword & Shield,2.26,Grass
+Baltoy,120,73,52,77,100,84,6,Rare Holo,False,Sun & Moon,6.17,Psychic
+Cacturne,82,36,57,55,44,37,6,Common,False,Ultra Prism,0.14,Dark
+Pichu,99,51,82,36,69,60,2,Rare,False,Neo Destiny,1.71,Electric
+Nuzleaf,62,43,42,82,95,65,3,Rare,False,EX Emerald,2.46,Grass
+Lugia,75,48,85,41,49,65,5,Rare,False,Furious Fists,2.42,Flying
+Cacnea,205,121,94,100,135,104,1,Rare Ultra,True,Gym Heroes,188.33,Grass
+Giratina GX,79,63,64,58,81,70,5,Rare,True,Phantom Forces,4.58,Ghost
+Shiftry,116,67,56,74,76,81,3,Rare Holo,False,Team Magma vs Team Aqua,7.65,Grass
+Lampent,104,49,68,61,84,77,6,Rare,False,Sun & Moon,1.03,Ghost
+Persian,53,37,31,36,38,44,2,Common,False,Expedition,0.2,Normal
+Totodile,41,50,43,40,41,54,5,Common,False,Ancient Origins,0.27,Water
+Bewear,43,45,62,49,29,44,1,Common,False,Gym Heroes,0.23,Fighting
+Latias,74,49,49,63,95,78,9,Rare,False,Shrouded Fable,1.56,Psychic
+Omanyte,39,41,63,74,23,51,6,Common,False,Crimson Invasion,0.41,Rock
+Hydreigon,34,48,60,46,59,72,7,Common,False,Sword & Shield,0.26,Dark
+Quilladin,74,37,41,42,52,26,5,Common,False,Furious Fists,0.11,Grass
+Morelull,79,35,55,61,65,74,1,Uncommon,False,Fossil,0.59,Fairy
+Mandibuzz,34,63,52,58,31,52,2,Common,False,Neo Destiny,0.52,Dark
+Sawk,88,34,94,61,46,77,6,Uncommon,False,Forbidden Light,0.59,Fighting
+Beldum,43,40,24,61,38,65,3,Common,False,EX FireRed & LeafGreen,0.27,Steel
+Sunkern,57,53,52,48,81,46,1,Uncommon,False,Gym Challenge,0.99,Grass
+Garchomp,61,66,59,58,60,49,6,Uncommon,False,Crimson Invasion,0.3,Dragon
+Baltoy,69,43,61,73,124,80,2,Rare Holo,False,Neo Destiny,4.97,Psychic
+Marshtomp GX,30,53,36,59,28,59,7,Common,True,Vivid Voltage,1.85,Water
+Hakamo-o GX,107,66,89,82,79,67,1,Rare,True,Neo Genesis,4.66,Dragon
+Zeraora V,65,39,71,21,33,37,6,Common,True,Burning Shadows,0.44,Electric
+Hitmonlee EX,64,57,82,60,48,60,4,Uncommon,True,Legends Awakened,0.64,Fighting
+Toxicroak,71,50,99,64,35,69,8,Rare,False,Paradox Rift,2.62,Fighting
+Cresselia,82,55,25,47,60,69,3,Common,False,EX Emerald,0.52,Psychic
+Ditto,190,93,93,103,103,103,3,Rare Holo GX,True,Dragon,39.63,Normal
+Scorbunny,53,42,40,43,43,38,5,Common,False,Phantom Forces,0.23,Fire
+Liepard,108,72,71,81,83,56,8,Rare Holo,False,151,6.4,Dark
+Machamp,42,47,56,63,36,42,3,Common,False,EX Emerald,0.32,Fighting
+Infernape,165,120,56,55,88,84,7,Rare Holo EX,True,Battle Styles,41.01,Fire
+Crobat EX,34,36,44,31,43,44,1,Common,True,Neo Genesis,0.3,Flying
+Chespin,84,41,50,47,66,43,1,Uncommon,False,Base Set,0.6,Grass
+Meditite,34,33,39,26,70,53,1,Common,False,Jungle,0.19,Psychic
+Suicune EX,185,92,107,125,88,122,1,Rare Holo GX,True,Neo Discovery,73.36,Water
+Crabominable,169,87,119,127,59,92,4,Rare Holo EX,True,Secret Wonders,58.53,Fighting
+Muk,101,45,65,77,74,65,6,Rare,False,Crimson Invasion,1.05,Poison
+Wailord,101,56,61,66,44,73,2,Rare,False,Aquapolis,0.82,Water
+Walrein,55,54,54,65,50,26,2,Common,False,Expedition,0.23,Ice
+Kricketune,44,24,55,60,35,22,4,Common,False,Legends Awakened,0.12,Bug
+Croconaw,52,61,48,52,58,42,6,Common,False,Burning Shadows,0.39,Water
+Tyranitar,72,32,57,56,81,56,3,Uncommon,False,EX Emerald,0.21,Dark
+Hitmontop,88,51,91,68,38,63,6,Uncommon,False,Burning Shadows,0.51,Fighting
+Throh,59,54,98,47,49,61,8,Uncommon,False,Obsidian Flames,0.77,Fighting
+Togetic,32,30,32,57,62,84,7,Common,False,Battle Styles,0.15,Fairy
+Simisear,57,62,33,42,46,38,4,Common,False,Legends Awakened,0.16,Fire
+Dusclops,48,30,49,23,59,46,5,Common,False,Furious Fists,0.3,Ghost
+Walrein GX,102,71,78,85,65,69,7,Rare,True,Darkness Ablaze,5.02,Water
+Litten,57,75,40,38,51,42,4,Common,False,Diamond & Pearl,0.61,Fire
+Chesnaught,77,24,44,61,72,29,4,Uncommon,False,Legends Awakened,0.5,Grass
+Wingull,68,43,43,73,34,77,5,Uncommon,False,Flashfire,0.3,Water
+Hitmonlee,107,69,112,107,50,71,2,Rare Holo,False,Expedition,4.02,Fighting
+Snover,59,38,59,44,62,32,5,Common,False,Ancient Origins,0.23,Grass
+Yveltal,58,48,48,45,59,53,6,Common,False,Burning Shadows,0.31,Dark
+Caterpie,77,48,83,72,58,58,3,Rare,False,Ruby & Sapphire,3.22,Bug
+Lombre,85,80,73,78,77,73,4,Rare Holo,False,Majestic Dawn,2.87,Grass
+Walrein,127,53,76,90,69,86,6,Rare Holo,False,Ultra Prism,6.27,Water
+Gulpin,165,69,101,97,125,103,2,Rare Holo GX,True,Aquapolis,36.37,Poison
+Zubat,175,94,110,88,110,106,4,Rare Holo EX,True,Mysterious Treasures,176.49,Poison
+Victreebel,110,73,58,78,78,71,5,Rare Holo,True,Phantom Forces,8.91,Grass
+Azumarill GX,69,44,35,57,43,52,5,Common,True,Primal Clash,0.2,Water
+Blissey,171,83,103,96,81,97,9,Rare Holo EX,True,Shrouded Fable,49.57,Normal
+Xatu,98,47,36,43,78,61,4,Uncommon,False,Great Encounters,0.96,Psychic
+Skuntank,112,54,69,58,67,64,8,Rare,False,Paldea Evolved,1.55,Poison
+Dustox EX,68,40,71,35,77,45,2,Uncommon,True,Neo Revelation,0.91,Bug
+Snubbull,101,52,46,68,71,80,1,Rare,False,Base Set,4.58,Fairy
+Medicham,59,54,65,66,50,37,7,Common,False,Rebel Clash,0.08,Fighting
+Oddish,67,51,61,62,85,52,3,Uncommon,False,EX Emerald,0.91,Grass
+Floatzel,176,82,95,115,71,105,1,Rare Holo EX,True,Gym Heroes,53.35,Water
+Machop,36,53,75,66,30,39,7,Common,False,Sword & Shield,0.57,Fighting
+Sentret,81,57,51,50,61,34,1,Common,False,Neo Discovery,0.23,Normal
+Aromatisse EX,40,46,36,48,55,42,6,Common,True,Guardians Rising,0.44,Fairy
+Gastly EX,68,34,57,52,69,73,3,Uncommon,True,Ruby & Sapphire,0.92,Ghost
+Finneon,97,46,80,104,56,94,4,Rare Holo,False,Secret Wonders,14.87,Water
+Dunsparce,100,70,41,60,53,54,8,Rare,False,Paldea Evolved,1.36,Normal
+Forretress,74,55,85,46,55,63,3,Uncommon,False,EX FireRed & LeafGreen,1.24,Bug
+Budew,41,61,36,60,55,61,6,Uncommon,False,Burning Shadows,0.31,Grass
+Timburr,48,37,56,64,12,44,3,Common,False,EX FireRed & LeafGreen,0.19,Fighting
+Hakamo-o EX,118,84,76,46,81,79,8,Rare,True,Obsidian Flames,3.98,Dragon
+Pignite,77,66,47,50,58,42,5,Uncommon,False,Flashfire,0.33,Fire
+Togepi,67,48,52,54,71,69,2,Uncommon,False,Neo Revelation,0.6,Fairy
+Onix,101,91,91,103,56,84,6,Rare Holo,False,Guardians Rising,16.76,Rock
+Sunflora,78,69,63,78,75,52,8,Rare,False,Paldean Fates,2.71,Grass
+Houndour,86,67,58,54,49,62,3,Rare,False,Dragon,2.36,Fire
+Mankey,39,55,46,56,22,43,6,Common,False,Ultra Prism,0.23,Fighting
+Kricketune,93,35,64,58,57,54,2,Rare,False,Aquapolis,1.73,Bug
+Farfetchd,53,42,47,26,57,55,7,Common,False,Darkness Ablaze,0.13,Flying
+Manectric,60,48,50,40,53,52,8,Uncommon,False,Paldean Fates,0.44,Electric
+Machamp,105,70,73,83,49,62,5,Rare,False,Flashfire,0.86,Fighting
+Pikachu,71,59,60,44,56,33,3,Uncommon,False,Sandstorm,0.79,Electric
+Magneton,62,46,74,41,71,30,7,Uncommon,False,Darkness Ablaze,0.42,Electric
+Vullaby,92,64,68,55,52,60,1,Rare,True,Fossil,2.05,Dark
+Zorua,94,54,63,70,62,61,2,Uncommon,False,Neo Destiny,1.13,Dark
+Zweilous,35,50,54,28,48,53,1,Common,False,Base Set 2,0.21,Dark
+Electrike,100,58,70,37,62,56,3,Rare,False,Team Magma vs Team Aqua,1.97,Electric
+Teddiursa,34,45,37,44,39,30,6,Common,False,Sun & Moon,0.24,Normal
+Ho-Oh,61,35,49,31,38,34,5,Common,False,Phantom Forces,0.29,Flying
+Hariyama,178,108,144,107,79,82,2,Rare Holo GX,True,Expedition,42.21,Fighting
+Weedle,81,36,60,46,52,57,4,Uncommon,False,Great Encounters,0.25,Bug
+Wooper,61,48,62,53,33,58,4,Common,False,Great Encounters,0.21,Ground
+Tentacool,41,43,53,51,37,57,1,Common,False,Team Rocket,0.75,Water
+Qwilfish,69,55,58,24,57,49,4,Common,False,Diamond & Pearl,0.19,Poison
+Vileplume,113,75,79,60,78,79,5,Rare Holo,True,XY Base,8.95,Poison
+Dunsparce,80,51,40,66,47,43,5,Uncommon,False,Phantom Forces,0.31,Normal
+Garchomp,76,65,60,83,84,60,1,Uncommon,False,Base Set 2,0.93,Dragon
+Primeape,116,81,105,85,25,65,3,Rare Holo,False,Team Magma vs Team Aqua,5.28,Fighting
+Torchic,79,88,56,41,74,54,8,Rare,False,Obsidian Flames,1.1,Fire
+Sawk,78,63,68,44,43,46,6,Uncommon,False,Ultra Prism,0.34,Fighting
+Grotle,98,68,73,69,69,67,2,Rare,False,Expedition,0.83,Grass
+Aggron,46,57,46,87,39,60,1,Common,False,Neo Discovery,0.34,Rock
+Treecko,65,42,35,48,55,55,5,Common,False,Furious Fists,0.17,Grass
+Sandygast,69,61,60,50,94,61,3,Uncommon,False,Dragon,1.6,Ghost
+Grotle,55,34,48,37,79,58,2,Common,False,Skyridge,0.15,Grass
+Slugma,51,48,44,30,54,44,6,Common,False,Sun & Moon,0.18,Fire
+Braixen,59,76,46,59,56,51,3,Uncommon,False,Sandstorm,0.33,Fire
+Pansage,77,41,54,52,67,50,7,Uncommon,False,Battle Styles,0.54,Grass
+Regice,65,63,48,58,50,54,2,Common,False,Expedition,0.47,Ice
+Pignite EX,56,75,52,44,40,47,4,Uncommon,True,Mysterious Treasures,1.4,Fire
+Zebstrika,107,53,72,42,45,55,5,Uncommon,False,XY Base,0.3,Electric
+Piloswine,79,60,61,75,54,83,3,Uncommon,False,EX FireRed & LeafGreen,0.69,Ice
+Vikavolt,87,62,79,46,68,69,7,Rare,True,Rebel Clash,3.24,Electric
+Kingdra,170,117,142,100,116,121,8,Rare Holo GX,True,Paldean Fates,50.87,Dragon
+Sylveon,77,49,53,77,46,77,1,Uncommon,False,Gym Challenge,0.6,Fairy
+Grimer,108,70,64,77,43,44,8,Rare,False,Paldea Evolved,1.96,Poison
+Tentacruel,168,84,111,116,92,106,5,Rare Holo EX,True,Primal Clash,58.31,Water
+Fearow,30,53,29,45,22,43,1,Common,False,Gym Heroes,0.18,Normal
+Sylveon,51,79,47,73,67,70,2,Uncommon,False,Neo Destiny,0.61,Fairy
+Poliwrath,60,35,42,54,56,74,1,Uncommon,False,Neo Genesis,1.03,Water
+Reshiram,66,51,27,17,67,39,4,Uncommon,False,Legends Awakened,0.22,Fire
+Meganium,51,31,39,56,55,50,8,Common,False,151,0.32,Grass
+Melmetal,54,49,54,52,40,66,5,Common,False,Ancient Origins,0.19,Steel
+Pikachu,95,63,85,37,73,46,1,Rare,False,Team Rocket,1.79,Electric
+Hawlucha GX,55,56,57,59,41,65,3,Uncommon,True,Ruby & Sapphire,1.0,Fighting
+Raboot,94,97,77,35,77,61,2,Rare,False,Legendary Collection,1.37,Fire
+Pancham,143,97,154,120,72,100,1,Rare Holo GX,False,Neo Genesis,12.92,Fighting
+Shiftry,83,68,61,42,77,45,7,Uncommon,False,Chilling Reign,0.31,Dark
+Torkoal GX,116,102,53,48,59,61,5,Rare Holo,True,Primal Clash,9.48,Fire
+Floatzel,30,64,53,55,47,60,6,Common,False,Burning Shadows,0.17,Water
+Cherubi,118,53,60,80,71,55,7,Rare,False,Chilling Reign,1.72,Grass
+Gothitelle,86,66,46,51,83,67,8,Uncommon,False,Paldea Evolved,0.52,Psychic
+Dratini,34,61,69,48,66,57,1,Uncommon,False,Neo Discovery,0.7,Dragon
+Kricketune,53,37,57,46,43,26,3,Common,False,EX FireRed & LeafGreen,0.23,Bug
+Meowth,53,57,43,57,50,50,3,Uncommon,False,Team Magma vs Team Aqua,0.39,Normal
+Celebi,44,63,59,56,81,89,8,Rare,False,Scarlet & Violet,3.33,Psychic
+Shellos,89,76,64,91,72,82,6,Rare Holo,False,Burning Shadows,7.49,Water
+Gabite,40,57,70,51,64,71,1,Common,False,Fossil,0.13,Dragon
+Houndoom,55,51,39,28,58,33,4,Common,False,Majestic Dawn,0.25,Fire
+Golduck,43,33,25,65,50,49,8,Common,False,Obsidian Flames,0.16,Water
+Grotle,48,47,53,61,35,59,3,Common,False,EX Emerald,0.21,Grass
+Gurdurr,55,59,62,52,22,40,7,Common,False,Chilling Reign,0.35,Fighting
+Psyduck,46,23,34,61,36,44,4,Common,False,Diamond & Pearl,0.2,Water
+Ivysaur,101,35,54,47,70,66,5,Uncommon,False,XY Base,0.82,Grass
+Dewgong,86,71,62,91,81,71,6,Rare,False,Crimson Invasion,0.89,Ice
+Eevee,61,29,46,49,54,31,4,Common,False,Diamond & Pearl,0.12,Normal
+Shedinja,33,43,59,18,37,42,1,Common,False,Gym Heroes,0.31,Bug
+Farfetchd,104,95,83,72,64,65,5,Rare Holo,False,Furious Fists,3.11,Normal
+Charjabug,83,53,58,36,60,45,3,Uncommon,False,Dragon,0.54,Electric
+Nuzleaf,30,45,65,28,41,34,1,Common,False,Neo Genesis,0.13,Dark
+Mewtwo,64,55,32,46,70,57,3,Uncommon,False,EX FireRed & LeafGreen,0.36,Psychic
+Ralts,49,41,38,43,60,69,8,Common,False,Paldean Fates,0.31,Psychic
+Clefairy,55,41,45,45,61,72,2,Common,False,Neo Destiny,0.33,Fairy
+Zorua,54,57,74,42,67,62,1,Uncommon,False,Neo Genesis,0.34,Dark
+Magmar,80,81,50,49,50,51,2,Rare,False,Skyridge,2.15,Fire
+Numel,79,69,96,98,59,60,1,Rare,False,Gym Challenge,3.09,Ground
+Victreebel,122,46,67,69,67,63,7,Rare,True,Sword & Shield,2.34,Grass
+Exeggcute,78,49,33,105,100,110,7,Rare,False,Vivid Voltage,1.5,Psychic
+Latias,31,40,70,37,60,56,5,Common,False,Roaring Skies,0.32,Dragon
+Sawk,76,51,76,55,36,58,2,Uncommon,False,Aquapolis,0.49,Fighting
+Mew,30,14,32,44,68,62,2,Common,False,Neo Revelation,0.31,Psychic
+Jynx,40,49,35,46,64,49,3,Common,False,Ruby & Sapphire,0.11,Psychic
+Scizor,71,36,45,72,31,66,3,Uncommon,False,Ruby & Sapphire,0.85,Steel
+Palkia,102,82,59,66,50,55,5,Rare,False,Phantom Forces,2.11,Water
+Emolga,53,31,67,43,38,43,4,Common,False,Diamond & Pearl,0.33,Electric
+Galvantula,75,35,48,34,38,46,8,Common,False,Obsidian Flames,0.31,Electric
+Slakoth GX,92,59,47,60,70,66,3,Rare,True,Team Magma vs Team Aqua,4.1,Normal
+Electrode,85,30,86,46,42,50,2,Uncommon,False,Skyridge,0.27,Electric
+Simisear,59,85,54,27,56,64,2,Uncommon,False,Aquapolis,0.32,Fire
+Mightyena,67,22,45,54,59,39,8,Common,False,Obsidian Flames,0.31,Dark
+Spearow V,65,49,69,64,48,65,4,Uncommon,True,Secret Wonders,1.58,Normal
+Raikou EX,33,38,24,37,51,33,3,Common,True,Ruby & Sapphire,0.53,Electric
+Crabominable GX,56,61,86,72,57,48,1,Uncommon,True,Jungle,0.79,Fighting
+Ursaring,54,53,52,52,38,62,2,Common,False,Skyridge,0.2,Normal
+Wartortle,51,38,49,71,56,61,4,Common,False,Legends Awakened,0.35,Water
+Zweilous,68,68,74,85,56,72,5,Rare,False,Phantom Forces,2.05,Dark
+Marill,45,42,39,52,64,45,4,Common,False,Diamond & Pearl,0.29,Fairy
+Sylveon,82,54,54,82,84,90,5,Rare Holo,False,Flashfire,7.16,Fairy
+Anorith,40,56,52,67,38,65,3,Common,False,Dragon,0.17,Rock
+Zubat,185,79,89,63,88,76,6,Rare Holo EX,True,Sun & Moon,70.48,Flying
+Sandile,169,90,126,100,107,99,7,Rare Holo GX,True,Sword & Shield,43.57,Dark
+Sawk,71,43,67,69,37,32,2,Common,False,Neo Revelation,0.31,Fighting
+Aromatisse,99,42,41,69,78,71,1,Uncommon,False,Team Rocket,0.72,Fairy
+Lapras,43,55,40,32,41,54,1,Common,False,Neo Discovery,0.22,Water
+Graveler,94,78,78,100,68,85,4,Rare Holo,False,Secret Wonders,5.25,Rock
+Girafarig,52,35,30,49,78,72,4,Uncommon,False,Legends Awakened,0.51,Psychic
+Moltres,76,48,70,39,63,52,1,Uncommon,False,Base Set 2,0.84,Flying
+Torracat,59,64,53,53,52,56,5,Uncommon,False,Roaring Skies,0.53,Fire
+Zebstrika,42,37,39,43,36,45,3,Common,False,EX Emerald,0.36,Electric
+Magikarp,60,36,52,72,50,64,4,Common,False,Secret Wonders,0.48,Water
+Baltoy,92,58,63,83,96,76,7,Rare Holo,False,Chilling Reign,5.36,Psychic
+Golem,82,52,75,61,35,50,2,Uncommon,False,Expedition,0.47,Ground
+Reshiram,62,90,32,66,57,59,4,Uncommon,False,Great Encounters,0.48,Fire
+Toxicroak,62,56,89,54,22,64,1,Uncommon,False,Fossil,0.59,Fighting
+Zeraora,71,46,52,37,48,45,7,Uncommon,False,Darkness Ablaze,0.28,Electric
+Swampert EX,76,56,53,62,36,87,6,Uncommon,True,Forbidden Light,1.75,Water
+Cacnea,53,46,43,64,59,53,2,Uncommon,False,Legendary Collection,0.27,Grass
+Vulpix,71,71,61,48,57,61,3,Uncommon,True,Dragon,1.18,Fire
+Zoroark,70,58,46,44,54,42,7,Uncommon,False,Vivid Voltage,0.48,Dark
+Slowbro,37,38,45,59,43,48,2,Common,False,Neo Revelation,0.33,Water
+Gothorita,34,33,31,45,64,61,7,Common,False,Vivid Voltage,0.12,Psychic
+Braixen,77,55,80,39,44,43,4,Uncommon,False,Majestic Dawn,0.36,Fire
+Drowzee,91,62,53,53,109,113,3,Rare Holo,False,Team Magma vs Team Aqua,6.92,Psychic
+Golem,148,74,121,106,74,93,4,Rare Holo EX,False,Legends Awakened,29.99,Ground
+Forretress,55,34,55,65,39,62,5,Uncommon,False,XY Base,0.49,Bug
+Haxorus,75,46,62,88,82,54,3,Uncommon,False,Ruby & Sapphire,0.61,Dragon
+Kyogre,79,58,65,55,50,64,6,Uncommon,False,Sun & Moon,0.88,Water
+Marill,125,58,72,102,68,94,6,Rare Holo,False,Guardians Rising,8.3,Water
+Sylveon,85,90,54,59,68,84,7,Rare,False,Battle Styles,1.98,Fairy
+Sunkern,60,33,30,49,48,45,1,Common,False,Gym Heroes,0.53,Grass
+Butterfree,59,22,52,41,29,47,5,Common,False,XY Base,0.17,Bug
+Crabominable,84,42,66,73,38,44,4,Uncommon,False,Legends Awakened,0.66,Fighting
+Roserade,77,37,68,39,71,62,3,Uncommon,False,Team Magma vs Team Aqua,0.74,Grass
+Duskull,66,30,51,53,60,47,4,Uncommon,False,Great Encounters,0.46,Ghost
+Larvitar,71,48,50,53,29,33,8,Common,False,151,0.46,Ground
+Pelipper,70,56,40,51,29,57,1,Common,False,Neo Genesis,0.16,Water
+Lugia EX,216,88,82,111,148,152,8,Rare Ultra,True,151,283.15,Psychic
+Kyurem,52,62,70,61,63,57,6,Common,False,Crimson Invasion,0.18,Dragon
+Garchomp,74,83,66,66,86,76,1,Rare,False,Fossil,0.66,Dragon
+Deino,115,70,86,72,65,60,1,Rare,False,Gym Heroes,2.26,Dark
+Spoink,57,45,25,42,67,66,1,Common,False,Gym Heroes,0.09,Psychic
+Cleffa,74,59,29,44,61,63,1,Uncommon,False,Neo Discovery,0.69,Fairy
+Magneton V,66,55,83,51,51,53,2,Rare,True,Neo Destiny,1.39,Electric
+Frillish,67,36,71,75,76,62,7,Rare,False,Darkness Ablaze,3.39,Ghost
+Magmar,51,65,35,27,43,24,7,Common,False,Chilling Reign,0.22,Fire
+Luxio,37,31,62,33,44,24,9,Common,False,Shrouded Fable,0.29,Electric
+Baltoy GX,192,78,72,111,127,137,5,Rare Holo GX,True,Phantom Forces,49.03,Psychic
+Zapdos,62,62,50,55,76,62,1,Rare,False,Gym Challenge,2.02,Flying
+Croagunk,57,48,84,83,37,57,2,Uncommon,False,Skyridge,0.78,Fighting
+Kricketune,64,34,54,48,44,46,3,Common,False,EX FireRed & LeafGreen,0.24,Bug
+Dustox,90,58,93,69,67,61,3,Rare Holo,False,EX FireRed & LeafGreen,12.52,Bug
+Combusken,63,81,64,33,69,51,7,Rare,False,Vivid Voltage,1.36,Fire
+Donphan,71,47,60,56,25,40,4,Common,False,Diamond & Pearl,0.21,Ground
+Raichu,104,64,70,69,75,61,2,Rare Holo,False,Neo Destiny,6.72,Electric
+Scorbunny,61,82,55,54,72,53,8,Rare,False,Paldean Fates,5.11,Fire
+Pidgeot,58,23,51,20,35,47,2,Common,False,Neo Revelation,0.23,Flying
+Golurk,49,55,58,25,51,42,1,Common,False,Fossil,0.18,Ghost
+Murkrow,31,35,34,47,33,31,1,Common,False,Team Rocket,0.29,Flying
+Ninjask,92,63,49,27,41,43,4,Uncommon,False,Majestic Dawn,0.68,Bug
+Dusknoir,51,33,56,35,48,24,3,Common,False,Ruby & Sapphire,0.12,Ghost
+Gulpin,112,69,58,50,66,64,8,Rare,False,Obsidian Flames,1.99,Poison
+Vileplume,86,75,86,74,81,90,8,Rare Holo,True,151,20.76,Grass
+Lumineon,92,68,64,84,67,80,6,Rare Holo,False,Burning Shadows,3.85,Water
+Ponyta,116,87,70,48,54,63,2,Rare,False,Aquapolis,1.8,Fire
+Dragonite,55,71,77,62,74,50,3,Uncommon,False,Ruby & Sapphire,0.29,Dragon
+Sunkern,92,50,44,78,64,53,6,Uncommon,False,Sun & Moon,0.64,Grass
+Gardevoir,158,82,67,102,105,115,6,Rare Holo EX,True,Guardians Rising,63.33,Fairy
+Pawniard,66,45,48,54,50,63,1,Common,False,Neo Genesis,0.38,Dark
+Cherubi,57,30,45,37,69,53,2,Common,False,Skyridge,0.33,Grass
+Roserade,64,52,40,57,52,66,6,Uncommon,False,Guardians Rising,1.17,Grass
+Frillish,82,45,49,57,61,53,4,Uncommon,False,Secret Wonders,0.25,Ghost
+Houndour,228,109,149,140,129,117,2,Secret Rare,True,Neo Revelation,839.76,Dark
+Sealeo,78,74,64,76,63,65,5,Rare,False,Flashfire,1.03,Water
+Makuhita,67,13,88,61,35,41,3,Common,False,EX Emerald,0.3,Fighting
+Jynx,76,54,48,71,66,49,1,Uncommon,False,Team Rocket,0.79,Ice
+Delphox,77,58,53,43,70,33,2,Uncommon,False,Neo Revelation,0.5,Fire
+Miltank,30,35,40,36,53,41,2,Common,False,Aquapolis,0.18,Normal
+Quilava,100,61,51,45,51,41,1,Uncommon,False,Team Rocket,0.25,Fire
+Farfetchd,60,51,48,40,35,39,4,Common,False,Diamond & Pearl,0.09,Flying
+Tropius,102,68,71,58,62,60,2,Rare Holo,False,Skyridge,6.24,Flying
+Slugma,30,57,37,23,41,40,6,Common,False,Guardians Rising,0.56,Fire
+Poochyena,48,60,56,33,39,43,6,Common,False,Crimson Invasion,0.38,Dark
+Doduo,92,60,59,49,73,75,2,Rare,False,Neo Destiny,1.62,Normal
+Lapras,44,36,35,58,43,51,4,Common,False,Diamond & Pearl,0.14,Water
+Magikarp,52,21,53,71,35,58,8,Common,False,Obsidian Flames,0.25,Water
+Walrein,61,42,38,42,34,40,1,Common,False,Base Set,0.63,Water
+Croconaw,72,59,54,71,61,78,3,Rare,False,Dragon,2.77,Water
+Zubat,66,57,79,64,57,61,6,Rare,False,Crimson Invasion,0.46,Poison
+Vileplume,87,46,72,51,77,57,2,Rare,True,Neo Revelation,1.64,Grass
+Claydol,47,49,34,37,66,60,4,Common,False,Secret Wonders,0.42,Psychic
+Raticate GX,72,44,43,20,42,47,2,Common,True,Aquapolis,0.37,Normal
+Lotad,73,48,57,53,57,61,6,Uncommon,False,Sun & Moon,0.27,Grass
+Sawk,35,54,56,55,39,46,7,Common,False,Sword & Shield,0.12,Fighting
+Wigglytuff,80,74,37,48,61,61,8,Uncommon,False,Paldea Evolved,1.35,Fairy
+Squirtle,93,57,70,72,47,83,6,Rare,False,Forbidden Light,1.31,Water
+Snivy,69,25,45,49,63,33,3,Common,False,Team Magma vs Team Aqua,0.19,Grass
+Paras,84,39,50,65,50,46,6,Uncommon,False,Ultra Prism,0.93,Bug
+Girafarig,160,73,74,83,137,128,3,Rare Holo GX,True,EX Emerald,55.88,Psychic
+Zapdos GX,188,57,114,48,99,91,5,Rare Holo EX,True,Phantom Forces,82.52,Electric
+Noctowl,79,65,38,34,64,56,6,Uncommon,False,Forbidden Light,0.38,Flying
+Musharna,67,35,68,61,86,109,3,Rare,False,EX Emerald,5.39,Psychic
+Spearow EX,69,70,51,68,52,45,1,Uncommon,True,Gym Challenge,1.96,Normal
+Ninetales,100,90,29,48,65,63,2,Rare,False,Skyridge,1.19,Fire
+Mew,117,60,61,90,99,80,1,Rare Holo,False,Fossil,4.33,Psychic
+Floatzel GX,71,49,51,82,57,75,1,Uncommon,True,Neo Genesis,1.36,Water
+Piplup,51,31,36,39,44,58,8,Common,False,Scarlet & Violet,0.19,Water
+Hoothoot,41,73,41,42,54,40,6,Common,False,Sun & Moon,0.24,Normal
+Mienfoo,180,90,152,111,89,92,6,Rare Holo GX,True,Forbidden Light,38.46,Fighting
+Fraxure,47,66,42,66,62,70,6,Uncommon,False,Burning Shadows,0.74,Dragon
+Spheal,73,57,53,54,48,56,3,Uncommon,False,Dragon,0.28,Water
+Meganium,43,60,46,78,72,59,1,Uncommon,False,Fossil,0.85,Grass
+Drowzee GX,35,35,34,44,57,72,5,Common,True,Flashfire,0.53,Psychic
+Shellos,120,68,54,115,60,101,1,Rare Holo,False,Neo Genesis,6.31,Water
+Cherubi,57,55,66,61,48,51,1,Uncommon,False,Base Set 2,0.72,Grass
+Drifloon,49,58,68,55,77,39,3,Uncommon,False,Team Magma vs Team Aqua,0.7,Ghost
+Xerneas,30,32,27,50,48,66,1,Common,False,Fossil,0.44,Fairy
+Furret,69,42,36,57,47,37,1,Uncommon,False,Fossil,0.87,Normal
+Piplup,46,48,41,70,47,68,6,Uncommon,False,Forbidden Light,0.78,Water
+Simisage,38,38,52,46,62,43,2,Common,False,Neo Destiny,0.46,Grass
+Dodrio,38,53,41,37,57,50,5,Common,False,Primal Clash,0.16,Normal
+Mimikyu GX,45,41,49,41,66,50,3,Common,True,Sandstorm,0.19,Fairy
+Mew,100,51,58,48,94,88,6,Rare,False,Guardians Rising,1.87,Psychic
+Helioptile,115,53,83,56,68,61,6,Rare,False,Sun & Moon,1.06,Electric
+Yanma,112,57,73,75,46,67,6,Rare,False,Forbidden Light,0.96,Bug
+Grovyle,84,48,67,85,65,52,5,Rare,False,Ancient Origins,0.85,Grass
+Gourgeist,72,33,51,54,72,72,5,Rare,False,XY Base,1.87,Ghost
+Slurpuff,112,80,74,75,80,97,3,Rare Holo,False,EX FireRed & LeafGreen,2.57,Fairy
+Ninjask,77,60,66,80,48,80,4,Rare,False,Secret Wonders,1.84,Bug
+Ludicolo,67,46,64,73,44,80,6,Uncommon,False,Crimson Invasion,0.25,Water
+Numel,88,44,34,14,40,36,7,Common,False,Darkness Ablaze,0.14,Fire
+Meganium GX,87,71,58,68,81,50,6,Uncommon,True,Guardians Rising,1.55,Grass
+Golbat,68,48,56,58,59,67,3,Rare,False,Team Magma vs Team Aqua,1.09,Flying
+Ariados,52,41,60,41,60,42,3,Common,False,Dragon,0.29,Poison
+Dunsparce,85,33,64,71,46,67,7,Rare,False,Vivid Voltage,1.12,Normal
+Rotom,45,43,52,33,51,42,7,Common,False,Vivid Voltage,0.47,Electric
+Fraxure,67,74,85,74,74,70,3,Rare,False,Ruby & Sapphire,2.72,Dragon
+Minun EX,129,73,101,62,69,68,6,Rare Holo,True,Forbidden Light,8.93,Electric
+Pansear,66,80,63,36,59,64,7,Uncommon,False,Rebel Clash,0.74,Fire
+Exeggutor,56,31,44,43,47,64,6,Common,False,Forbidden Light,0.16,Psychic
+Slowbro GX,30,48,50,41,53,54,4,Common,True,Diamond & Pearl,1.15,Psychic
+Darkrai,120,55,95,64,91,67,8,Rare Holo,False,151,6.82,Dark
+Spiritomb,55,41,66,46,54,55,3,Common,False,Team Magma vs Team Aqua,0.12,Dark
+Raticate V,48,53,56,36,42,44,4,Common,True,Legends Awakened,0.12,Normal
+Uxie,62,37,32,66,60,77,5,Common,False,Flashfire,0.19,Psychic
+Cascoon,97,47,72,77,57,65,7,Rare Holo,False,Darkness Ablaze,2.35,Bug
+Uxie,80,67,34,71,119,106,3,Rare Holo,False,Sandstorm,8.79,Psychic
+Xatu,92,48,58,81,76,94,7,Rare,False,Vivid Voltage,1.98,Psychic
+Squirtle,78,63,62,78,52,85,2,Rare,False,Expedition,2.59,Water
+Magcargo,90,76,61,41,63,57,5,Rare,False,Roaring Skies,2.62,Fire
+Snivy GX,64,73,34,64,64,64,8,Uncommon,True,151,1.13,Grass
+Lombre,73,62,68,84,50,81,4,Rare,False,Majestic Dawn,3.57,Water
+Houndoom,43,71,30,27,46,58,8,Common,False,Paldea Evolved,0.18,Fire
+Salamence,65,65,79,80,74,59,7,Uncommon,False,Darkness Ablaze,0.32,Dragon
+Victreebel,51,38,53,46,42,59,3,Common,True,EX FireRed & LeafGreen,0.36,Poison
+Cryogonal V,98,50,65,48,92,76,5,Rare,True,Primal Clash,5.28,Ice
+Heatran EX,82,69,50,30,53,49,1,Uncommon,True,Base Set,0.76,Fire
+Golbat,71,51,41,42,39,49,1,Uncommon,False,Jungle,0.33,Flying
+Pikachu,71,49,83,53,43,54,5,Rare,False,Furious Fists,1.95,Electric
+Plusle,42,43,40,39,40,42,7,Common,False,Battle Styles,0.15,Electric
+Bastiodon EX,176,105,99,133,82,109,2,Rare Holo EX,True,Aquapolis,101.69,Steel
+Seedot,100,57,73,72,89,67,4,Rare Holo,False,Secret Wonders,9.41,Grass
+Teddiursa,90,42,36,33,35,53,1,Common,False,Team Rocket,0.22,Normal
+Bisharp EX,197,122,128,107,114,108,7,Rare Ultra,True,Vivid Voltage,181.99,Dark
+Mienshao,36,42,62,54,30,27,6,Common,False,Forbidden Light,0.22,Fighting
+Bewear,182,100,148,131,80,100,5,Rare Holo GX,True,XY Base,65.5,Fighting
+Jirachi,56,35,39,54,88,66,1,Uncommon,False,Base Set,0.42,Psychic
+Ninetales,77,58,45,46,62,50,5,Uncommon,False,Phantom Forces,0.22,Fire
+Totodile EX,52,59,58,46,37,62,8,Common,True,Paradox Rift,0.27,Water
+Murkrow,104,89,80,76,77,63,6,Rare Holo,False,Guardians Rising,10.84,Dark
+Smeargle,78,49,47,52,52,52,3,Uncommon,False,EX Emerald,0.7,Normal
+Latias,57,54,52,38,72,60,3,Common,False,Ruby & Sapphire,0.4,Psychic
+Froslass,115,66,52,69,77,77,6,Rare,False,Burning Shadows,2.48,Ice
+Klefki,64,49,43,45,59,56,8,Common,False,Paldea Evolved,0.16,Fairy
+Tauros,93,100,48,60,63,75,4,Rare,False,Diamond & Pearl,1.79,Normal
+Suicune,97,82,84,82,62,84,1,Rare Holo,False,Base Set 2,7.77,Water
+Garchomp EX,32,38,64,58,37,42,2,Common,True,Expedition,0.53,Ground
+Koffing,87,65,53,53,57,73,6,Uncommon,False,Forbidden Light,0.31,Poison
+Tentacool,87,37,66,61,67,85,2,Rare,False,Skyridge,2.01,Poison
+Rotom,31,59,53,47,44,53,3,Common,False,Dragon,0.16,Electric
+Reshiram,81,46,40,37,34,59,1,Common,False,Gym Heroes,0.24,Fire
+Sealeo EX,61,54,46,75,53,75,2,Uncommon,True,Neo Revelation,3.53,Ice
+Jirachi,31,18,21,29,82,43,3,Common,False,Team Magma vs Team Aqua,0.15,Psychic
+Cyndaquil,33,74,46,47,34,31,6,Common,False,Forbidden Light,0.17,Fire
+Chikorita GX,47,52,62,44,64,52,1,Common,True,Team Rocket,0.51,Grass
+Roselia,74,49,41,58,89,39,5,Uncommon,False,XY Base,0.47,Grass
+Chimchar,49,40,45,37,56,43,6,Common,False,Crimson Invasion,0.18,Fire
+Butterfree,33,36,44,49,29,41,7,Common,False,Sword & Shield,0.22,Bug
+Plusle,158,66,124,53,95,58,1,Rare Holo EX,True,Base Set,78.19,Electric
+Kyogre,86,56,62,77,67,52,5,Rare,False,Phantom Forces,1.33,Water
+Rhyhorn,93,67,69,81,60,69,5,Rare,False,Flashfire,4.22,Rock
+Machoke EX,54,47,86,73,28,52,7,Uncommon,True,Rebel Clash,2.52,Fighting
+Klefki,89,45,40,70,83,78,3,Uncommon,False,EX FireRed & LeafGreen,0.44,Fairy
+Doublade,69,72,69,92,57,72,6,Uncommon,False,Guardians Rising,0.3,Steel
+Hariyama,105,50,84,65,29,35,1,Uncommon,False,Base Set,0.45,Fighting
+Simisage,36,24,37,62,61,54,4,Common,False,Secret Wonders,0.19,Grass
+Azurill,54,38,49,54,52,63,1,Uncommon,False,Neo Discovery,0.33,Fairy
+Bellossom,74,62,62,66,60,57,4,Uncommon,False,Majestic Dawn,0.47,Grass
+Gyarados,65,47,24,66,46,86,8,Uncommon,False,Scarlet & Violet,0.38,Water
+Carbink,83,53,41,60,84,91,2,Rare,False,Neo Revelation,1.63,Fairy
+Litwick,87,49,77,51,73,80,7,Rare,False,Rebel Clash,2.38,Ghost
+Floatzel,84,70,41,67,61,63,4,Uncommon,False,Great Encounters,0.81,Water
+Numel,63,67,59,50,46,64,8,Uncommon,False,Paradox Rift,0.38,Fire
+Pangoro,62,66,77,50,31,45,6,Uncommon,False,Burning Shadows,0.86,Fighting
+Tentacool,73,69,67,93,47,73,4,Rare,False,Diamond & Pearl,1.98,Water
+Litten,105,79,43,48,71,61,3,Rare,False,EX Emerald,1.15,Fire
+Koffing,58,47,52,57,56,62,5,Uncommon,False,Furious Fists,0.71,Poison
+Lombre,75,85,65,64,64,71,8,Rare,False,151,1.52,Water
+Elekid,92,62,58,48,56,74,7,Rare,False,Chilling Reign,1.27,Electric
+Pansear,45,59,28,27,47,46,8,Common,False,Obsidian Flames,0.15,Fire
+Spearow,69,64,52,60,50,54,7,Uncommon,False,Chilling Reign,0.58,Normal
+Exeggcute,77,34,49,42,83,84,4,Rare,False,Secret Wonders,0.34,Psychic
+Breloom,66,41,49,39,49,59,6,Common,False,Forbidden Light,0.23,Grass
+Registeel,103,73,63,90,54,82,1,Rare,False,Base Set,2.55,Steel
+Slowbro,60,32,18,55,64,62,2,Common,False,Neo Destiny,0.38,Psychic
+Wurmple,53,44,35,29,23,39,8,Common,False,Obsidian Flames,0.16,Bug
+Kricketune,56,50,55,26,50,42,6,Common,False,Burning Shadows,0.22,Bug
+Drifblim,79,41,34,38,77,36,7,Uncommon,False,Rebel Clash,0.4,Ghost
+Venonat,43,54,46,45,49,44,1,Common,True,Team Rocket,0.14,Poison
+Mienshao,48,36,73,49,44,45,5,Common,False,XY Base,0.26,Fighting
+Bastiodon,109,70,84,79,58,78,2,Rare,False,Expedition,2.51,Rock
+Slowbro,97,54,61,94,117,91,2,Rare Holo,False,Neo Revelation,9.56,Psychic
+Typhlosion,165,131,102,79,111,93,6,Rare Holo GX,True,Guardians Rising,24.07,Fire
+Furret,71,64,48,71,80,64,4,Rare,False,Legends Awakened,1.38,Normal
+Jellicent,73,42,55,52,69,61,4,Uncommon,False,Mysterious Treasures,0.52,Ghost
+Cranidos,30,47,56,59,47,51,1,Common,False,Base Set 2,0.16,Rock
+Slowbro,47,43,34,40,55,52,6,Common,False,Guardians Rising,0.15,Psychic
+Mimikyu,56,48,45,76,70,83,5,Uncommon,False,Primal Clash,0.6,Fairy
+Tepig,123,92,47,62,62,54,5,Rare,False,Flashfire,0.59,Fire
+Victini,37,34,34,39,68,81,2,Common,True,Skyridge,0.77,Psychic
+Squirtle,39,57,27,59,41,67,1,Common,False,Jungle,0.36,Water
+Braixen,165,152,78,65,98,86,3,Rare Holo GX,True,EX FireRed & LeafGreen,44.66,Fire
+Baltoy,99,29,57,52,74,64,6,Uncommon,False,Forbidden Light,0.63,Psychic
+Magikarp,112,60,67,81,49,76,3,Rare,False,Sandstorm,1.31,Water
+Lickitung EX,78,43,40,46,61,62,6,Uncommon,True,Ultra Prism,1.38,Normal
+Carbink,116,77,50,48,76,72,7,Rare,False,Darkness Ablaze,1.06,Fairy
+Starmie EX,30,38,46,41,60,60,3,Common,True,Sandstorm,0.65,Psychic
+Azumarill,33,41,42,61,52,57,7,Common,False,Rebel Clash,0.24,Water
+Clobbopus,92,61,77,70,55,48,1,Uncommon,False,Base Set,0.57,Fighting
+Quilava,96,97,34,48,70,56,6,Rare,False,Ultra Prism,1.43,Fire
+Lombre,103,59,75,80,102,68,2,Rare Holo,False,Neo Revelation,4.93,Grass
+Psyduck,80,54,79,78,50,73,6,Rare,False,Sun & Moon,2.12,Water
+Jigglypuff,45,32,47,33,35,56,7,Common,False,Vivid Voltage,0.42,Normal
+Mudkip,46,33,46,57,22,61,3,Common,False,EX FireRed & LeafGreen,0.11,Water
+Krookodile,42,12,60,38,51,62,3,Common,False,Ruby & Sapphire,0.19,Dark
+Kabuto EX,114,80,86,101,35,81,8,Rare Holo,True,Scarlet & Violet,18.49,Rock
+Magneton,44,52,68,24,60,43,3,Uncommon,False,Ruby & Sapphire,0.49,Electric
+Azelf,110,39,38,52,78,73,2,Rare,False,Skyridge,2.52,Psychic
+Pidgeotto,68,73,62,34,47,52,5,Uncommon,False,Roaring Skies,1.21,Flying
+Mamoswine,68,56,57,61,56,77,8,Uncommon,False,Paldea Evolved,0.3,Ice
+Magikarp,45,43,63,42,45,60,2,Common,False,Skyridge,0.31,Water
+Onix,91,59,92,123,47,60,1,Rare Holo,False,Fossil,3.66,Rock
+Gastrodon,38,56,56,61,44,39,3,Common,False,Sandstorm,0.35,Water
+Mandibuzz,64,50,61,51,68,47,2,Uncommon,False,Expedition,0.53,Dark
+Heracross GX,59,46,72,65,51,37,5,Common,True,Phantom Forces,0.5,Fighting
+Voltorb,81,47,78,48,69,62,5,Rare,True,Furious Fists,2.51,Electric
+Shinx GX,61,51,61,25,53,36,3,Common,True,EX Emerald,0.26,Electric
+Swirlix,106,76,50,100,104,119,4,Rare Holo,False,Diamond & Pearl,11.96,Fairy
+Gyarados,194,90,73,120,96,128,7,Rare Holo EX,True,Sword & Shield,47.39,Water
+Lugia,94,52,58,54,61,58,8,Rare,False,Paldean Fates,1.01,Flying
+Bastiodon V,50,43,39,51,10,56,2,Common,True,Skyridge,0.83,Steel
+Hippowdon EX,78,73,80,66,51,41,8,Uncommon,True,Paldea Evolved,0.96,Ground
+Serperior,49,51,60,48,55,50,1,Common,False,Base Set 2,0.23,Grass
+Pupitar,95,57,64,89,42,55,2,Uncommon,False,Expedition,0.73,Rock
+Roserade,62,22,74,59,64,51,5,Common,False,Flashfire,0.38,Grass
+Mimikyu,72,28,20,35,62,68,1,Common,False,Gym Challenge,0.16,Fairy
+Cyndaquil,56,55,75,45,65,59,7,Uncommon,False,Battle Styles,1.44,Fire
+Pelipper,231,120,125,148,92,153,7,Secret Rare,True,Darkness Ablaze,751.63,Water
+Lugia,83,50,79,31,43,50,5,Uncommon,False,Primal Clash,1.07,Flying
+Furret,81,46,57,40,44,46,7,Uncommon,False,Vivid Voltage,0.21,Normal
+Ralts,167,68,70,93,129,126,7,Rare Holo EX,True,Chilling Reign,30.36,Psychic
+Turtwig,179,70,84,100,108,94,5,Rare Holo EX,True,Furious Fists,56.96,Grass
+Vigoroth,39,36,44,51,35,48,8,Common,True,Paldea Evolved,0.47,Normal
+Snorlax,86,66,35,59,38,44,2,Uncommon,False,Neo Revelation,0.57,Normal
+Simisage,35,44,29,57,51,37,5,Common,False,XY Base,0.44,Grass
+Togetic,66,73,27,52,77,83,3,Uncommon,False,Sandstorm,0.35,Fairy
+Snivy,111,55,90,75,95,52,4,Rare Holo,False,Legends Awakened,7.07,Grass
+Alolan Vulpix,107,69,72,67,89,68,7,Rare Holo,True,Darkness Ablaze,29.62,Ice
+Volbeat,47,39,49,58,36,44,5,Common,True,Phantom Forces,0.36,Bug
+Chesnaught,99,64,74,85,86,75,6,Rare Holo,False,Guardians Rising,3.12,Grass
+Staravia,74,56,50,32,48,47,7,Rare,False,Sword & Shield,1.03,Flying
+Giratina,100,67,91,70,86,68,6,Rare,False,Crimson Invasion,0.82,Dragon
+Bewear,97,65,92,83,51,73,8,Rare,False,Paldea Evolved,1.6,Fighting
+Honchkrow,207,98,134,93,101,108,2,Rare Holo GX,True,Neo Revelation,41.44,Dark
+Whiscash,108,80,93,95,71,75,1,Rare Holo,False,Neo Genesis,8.81,Ground
+Rapidash,50,70,36,12,43,38,1,Common,False,Neo Discovery,0.24,Fire
+Poliwrath,64,63,56,70,52,49,1,Uncommon,False,Fossil,0.57,Water
+Zeraora,108,71,90,62,63,75,6,Rare Holo,False,Sun & Moon,5.72,Electric
+Umbreon,66,26,32,53,55,42,3,Common,False,Dragon,0.22,Dark
+Gardevoir,99,65,76,90,89,95,6,Rare Holo,False,Forbidden Light,14.13,Fairy
+Yamper EX,64,60,93,56,64,68,4,Rare,True,Legends Awakened,3.95,Electric
+Armaldo,91,65,87,92,44,63,1,Uncommon,False,Gym Heroes,0.84,Rock
+Chespin,46,29,36,57,57,55,5,Common,False,Flashfire,0.33,Grass
+Aromatisse,76,55,39,40,81,81,7,Uncommon,False,Chilling Reign,0.57,Fairy
+Meowth,59,50,44,28,51,45,8,Common,False,Scarlet & Violet,0.17,Normal
+Mienfoo,70,42,80,67,58,50,5,Uncommon,False,XY Base,0.58,Fighting
+Yamper,171,66,126,80,74,68,9,Rare Holo EX,True,Shrouded Fable,51.32,Electric
+Shroomish,177,84,72,109,112,91,6,Rare Holo EX,True,Burning Shadows,121.06,Grass
+Dhelmise,100,39,42,57,63,54,7,Uncommon,False,Chilling Reign,0.35,Ghost
+Rotom,151,85,98,66,79,73,3,Rare Holo EX,True,EX FireRed & LeafGreen,66.11,Electric
+Croagunk,82,42,67,70,68,59,8,Uncommon,False,Paradox Rift,0.67,Poison
+Lugia,60,57,38,46,46,60,3,Uncommon,False,Dragon,0.38,Flying
+Tentacruel,87,68,75,82,50,85,6,Rare,False,Crimson Invasion,1.54,Water
+Houndour,86,36,61,63,34,49,5,Common,False,Phantom Forces,0.21,Dark
+Plusle,107,48,35,62,63,31,5,Common,False,Furious Fists,0.38,Electric
+Darkrai,30,61,42,38,52,45,1,Common,False,Jungle,0.12,Dark
+Tyrogue,100,50,102,99,54,61,4,Rare Holo,False,Legends Awakened,3.93,Fighting
+Marill,80,63,40,67,46,60,6,Uncommon,False,Burning Shadows,0.36,Water
+Vullaby,66,41,40,47,51,61,7,Common,True,Sword & Shield,0.57,Dark
+Torracat,56,38,48,16,53,21,3,Common,False,Sandstorm,0.3,Fire
+Shinx,201,87,114,90,112,92,6,Rare Ultra,True,Burning Shadows,189.28,Electric
+Blaziken,60,70,27,31,35,26,6,Common,False,Sun & Moon,0.24,Fire
+Pineco,57,37,64,56,23,53,8,Common,False,Paldea Evolved,0.33,Bug
+Pansear EX,83,94,71,42,74,57,3,Rare,True,EX Emerald,1.83,Fire
+Heatran,61,64,53,82,61,95,3,Uncommon,False,EX FireRed & LeafGreen,0.53,Steel
+Groudon,50,52,64,43,50,47,7,Common,False,Vivid Voltage,0.25,Ground
+Ditto,58,45,35,36,47,37,2,Common,False,Skyridge,0.1,Normal
+Cacnea,57,38,39,44,59,45,4,Common,False,Legends Awakened,0.22,Grass
+Stufful,79,45,63,63,50,54,7,Uncommon,False,Rebel Clash,0.34,Fighting
+Mesprit,227,86,83,115,163,153,3,Secret Rare,True,EX Emerald,555.98,Psychic
+Haxorus,42,62,73,83,80,65,4,Uncommon,False,Majestic Dawn,0.45,Dragon
+Tentacruel,103,51,45,73,62,79,3,Rare,False,EX Emerald,1.46,Water
+Shroomish,88,43,64,43,79,65,3,Uncommon,False,Team Magma vs Team Aqua,0.73,Grass
+Aerodactyl,58,26,53,82,36,70,5,Common,False,Phantom Forces,0.32,Rock
+Zapdos,71,29,58,23,49,30,3,Uncommon,False,Dragon,0.53,Flying
+Absol,34,49,59,52,52,47,2,Common,False,Expedition,0.51,Dark
+Azumarill,49,48,41,36,34,45,3,Common,False,Ruby & Sapphire,0.17,Water
+Weepinbell,83,43,55,75,76,81,8,Rare,False,Paldean Fates,1.5,Grass
+Snivy,44,42,55,53,33,50,2,Common,False,Neo Revelation,0.11,Grass
+Vulpix,81,75,66,46,54,58,1,Rare,True,Jungle,2.39,Fire
+Weepinbell,67,32,48,29,70,62,1,Common,False,Jungle,0.43,Poison
+Yveltal,46,52,59,44,41,29,1,Common,False,Gym Challenge,0.22,Dark
+Cinderace EX,82,65,58,44,38,66,3,Uncommon,True,EX FireRed & LeafGreen,0.89,Fire
+Abomasnow,66,44,35,64,54,60,3,Uncommon,False,Team Magma vs Team Aqua,0.38,Grass
+Lugia,61,23,36,41,27,54,7,Common,False,Vivid Voltage,0.17,Psychic
+Togedemaru,106,54,72,59,78,57,7,Rare,False,Darkness Ablaze,2.33,Electric
+Palkia,61,43,42,78,42,65,5,Uncommon,False,Primal Clash,0.41,Water
+Vaporeon,65,60,32,53,20,65,7,Common,True,Vivid Voltage,0.34,Water
+Litten,57,76,52,36,59,34,7,Uncommon,False,Darkness Ablaze,0.42,Fire
+Delibird,78,42,48,70,73,61,8,Uncommon,False,Paldean Fates,0.46,Ice
+Magnemite,96,58,69,109,40,93,5,Rare,False,Phantom Forces,2.33,Steel
+Finneon,71,49,41,70,50,68,4,Uncommon,False,Legends Awakened,0.41,Water
+Pikachu,62,42,74,36,50,31,6,Uncommon,False,Ultra Prism,0.31,Electric
+Machoke,53,46,92,87,39,75,2,Rare,False,Neo Destiny,1.1,Fighting
+Shellos,64,60,62,55,59,68,6,Uncommon,False,Guardians Rising,0.84,Water
+Palkia,43,45,48,53,34,67,6,Common,False,Sun & Moon,0.27,Water
+Weedle,42,36,50,57,54,54,3,Uncommon,False,EX FireRed & LeafGreen,0.52,Bug
+Roselia,52,46,43,42,45,41,3,Common,False,EX Emerald,0.45,Grass
+Lapras GX,195,90,75,103,90,105,1,Rare Holo EX,True,Fossil,74.78,Water
+Mightyena,106,59,91,93,73,84,8,Rare Holo,False,151,11.29,Dark
+Abomasnow,91,48,35,64,55,56,4,Uncommon,False,Secret Wonders,1.18,Grass
+Feebas,84,74,57,85,58,80,8,Rare,False,151,2.46,Water
+Primeape,61,45,80,66,58,73,1,Uncommon,False,Neo Genesis,0.82,Fighting
+Clefable,68,43,62,62,66,67,2,Uncommon,False,Neo Revelation,0.33,Fairy
+Buizel,188,103,97,114,87,118,5,Rare Holo GX,True,Furious Fists,78.26,Water
+Vaporeon,90,72,64,68,51,79,6,Rare,True,Guardians Rising,5.93,Water
+Mamoswine,51,44,63,77,44,74,4,Uncommon,False,Diamond & Pearl,0.38,Ice
+Elekid,161,73,99,60,86,72,3,Rare Holo EX,True,Sandstorm,112.36,Electric
+Umbreon,58,38,50,49,46,46,2,Common,False,Aquapolis,0.28,Dark
+Zorua,72,62,70,51,41,54,1,Uncommon,False,Gym Heroes,0.18,Dark
+Qwilfish,101,66,52,88,48,82,8,Rare Holo,False,Obsidian Flames,4.68,Water
+Magikarp,62,42,45,57,36,59,7,Common,False,Chilling Reign,0.19,Water
+Sylveon,59,59,64,53,78,72,2,Uncommon,False,Expedition,0.35,Fairy
+Cubchoo,56,46,44,61,40,41,5,Common,False,Roaring Skies,0.63,Ice
+Rayquaza,55,31,44,45,36,30,3,Common,False,Dragon,0.24,Flying
+Altaria,179,111,126,90,120,85,4,Rare Holo EX,True,Legends Awakened,67.94,Dragon
+Spheal,49,31,42,57,43,56,2,Common,False,Neo Revelation,0.27,Water
+Swirlix,86,62,64,65,77,80,8,Rare,False,Paldean Fates,1.8,Fairy
+Treecko,48,38,62,64,73,58,2,Uncommon,False,Skyridge,0.82,Grass
+Hitmonchan,41,67,81,77,47,45,6,Uncommon,False,Sun & Moon,0.51,Fighting
+Tangela,48,50,47,55,44,43,4,Common,False,Majestic Dawn,0.25,Grass
+Sylveon,64,49,36,57,51,60,5,Common,False,Furious Fists,0.3,Fairy
+Bronzong V,165,101,102,138,75,116,1,Rare Holo EX,True,Neo Discovery,65.59,Steel
+Grimer,69,57,51,39,59,60,4,Common,False,Majestic Dawn,0.2,Poison
+Houndour,86,59,74,52,55,71,8,Rare,False,151,1.86,Dark
+Fraxure,76,48,73,52,72,63,5,Uncommon,False,Ancient Origins,0.26,Dragon
+Yamask,60,51,12,48,74,54,7,Common,False,Vivid Voltage,0.65,Ghost
+Dusclops,76,46,51,51,78,69,1,Rare,False,Team Rocket,2.82,Ghost
+Togetic,47,44,25,44,39,73,5,Common,False,Roaring Skies,0.48,Fairy
+Bisharp,195,129,95,150,101,144,7,Rare Ultra,True,Darkness Ablaze,190.16,Steel
+Moltres,50,28,55,54,56,43,2,Common,False,Aquapolis,0.24,Flying
+Dhelmise,183,71,87,99,117,96,7,Rare Holo GX,True,Chilling Reign,36.58,Ghost
+Mankey,54,21,54,53,23,50,7,Common,False,Darkness Ablaze,0.16,Fighting
+Rhyperior,81,48,67,92,38,49,2,Uncommon,False,Neo Revelation,0.3,Rock
+Armaldo,104,60,65,77,60,68,5,Rare Holo,False,Ancient Origins,5.68,Bug
+Torracat,75,71,48,59,48,52,6,Uncommon,False,Ultra Prism,0.58,Fire
+Lotad V,234,108,119,128,139,122,5,Secret Rare,True,Ancient Origins,441.63,Grass
+Chespin,33,27,62,31,50,42,2,Common,False,Expedition,0.14,Grass
+Claydol,68,57,63,54,39,33,5,Common,False,Furious Fists,0.15,Ground
+Drowzee EX,48,19,32,44,82,59,8,Common,True,151,0.51,Psychic
+Silcoon,47,27,49,49,58,50,4,Common,False,Legends Awakened,0.21,Bug
+Ursaring,47,40,47,46,27,44,8,Common,False,Paldean Fates,0.17,Normal
+Thundurus,58,35,59,24,49,33,7,Common,False,Battle Styles,0.2,Electric
+Kakuna,76,39,54,44,61,62,7,Uncommon,False,Rebel Clash,0.27,Bug
+Pinsir,100,55,69,66,50,48,4,Rare,False,Great Encounters,3.26,Bug
+Empoleon,87,66,45,64,44,63,8,Uncommon,False,Paldea Evolved,0.78,Water
+Heatran,42,66,63,29,63,46,8,Uncommon,False,Paldean Fates,0.39,Fire
+Rapidash,78,71,36,45,49,42,7,Uncommon,False,Sword & Shield,0.24,Fire
+Kyogre V,52,53,35,54,44,61,1,Common,True,Gym Heroes,0.57,Water
+Swellow,98,74,46,64,77,79,2,Rare Holo,False,Neo Destiny,5.11,Flying
+Sableye,100,48,55,53,69,44,1,Uncommon,False,Fossil,0.67,Dark
+Charmeleon,68,66,52,33,54,39,1,Uncommon,False,Jungle,0.52,Fire
+Hitmontop,57,54,77,87,36,55,7,Uncommon,False,Battle Styles,0.58,Fighting
+Wingull,83,54,59,67,43,66,6,Uncommon,False,Burning Shadows,0.4,Water
+Luxray,75,43,78,43,35,47,4,Uncommon,False,Majestic Dawn,0.67,Electric
+Dunsparce,82,48,47,65,44,41,7,Uncommon,False,Battle Styles,0.74,Normal
+Golett,125,45,85,65,99,89,4,Rare Holo,False,Secret Wonders,9.05,Ghost
+Dedenne,62,38,73,36,47,44,2,Uncommon,False,Neo Revelation,0.55,Electric
+Togepi,106,67,58,76,90,103,8,Rare Holo,False,Paradox Rift,4.28,Fairy
+Honchkrow,87,65,54,40,54,60,7,Uncommon,False,Vivid Voltage,0.18,Dark
+Pawniard,86,70,71,75,84,55,4,Rare,False,Mysterious Treasures,1.54,Dark
+Farfetchd EX,30,33,21,57,30,51,1,Common,True,Team Rocket,0.8,Normal
+Golem,44,42,47,88,66,62,5,Uncommon,False,Flashfire,0.31,Rock
+Blaziken,79,68,58,47,71,29,6,Rare,False,Ultra Prism,0.66,Fire
+Boltund EX,58,35,61,49,52,19,4,Common,True,Legends Awakened,0.48,Electric
+Wingull,47,45,45,45,39,67,2,Common,False,Expedition,0.28,Water
+Marill GX,108,53,35,63,86,73,4,Rare,True,Majestic Dawn,6.15,Fairy
+Chespin,58,45,42,76,30,34,2,Common,False,Expedition,0.38,Grass
+Granbull,65,57,30,43,66,65,8,Common,False,Obsidian Flames,0.52,Fairy
+Pidgeot,76,41,53,70,63,47,2,Uncommon,False,Skyridge,0.91,Normal
+Cubone,83,77,79,89,40,62,3,Rare,False,EX FireRed & LeafGreen,5.48,Ground
+Lairon,56,70,29,79,42,58,4,Uncommon,False,Majestic Dawn,0.44,Steel
+Houndour,119,58,74,67,68,54,8,Uncommon,False,Paradox Rift,1.39,Dark
+Blaziken,73,91,68,57,71,55,6,Rare,False,Sun & Moon,1.31,Fire
+Bronzor,91,66,78,102,59,81,8,Rare Holo,False,151,2.89,Steel
+Shaymin,93,66,74,63,74,58,1,Rare,False,Base Set 2,1.55,Grass
+Celebi,77,50,54,82,97,103,1,Rare Holo,False,Fossil,3.4,Psychic
+Lugia,87,40,59,63,91,71,1,Rare,False,Gym Challenge,1.05,Psychic
+Exeggutor,69,58,87,48,99,80,3,Rare,False,EX FireRed & LeafGreen,1.73,Grass
+Jirachi,96,57,48,62,118,78,1,Rare Holo,False,Neo Discovery,3.62,Psychic
+Crabrawler,35,57,75,76,35,53,7,Uncommon,False,Vivid Voltage,0.57,Fighting
+Shroomish GX,44,37,53,63,62,48,2,Common,True,Skyridge,0.38,Grass
+Stufful,50,47,69,57,12,31,7,Common,False,Darkness Ablaze,0.32,Fighting
+Yveltal,63,59,59,53,33,52,7,Common,False,Battle Styles,0.59,Dark
+Swellow,70,37,59,58,58,40,3,Uncommon,False,Sandstorm,0.27,Flying
+Seedot,36,34,48,43,28,38,7,Common,False,Sword & Shield,0.22,Grass
+Kyogre,43,49,58,35,43,45,5,Common,False,Phantom Forces,0.73,Water
+Pelipper,52,63,59,71,52,49,2,Uncommon,False,Skyridge,0.41,Water
+Gible,75,75,99,70,51,53,6,Rare,False,Forbidden Light,2.46,Ground
+Pancham,107,75,115,98,38,74,3,Rare Holo,False,Ruby & Sapphire,9.44,Fighting
+Musharna,227,97,105,135,156,154,1,Secret Rare,True,Gym Challenge,525.16,Psychic
+Charjabug,95,51,94,68,79,77,7,Rare Holo,False,Battle Styles,7.65,Electric
+Chinchou,75,71,70,47,66,59,8,Rare,False,Paldean Fates,2.57,Electric
+Eevee,84,64,62,63,61,43,5,Rare,False,Roaring Skies,1.53,Normal
+Rattata,119,72,79,67,73,75,2,Rare Holo,False,Legendary Collection,5.34,Normal
+Yveltal,65,58,87,54,66,68,6,Rare,False,Crimson Invasion,3.04,Dark
+Marill,66,65,79,91,57,72,3,Rare,False,Team Magma vs Team Aqua,2.1,Water
+Chimchar,55,68,46,22,45,40,5,Common,False,Ancient Origins,0.21,Fire
+Forretress,70,32,53,56,63,36,3,Uncommon,False,Team Magma vs Team Aqua,0.59,Bug
+Darkrai,71,54,74,60,71,55,7,Uncommon,False,Darkness Ablaze,0.52,Dark
+Beedrill,81,59,86,74,52,41,8,Rare,False,Obsidian Flames,1.61,Bug
+Ariados,229,105,122,120,94,125,3,Secret Rare,True,Sandstorm,401.98,Bug
+Snover,55,37,57,68,69,57,3,Uncommon,False,Ruby & Sapphire,0.75,Grass
+Suicune,95,70,69,68,61,86,5,Rare Holo,False,Roaring Skies,5.51,Water
+Pidgeotto,91,76,28,58,47,57,2,Rare,False,Neo Revelation,1.49,Normal
+Mienshao,81,54,84,56,55,54,7,Uncommon,False,Vivid Voltage,0.71,Fighting
+Porygon,81,54,52,35,36,42,3,Uncommon,False,Dragon,0.5,Normal
+Conkeldurr,89,53,73,56,52,39,2,Uncommon,False,Legendary Collection,0.47,Fighting
+Houndoom,102,78,49,54,57,46,5,Rare,False,Flashfire,2.16,Fire
+Dedenne,114,46,81,51,66,64,3,Rare Holo,False,Sandstorm,13.13,Electric
+Kirlia,68,42,48,47,87,66,3,Uncommon,False,Team Magma vs Team Aqua,0.62,Psychic
+Cubchoo,64,56,54,54,58,66,6,Uncommon,False,Forbidden Light,1.44,Ice
+Mewtwo,166,78,91,108,151,134,7,Rare Holo GX,True,Rebel Clash,20.95,Psychic
+Blastoise,86,46,61,90,59,69,7,Rare,False,Vivid Voltage,1.96,Water
+Pansage,72,34,56,52,62,60,4,Uncommon,False,Diamond & Pearl,0.2,Grass
+Aron,42,51,51,79,40,57,7,Common,False,Rebel Clash,0.28,Rock
+Machoke,97,44,97,75,31,86,5,Rare,False,Ancient Origins,4.31,Fighting
+Houndoom,64,57,62,55,60,21,7,Uncommon,False,Sword & Shield,0.92,Fire
+Absol,30,28,50,28,64,42,5,Common,False,Primal Clash,0.2,Dark
+Torterra,63,23,32,53,62,51,5,Common,False,XY Base,0.41,Grass
+Slaking,31,36,43,50,63,31,5,Common,False,Flashfire,0.05,Normal
+Kadabra,57,26,27,44,58,51,1,Common,False,Neo Discovery,0.22,Psychic
+Shiftry,74,49,66,72,85,64,4,Rare,False,Diamond & Pearl,1.26,Grass
+Bisharp,76,54,56,62,29,42,3,Common,False,Ruby & Sapphire,0.21,Steel
+Magikarp,48,38,36,52,44,73,5,Common,False,Ancient Origins,0.22,Water
+Pidgeot,59,39,50,38,33,39,6,Common,False,Forbidden Light,0.21,Normal
+Lumineon,60,53,50,73,60,82,1,Uncommon,False,Gym Challenge,0.38,Water
+Medicham,45,48,31,36,76,60,1,Common,False,Base Set,0.77,Psychic
+Raichu,53,44,58,34,58,53,9,Uncommon,False,Shrouded Fable,0.58,Electric
+Chimecho,63,44,34,41,64,78,6,Uncommon,False,Crimson Invasion,0.34,Psychic
+Meganium,107,64,65,79,76,67,4,Rare Holo,False,Diamond & Pearl,3.55,Grass
+Dodrio,82,64,68,69,52,54,6,Rare,False,Crimson Invasion,1.28,Normal
+Gothitelle,84,41,42,74,90,100,7,Rare,False,Rebel Clash,1.51,Psychic
+Mandibuzz,88,63,63,42,67,38,5,Uncommon,False,Primal Clash,0.52,Dark
+Pancham EX,57,48,78,64,61,50,5,Uncommon,True,Phantom Forces,0.75,Fighting
+Yamask,50,35,53,41,71,35,5,Common,False,Furious Fists,0.25,Ghost
+Rhydon,66,48,67,73,47,59,1,Uncommon,False,Jungle,0.47,Rock
+Tyrogue,79,55,75,45,49,36,1,Common,False,Team Rocket,0.3,Fighting
+Golbat,102,34,54,32,64,49,3,Uncommon,False,Team Magma vs Team Aqua,0.53,Flying
+Alakazam,49,42,24,63,36,67,4,Common,False,Majestic Dawn,0.32,Psychic
+Celebi,43,23,41,32,79,38,5,Common,False,Flashfire,0.3,Psychic
+Metagross,45,62,61,54,47,68,1,Common,False,Neo Discovery,0.39,Steel
+Shinx,168,77,100,74,69,67,9,Rare Holo EX,True,Temporal Forces,59.06,Electric
+Raticate,101,64,59,78,88,44,7,Rare,False,Chilling Reign,2.44,Normal
+Jigglypuff,52,44,42,48,70,28,8,Common,False,Paldea Evolved,0.67,Normal
+Wartortle,59,61,57,73,53,60,1,Uncommon,False,Gym Heroes,0.55,Water
+Clobbopus,38,36,75,64,42,46,2,Common,False,Neo Revelation,0.12,Fighting
+Flaaffy,121,61,84,53,77,65,6,Rare Holo,False,Burning Shadows,6.19,Electric
+Gothorita,78,27,49,40,85,70,4,Uncommon,False,Secret Wonders,0.78,Psychic
+Blitzle,60,43,67,34,33,40,8,Uncommon,False,151,0.4,Electric
+Mew,33,40,27,47,74,76,3,Common,False,EX FireRed & LeafGreen,0.28,Psychic
+Crabrawler,79,60,84,69,43,56,2,Rare,False,Neo Revelation,4.11,Fighting
+Ampharos,99,54,87,41,55,47,2,Rare,False,Neo Destiny,2.13,Electric
+Spritzee,110,58,42,69,43,62,7,Uncommon,False,Chilling Reign,0.58,Fairy
+Electabuzz,36,40,36,30,57,17,2,Common,False,Expedition,0.25,Electric
+Chinchou,65,41,54,44,30,31,8,Common,False,Paradox Rift,0.16,Electric
+Honedge,68,57,37,70,47,84,2,Uncommon,False,Aquapolis,0.58,Steel
+Articuno GX,63,39,56,20,36,36,2,Common,True,Legendary Collection,0.4,Flying
+Staravia,71,49,58,42,67,40,6,Uncommon,False,Burning Shadows,0.6,Flying
+Pupitar,96,65,64,77,50,57,2,Uncommon,False,Legendary Collection,0.49,Rock
+Bronzong,41,46,61,48,46,52,6,Common,False,Guardians Rising,0.53,Steel
+Finneon,182,103,101,113,83,104,5,Rare Holo GX,True,Primal Clash,38.49,Water
+Tauros,30,29,44,37,57,53,6,Common,False,Burning Shadows,0.18,Normal
+Marill,89,54,37,60,83,63,6,Uncommon,False,Ultra Prism,0.62,Fairy
+Tentacool,66,48,57,51,51,52,4,Common,False,Mysterious Treasures,0.26,Poison
+Aegislash,68,70,44,77,47,65,7,Uncommon,False,Sword & Shield,0.64,Steel
+Vullaby,73,60,74,69,71,73,7,Rare,True,Rebel Clash,3.28,Dark
+Cofagrigus,57,18,36,29,63,60,1,Common,False,Jungle,0.15,Ghost
+Lugia,91,31,52,58,104,79,4,Rare,False,Secret Wonders,2.06,Psychic
+Uxie,59,51,12,60,78,58,1,Uncommon,False,Jungle,0.79,Psychic
+Honchkrow,35,39,57,50,34,44,1,Common,False,Neo Discovery,0.13,Dark
+Bisharp,185,99,129,94,116,104,4,Rare Ultra,True,Majestic Dawn,94.25,Dark
+Magcargo,67,60,41,59,62,40,2,Common,False,Neo Revelation,0.32,Fire
+Mesprit,58,41,38,50,76,58,4,Uncommon,False,Mysterious Treasures,0.45,Psychic
+Rotom,43,31,48,26,41,40,3,Common,False,Ruby & Sapphire,0.23,Electric
+Makuhita GX,70,53,81,64,43,30,5,Uncommon,True,Flashfire,1.15,Fighting
+Joltik,53,41,46,23,38,33,7,Common,False,Sword & Shield,0.43,Electric
+Hypno,70,40,48,40,70,62,6,Uncommon,False,Burning Shadows,1.2,Psychic
+Beldum,206,114,88,164,82,132,9,Rare Holo GX,True,Twilight Masquerade,21.91,Steel
+Pidgeot,104,68,75,53,64,79,1,Rare Holo,False,Neo Discovery,4.67,Normal
+Nuzleaf,63,51,69,44,47,32,5,Common,False,Furious Fists,0.17,Dark
+Timburr,91,56,88,86,63,76,4,Rare,False,Majestic Dawn,2.82,Fighting
+Entei,108,100,63,41,48,74,3,Rare Holo,False,Dragon,5.0,Fire
+Mismagius,64,53,65,24,66,59,2,Uncommon,False,Legendary Collection,0.36,Ghost
+Raticate,162,88,75,91,80,88,3,Rare Holo EX,True,EX FireRed & LeafGreen,58.97,Normal
+Plusle,44,53,61,40,34,45,7,Uncommon,False,Battle Styles,0.28,Electric
+Blastoise,152,88,80,94,100,103,4,Rare Holo EX,True,Mysterious Treasures,57.65,Water
+Deoxys,77,32,21,45,84,75,6,Uncommon,False,Guardians Rising,0.31,Psychic
+Delphox V,65,60,52,45,44,59,5,Uncommon,True,Ancient Origins,1.67,Fire
+Dunsparce,44,45,59,45,28,48,1,Common,False,Neo Genesis,0.22,Normal
+Toxicroak,76,70,87,67,47,68,7,Rare,False,Sword & Shield,1.01,Fighting
+Electrode,89,54,77,37,52,49,5,Rare,False,Roaring Skies,1.33,Electric
+Purrloin,41,52,64,38,54,43,4,Common,False,Majestic Dawn,0.2,Dark
+Charmeleon,88,84,55,57,71,77,2,Rare Holo,False,Aquapolis,3.86,Fire
+Golett,53,45,59,51,88,64,4,Uncommon,False,Great Encounters,0.36,Ghost
+Simisage,44,23,44,45,61,49,3,Common,False,Team Magma vs Team Aqua,0.2,Grass
+Liepard,92,52,77,59,91,59,1,Rare,False,Gym Heroes,1.43,Dark
+Turtwig,69,51,70,65,53,57,7,Uncommon,False,Darkness Ablaze,0.88,Grass
+Reshiram,73,90,63,35,57,64,2,Rare,False,Expedition,1.6,Fire
+Weedle GX,102,47,77,82,69,77,2,Rare Holo,True,Aquapolis,28.05,Bug
+Houndoom,114,70,75,54,64,44,5,Rare,False,Phantom Forces,0.63,Dark
+Bonsly,74,66,61,59,53,60,1,Uncommon,False,Neo Genesis,0.38,Rock
+Gothita,45,24,42,45,66,44,5,Common,False,Flashfire,0.53,Psychic
+Plusle,41,23,63,45,31,22,7,Common,False,Rebel Clash,0.34,Electric
+Bulbasaur,31,46,42,46,73,39,3,Common,False,EX Emerald,0.58,Grass
+Gulpin,44,46,44,46,40,41,7,Uncommon,False,Chilling Reign,0.37,Poison
+Sealeo GX,72,32,45,47,42,75,3,Common,True,Sandstorm,0.41,Water
+Kadabra,100,59,40,64,85,98,6,Rare,False,Ultra Prism,2.97,Psychic
+Stufful GX,40,36,77,55,34,42,8,Common,True,Paldea Evolved,1.04,Fighting
+Drifloon,32,42,55,54,68,62,3,Uncommon,False,Team Magma vs Team Aqua,0.29,Ghost
+Combusken,30,40,40,31,42,33,1,Common,False,Jungle,0.22,Fire
+Torracat,123,73,52,53,66,62,4,Rare Holo,False,Mysterious Treasures,1.65,Fire
+Boltund,59,38,53,32,40,18,5,Common,False,Furious Fists,0.24,Electric
+Beldum,31,39,25,74,63,46,5,Common,False,Ancient Origins,0.26,Steel
+Gible,92,61,78,44,67,58,4,Uncommon,False,Secret Wonders,0.55,Dragon
+Wailmer,40,50,53,72,46,68,4,Uncommon,False,Mysterious Treasures,0.58,Water
+Pelipper,79,58,57,66,39,72,7,Uncommon,False,Darkness Ablaze,0.52,Water
+Charmeleon,112,110,63,33,52,42,2,Rare,False,Neo Revelation,3.7,Fire
+Dragonair,79,66,97,77,59,78,6,Rare,False,Ultra Prism,1.55,Dragon
+Spheal,88,58,81,91,82,88,1,Rare Holo,False,Team Rocket,4.33,Ice
+Slugma,43,79,45,44,46,58,7,Common,False,Rebel Clash,0.26,Fire
+Houndoom,71,62,68,36,64,51,8,Uncommon,False,Paldea Evolved,1.12,Dark
+Totodile,45,47,62,62,24,58,5,Common,False,Roaring Skies,0.27,Water
+Throh,67,53,77,92,58,60,3,Rare,False,EX Emerald,1.26,Fighting
+Aerodactyl,78,68,69,69,48,65,2,Uncommon,False,Skyridge,0.53,Rock
+Slugma,96,85,58,46,59,46,4,Rare,False,Secret Wonders,2.31,Fire
+Latios,86,62,87,94,93,80,6,Rare Holo,False,Ultra Prism,5.94,Dragon
+Togetic,101,59,68,38,59,59,4,Rare Holo,False,Diamond & Pearl,4.34,Flying
+Lumineon,72,73,58,69,58,74,6,Rare,False,Ultra Prism,2.77,Water
+Sceptile EX,77,45,43,41,54,66,6,Common,True,Sun & Moon,0.89,Grass
+Cherubi,75,41,32,38,73,42,3,Common,False,EX FireRed & LeafGreen,0.22,Grass
+Weavile,115,61,59,86,76,76,1,Rare,False,Team Rocket,1.22,Ice
+Timburr,109,28,90,65,34,48,3,Uncommon,False,Ruby & Sapphire,0.35,Fighting
+Pangoro GX,42,46,59,47,32,54,3,Common,True,Sandstorm,0.45,Fighting
+Yamper,47,58,40,17,27,31,1,Common,False,Fossil,0.32,Electric
+Hoothoot,80,72,72,66,89,68,6,Rare Holo,False,Burning Shadows,6.96,Normal
+Paras,100,48,66,57,46,70,5,Rare,False,Roaring Skies,1.13,Bug
+Cradily,42,51,47,68,18,62,5,Common,False,Roaring Skies,0.2,Rock
+Roserade,49,52,39,57,68,53,5,Uncommon,False,Ancient Origins,0.78,Grass
+Dragonair,77,70,61,71,70,56,1,Uncommon,False,Base Set,0.3,Dragon
+Noctowl,67,48,21,34,41,36,4,Common,False,Diamond & Pearl,0.63,Flying
+Elekid,60,47,66,44,51,60,5,Uncommon,False,Ancient Origins,0.24,Electric
+Regidrago,94,59,77,64,89,56,7,Uncommon,False,Rebel Clash,0.78,Dragon
+Sealeo,30,49,50,55,41,51,6,Common,False,Forbidden Light,0.18,Water
+Sawk,30,32,62,60,54,62,5,Common,False,Furious Fists,0.24,Fighting
+Purrloin,101,45,57,60,54,54,2,Uncommon,False,Skyridge,0.61,Dark
+Rampardos,64,36,56,72,61,52,4,Uncommon,False,Diamond & Pearl,0.79,Rock
+Charjabug,34,43,70,23,56,47,4,Common,False,Secret Wonders,0.12,Electric
+Palkia,81,66,61,82,61,90,6,Rare Holo,False,Ultra Prism,2.93,Water
+Regirock V,51,48,63,76,54,62,7,Uncommon,True,Darkness Ablaze,2.69,Rock
+Floatzel,188,92,109,130,86,129,6,Rare Holo GX,True,Crimson Invasion,68.05,Water
+Vibrava,44,49,62,41,68,48,1,Common,True,Gym Challenge,1.13,Dragon
+Bellsprout,38,24,32,47,65,48,4,Common,False,Diamond & Pearl,0.21,Grass
+Aron,103,88,83,98,71,115,3,Rare Holo,False,Sandstorm,7.61,Steel
+Cofagrigus,58,33,48,37,42,47,8,Common,False,Paldea Evolved,0.24,Ghost
+Gyarados,88,51,47,55,17,38,3,Common,False,EX FireRed & LeafGreen,0.3,Water
+Cleffa,61,44,55,64,40,67,7,Uncommon,False,Chilling Reign,0.82,Fairy
+Camerupt,52,61,48,53,44,30,9,Common,False,Twilight Masquerade,0.18,Fire
+Lombre,61,51,55,73,50,70,5,Uncommon,False,Flashfire,0.53,Water
+Absol,52,52,43,38,46,45,4,Common,False,Diamond & Pearl,0.08,Dark
+Blissey,169,97,98,89,92,89,8,Rare Holo EX,True,Paldean Fates,119.72,Normal
+Chikorita,180,61,81,92,112,90,7,Rare Holo EX,True,Chilling Reign,54.09,Grass
+Venonat,52,53,46,27,46,53,8,Common,True,Paldean Fates,0.47,Poison
+Misdreavus,65,30,50,50,63,49,8,Uncommon,False,Paldea Evolved,0.43,Ghost
+Klink,111,69,69,86,63,96,5,Rare,False,XY Base,0.68,Steel
+Pinsir,52,30,36,38,39,52,6,Common,False,Crimson Invasion,0.07,Bug
+Lotad,86,58,39,69,50,68,1,Uncommon,False,Gym Heroes,0.58,Water
+Ponyta,185,130,81,79,96,57,6,Rare Holo EX,True,Crimson Invasion,166.56,Fire
+Emolga,75,70,80,48,64,65,5,Rare,False,Furious Fists,2.35,Electric
+Flareon V,47,63,52,39,41,39,3,Common,True,Dragon,0.68,Fire
+Suicune,69,57,26,63,42,25,3,Common,False,Ruby & Sapphire,0.18,Water
+Buizel,164,67,91,112,95,115,4,Rare Holo EX,True,Mysterious Treasures,115.76,Water
+Tepig,110,107,64,57,73,79,1,Rare Holo,False,Base Set,5.4,Fire
+Breloom,104,64,67,83,71,68,6,Rare Holo,False,Ultra Prism,5.38,Grass
+Clefable,59,47,62,51,66,83,5,Uncommon,False,XY Base,0.56,Fairy
+Banette,61,46,35,42,75,36,6,Common,False,Crimson Invasion,0.22,Ghost
+Breloom,53,38,52,59,34,60,4,Common,False,Diamond & Pearl,0.21,Grass
+Scizor,51,56,42,66,49,59,1,Common,False,Gym Heroes,0.19,Steel
+Omastar,42,54,48,77,32,51,3,Common,False,EX FireRed & LeafGreen,0.25,Rock
+Pidgeot,47,40,40,45,54,52,2,Common,False,Expedition,0.16,Flying
+Gloom,52,55,64,66,70,71,5,Rare,False,XY Base,1.62,Grass
+Houndour,82,89,62,48,66,63,8,Uncommon,False,Obsidian Flames,0.56,Fire
+Sinistea,40,19,56,47,65,49,6,Common,False,Sun & Moon,0.33,Ghost
+Drowzee,42,34,43,40,71,59,5,Common,False,Furious Fists,0.25,Psychic
+Avalugg,77,67,79,69,59,50,1,Uncommon,False,Neo Discovery,0.71,Ice
+Dunsparce,112,62,81,61,81,66,5,Rare Holo,False,Roaring Skies,7.45,Normal
+Xatu,95,46,68,52,53,59,1,Rare,False,Base Set,1.43,Flying
+Charmander,80,97,54,49,57,48,1,Rare,False,Neo Discovery,2.03,Fire
+Cresselia,79,48,48,46,85,72,6,Uncommon,False,Sun & Moon,0.52,Psychic
+Throh GX,75,38,43,64,47,27,3,Common,True,Sandstorm,0.5,Fighting
+Magikarp V,111,79,73,65,53,78,1,Rare,True,Base Set 2,3.92,Water
+Claydol,42,21,40,38,67,53,8,Common,False,Paldean Fates,0.37,Psychic
+Shuppet,78,53,60,42,65,52,5,Uncommon,False,Roaring Skies,0.28,Ghost
+Ariados,77,45,68,64,42,73,7,Rare,False,Battle Styles,2.16,Bug
+Emboar,90,77,48,28,43,44,1,Uncommon,False,Team Rocket,0.48,Fire
+Doduo,73,55,35,48,43,60,1,Uncommon,False,Base Set,0.53,Flying
+Celebi,79,50,30,58,80,57,5,Uncommon,False,Ancient Origins,0.45,Psychic
+Skarmory,39,33,50,33,46,45,2,Common,False,Neo Destiny,0.29,Flying
+Wailord,158,99,93,116,79,116,7,Rare Holo EX,True,Darkness Ablaze,85.47,Water
+Golduck,67,53,53,66,39,58,1,Uncommon,False,Base Set 2,0.86,Water
+Wingull,61,31,46,27,51,30,2,Common,False,Expedition,0.17,Flying
+Floatzel GX,60,48,60,47,44,33,3,Common,True,Dragon,0.43,Water
+Weezing GX,77,47,67,77,80,79,1,Rare Holo,True,Gym Heroes,19.23,Poison
+Electrike,118,53,73,47,82,48,4,Rare,False,Majestic Dawn,2.1,Electric
+Magnemite,59,54,56,71,31,51,9,Common,False,Twilight Masquerade,0.5,Steel
+Nidorina,115,62,68,58,52,54,1,Rare,False,Fossil,4.26,Poison
+Magmar,78,73,43,38,61,45,4,Uncommon,False,Diamond & Pearl,0.58,Fire
+Baltoy,117,45,53,72,108,88,3,Rare Holo,False,EX FireRed & LeafGreen,6.03,Psychic
+Abomasnow,58,41,49,52,63,29,8,Common,False,151,0.25,Grass
+Mankey,47,61,78,84,34,70,2,Uncommon,False,Expedition,0.88,Fighting
+Houndour,192,106,135,103,107,117,2,Rare Ultra,True,Aquapolis,50.31,Dark
+Serperior,70,50,54,66,66,48,1,Uncommon,False,Neo Discovery,0.84,Grass
+Emolga,51,27,38,38,42,41,2,Common,False,Expedition,0.13,Electric
+Hariyama,44,47,65,66,34,49,1,Common,False,Gym Challenge,0.14,Fighting
+Luxio,204,94,123,75,127,83,2,Rare Ultra,True,Neo Destiny,115.43,Electric
+Meganium,30,36,61,53,51,51,8,Common,False,151,0.17,Grass
+Hitmonlee,81,65,98,83,58,66,5,Rare,False,Furious Fists,1.15,Fighting
+Mienfoo,45,34,62,59,51,38,1,Common,False,Neo Discovery,0.57,Fighting
+Azumarill,57,45,67,59,35,73,1,Common,False,Team Rocket,0.17,Water
+Grumpig,48,33,30,45,88,66,8,Uncommon,False,Paldea Evolved,0.27,Psychic
+Lunatone,64,49,38,52,76,75,1,Uncommon,False,Gym Heroes,0.54,Psychic
+Kricketune,75,39,52,63,42,52,3,Common,False,Ruby & Sapphire,0.27,Bug
+Lickitung,87,47,45,55,56,54,6,Uncommon,False,Burning Shadows,0.27,Normal
+Feraligatr,33,55,34,58,44,22,1,Common,False,Base Set 2,0.13,Water
+Lairon,88,79,79,104,54,68,5,Rare Holo,False,Ancient Origins,6.77,Rock
+Krokorok,97,56,62,59,59,74,6,Rare,False,Forbidden Light,2.66,Dark
+Regirock,99,67,60,91,34,69,6,Uncommon,False,Forbidden Light,1.24,Rock
+Azumarill,170,88,88,113,75,102,5,Rare Holo EX,True,Flashfire,85.24,Water
+Spearow,62,64,58,68,60,46,3,Uncommon,False,Ruby & Sapphire,0.4,Normal
+Golbat,82,66,69,54,71,54,7,Rare Holo,False,Rebel Clash,3.76,Flying
+Stufful EX,30,42,67,39,33,20,8,Common,True,Scarlet & Violet,0.4,Fighting
+Snover GX,60,53,41,46,49,34,7,Uncommon,True,Vivid Voltage,1.11,Grass
+Piloswine,46,38,58,56,39,38,6,Common,False,Forbidden Light,0.09,Ground
+Electrode,54,28,55,37,23,47,6,Common,False,Guardians Rising,0.13,Electric
+Hoothoot,71,51,64,48,55,64,6,Uncommon,False,Sun & Moon,0.5,Normal
+Doduo,87,49,62,61,47,42,1,Uncommon,False,Fossil,0.76,Flying
+Togekiss,78,61,32,73,79,81,7,Rare,False,Chilling Reign,0.63,Fairy
+Spritzee,93,75,50,79,101,87,2,Rare Holo,False,Neo Revelation,11.89,Fairy
+Kyurem,91,76,69,79,94,47,5,Rare,False,XY Base,2.03,Dragon
+Fraxure GX,191,109,134,106,141,105,1,Rare Holo GX,True,Fossil,93.23,Dragon
+Swellow V,42,21,47,46,39,62,7,Common,True,Battle Styles,0.52,Flying
+Kingdra,30,53,59,53,63,39,2,Common,False,Neo Destiny,0.22,Dragon
+Bisharp EX,100,90,73,102,43,99,4,Rare Holo,True,Majestic Dawn,6.71,Steel
+Machop,96,46,89,86,60,58,5,Rare,False,Primal Clash,1.62,Fighting
+Charjabug,83,57,86,78,72,65,7,Rare Holo,False,Rebel Clash,4.6,Electric
+Shroomish,58,58,60,63,64,65,4,Uncommon,False,Secret Wonders,0.85,Grass
+Delphox,82,94,62,61,62,61,1,Rare,False,Gym Challenge,1.87,Fire
+Swinub,31,46,47,57,45,72,1,Common,False,Neo Discovery,0.28,Ice
+Emolga,38,20,47,47,31,53,7,Common,False,Battle Styles,0.2,Electric
+Snivy,51,36,28,56,46,36,5,Common,False,Roaring Skies,0.16,Grass
+Cacturne,92,54,60,74,61,72,7,Rare,False,Vivid Voltage,2.78,Grass
+Lileep,30,35,55,54,34,48,3,Common,False,Ruby & Sapphire,0.17,Rock
+Pansage,89,65,69,83,94,80,2,Rare,False,Legendary Collection,1.06,Grass
+Haunter,62,10,55,40,64,44,7,Common,False,Darkness Ablaze,0.14,Ghost
+Wailmer,85,73,74,65,45,84,2,Rare,False,Expedition,0.86,Water
+Rhyhorn,177,124,138,119,79,85,7,Rare Ultra,True,Vivid Voltage,240.69,Ground
+Kabutops,85,65,85,99,73,87,7,Rare Holo,False,Vivid Voltage,7.51,Rock
+Steelix,95,75,55,92,51,74,4,Rare,False,Legends Awakened,1.63,Steel
+Ninetales,33,81,38,34,41,43,8,Uncommon,False,151,0.51,Fire
+Mandibuzz,77,59,68,49,61,54,7,Uncommon,False,Battle Styles,0.78,Dark
+Machop,65,48,92,54,45,43,7,Uncommon,False,Battle Styles,0.41,Fighting
+Drifloon,66,27,47,56,70,61,4,Uncommon,False,Secret Wonders,1.57,Ghost
+Tapu Koko,79,69,47,56,76,86,3,Rare,False,EX Emerald,1.3,Fairy
+Pangoro,113,92,98,88,69,56,6,Rare Holo,False,Crimson Invasion,9.73,Fighting
+Gible,83,73,84,62,93,72,7,Rare,False,Chilling Reign,1.94,Dragon
+Abomasnow,103,49,47,75,90,56,1,Rare,False,Neo Genesis,1.14,Grass
+Pelipper,63,44,57,75,52,91,3,Uncommon,False,Ruby & Sapphire,0.19,Water
+Treecko,72,52,40,45,54,44,5,Uncommon,False,Phantom Forces,0.67,Grass
+Feraligatr,43,52,38,48,42,46,7,Common,False,Rebel Clash,0.33,Water
+Zigzagoon,77,41,61,42,58,44,2,Rare,False,Aquapolis,1.48,Normal
+Moltres,114,58,68,42,68,62,8,Rare,False,Paldea Evolved,1.17,Flying
+Tentacruel EX,70,35,58,40,48,67,3,Common,True,Ruby & Sapphire,0.54,Poison
+Slowbro,77,29,47,52,69,74,3,Uncommon,False,Dragon,0.45,Psychic
+Teddiursa,74,44,43,30,27,53,4,Common,False,Legends Awakened,0.26,Normal
+Exeggcute,69,39,22,48,77,73,9,Uncommon,False,Shrouded Fable,0.29,Psychic
+Purrloin,169,92,117,105,103,115,6,Rare Holo GX,True,Forbidden Light,28.1,Dark
+Metapod,31,47,51,35,29,52,5,Common,False,XY Base,0.71,Bug
+Toxicroak,126,81,123,82,31,57,7,Rare Holo,False,Rebel Clash,3.52,Fighting
+Charizard,152,101,83,59,90,68,3,Rare Holo EX,True,Dragon,119.1,Fire
+Darumaka,68,54,57,30,40,56,6,Uncommon,False,Guardians Rising,0.38,Fire
+Wingull,77,48,55,65,26,43,6,Common,False,Crimson Invasion,0.19,Water
+Heracross,118,58,73,53,87,77,3,Rare Holo,False,Dragon,10.7,Bug
+Poochyena,56,66,66,43,49,71,6,Uncommon,False,Forbidden Light,0.61,Dark
+Scyther,38,36,32,59,31,45,1,Common,False,Base Set,0.33,Bug
+Teddiursa,37,55,36,38,35,47,2,Common,False,Skyridge,0.33,Normal
+Swablu,107,62,52,51,54,33,5,Rare,False,Phantom Forces,2.79,Flying
+Quilava EX,53,57,45,33,62,59,5,Uncommon,True,Flashfire,1.08,Fire
+Exeggutor,79,35,39,43,75,71,1,Uncommon,False,Team Rocket,0.71,Psychic
+Salamence,40,35,55,47,70,57,8,Common,False,151,0.17,Dragon
+Floatzel,80,44,57,66,41,50,7,Uncommon,False,Darkness Ablaze,0.31,Water
+Shaymin,94,60,63,73,83,65,3,Rare,False,Ruby & Sapphire,3.69,Grass
+Magneton,48,49,61,42,52,16,8,Common,False,Scarlet & Violet,0.16,Electric
+Pansear,57,61,39,44,43,54,7,Common,False,Vivid Voltage,0.58,Fire
+Gothorita,50,25,32,49,55,32,6,Common,False,Sun & Moon,0.22,Psychic
+Magikarp,51,45,68,61,28,45,2,Common,False,Expedition,0.29,Water
+Snorlax,84,50,53,69,41,53,1,Uncommon,False,Base Set,0.33,Normal
+Snorlax,87,68,55,62,57,56,2,Rare,False,Skyridge,1.81,Normal
+Ariados,105,45,75,72,50,56,6,Rare,False,Ultra Prism,3.47,Bug
+Pumpkaboo,94,48,57,54,65,68,5,Uncommon,False,Flashfire,0.17,Ghost
+Cascoon,88,57,61,36,60,63,6,Uncommon,False,Guardians Rising,0.58,Bug
+Staraptor,30,34,58,33,31,35,1,Common,False,Gym Challenge,0.15,Flying
+Ariados,51,49,56,57,54,21,2,Common,False,Aquapolis,0.29,Bug
+Rapidash,96,73,56,68,59,61,3,Rare,False,Sandstorm,1.5,Fire
+Victreebel EX,104,64,86,78,90,75,3,Rare Holo,True,EX FireRed & LeafGreen,15.68,Grass
+Misdreavus GX,85,46,75,47,83,57,8,Rare,True,Scarlet & Violet,2.97,Ghost
+Wooper,50,53,53,76,37,36,4,Common,False,Legends Awakened,0.16,Ground
+Pansage,188,88,103,138,130,113,1,Rare Ultra,True,Neo Genesis,175.48,Grass
+Regice,80,79,75,87,79,81,1,Rare Holo,False,Jungle,8.32,Ice
+Chinchou,64,43,46,60,46,40,6,Common,False,Guardians Rising,0.14,Electric
+Yveltal,67,50,62,53,59,73,7,Uncommon,False,Rebel Clash,1.07,Dark
+Bellossom,66,37,50,46,80,47,1,Uncommon,False,Base Set,0.66,Grass
+Kricketune,52,31,74,50,46,47,8,Uncommon,False,Scarlet & Violet,0.44,Bug
+Sawk,97,70,71,67,65,55,3,Rare,False,Ruby & Sapphire,1.36,Fighting
+Beautifly V,38,31,50,48,22,58,4,Common,True,Legends Awakened,0.57,Bug
+Nidoran,59,37,40,55,38,28,5,Common,False,Primal Clash,0.6,Poison
+Spritzee,73,72,26,62,80,78,8,Uncommon,False,Paradox Rift,1.21,Fairy
+Tapu Koko,35,46,45,38,79,71,8,Common,False,Paldea Evolved,0.66,Fairy
+Gastly,61,29,41,22,73,53,7,Common,False,Battle Styles,0.3,Ghost
+Emolga,66,39,58,42,54,34,5,Common,False,XY Base,0.73,Electric
+Paras,110,46,85,78,64,70,5,Rare Holo,False,Ancient Origins,8.98,Bug
+Onix,92,77,94,69,77,65,2,Rare,False,Legendary Collection,4.04,Ground
+Flareon EX,74,88,58,35,61,53,6,Uncommon,True,Guardians Rising,1.09,Fire
+Ariados,83,59,63,42,35,53,5,Uncommon,False,Flashfire,0.54,Bug
+Feraligatr,66,72,66,81,67,91,5,Rare Holo,False,Roaring Skies,17.52,Water
+Parasect,51,53,51,62,57,58,2,Uncommon,False,Aquapolis,0.24,Bug
+Boltund EX,53,24,50,31,53,54,7,Common,True,Chilling Reign,0.44,Electric
+Galvantula,98,54,86,53,56,69,1,Rare,False,Neo Discovery,3.32,Electric
+Salamence,95,69,74,58,48,61,8,Uncommon,False,151,0.32,Dragon
+Magneton,92,74,80,115,62,100,7,Rare Holo,False,Battle Styles,4.85,Steel
+Roggenrola,55,59,47,69,25,52,1,Common,False,Fossil,0.33,Rock
+Sneasel,59,52,64,45,57,57,4,Uncommon,False,Mysterious Treasures,0.32,Dark
+Croconaw,69,38,60,79,43,46,1,Uncommon,False,Gym Heroes,1.06,Water
+Sandile,102,75,87,77,77,79,3,Rare Holo,False,Team Magma vs Team Aqua,4.24,Dark
+Hypno,38,25,29,46,62,75,5,Common,False,Roaring Skies,0.38,Psychic
+Wooper,54,63,57,55,30,54,5,Common,False,Flashfire,0.36,Ground
+Shroomish,65,31,43,62,37,60,6,Common,False,Burning Shadows,0.19,Grass
+Cleffa,40,53,30,34,46,69,1,Common,False,Fossil,0.3,Fairy
+Girafarig,73,56,37,62,47,43,3,Uncommon,False,Sandstorm,0.46,Normal
+Machoke,30,53,60,67,37,48,2,Common,False,Skyridge,0.19,Fighting
+Frillish EX,61,49,49,65,78,56,5,Uncommon,True,Roaring Skies,0.8,Ghost
+Stufful,31,45,65,56,33,35,5,Common,False,Ancient Origins,0.13,Fighting
+Lanturn,59,44,49,38,65,35,1,Uncommon,False,Jungle,0.2,Electric
+Torkoal EX,47,48,30,27,53,34,9,Common,True,Twilight Masquerade,0.6,Fire
+Gabite,38,41,71,83,27,38,4,Common,False,Great Encounters,0.24,Ground
+Hariyama,56,38,52,63,28,26,2,Common,False,Skyridge,0.23,Fighting
+Drowzee,96,47,54,52,87,86,7,Uncommon,False,Rebel Clash,0.46,Psychic
+Hoothoot,91,67,77,51,79,77,5,Rare Holo,False,Primal Clash,4.89,Flying
+Drifblim EX,69,48,56,35,61,28,8,Common,True,Scarlet & Violet,1.41,Ghost
+Torracat,45,75,41,34,53,17,2,Common,False,Neo Destiny,0.52,Fire
+Flareon,46,69,30,37,30,32,7,Common,False,Vivid Voltage,0.1,Fire
+Zorua,41,41,73,49,42,51,2,Common,False,Aquapolis,0.16,Dark
+Mareep,74,71,75,39,49,47,3,Uncommon,False,EX Emerald,0.17,Electric
+Magcargo EX,66,67,35,43,45,47,1,Common,True,Base Set,0.45,Fire
+Poliwag,62,34,46,48,26,52,3,Common,False,Team Magma vs Team Aqua,0.14,Water
+Walrein,193,102,120,150,107,137,1,Rare Ultra,True,Gym Heroes,253.49,Water
+Talonflame,80,96,54,47,52,55,3,Rare,False,Sandstorm,2.97,Fire
+Magcargo,60,69,54,45,50,53,5,Uncommon,False,Ancient Origins,0.56,Fire
+Klinklang,62,52,36,77,49,51,7,Common,False,Rebel Clash,0.54,Steel
+Pikachu,33,71,70,50,50,28,5,Common,False,XY Base,0.14,Electric
+Golurk,103,51,67,52,96,89,8,Rare,False,Paldea Evolved,3.32,Ghost
+Cyndaquil,72,74,40,28,62,32,4,Common,False,Diamond & Pearl,0.21,Fire
+Wooper,69,74,68,63,62,53,1,Uncommon,False,Gym Challenge,0.56,Ground
+Granbull GX,55,43,44,37,54,58,2,Common,True,Aquapolis,0.82,Fairy
+Gourgeist,44,34,54,57,51,46,1,Common,False,Base Set,0.16,Ghost
+Camerupt,73,64,39,27,58,40,5,Uncommon,False,Roaring Skies,0.26,Fire
+Murkrow EX,83,76,78,74,63,74,8,Rare,True,Obsidian Flames,6.97,Dark
+Victini,85,81,50,41,55,47,2,Rare,True,Neo Revelation,3.01,Fire
+Weepinbell,67,52,43,64,79,62,5,Uncommon,False,Ancient Origins,0.65,Grass
+Togedemaru,119,67,93,48,76,69,5,Rare Holo,False,Ancient Origins,4.3,Electric
+Chinchou,84,47,78,43,58,47,6,Uncommon,False,Burning Shadows,0.37,Electric
+Clobbopus,82,45,97,60,61,41,1,Uncommon,False,Gym Heroes,0.33,Fighting
+Aron,50,49,48,63,46,75,5,Common,False,Flashfire,0.31,Rock
+Ninjask,88,56,88,77,36,53,2,Rare Holo,False,Neo Destiny,7.31,Bug
+Cacturne GX,77,59,75,58,63,61,2,Uncommon,True,Neo Destiny,1.75,Dark
+Whismur,47,48,37,39,55,59,5,Common,False,Ancient Origins,0.25,Normal
+Jynx,75,42,59,62,57,71,4,Uncommon,False,Legends Awakened,0.57,Ice
+Mienfoo,78,62,75,71,48,58,1,Rare,False,Neo Genesis,2.92,Fighting
+Chikorita,65,50,61,60,70,48,5,Uncommon,False,Flashfire,0.33,Grass
+Azumarill,30,52,32,58,60,57,8,Common,False,Paldean Fates,0.4,Fairy
+Venomoth,82,23,73,47,65,62,2,Rare,True,Neo Destiny,2.69,Bug
+Numel,30,49,69,59,54,37,6,Common,False,Crimson Invasion,0.16,Ground
+Cacturne,30,58,54,48,73,38,6,Common,False,Burning Shadows,0.14,Dark
+Emboar,65,96,69,61,52,51,6,Uncommon,False,Ultra Prism,1.0,Fire
+Delphox,177,120,75,70,98,80,8,Rare Holo EX,True,Paldea Evolved,26.71,Fire
+Duraludon,53,54,47,73,35,77,2,Uncommon,False,Legendary Collection,0.62,Steel
+Raboot,107,72,62,49,73,62,2,Rare Holo,False,Skyridge,2.17,Fire
+Breloom,65,33,38,56,64,43,6,Common,False,Forbidden Light,0.15,Grass
+Rayquaza,30,61,89,33,54,46,4,Common,False,Secret Wonders,0.45,Dragon
+Deino,66,56,42,55,50,46,1,Common,False,Team Rocket,0.21,Dark
+Sneasel,204,99,140,115,110,125,5,Rare Ultra,True,Roaring Skies,101.7,Dark
+Hypno,87,40,56,69,101,87,4,Rare Holo,False,Secret Wonders,7.08,Psychic
+Pancham,30,47,69,50,40,24,4,Common,False,Mysterious Treasures,0.15,Fighting
+Aipom,60,55,55,42,53,40,3,Uncommon,False,Ruby & Sapphire,0.57,Normal
+Blastoise EX,126,64,74,84,63,101,3,Rare Holo,True,Ruby & Sapphire,49.86,Water
+Lucario,68,46,58,45,40,62,6,Common,False,Guardians Rising,0.48,Fighting
+Cacturne,87,49,47,40,70,45,6,Uncommon,False,Burning Shadows,0.88,Grass
+Weedle,93,57,61,47,73,76,5,Rare Holo,False,Furious Fists,8.02,Bug
+Mimikyu,107,87,29,82,83,76,3,Rare,False,Dragon,1.12,Fairy
+Mismagius,42,40,47,37,63,50,5,Common,False,Phantom Forces,0.64,Ghost
+Electrode,43,36,55,40,46,40,3,Common,False,Sandstorm,0.18,Electric
+Pidgeotto EX,87,66,69,45,80,41,9,Rare,True,Temporal Forces,6.15,Flying
+Snubbull,83,77,61,79,58,102,6,Rare,False,Sun & Moon,1.79,Fairy
+Sunkern,72,46,32,50,64,54,5,Uncommon,False,Roaring Skies,0.74,Grass
+Kadabra,90,54,25,61,59,67,7,Uncommon,False,Vivid Voltage,0.56,Psychic
+Combusken,66,60,53,30,49,38,4,Common,False,Legends Awakened,0.06,Fire
+Krookodile,99,61,76,78,97,81,7,Rare Holo,False,Vivid Voltage,12.24,Dark
+Yanma EX,67,41,71,57,41,50,7,Uncommon,True,Chilling Reign,1.24,Bug
+Regidrago,92,50,42,49,66,49,9,Common,False,Temporal Forces,0.21,Dragon
+Roselia,106,47,73,69,83,73,5,Rare Holo,False,Roaring Skies,8.4,Poison
+Cyndaquil,102,85,65,51,59,51,8,Rare,False,151,1.93,Fire
+Dratini,41,57,82,59,77,72,3,Uncommon,False,Dragon,1.08,Dragon
+Magneton,47,39,58,33,39,34,2,Common,False,Neo Destiny,0.14,Electric
+Vigoroth,48,41,40,35,49,48,1,Common,True,Gym Challenge,0.37,Normal
+Squirtle,97,70,72,72,64,74,5,Rare,False,Ancient Origins,1.98,Water
+Ninetales EX,63,56,31,31,56,48,7,Common,True,Darkness Ablaze,0.34,Fire
+Wailmer,65,34,66,58,48,55,5,Uncommon,False,Furious Fists,0.4,Water
+Azumarill,83,99,53,60,102,102,1,Rare Holo,False,Base Set,4.54,Fairy
+Ariados EX,31,53,56,46,47,34,4,Common,True,Majestic Dawn,0.31,Bug
+Nuzleaf,70,28,32,53,50,52,4,Common,False,Secret Wonders,0.52,Dark
+Houndoom,62,40,47,55,50,38,5,Common,False,Phantom Forces,0.17,Dark
+Quilava,80,64,44,41,62,45,4,Uncommon,False,Diamond & Pearl,0.41,Fire
+Crabrawler,82,46,83,59,37,50,2,Uncommon,False,Skyridge,0.58,Fighting
+Latios,77,34,31,62,72,83,1,Uncommon,False,Jungle,0.73,Psychic
+Abomasnow,79,66,57,56,54,58,7,Uncommon,False,Rebel Clash,1.12,Ice
+Darkrai,99,56,91,74,73,78,2,Rare Holo,False,Neo Destiny,4.11,Dark
+Ninetales,62,57,33,42,45,38,5,Common,False,Roaring Skies,0.16,Fire
+Croconaw,92,73,53,87,46,85,7,Rare,False,Darkness Ablaze,2.07,Water
+Shiftry,76,53,53,90,85,63,2,Rare Holo,False,Skyridge,6.34,Grass
+Espeon,55,36,36,45,64,61,3,Common,False,EX FireRed & LeafGreen,0.32,Psychic
+Pansage,54,59,61,56,65,52,3,Uncommon,False,EX FireRed & LeafGreen,0.29,Grass
+Shinx,60,45,59,68,81,63,6,Rare,False,Burning Shadows,1.46,Electric

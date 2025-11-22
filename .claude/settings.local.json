@@ -22,7 +22,8 @@
       "Bash(do echo \"Testing $ex...\")",
       "Bash(for module in 00_ml_in_business.py 01_data_engineering.py 02_eda_and_features.py 03_model_training.py 04_model_evaluation.py 05_inference_service.py 06_production_monitoring.py 07_collaboration.py 08_capstone.py)",
       "Bash(do)",
-      "Bash(for exercise in exercises_00.py exercises_01.py exercises_02.py exercises_03.py exercises_04.py exercises_06.py exercises_07.py)"
+      "Bash(for exercise in exercises_00.py exercises_01.py exercises_02.py exercises_03.py exercises_04.py exercises_06.py exercises_07.py)",
+      "Bash(do echo \"Checking $module...\" uvx marimo check \"$module\")"
     ],
     "deny": [],
     "ask": []

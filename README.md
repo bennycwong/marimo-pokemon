@@ -87,7 +87,8 @@ A hands-on learning system that teaches you to build production ML systems from 
 - ✅ **ML Cheatsheet** - Quick reference for all key concepts
 - ✅ **Progress Tracker** - Track your learning journey
 - ✅ **CAPSTONE_RUBRIC.md** - 100-point self-assessment rubric
-- ✅ **800 Pokemon Cards Dataset** - With price_usd for regression tasks
+- ✅ **16,000 Pokemon Cards Dataset** - Comprehensive dataset with price_usd for regression tasks
+- ✅ **USING_PRESPLIT_DATA.md** - Guide for using pre-split train/val/test datasets
 
 ---
 
@@ -136,11 +137,33 @@ uvx marimo run 00_ml_in_business.py
 ### Generate the Dataset
 
 ```bash
-# Generate the Pokemon card dataset (with price_usd)
-uv run python data/generate_dataset.py
+# Generate comprehensive Pokemon card dataset (16,000 cards)
+uv run python data/generate_comprehensive_dataset.py
 
-# This creates data/pokemon_cards.csv (800 cards)
+# This creates:
+#   - data/pokemon_cards.csv (16,000 cards)
+#   - data/pokemon_cards_sample_1000.csv (1,000 card sample)
 ```
+
+### Create Train/Validation/Test Splits (Optional but Recommended)
+
+```bash
+# Create professional 70/15/15 splits (stratified by type)
+uv run python data/create_splits.py
+
+# This creates data/splits/:
+#   - pokemon_train.csv (11,200 cards)
+#   - pokemon_validation.csv (2,400 cards)
+#   - pokemon_test.csv (2,400 cards)
+
+# See USING_PRESPLIT_DATA.md for usage guide
+```
+
+**Why use pre-split data?**
+- ✅ No data leakage (splits done before any EDA)
+- ✅ Consistent across all modules
+- ✅ Stratified by type (balanced classes)
+- ✅ Follows industry best practices (70/15/15)
 
 ### Validate Your Setup
 
