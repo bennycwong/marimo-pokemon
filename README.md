@@ -142,6 +142,23 @@ uv run python data/generate_dataset.py
 # This creates data/pokemon_cards.csv (800 cards)
 ```
 
+### Validate Your Setup
+
+```bash
+# Run the setup test to verify everything works
+uv run python test_setup.py
+
+# This checks:
+# - All dependencies are installed
+# - Dataset exists
+# - All 8 modules + 7 exercises are present
+# - Libraries can be imported
+# - Basic operations work
+```
+
+**If test_setup.py passes**: You're ready to start! 🎉
+**If it fails**: See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for solutions.
+
 ---
 
 ## 📌 Key uv/uvx Commands

@@ -84,8 +84,8 @@ except Exception as e:
 print("\n5. Testing data validation...")
 try:
     schema = pa.DataFrameSchema({
-        "hp": pa.Column(float, nullable=True),
-        "attack": pa.Column(int, pa.Check.ge(0)),
+        "hp": pa.Column(pa.Int, nullable=True),  # Accept int types
+        "attack": pa.Column(pa.Int, pa.Check.ge(0)),
         "type": pa.Column(str)
     }, strict=False)
 
@@ -115,20 +115,41 @@ except Exception as e:
 # Test 7: Check marimo notebooks exist
 print("\n7. Testing notebook files...")
 try:
-    notebooks = [
+    main_notebooks = [
+        '00_ml_in_business.py',
         '01_data_engineering.py',
         '02_eda_and_features.py',
         '03_model_training.py',
         '04_model_evaluation.py',
-        '05_inference_service.py'
+        '05_inference_service.py',
+        '06_production_monitoring.py',
+        '07_collaboration.py',
+        '08_capstone.py'
     ]
 
-    for nb in notebooks:
-        if not Path(nb).exists():
-            print(f"   ❌ Missing notebook: {nb}")
-            exit(1)
+    exercise_notebooks = [
+        'exercises_00.py',
+        'exercises_01.py',
+        'exercises_02.py',
+        'exercises_03.py',
+        'exercises_04.py',
+        'exercises_05.py',
+        'exercises_06.py',
+        'exercises_07.py'
+    ]
 
-    print(f"   ✅ All {len(notebooks)} notebooks found")
+    all_notebooks = main_notebooks + exercise_notebooks
+
+    missing = []
+    for nb in all_notebooks:
+        if not Path(nb).exists():
+            missing.append(nb)
+
+    if missing:
+        print(f"   ❌ Missing notebooks: {', '.join(missing)}")
+        exit(1)
+
+    print(f"   ✅ All {len(all_notebooks)} notebooks found ({len(main_notebooks)} main + {len(exercise_notebooks)} exercises)")
 except Exception as e:
     print(f"   ❌ Notebook check error: {e}")
     exit(1)
@@ -153,8 +174,32 @@ try:
 except Exception as e:
     print(f"   ❌ Polars error: {e}")
 
+# Test 10: Check MLflow (experiment tracking)
+print("\n10. Testing MLflow...")
+try:
+    import mlflow
+    print(f"   ✅ MLflow available (version {mlflow.__version__})")
+except Exception as e:
+    print(f"   ⚠️  MLflow not available: {e}")
+    print("   Note: MLflow needed for Module 3 (experiment tracking)")
+
+# Test 11: Check scipy (statistical tests)
+print("\n11. Testing scipy...")
+try:
+    import scipy
+    from scipy import stats
+    print(f"   ✅ scipy available (version {scipy.__version__})")
+except Exception as e:
+    print(f"   ❌ scipy error: {e}")
+    print("   Note: scipy needed for Module 6 (drift detection)")
+
 print("\n" + "=" * 60)
 print("✅ SETUP TEST COMPLETE!")
-print("\nYour environment is ready. Start learning with:")
-print("  marimo edit 01_data_engineering.py")
+print("\nYour environment is ready for the complete 8-module course!")
+print("\nRecommended way to start:")
+print("  uvx marimo edit ./")
+print("\nOr start with Module 0:")
+print("  uvx marimo edit 00_ml_in_business.py")
+print("\nCourse structure: 8 modules + 7 exercise sets + capstone")
+print("Total duration: 20-24 hours over 3-4 weeks")
 print("=" * 60)
