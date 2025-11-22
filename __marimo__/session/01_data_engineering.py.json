@@ -6,7 +6,7 @@
   "cells": [
     {
       "id": "MJUe",
-      "code_hash": "9ff1023b2170e005dab165ee74d7bd83",
+      "code_hash": "033e7bbf8be8fdda22206bb4d694a60a",
       "outputs": [
         {
           "type": "data",
@@ -19,7 +19,7 @@
     },
     {
       "id": "vblA",
-      "code_hash": "94c1b1ee5a0e21d20e6a4f5a23595dec",
+      "code_hash": "0a4ab0d7b08247d86779fb2c29e683fa",
       "outputs": [
         {
           "type": "data",
@@ -45,7 +45,7 @@
     },
     {
       "id": "RGSE",
-      "code_hash": "7548ab0232cc4d641d4cf9d62d9bd956",
+      "code_hash": "5167ac4cd886391c2f55c057219becbb",
       "outputs": [
         {
           "type": "data",
@@ -58,7 +58,7 @@
     },
     {
       "id": "iLit",
-      "code_hash": "6c69891fe4889fda7d3a524d17dcb48c",
+      "code_hash": "87630f2006ac1a4991d98bf917becbda",
       "outputs": [
         {
           "type": "data",
@@ -71,7 +71,7 @@
     },
     {
       "id": "TqIu",
-      "code_hash": "97682cca713d5dc9e6676dc544de32fa",
+      "code_hash": "72a380bc0da32fd50c8b0cbc94963255",
       "outputs": [
         {
           "type": "data",
@@ -84,7 +84,7 @@
     },
     {
       "id": "ecfG",
-      "code_hash": "3dd5d202d91c350c9ab6dac5ac3d7ff0",
+      "code_hash": "d7c58253a38a005c78b667a84b3ae49c",
       "outputs": [
         {
           "type": "data",
@@ -97,7 +97,7 @@
     },
     {
       "id": "ZBYS",
-      "code_hash": "92c0c2c00acb0ee5c3541f8062122dd5",
+      "code_hash": "fc7545e43b6b0cdd917923d057057161",
       "outputs": [
         {
           "type": "data",
@@ -110,7 +110,7 @@
     },
     {
       "id": "xXTn",
-      "code_hash": "99603ffa183c66c4f402cc9529995b56",
+      "code_hash": "d369c216ceb4d6549a877f332caef42a",
       "outputs": [
         {
           "type": "data",
@@ -162,7 +162,7 @@
         {
           "type": "stream",
           "name": "stdout",
-          "text": "\u2705 Loaded 800 Pokemon cards\n\u2705 Dataset shape: 800 rows \u00d7 13 columns\n",
+          "text": "\u2705 Loaded 16000 Pokemon cards\n\u2705 Dataset shape: 16000 rows \u00d7 13 columns\n",
           "mimetype": "text/plain"
         }
       ]
@@ -174,7 +174,7 @@
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"first-look-at-the-data\">\ud83d\udd0d First Look at the Data</h3>\n<span class=\"paragraph\">We loaded <strong>800 records</strong> with <strong>13 features</strong>.\nLet's examine the first few rows:</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"first-look-at-the-data\">\ud83d\udd0d First Look at the Data</h3>\n<span class=\"paragraph\">We loaded <strong>16000 records</strong> with <strong>13 features</strong>.\nLet's examine the first few rows:</span></span>"
           }
         }
       ],
@@ -187,7 +187,7 @@
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='0aa673e9-5bba-cb66-8d05-ec8408dba215'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0000&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zenith-122&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Psychic&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:65,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:89,&#92;&quot;sp_defense&#92;&quot;:79,&#92;&quot;speed&#92;&quot;:70,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0001&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Machamp-188&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:72.0,&#92;&quot;attack&#92;&quot;:73,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:55,&#92;&quot;sp_defense&#92;&quot;:90,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-09-0002&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Titanor-14&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Steel&#92;&quot;,&#92;&quot;hp&#92;&quot;:63.0,&#92;&quot;attack&#92;&quot;:89,&#92;&quot;defense&#92;&quot;:97,&#92;&quot;sp_attack&#92;&quot;:58,&#92;&quot;sp_defense&#92;&quot;:74,&#92;&quot;speed&#92;&quot;:58,&#92;&quot;generation&#92;&quot;:9,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.19},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-06-0003&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Flamara-54&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:86,&#92;&quot;defense&#92;&quot;:72,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:68,&#92;&quot;speed&#92;&quot;:81,&#92;&quot;generation&#92;&quot;:6,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Ultra Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:29.05},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0004&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Floravia-41&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:null,&#92;&quot;attack&#92;&quot;:59,&#92;&quot;defense&#92;&quot;:74,&#92;&quot;sp_attack&#92;&quot;:77,&#92;&quot;sp_defense&#92;&quot;:59,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:5.44},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0005&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Fernix-231&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:76.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:73,&#92;&quot;sp_attack&#92;&quot;:91,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:10.62},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-05-0006&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Sparklix-101&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fairy&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:67,&#92;&quot;defense&#92;&quot;:63,&#92;&quot;sp_attack&#92;&quot;:88,&#92;&quot;sp_defense&#92;&quot;:76,&#92;&quot;speed&#92;&quot;:72,&#92;&quot;generation&#92;&quot;:5,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:4.29},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-01-0007&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Brawlix-237&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fighting&#92;&quot;,&#92;&quot;hp&#92;&quot;:65.0,&#92;&quot;attack&#92;&quot;:96,&#92;&quot;defense&#92;&quot;:71,&#92;&quot;sp_attack&#92;&quot;:56,&#92;&quot;sp_defense&#92;&quot;:72,&#92;&quot;speed&#92;&quot;:78,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:3.84},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0008&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Zaptor-286&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Electric&#92;&quot;,&#92;&quot;hp&#92;&quot;:61.0,&#92;&quot;attack&#92;&quot;:77,&#92;&quot;defense&#92;&quot;:56,&#92;&quot;sp_attack&#92;&quot;:81,&#92;&quot;sp_defense&#92;&quot;:67,&#92;&quot;speed&#92;&quot;:99,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.31},{&#92;&quot;card_id&#92;&quot;:&#92;&quot;PKM-02-0009&#92;&quot;,&#92;&quot;name&#92;&quot;:&#92;&quot;Ignithor-137&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:94.0,&#92;&quot;attack&#92;&quot;:83,&#92;&quot;defense&#92;&quot;:55,&#92;&quot;sp_attack&#92;&quot;:71,&#92;&quot;sp_defense&#92;&quot;:65,&#92;&quot;speed&#92;&quot;:79,&#92;&quot;generation&#92;&quot;:2,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.28}]&quot;' data-total-rows='10' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;card_id&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;hp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;speed&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;generation&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;is_legendary&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;rarity&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;price_usd&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='323c10a5-4542-7df8-a0b8-824ea81eace8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;name&#92;&quot;:&#92;&quot;Solrock&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Psychic&#92;&quot;,&#92;&quot;hp&#92;&quot;:72,&#92;&quot;attack&#92;&quot;:70,&#92;&quot;defense&#92;&quot;:48,&#92;&quot;sp_attack&#92;&quot;:53,&#92;&quot;sp_defense&#92;&quot;:82,&#92;&quot;speed&#92;&quot;:79,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Fossil&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.38},{&#92;&quot;name&#92;&quot;:&#92;&quot;Torchic&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:78,&#92;&quot;attack&#92;&quot;:47,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:39,&#92;&quot;sp_defense&#92;&quot;:52,&#92;&quot;speed&#92;&quot;:33,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Base Set 2&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.0},{&#92;&quot;name&#92;&quot;:&#92;&quot;Sneasel&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Dark&#92;&quot;,&#92;&quot;hp&#92;&quot;:85,&#92;&quot;attack&#92;&quot;:62,&#92;&quot;defense&#92;&quot;:77,&#92;&quot;sp_attack&#92;&quot;:69,&#92;&quot;sp_defense&#92;&quot;:68,&#92;&quot;speed&#92;&quot;:62,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Jungle&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.31},{&#92;&quot;name&#92;&quot;:&#92;&quot;Ponyta EX&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:127,&#92;&quot;attack&#92;&quot;:104,&#92;&quot;defense&#92;&quot;:51,&#92;&quot;sp_attack&#92;&quot;:58,&#92;&quot;sp_defense&#92;&quot;:52,&#92;&quot;speed&#92;&quot;:50,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare Holo&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:true,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Jungle&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:12.47},{&#92;&quot;name&#92;&quot;:&#92;&quot;Azurill&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fairy&#92;&quot;,&#92;&quot;hp&#92;&quot;:54,&#92;&quot;attack&#92;&quot;:38,&#92;&quot;defense&#92;&quot;:49,&#92;&quot;sp_attack&#92;&quot;:54,&#92;&quot;sp_defense&#92;&quot;:52,&#92;&quot;speed&#92;&quot;:63,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Neo Discovery&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.33},{&#92;&quot;name&#92;&quot;:&#92;&quot;Tentacool&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Water&#92;&quot;,&#92;&quot;hp&#92;&quot;:42,&#92;&quot;attack&#92;&quot;:55,&#92;&quot;defense&#92;&quot;:54,&#92;&quot;sp_attack&#92;&quot;:46,&#92;&quot;sp_defense&#92;&quot;:36,&#92;&quot;speed&#92;&quot;:58,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Jungle&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.41},{&#92;&quot;name&#92;&quot;:&#92;&quot;Corsola&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Water&#92;&quot;,&#92;&quot;hp&#92;&quot;:66,&#92;&quot;attack&#92;&quot;:69,&#92;&quot;defense&#92;&quot;:42,&#92;&quot;sp_attack&#92;&quot;:87,&#92;&quot;sp_defense&#92;&quot;:46,&#92;&quot;speed&#92;&quot;:84,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Gym Challenge&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.61},{&#92;&quot;name&#92;&quot;:&#92;&quot;Pignite&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Fire&#92;&quot;,&#92;&quot;hp&#92;&quot;:35,&#92;&quot;attack&#92;&quot;:69,&#92;&quot;defense&#92;&quot;:40,&#92;&quot;sp_attack&#92;&quot;:29,&#92;&quot;sp_defense&#92;&quot;:30,&#92;&quot;speed&#92;&quot;:32,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Common&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Gym Challenge&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.33},{&#92;&quot;name&#92;&quot;:&#92;&quot;Lotad&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Grass&#92;&quot;,&#92;&quot;hp&#92;&quot;:60,&#92;&quot;attack&#92;&quot;:44,&#92;&quot;defense&#92;&quot;:39,&#92;&quot;sp_attack&#92;&quot;:57,&#92;&quot;sp_defense&#92;&quot;:75,&#92;&quot;speed&#92;&quot;:51,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Uncommon&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Gym Challenge&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:0.44},{&#92;&quot;name&#92;&quot;:&#92;&quot;Swampert&#92;&quot;,&#92;&quot;type&#92;&quot;:&#92;&quot;Water&#92;&quot;,&#92;&quot;hp&#92;&quot;:100,&#92;&quot;attack&#92;&quot;:36,&#92;&quot;defense&#92;&quot;:66,&#92;&quot;sp_attack&#92;&quot;:73,&#92;&quot;sp_defense&#92;&quot;:53,&#92;&quot;speed&#92;&quot;:81,&#92;&quot;generation&#92;&quot;:1,&#92;&quot;rarity&#92;&quot;:&#92;&quot;Rare&#92;&quot;,&#92;&quot;is_legendary&#92;&quot;:false,&#92;&quot;set_name&#92;&quot;:&#92;&quot;Gym Heroes&#92;&quot;,&#92;&quot;price_usd&#92;&quot;:1.54}]&quot;' data-total-rows='10' data-total-columns='13' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;hp&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_attack&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;sp_defense&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;speed&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;generation&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;rarity&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;is_legendary&quot;,[&quot;boolean&quot;,&quot;bool&quot;]],[&quot;set_name&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;price_usd&quot;,[&quot;number&quot;,&quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
@@ -196,85 +196,239 @@
     {
       "id": "BYtC",
       "code_hash": "0c1e84674a65e0171dab94a9e5cf6ef5",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "============================================================\nDATASET INFORMATION\n============================================================\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 16000 entries, 0 to 15999\nData columns (total 13 columns):\n #   Column        Non-Null Count  Dtype  \n---  ------        --------------  -----  \n 0   name          16000 non-null  object \n 1   type          16000 non-null  object \n 2   hp            16000 non-null  int64  \n 3   attack        16000 non-null  int64  \n 4   defense       16000 non-null  int64  \n 5   sp_attack     16000 non-null  int64  \n 6   sp_defense    16000 non-null  int64  \n 7   speed         16000 non-null  int64  \n 8   generation    16000 non-null  int64  \n 9   rarity        16000 non-null  object \n 10  is_legendary  16000 non-null  bool   \n 11  set_name      16000 non-null  object \n 12  price_usd     16000 non-null  float64\ndtypes: bool(1), float64(1), int64(7), object(4)\nmemory usage: 1.5+ MB\n\n============================================================\nBASIC STATISTICS\n============================================================\n                 hp        attack       defense     sp_attack    sp_defense  \\\ncount  16000.000000  16000.000000  16000.000000  16000.000000  16000.000000   \nmean      77.432375     55.964687     60.215625     59.570312     60.618563   \nstd       36.666275     19.453350     21.073393     20.958578     21.400434   \nmin       30.000000     10.000000     10.000000     10.000000     10.000000   \n25%       53.000000     43.000000     46.000000     45.000000     46.000000   \n50%       71.000000     53.000000     57.000000     57.000000     57.000000   \n75%       91.000000     66.000000     71.000000     70.000000     72.000000   \nmax      251.000000    166.000000    183.000000    187.000000    178.000000   \n\n              speed    generation     price_usd  \ncount  16000.000000  16000.000000  16000.000000  \nmean      61.153750      4.275000     10.281799  \nstd       20.343103      2.307533     53.886034  \nmin       10.000000      1.000000      0.040000  \n25%       47.000000      2.000000      0.300000  \n50%       58.000000      4.000000      0.630000  \n75%       72.000000      6.000000      2.150000  \nmax      169.000000      9.000000   2391.530000  \n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Kclp",
       "code_hash": "7614667d5789a4dc391f26041ff046b2",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "============================================================\nMISSING VALUE ANALYSIS\n============================================================\nEmpty DataFrame\nColumns: [Column, Missing Count, Missing %]\nIndex: []\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "emfo",
       "code_hash": "c07721b650dd18c2c82f2957450fded9",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "'card_id'",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/pandas/core/indexes/base.py&quot;</span>, line <span class=\"m\">3812</span>, in <span class=\"n\">get_loc</span>\n<span class=\"w\">    </span><span class=\"k\">return</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">_engine</span><span class=\"o\">.</span><span class=\"n\">get_loc</span><span class=\"p\">(</span><span class=\"n\">casted_key</span><span class=\"p\">)</span>\n<span class=\"w\">           </span><span class=\"pm\">~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;pandas/_libs/index.pyx&quot;</span>, line <span class=\"m\">167</span>, in <span class=\"n\">pandas._libs.index.IndexEngine.get_loc</span>\n  File <span class=\"nb\">&quot;pandas/_libs/index.pyx&quot;</span>, line <span class=\"m\">196</span>, in <span class=\"n\">pandas._libs.index.IndexEngine.get_loc</span>\n  File <span class=\"nb\">&quot;pandas/_libs/hashtable_class_helper.pxi&quot;</span>, line <span class=\"m\">7088</span>, in <span class=\"n\">pandas._libs.hashtable.PyObjectHashTable.get_item</span>\n  File <span class=\"nb\">&quot;pandas/_libs/hashtable_class_helper.pxi&quot;</span>, line <span class=\"m\">7096</span>, in <span class=\"n\">pandas._libs.hashtable.PyObjectHashTable.get_item</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">&#39;card_id&#39;</span>\n\n<span class=\"gt\">The above exception was the direct cause of the following exception:</span>\n\n<span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/marimo/_runtime/executor.py&quot;</span>, line <span class=\"m\">138</span>, in <span class=\"n\">execute_cell</span>\n<span class=\"w\">    </span><span class=\"n\">exec</span><span class=\"p\">(</span><span class=\"n\">cell</span><span class=\"o\">.</span><span class=\"n\">body</span><span class=\"p\">,</span> <span class=\"n\">glbls</span><span class=\"p\">)</span>\n<span class=\"w\">    </span><span class=\"pm\">~~~~^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/var/folders/s8/xbv97fy15379pdpcf3npnv740000gp/T/marimo_794/__marimo__cell_emfo_.py&quot;</span>, line <span class=\"m\">2</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">duplicate_ids</span> <span class=\"o\">=</span> <span class=\"n\">df_raw</span><span class=\"p\">[</span><span class=\"s1\">&#39;card_id&#39;</span><span class=\"p\">]</span><span class=\"o\">.</span><span class=\"n\">duplicated</span><span class=\"p\">()</span><span class=\"o\">.</span><span class=\"n\">sum</span><span class=\"p\">()</span>\n<span class=\"w\">                    </span><span class=\"pm\">~~~~~~^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/pandas/core/frame.py&quot;</span>, line <span class=\"m\">4113</span>, in <span class=\"n\">__getitem__</span>\n<span class=\"w\">    </span><span class=\"n\">indexer</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">columns</span><span class=\"o\">.</span><span class=\"n\">get_loc</span><span class=\"p\">(</span><span class=\"n\">key</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/pandas/core/indexes/base.py&quot;</span>, line <span class=\"m\">3819</span>, in <span class=\"n\">get_loc</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"ne\">KeyError</span><span class=\"p\">(</span><span class=\"n\">key</span><span class=\"p\">)</span> <span class=\"kn\">from</span><span class=\"w\"> </span><span class=\"nn\">err</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">&#39;card_id&#39;</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
     },
     {
       "id": "Hstk",
       "code_hash": "0c89c0f3d5d9c9eef264e709f7f484f6",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\n============================================================\nCATEGORICAL COLUMN VALUE COUNTS\n============================================================\n\n--- Type Distribution ---\ntype\nWater       1832\nFire        1611\nGrass       1542\nPsychic     1320\nElectric    1272\n            ... \nFlying       556\nPoison       431\nRock         415\nGround       397\nIce          300\nName: count, Length: 18, dtype: int64\n\n\u26a0\ufe0f  Notice the lowercase values? Data entry inconsistency!\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "nWHF",
       "code_hash": "bddd1318a0e00648bce02b3c87acc895",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\n============================================================\nOUTLIER DETECTION (Price)\n============================================================\nLower bound: $-2.48\nUpper bound: $4.92\nOutliers found: 2461\n\nTop 10 most expensive cards (potential outliers):\n             name      type       rarity  is_legendary  price_usd\n2235    Mismagius     Ghost  Secret Rare          True    2391.53\n3630        Budew     Grass  Secret Rare          True    1918.01\n12738     Flaaffy  Electric  Secret Rare          True    1149.85\n15804    Cacturne      Dark  Secret Rare          True    1112.34\n1198   Weepinbell     Grass  Secret Rare          True     889.48\n13544       Ho-Oh    Flying  Secret Rare          True     882.26\n13896     Walrein     Water  Secret Rare          True     866.33\n3460     Houndour      Dark  Secret Rare          True     839.76\n3241    Duraludon     Steel  Secret Rare          True     833.42\n12051     Geodude      Rock  Secret Rare          True     817.32\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "ZHCJ",
       "code_hash": "011decdb9494755ef09960701fb195a6",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "ROlb",
       "code_hash": "d95897d9e2d029f59606b2a34a834199",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "\u2705 Schema defined\n\nThis schema enforces:\n- card_id must be unique\n- type must be properly capitalized\n- Stats must be in reasonable ranges\n- generation must be 1-9\n- rarity must be one of the expected values\n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "qnkX",
       "code_hash": "4f261da3bb6671da698a0589f0bb0907",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "============================================================\nVALIDATING RAW DATA\n============================================================\n\u274c Validation failed!\n\nNumber of errors: 2950\n\nFirst 10 validation errors:\n       schema_context  column  \\\n2949  DataFrameSchema    None   \n1970           Column  rarity   \n1961           Column  rarity   \n1962           Column  rarity   \n1963           Column  rarity   \n1964           Column  rarity   \n1965           Column  rarity   \n1966           Column  rarity   \n1967           Column  rarity   \n1968           Column  rarity   \n\n                                                  check check_number  \\\n2949                                column_in_dataframe         None   \n1970  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1961  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1962  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1963  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1964  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1965  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1966  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1967  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n1968  isin(['Common', 'Uncommon', 'Rare', 'Ultra Rar...            0   \n\n      failure_case  index  \n2949       card_id   None  \n1970     Rare Holo  10524  \n1961     Rare Holo  10486  \n1962     Rare Holo  10487  \n1963     Rare Holo  10491  \n1964     Rare Holo  10499  \n1965     Rare Holo  10501  \n1966     Rare Holo  10504  \n1967     Rare Holo  10505  \n1968  Rare Holo GX  10508  \n",
+          "mimetype": "text/plain"
+        }
+      ]
     },
     {
       "id": "Vxnm",
       "code_hash": "6d1945ac04c5eed615025fa14f26d9f1",
-      "outputs": [],
-      "console": []
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "Index(['card_id'], dtype='object')",
+          "traceback": []
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "<span class=\"codehilite\"><div class=\"highlight\"><pre><span></span><span class=\"gt\">Traceback (most recent call last):</span>\n  File <span class=\"nb\">&quot;/var/folders/s8/xbv97fy15379pdpcf3npnv740000gp/T/marimo_794/__marimo__cell_Vxnm_.py&quot;</span>, line <span class=\"m\">55</span>, in <span class=\"n\">&lt;module&gt;</span>\n<span class=\"w\">    </span><span class=\"n\">df_clean</span> <span class=\"o\">=</span> <span class=\"n\">clean_pokemon_data</span><span class=\"p\">(</span><span class=\"n\">df_raw</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/var/folders/s8/xbv97fy15379pdpcf3npnv740000gp/T/marimo_794/__marimo__cell_Vxnm_.py&quot;</span>, line <span class=\"m\">21</span>, in <span class=\"n\">clean_pokemon_data</span>\n<span class=\"w\">    </span><span class=\"n\">df_clean</span> <span class=\"o\">=</span> <span class=\"n\">df_clean</span><span class=\"o\">.</span><span class=\"n\">drop_duplicates</span><span class=\"p\">(</span><span class=\"n\">subset</span><span class=\"o\">=</span><span class=\"p\">[</span><span class=\"s1\">&#39;card_id&#39;</span><span class=\"p\">],</span> <span class=\"n\">keep</span><span class=\"o\">=</span><span class=\"s1\">&#39;first&#39;</span><span class=\"p\">)</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/pandas/core/frame.py&quot;</span>, line <span class=\"m\">6840</span>, in <span class=\"n\">drop_duplicates</span>\n<span class=\"w\">    </span><span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"bp\">self</span><span class=\"p\">[</span><span class=\"o\">-</span><span class=\"bp\">self</span><span class=\"o\">.</span><span class=\"n\">duplicated</span><span class=\"p\">(</span><span class=\"n\">subset</span><span class=\"p\">,</span> <span class=\"n\">keep</span><span class=\"o\">=</span><span class=\"n\">keep</span><span class=\"p\">)]</span>\n<span class=\"w\">                   </span><span class=\"pm\">~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^</span>\n  File <span class=\"nb\">&quot;/Users/benny.wong/.cache/uv/archive-v0/4URZ5lSNR81AX0mZB7D00/lib/python3.13/site-packages/pandas/core/frame.py&quot;</span>, line <span class=\"m\">6972</span>, in <span class=\"n\">duplicated</span>\n<span class=\"w\">    </span><span class=\"k\">raise</span> <span class=\"ne\">KeyError</span><span class=\"p\">(</span><span class=\"n\">Index</span><span class=\"p\">(</span><span class=\"n\">diff</span><span class=\"p\">))</span>\n<span class=\"gr\">KeyError</span>: <span class=\"n\">Index([&#39;card_id&#39;], dtype=&#39;object&#39;)</span>\n</pre></div>\n</span>",
+          "mimetype": "application/vnd.marimo+traceback"
+        }
+      ]
     },
     {
       "id": "DnEU",
-      "code_hash": "8aff2cc6f856df9dc258965b43496e2b",
-      "outputs": [],
+      "code_hash": "14e5193875bd3e8a500984d42b6fe930",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "An ancestor raised an exception (KeyError): ",
+          "traceback": []
+        }
+      ],
       "console": []
     },
     {
       "id": "ulZA",
       "code_hash": "5bcfd97f99d955886a905cc48e4916f8",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "An ancestor raised an exception (KeyError): ",
+          "traceback": []
+        }
+      ],
       "console": []
     },
     {
       "id": "Pvdt",
       "code_hash": "50d34b3f67eace480815746a14e1e9af",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "An ancestor raised an exception (KeyError): ",
+          "traceback": []
+        }
+      ],
       "console": []
     },
     {
       "id": "aLJB",
       "code_hash": "460285878f00990c2110051af28d783d",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
       "console": []
     },
     {
       "id": "nHfw",
       "code_hash": "b27280f0e438f3d7715c62d05989ba3b",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "exception",
+          "evalue": "An ancestor raised an exception (KeyError): ",
+          "traceback": []
+        }
+      ],
       "console": []
     }
   ]
