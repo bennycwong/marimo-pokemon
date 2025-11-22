@@ -110,8 +110,35 @@
             border: none;
         }
 
+        .button-group {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .randomize-btn {
+            padding: 15px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .randomize-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 87, 108, 0.4);
+        }
+
+        .randomize-btn:active {
+            transform: translateY(0);
+        }
+
         .predict-btn {
-            width: 100%;
             padding: 15px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -121,7 +148,6 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
-            margin-top: 20px;
         }
 
         .predict-btn:hover {
@@ -357,7 +383,10 @@
                 <input type="range" min="1" max="300" value="85" class="slider" id="speed-slider">
             </div>
 
-            <button class="predict-btn" id="predict-btn">🔮 Predict Type</button>
+            <div class="button-group">
+                <button class="randomize-btn" id="randomize-btn">🎲 Random</button>
+                <button class="predict-btn" id="predict-btn">🔮 Predict Type</button>
+            </div>
         </div>
 
         <!-- Results Card -->
@@ -413,6 +442,129 @@
         function formatConfidence(confidence) {
             return `${(confidence * 100).toFixed(1)}%`;
         }
+
+        // Helper function to set slider value
+        function setSliderValue(stat, value) {
+            const slider = document.getElementById(`${stat}-slider`);
+            const valueDisplay = document.getElementById(`${stat}-value`);
+            slider.value = value;
+            valueDisplay.textContent = value;
+        }
+
+        // Random number between min and max (inclusive)
+        function randomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Generate realistic Pokemon stats based on archetypes
+        function generateRandomPokemon() {
+            // Define realistic Pokemon archetypes with stat ranges
+            const archetypes = [
+                {
+                    name: 'Tank',
+                    hp: [100, 150],
+                    attack: [40, 80],
+                    defense: [100, 150],
+                    sp_attack: [40, 70],
+                    sp_defense: [100, 150],
+                    speed: [20, 50]
+                },
+                {
+                    name: 'Physical Attacker',
+                    hp: [70, 100],
+                    attack: [110, 150],
+                    defense: [60, 90],
+                    sp_attack: [40, 70],
+                    sp_defense: [60, 80],
+                    speed: [80, 120]
+                },
+                {
+                    name: 'Special Attacker',
+                    hp: [70, 90],
+                    attack: [40, 70],
+                    defense: [50, 80],
+                    sp_attack: [110, 150],
+                    sp_defense: [70, 90],
+                    speed: [80, 120]
+                },
+                {
+                    name: 'Speedster',
+                    hp: [50, 80],
+                    attack: [80, 110],
+                    defense: [50, 70],
+                    sp_attack: [80, 110],
+                    sp_defense: [50, 70],
+                    speed: [120, 160]
+                },
+                {
+                    name: 'Balanced',
+                    hp: [80, 100],
+                    attack: [80, 100],
+                    defense: [80, 100],
+                    sp_attack: [80, 100],
+                    sp_defense: [80, 100],
+                    speed: [80, 100]
+                },
+                {
+                    name: 'Glass Cannon',
+                    hp: [40, 70],
+                    attack: [120, 160],
+                    defense: [30, 60],
+                    sp_attack: [120, 160],
+                    sp_defense: [40, 70],
+                    speed: [100, 140]
+                },
+                {
+                    name: 'Legendary',
+                    hp: [90, 120],
+                    attack: [110, 150],
+                    defense: [100, 130],
+                    sp_attack: [110, 150],
+                    sp_defense: [100, 130],
+                    speed: [90, 130]
+                },
+                {
+                    name: 'Defensive Wall',
+                    hp: [90, 130],
+                    attack: [50, 80],
+                    defense: [120, 160],
+                    sp_attack: [50, 80],
+                    sp_defense: [120, 160],
+                    speed: [30, 60]
+                }
+            ];
+
+            // Randomly select an archetype
+            const archetype = archetypes[Math.floor(Math.random() * archetypes.length)];
+
+            // Generate stats within the archetype ranges
+            const stats = {
+                hp: randomInt(archetype.hp[0], archetype.hp[1]),
+                attack: randomInt(archetype.attack[0], archetype.attack[1]),
+                defense: randomInt(archetype.defense[0], archetype.defense[1]),
+                sp_attack: randomInt(archetype.sp_attack[0], archetype.sp_attack[1]),
+                sp_defense: randomInt(archetype.sp_defense[0], archetype.sp_defense[1]),
+                speed: randomInt(archetype.speed[0], archetype.speed[1])
+            };
+
+            return { archetype: archetype.name, stats };
+        }
+
+        // Randomize button click handler
+        document.getElementById('randomize-btn').addEventListener('click', () => {
+            const { archetype, stats } = generateRandomPokemon();
+
+            // Update all sliders with animation
+            setSliderValue('hp', stats.hp);
+            setSliderValue('attack', stats.attack);
+            setSliderValue('defense', stats.defense);
+            setSliderValue('sp_attack', stats.sp_attack);
+            setSliderValue('sp_defense', stats.sp_defense);
+            setSliderValue('speed', stats.speed);
+
+            // Show archetype name briefly (optional - you can remove this)
+            console.log(`Generated ${archetype} Pokemon with total stats: ${Object.values(stats).reduce((a, b) => a + b, 0)}`);
+        });
 
         // Predict button click handler
         document.getElementById('predict-btn').addEventListener('click', async () => {

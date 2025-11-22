@@ -26,6 +26,7 @@ A complete production-ready ML inference system with trained model, REST API, an
 - **Design**: Beautiful Pokemon card-themed interface
 - **Features**:
   - Interactive sliders for all 6 base stats
+  - **Randomizer button** - Generate realistic Pokemon with 8 different archetypes (Tank, Physical Attacker, Special Attacker, Speedster, Balanced, Glass Cannon, Legendary, Defensive Wall)
   - Real-time prediction updates
   - Type-specific color coding (18 Pokemon types)
   - Confidence visualization
@@ -401,6 +402,48 @@ uv sync
 # Or install specific packages
 uv pip install fastapi uvicorn pydantic
 ```
+
+---
+
+## 🎲 Randomizer Feature
+
+The UI includes a **Random** button that generates realistic Pokemon stats based on 8 different archetypes:
+
+### Archetypes
+
+1. **Tank** - High HP and defenses, low speed
+   - Total stats: ~450-550
+   - Example: Snorlax, Blissey
+
+2. **Physical Attacker** - High attack, moderate speed
+   - Total stats: ~480-580
+   - Example: Machamp, Tyranitar
+
+3. **Special Attacker** - High special attack, moderate speed
+   - Total stats: ~480-570
+   - Example: Alakazam, Gengar
+
+4. **Speedster** - Very high speed, moderate offenses
+   - Total stats: ~460-550
+   - Example: Jolteon, Crobat
+
+5. **Balanced** - All stats around 80-100
+   - Total stats: ~480-600
+   - Example: Mew, Celebi
+
+6. **Glass Cannon** - Extreme offense, very low defense
+   - Total stats: ~450-560
+   - Example: Alakazam, Gengar (offensive builds)
+
+7. **Legendary** - High stats all around
+   - Total stats: ~600-720
+   - Example: Mewtwo, Rayquaza, Arceus
+
+8. **Defensive Wall** - Extreme defenses, low speed
+   - Total stats: ~450-580
+   - Example: Shuckle, Steelix
+
+Each archetype generates stats within realistic ranges for actual Pokemon, ensuring the predictions are meaningful!
 
 ---
 
